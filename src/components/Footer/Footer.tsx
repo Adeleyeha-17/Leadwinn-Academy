@@ -66,7 +66,7 @@ export const Footer = () => {
          </div>
 
          <div className="flex flex-col gap-2">
-            <h1 className="font-bold text-lg">Socials</h1>
+            <h1 className="sm:max-md:text-base font-bold md:text-lg">Socials</h1>
 
             <div className="flex gap-4">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
@@ -90,7 +90,7 @@ export const Footer = () => {
          </div>
 
          <div className="flex flex-col gap-2">
-            <h1 className="font-bold text-lg">Newsletter</h1>
+            <h1 className="sm:max-md:text-base font-bold md:text-lg">Newsletter</h1>
 
             <h1 className="text-base">Sign up with your email to join our mailing list</h1>
          </div>
