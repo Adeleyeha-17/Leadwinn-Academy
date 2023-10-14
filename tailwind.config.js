@@ -19,7 +19,7 @@ export default {
         "home" : "url(/wave.svg)"
       },
       margin: {
-        "15" : "40.5px"
+        "15" : "54.4px"
       }
     },
   },
