@@ -92,7 +92,7 @@ export const Footer = () => {
          <div className="flex flex-col gap-2">
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Newsletter</h1>
 
-            <h1 className="text-base">Sign up with your email to join our mailing list</h1>
+            <h1 className="sm:max-md:text-sm md:text-base">Sign up with your email to join our mailing list</h1>
          </div>
       </div>
 
