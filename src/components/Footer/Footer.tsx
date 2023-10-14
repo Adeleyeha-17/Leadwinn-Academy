@@ -23,7 +23,7 @@ export const Footer = () => {
       <div className="grid grid-flow-row sm:max-md:grid-cols-2 md:grid-flow-col gap-6 lg:gap-0  py-16 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto ">
 
          <div className="flex flex-col gap-2">
-            <h1 className="font-bold text-lg">Contact Us</h1>
+            <h1 className="sm:max-lg:text-base md:font-bold md:text-lg">Contact Us</h1>
 
             <div className="flex gap-4">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -31,8 +31,8 @@ export const Footer = () => {
                </svg>
 
                <div className="flex flex-col gap-1">
-                  <h1 className="font-medium text-base">Email</h1>
-                  <h1 className="text-sm">Leadwinn@gmail.com</h1>
+                  <h1 className="sm:max-lg:text-sm md:font-medium md:text-base">Email</h1>
+                  <h1 className="sm:max-lg:text-xs md:text-sm">Leadwinn@gmail.com</h1>
                </div>
             </div>
 
@@ -44,15 +44,15 @@ export const Footer = () => {
                </h1>
 
                <div className="flex flex-col gap-1">
-                  <h1 className="font-medium text-base">Phone</h1>
-                  <h1 className="text-sm">+2348071565349</h1>
+                  <h1 className="sm:max-lg:text-sm md:font-medium md:text-base">Phone</h1>
+                  <h1 className="sm:max-lg:text-xs md:text-sm">+2348071565349</h1>
                </div>
             </div>
          </div>
 
          <div className="flex flex-col gap-2">
-            <h1 className="font-bold text-lg">Quick Links</h1>
-            <div className="flex flex-col gap-2 text-base">
+            <h1 className="sm:max-lg:text-base md:font-bold md:text-lg">Quick Links</h1>
+            <div className="flex flex-col gap-2 sm:max-lg:text-sm md:text-base">
                {
                quickLinks.map(links => (
                   <Link to={
