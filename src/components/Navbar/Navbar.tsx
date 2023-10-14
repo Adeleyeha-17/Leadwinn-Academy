@@ -13,13 +13,13 @@ export const Navbar: React.FC = () => {
          <nav className="flex justify-between items-center h-16 px-5 pt-10 md:max-xl:px-7 md:max-w-6xl lg:max-w-7xl mx-auto">
             <div className="flex items-center gap-2">
                <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 sm:w-full'/></Link>
-               <span className="flex flex-col text-lead-black font-bold font-poppins">
+               <span className="flex flex-col text-lead-black md:max-lg:text-sm font-bold font-poppins">
                   <h1>Leadwinn</h1>
                   <h1>Academy</h1>
                </span>
             </div>
 
-            <div className='hidden sm:flex space-x-9 font-poppins text-base font-semibold text-head-black'>
+            <div className='hidden sm:flex md:max-lg:space-x-7 space-x-9 font-poppins md:max-lg:text-sm text-base font-semibold text-head-black'>
                <Link to="/about">About</Link>
                <Link to="/library">Library</Link>
                <Link to="/tech-hub">Tech Hub</Link>
@@ -27,9 +27,9 @@ export const Navbar: React.FC = () => {
                <Link to="/faq">FAQ</Link>
             </div>
 
-            <div className="hidden sm:flex space-x-8 font-poppins text-base font-semibold">
+            <div className="hidden sm:flex md:max-lg:space-x-6 space-x-8 font-poppins md:max-lg:text-sm text-base font-semibold">
                <Link to="" className='flex justify-center items-center text-head-blue'>Sign In</Link>
-               <Link to="" className="flex justify-center items-center w-48 h-14 gap-3 bg-head-blue text-white rounded-3xl">Enroll Now</Link>
+               <Link to="" className="flex justify-center items-center md:max-lg:w-36 md:max-lg:h-10 w-48 h-14 gap-3 bg-head-blue text-white rounded-3xl">Enroll Now</Link>
             </div>
 
             <div onClick={toggleFunc}
