@@ -32,7 +32,7 @@ export const Footer = () => {
 
                <div className="flex flex-col gap-1">
                   <h1 className="sm:max-lg:text-sm md:font-medium md:text-base">Email</h1>
-                  <h1 className="sm:max-lg:text-xs md:text-sm">Leadwinn@gmail.com</h1>
+                  <h1 className="sm:max-lg:text-sm md:text-sm">Leadwinn@gmail.com</h1>
                </div>
             </div>
 
@@ -45,13 +45,13 @@ export const Footer = () => {
 
                <div className="flex flex-col gap-1">
                   <h1 className="sm:max-lg:text-sm md:font-medium md:text-base">Phone</h1>
-                  <h1 className="sm:max-lg:text-xs md:text-sm">+2348071565349</h1>
+                  <h1 className="sm:max-lg:text-sm md:text-sm">+2348071565349</h1>
                </div>
             </div>
          </div>
 
          <div className="flex flex-col gap-2">
-            <h1 className="sm:max-lg:text-base md:font-bold md:text-lg">Quick Links</h1>
+            <h1 className="sm:max-lg:text-sm md:font-bold md:text-lg">Quick Links</h1>
             <div className="flex flex-col gap-2 sm:max-lg:text-sm md:text-base">
                {
                quickLinks.map(links => (
