@@ -8,6 +8,7 @@ type NavLink = {
 };
 
 export const Navbar: React.FC = () => {
+  
    const [nav, setNav] = useState(false);
 
    const toggleFunc = () => {
