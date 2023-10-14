@@ -17,6 +17,9 @@ export default {
       },
       backgroundImage: {
         "home" : "url(/wave.svg)"
+      },
+      margin: {
+        "15" : "40.5px"
       }
     },
   },
