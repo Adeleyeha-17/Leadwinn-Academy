@@ -35,15 +35,15 @@ export const Navbar: React.FC = () => {
             <div onClick={toggleFunc}
                className="cursor">
                {
-               nav ? <AiOutlineClose size={25}
-                  className="sm:hidden"/> : <AiOutlineMenu size={25}
+               nav ? <AiOutlineClose size={28}
+                  className="sm:hidden"/> : <AiOutlineMenu size={28}
                   className="sm:hidden"/>}
             </div>
 
             <div className={
                nav ? "fixed left-0 top-0 w-1/2 h-full border-r border-head-black sm:hidden transition-all ease-in-out duration-500 z-10" : "fixed -left-full"
             }>
-               <div className="font-poppins pt-24 mx-3 flex flex-col font-semibold">
+               <div className="font-poppins pt-20 mx-3 flex flex-col font-semibold">
                   <Link to="/about" className="p-4 border-b text-head-black">About</Link>
                   <Link to="/library" className="p-4 border-b text-head-black">Library</Link>
                   <Link to="/tech-hub" className="p-4 border-b text-head-black">Tech Hub</Link>
