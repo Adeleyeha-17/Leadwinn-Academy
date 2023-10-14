@@ -12,7 +12,11 @@ export default {
       colors: {
         "lead-black" : "#001928",
         "head-black" : "#0E2A4C",
-        "head-blue" : "#07F"
+        "head-blue" : "#07F",
+        "nav-blue" : "#ECF5FF"
+      },
+      backgroundImage: {
+        "home" : "url(/wave.svg)"
       }
     },
   },
