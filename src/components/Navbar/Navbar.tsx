@@ -43,14 +43,14 @@ export const Navbar: React.FC = () => {
             <div className={
                nav ? "fixed left-0 top-0 w-1/2 h-full border-r border-head-black sm:hidden transition-all ease-in-out duration-500 z-10" : "fixed -left-full"
             }>
-               <div className="pt-36 mx-3 flex flex-col">
+               <div className="font-poppins pt-24 mx-3 flex flex-col font-semibold">
                   <Link to="/about" className="p-4 border-b text-head-black">About</Link>
                   <Link to="/library" className="p-4 border-b text-head-black">Library</Link>
                   <Link to="/tech-hub" className="p-4 border-b text-head-black">Tech Hub</Link>
                   <Link to="/plans" className="p-4 border-b text-head-black">Plans</Link>
-                  <Link to="/faq" className="p-4 text-head-black">FAQ</Link>
-                  <Link to="/sign-in" className="p-4 text-head-blue">Sign In</Link>
-                  <Link to="register" className="flex justify-center items-center w-40 h-14 gap-3 bg-head-blue text-white rounded-3xl">Enroll Now</Link>
+                  <Link to="/faq" className="p-4 border-b text-head-black">FAQ</Link>
+                  <Link to="/sign-in" className="p-4 border-b text-head-blue">Sign In</Link>
+                  <Link to="register" className="p-4 text-head-blue">Enroll Now</Link>
                </div>
             </div>
          </nav>
