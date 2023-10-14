@@ -22,7 +22,7 @@ export const Footer = () => {
       <div className="grid grid-flow-row md:grid-flow-col gap-12 py-16 px-16 lg:py-24 lg:px-32 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto bg-footer-blue text-white font-poppins">
 
          <div className="flex flex-col gap-2">
-            <h1 className="font-medium text-xs xl:font-bold xl:text-lg">Contact Us</h1>
+            <h1 className="font-bold text-lg">Contact Us</h1>
 
             <div className="flex gap-4">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -30,7 +30,7 @@ export const Footer = () => {
                </svg>
 
                <div className="flex flex-col gap-1">
-                  <h1 className="xl:font-medium xl:text-base">Email</h1>
+                  <h1 className="font-medium text-base">Email</h1>
                   <h1 className="text-sm">Leadwinn@gmail.com</h1>
                </div>
             </div>
