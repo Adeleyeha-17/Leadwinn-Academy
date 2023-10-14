@@ -19,7 +19,7 @@ export const Footer = () => {
    ]
 
    return (
-      <div className="grid grid-flow-row md:grid-flow-col gap-12 py-16 px-16 lg:py-24 lg:px-32 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto bg-footer-blue text-white font-poppins">
+      <div className="grid grid-flow-row md:grid-flow-col gap-12 py-16 px-6 lg:py-24 sm:px-32 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto bg-footer-blue text-white font-poppins">
 
          <div className="flex flex-col gap-2">
             <h1 className="font-bold text-lg">Contact Us</h1>
