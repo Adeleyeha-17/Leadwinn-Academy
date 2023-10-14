@@ -14,7 +14,7 @@ export const Navbar: React.FC = () => {
          <div className="flex justify-between items-center lg:max-xl:px-10 lg:space-x-20 h-16 px-5 pt-10 md:max-w-6xl lg:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full' /></Link>
-               <span className="flex flex-col text-lead-black md:max-lg:text-sm font-bold font-poppins">
+               <span className="flex flex-col text-lead-black sm:max-lg:text-xs md:max-lg:text-sm font-bold font-poppins">
                   <h1>Leadwinn</h1>
                   <h1>Academy</h1>
                </span>
