@@ -21,6 +21,9 @@ export default {
       },
       margin: {
         "15" : "54.4px"
+      },
+      height: {
+        "460": "660px"
       }
     },
     },

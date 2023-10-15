@@ -23,6 +23,7 @@ export const Footer:React.FC = () => {
       [name]: type === "checkbox" ? checked : value,
     }))
   }
+
    const quickLinks: quickLink[] = [
       {
          link: "About Us",
@@ -40,8 +41,8 @@ export const Footer:React.FC = () => {
    ]
 
    return (
-    <div className="bg-footer-blue text-white font-poppins ">
-      <div className="grid grid-flow-row sm:max-md:grid-cols-2 md:grid-flow-col gap-6 lg:gap-0  py-16 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto ">
+    <div className="bg-footer-blue text-white font-poppins sm:h-460">
+      <div className="grid grid-flow-row sm:max-md:grid-cols-2 md:grid-flow-col gap-6 lg:gap-0 py-16 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto">
 
          <div className="flex flex-col gap-2">
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Contact Us</h1>
@@ -116,19 +117,35 @@ export const Footer:React.FC = () => {
             <h1 className="sm:max-md:text-sm md:text-base">Sign up with your email to join our mailing list</h1>
 
             <div className="flex flex-col gap-3">
-              <form >
+              <form>
               <input type="email" id='email' name='email' value={email} placeholder='Email Address' onChange={onChange} className='px-2 py-1 lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
               <div className='flex gap-2 mb-4'>
               <input type="checkbox" name="receiveMail" id="receiveMail" checked={receiveMail} onChange={onChange} />
-              <label htmlFor="receiveMail" className="text-sm xl:text-lg">I would like to receive emails from Leadwinn</label>
+              <label htmlFor="receiveMail" className="text-sm md:text-base">I would like to receive emails from Leadwinn</label>
               </div>
 
-              <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white rounded-3xl">Submit</button>
+              <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white rounded-3xl">Subscribe</button>
               </form>
             </div>
          </div>
+         
       </div>
 
+      <div className='border-t border-gray-400 mt-6 lg:max-xl:px-10  md:max-w-6xl lg:max-w-7xl mx-auto'>
+        
+        <div className='lg:grid lg:grid-cols-2 flex flex-col items-center gap-4 mt-10'>
+          <div className='flex items-center gap-3'>
+            <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12'/></Link>
+            <h5 className='text-xs sm:text-sm lg:text-base'>Copyright © 2020 - 2023 Leadwinn Academy. <span className='hidden sm:inline-block'>All rights reserved</span></h5>
+          </div>
+            <div className='flex items-center gap-4 text-xs sm:text-sm lg:text-base'>
+            <Link to="">Terms of Use</Link>
+            <Link to="">Privacy Notice</Link>
+            <Link to="">Modern Slavery Statement</Link>
+            </div>
+        </div>
+      </div>
+      
     </div>
    )
 }
