@@ -53,8 +53,8 @@ export const Footer:React.FC = () => {
                </svg>
 
                <div className="flex flex-col gap-1">
-                  <h1 className="sm:text-xs md:font-medium md:text-base">Email</h1>
-                  <h1 className="sm:text-xs md:text-sm">Leadwinn@gmail.com</h1>
+                  <h1 className="text-xs md:font-medium md:text-base">Email</h1>
+                  <h1 className="text-xs md:text-sm">Leadwinn@gmail.com</h1>
                </div>
             </div>
 
@@ -66,8 +66,8 @@ export const Footer:React.FC = () => {
                </h1>
 
                <div className="flex flex-col gap-1">
-                  <h1 className="sm:text-xs md:font-medium md:text-base">Phone</h1>
-                  <h1 className="sm:text-xs md:text-sm">+2348071565349</h1>
+                  <h1 className="text-xs md:font-medium md:text-base">Phone</h1>
+                  <h1 className="text-xs md:text-sm">+2348071565349</h1>
                </div>
             </div>
          </div>
@@ -138,7 +138,7 @@ export const Footer:React.FC = () => {
             <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12'/></Link>
             <h5 className='text-xs sm:text-sm lg:text-base'>Copyright © 2020 - 2023 Leadwinn Academy. <span className='hidden sm:inline-block'>All rights reserved</span></h5>
           </div>
-            <div className='flex items-center gap-3 px-4 sm:gap-4 text-xs sm:text-sm lg:text-base'>
+            <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-sm lg:text-base'>
             <Link to="">Terms of Use</Link>
             <Link to="">Privacy Notice</Link>
             <Link to="">Modern Slavery Statement</Link>
