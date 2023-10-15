@@ -23,7 +23,7 @@ export default {
         "15" : "54.4px"
       },
       height: {
-        "460": "660px"
+        "80": "80vh"
       }
     },
     },
