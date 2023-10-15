@@ -131,7 +131,7 @@ export const Footer:React.FC = () => {
          
       </div>
 
-      <div className='border-t border-gray-400 mt-6 lg:max-xl:px-10  md:max-w-6xl lg:max-w-7xl mx-auto'>
+      <div className='border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 lg:max-xl:px-10  md:max-w-6xl lg:max-w-7xl mx-auto'>
         
         <div className='lg:grid lg:grid-cols-2 flex flex-col items-center gap-4 mt-10'>
           <div className='flex items-center gap-3'>
