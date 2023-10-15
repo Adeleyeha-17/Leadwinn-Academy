@@ -124,7 +124,7 @@ export const Footer:React.FC = () => {
               <label htmlFor="receiveMail" className="text-sm md:text-base">I would like to receive emails from Leadwinn</label>
               </div>
 
-              <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white rounded-3xl">Subscribe</button>
+              <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:text-base rounded-3xl">Subscribe</button>
               </form>
             </div>
          </div>
