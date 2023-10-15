@@ -138,7 +138,7 @@ export const Footer:React.FC = () => {
             <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12'/></Link>
             <h5 className='text-xs sm:text-sm lg:text-base'>Copyright © 2020 - 2023 Leadwinn Academy. <span className='hidden sm:inline-block'>All rights reserved</span></h5>
           </div>
-            <div className='flex items-center gap-4 text-xs sm:text-sm lg:text-base'>
+            <div className='flex items-center gap-3 sm:gap-4 text-xs sm:text-sm lg:text-base'>
             <Link to="">Terms of Use</Link>
             <Link to="">Privacy Notice</Link>
             <Link to="">Modern Slavery Statement</Link>
