@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
       <div>
          <div className="flex justify-between items-center lg:max-xl:px-10 lg:space-x-20 h-16 px-5 pt-10 md:max-w-6xl lg:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
-               <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full'/></Link>
+               <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/></Link>
                <span className="flex flex-col text-lead-black sm:max-lg:text-xs md:max-lg:text-sm font-bold font-poppins">
                   <h1>Leadwinn</h1>
                   <h1>Academy</h1>
@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
 
             <div className="hidden sm:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins sm:max-md:text-xs md:max-lg:text-sm text-base font-semibold">
                <Link to="" className='flex justify-center items-center text-head-blue'>Sign In</Link>
-               <Link to="" className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:max-lg:w-36 md:max-lg:h-10 w-48 h-14 gap-3 bg-head-blue text-white rounded-3xl">Enroll Now</Link>
+               <Link to="" className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:max-lg:w-36 md:max-lg:h-10 w-48 h-14 gap-3 bg-head-blue transition ease-in-out duration-200 md:hover:translate-x-1 text-white rounded-3xl">Enroll Now</Link>
             </div>
 
             <div onClick={toggleFunc}

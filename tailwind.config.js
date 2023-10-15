@@ -23,6 +23,7 @@ export default {
         "15" : "54.4px"
       }
     },
-  },
-  plugins: [],
+    },
+  plugins: [
+  ],
 }

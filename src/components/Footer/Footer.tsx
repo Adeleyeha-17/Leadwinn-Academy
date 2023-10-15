@@ -1,8 +1,29 @@
+import React, {useState, ChangeEvent} from 'react'
 import {Link} from "react-router-dom"
 
-export const Footer = () => {
+type quickLink = {
+  link: string;
+  path: string;
+}
 
-   const quickLinks = [
+export const Footer:React.FC = () => {
+
+  const [emailData, setEmailData] = useState({
+    email: "",
+    receiveMail: true
+  })
+
+  const { email, receiveMail } = emailData;
+
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value, type, checked } = e.target
+
+    setEmailData((prevState) => ({
+      ...prevState,
+      [name]: type === "checkbox" ? checked : value,
+    }))
+  }
+   const quickLinks: quickLink[] = [
       {
          link: "About Us",
          path: "/about"
@@ -57,7 +78,7 @@ export const Footer = () => {
                quickLinks.map(links => (
                   <Link to={
                      links.path
-                  }>
+                  } key={links.path}>
                      {
                      links.link
                   }</Link>
@@ -93,6 +114,18 @@ export const Footer = () => {
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Newsletter</h1>
 
             <h1 className="sm:max-md:text-sm md:text-base">Sign up with your email to join our mailing list</h1>
+
+            <div className="flex flex-col gap-3">
+              <form >
+              <input type="email" id='email' name='email' value={email} placeholder='Email Address' onChange={onChange} className='px-2 py-1 lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
+              <div className='flex gap-2 mb-4'>
+              <input type="checkbox" name="receiveMail" id="receiveMail" checked={receiveMail} onChange={onChange} />
+              <label htmlFor="receiveMail" className="text-sm xl:text-lg">I would like to receive emails from Leadwinn</label>
+              </div>
+
+              <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white rounded-3xl">Submit</button>
+              </form>
+            </div>
          </div>
       </div>
 
