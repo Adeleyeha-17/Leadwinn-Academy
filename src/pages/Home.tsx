@@ -39,17 +39,17 @@ export const Home = () => {
             <img src="./homeIllustration.svg" alt="home illustration" className="mx-auto sm:w-3/4 md:w-2/5"/>
          </div>
 
-         <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-20 sm:h-48 w-3/5 rounded-3xl font-poppins text-white sm:font-bold text-xs sm:text-lg items-center justify-between px-16 -mt-10 mx-auto hidden sm:flex">
+         <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-20 sm:h-48 w-3/5 rounded-3xl font-poppins text-white sm:font-bold text-xs sm:text-lg items-center justify-between px-10 -mt-10 mx-auto hidden sm:flex">
             <div className="flex flex-col items-center mx-auto ">
               <img src="./edu1.svg" alt="" className="mx-auto "/>
-              <h1>100+ Students</h1>
+              <h1>Over 100+ Students</h1>
             </div>
 
             <div className="w-20 border-gray-200 border-2 transform rotate-90 rounded-lg"></div>
 
-            <div className="flex flex-col items-center mx-auto">
+            <div className="flex flex-col items-center justify-center mx-auto">
               <img src="./edu2.svg" alt="" className="mx-auto"/>
-              <h1>100+ Certified</h1>
+              <h1>Over 100+ Certified</h1>
             </div>
 
             <div className="w-20 border-gray-200 border-2 transform rotate-90 rounded-lg"></div>
@@ -57,7 +57,7 @@ export const Home = () => {
 
             <div className="flex flex-col items-center mx-auto">
               <img src="./edu3.svg" alt="" className="mx-auto"/>
-              <h1>10+ Countries</h1>
+              <h1>Over 10+ Countries</h1>
             </div>
          </div>
       </div>
