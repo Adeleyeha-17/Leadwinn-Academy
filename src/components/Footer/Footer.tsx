@@ -41,11 +41,11 @@ export const Footer:React.FC = () => {
    ]
 
    return (
-    <div className="bg-footer-blue text-white font-poppins pb-20 sm:max-md:mx-auto">
+    <div className="bg-footer-blue text-white font-poppins pb-20">
       <div className="grid grid-flow-row sm:max-md:grid-cols-2 md:grid-flow-col gap-6 sm:max-md:gap-0 lg:gap-0 py-16 sm:max-lg:px-3 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto">
 
-         <div className="flex flex-col gap-2">
-            <h1 className="sm:max-md:text-base font-bold md:text-lg">Contact Us</h1>
+         <div className="flex flex-col gap-2 sm:max-md:mx-auto">
+            <h1 className="sm:max-md:text-base font-bold md:text-lg ">Contact Us</h1>
 
             <div className="flex gap-4">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -72,7 +72,7 @@ export const Footer:React.FC = () => {
             </div>
          </div>
 
-         <div className="flex flex-col gap-2">
+         <div className="flex flex-col gap-2 sm:max-md:mx-auto">
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Quick Links</h1>
             <div className="flex flex-col gap-2 text-xs md:text-base">
                {
@@ -87,7 +87,7 @@ export const Footer:React.FC = () => {
             } </div>
          </div>
 
-         <div className="flex flex-col gap-2">
+         <div className="flex flex-col gap-2 sm:max-md:max-auto">
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Socials</h1>
 
             <div className="flex gap-4">
@@ -111,7 +111,7 @@ export const Footer:React.FC = () => {
             </div>
          </div>
 
-         <div className="flex flex-col gap-2">
+         <div className="flex flex-col gap-2 sm:max-md:max-auto">
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Newsletter</h1>
 
             <h1 className="text-xs  md:text-sm">Sign up with your email to join our mailing list</h1>
