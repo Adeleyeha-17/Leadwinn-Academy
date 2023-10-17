@@ -9,8 +9,8 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"]
       },
-      fontSize: {
-        
+      padding: {
+        "2.5" : "11px"
       }
       ,
       colors: {
