@@ -9,6 +9,10 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"]
       },
+      fontSize: {
+        
+      }
+      ,
       colors: {
         "lead-black" : "#001928",
         "head-black" : "#0E2A4C",
