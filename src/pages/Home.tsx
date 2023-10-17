@@ -26,7 +26,7 @@ export const Home = () => {
             <path d="M0 0H1440V813.284C1229.5 658.095 148 1058 0 658.095V197V0Z" fill="#ECF5FF"/>
          </svg>
 
-         <div className="flex flex-col md:flex-row mt-14 md:mt-24 justify-between lg:max-xl:px-10 lg:space-x-20  px-5 md:max-w-6xl lg:max-w-7xl mx-auto">
+         <div className="flex flex-col lg:flex-row mt-14 md:mt-24 justify-between lg:max-xl:px-10 lg:space-x-20  px-5 md:max-w-6xl lg:max-w-7xl mx-auto">
             <div className="font-poppins text-lead-black">
 
                <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold md:leading-snug mb-2 md:mb-5">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span> Online Coding Classes</h1>
@@ -36,7 +36,7 @@ export const Home = () => {
 
             </div>
 
-            <img src="./homeIllustration.svg" alt="home illustration" className=" mx-auto w-4/5 md:w-2/5"/>
+            <img src="./homeIllustration.svg" alt="home illustration" className=" mx-auto  md:w-3/5 lg:w-2/5"/>
          </div>
       </div>
    )
