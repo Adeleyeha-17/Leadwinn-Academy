@@ -39,7 +39,7 @@ export const Home = () => {
             <img src="./homeIllustration.svg" alt="home illustration" className="mx-auto sm:w-3/4 md:w-2/5"/>
          </div>
 
-         <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-20 sm:h-48 w-3/5 rounded-3xl font-poppins text-white sm:font-bold text-xs sm:text-lg items-center justify-between px-10 -mt-10 mx-auto hidden sm:flex">
+         <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-20 md:h-48 w-3/5 rounded-3xl font-poppins text-white md:font-bold text-xs lg:text-base items-center justify-between px-10 -mt-10 mx-auto hidden md:flex">
             <div className="flex flex-col items-center mx-auto ">
               <img src="./edu1.svg" alt="" className="mx-auto "/>
               <h1>Over 100+ Students</h1>
