@@ -72,7 +72,7 @@ export const Footer:React.FC = () => {
             </div>
          </div>
 
-         <div className="flex flex-col gap-2">
+         <div className="flex flex-col gap-2 w-full">
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Quick Links</h1>
             <div className="flex flex-col gap-2 text-xs md:text-base">
                {
