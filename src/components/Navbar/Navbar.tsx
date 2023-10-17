@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
+import Button from '../Button';
 
 type NavLink = {
    link: string;
@@ -42,13 +43,13 @@ export const Navbar: React.FC = () => {
          <div className="flex justify-between items-center lg:max-xl:px-10 lg:space-x-20 h-16 px-5 pt-10 md:max-w-6xl lg:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/></Link>
-               <span className="flex flex-col text-lead-black sm:max-lg:text-xs md:max-lg:text-sm font-bold font-poppins">
+               <span className="flex flex-col text-lead-black text-xs md:max-lg:text-sm lg:text-base font-bold font-poppins">
                   <h1>Leadwinn</h1>
                   <h1>Academy</h1>
                </span>
             </div>
 
-            <div className='hidden sm:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins sm:max-md:text-xs md:max-lg:text-sm xl:text-base font-semibold text-head-black'>
+            <div className='hidden sm:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:max-lg:text-sm lg:text-base font-semibold text-head-black'>
                {
                navLinks.map(link => (
                   <Link key={
@@ -63,10 +64,10 @@ export const Navbar: React.FC = () => {
                ))
             } </div>
 
-            <div className="hidden sm:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins sm:max-md:text-xs md:max-lg:text-sm text-base font-semibold">
-               <Link to="" className='flex justify-center items-center text-head-blue'>Sign In</Link>
-               <Link to="" className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:max-lg:w-36 md:max-lg:h-10 w-48 h-14 gap-3 bg-head-blue transition ease-in-out duration-200 md:hover:translate-x-1 text-white rounded-3xl">Enroll Now</Link>
-            </div>
+            <div className="hidden sm:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
+               <Link to="" className='flex justify-center items-center text-head-blue text-xs md:max-lg:text-sm lg:text-base font-semibold'>Sign In</Link>
+               <Button path="" title="Enroll Now"/>
+               </div>
 
             <div onClick={toggleFunc}
                className="cursor-pointer md:hidden">

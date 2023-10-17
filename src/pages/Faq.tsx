@@ -1,6 +1,6 @@
 
 export const Faq = () => {
   return (
-    <div>Faq</div>
+    <div>FAQ</div>
   )
 }
