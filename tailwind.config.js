@@ -21,7 +21,9 @@ export default {
         "head-black" : "#0E2A4C",
         "head-blue" : "#07F",
         "nav-blue" : "#ECF5FF",
-        "footer-blue" : "#003B80"
+        "footer-blue" : "#003B80",
+        "home-gra" : "#012956",
+        "home-gra-2" : "#2587F7"
       },
       backgroundImage: {
         "home" : "url(/wave.svg)"

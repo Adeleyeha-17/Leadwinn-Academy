@@ -38,6 +38,25 @@ export const Home = () => {
 
             <img src="./homeIllustration.svg" alt="home illustration" className="mx-auto sm:w-3/4 md:w-2/5"/>
          </div>
+
+         <div className="mx-auto bg-gradient-to-tr from-home-gra-2 to-home-gra h-48 w-3/5 rounded-3xl font-poppins text-white font-bold text-lg flex items-center justify-center gap-24 -mt-10">
+            <div className="relative">
+              <img src="./edu1.svg" alt="" className="w-3/4 mx-auto"/>
+              <h1>Over 100+ Students</h1>
+              <div className="absolute top-20 -right-20 w-20 border-gray-200 border-2 transform rotate-90 rounded-lg"></div>
+            </div>
+
+            <div className="relative">
+              <img src="./edu2.svg" alt="" className="w-3/4 mx-auto"/>
+              <h1>Over 100+ Students</h1>
+              <div className="absolute top-20 -right-20 w-20 border-gray-200 border-2 transform rotate-90 rounded-lg"></div>
+            </div>
+
+            <div>
+              <img src="./edu3.svg" alt="" className="w-3/4 mx-auto"/>
+              <h1>Over 100+ Students</h1>
+            </div>
+         </div>
       </div>
    )
 }
