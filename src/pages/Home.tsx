@@ -29,14 +29,14 @@ export const Home = () => {
          <div className="flex flex-col md:flex-row mt-14 md:mt-24 justify-between lg:max-xl:px-10 lg:space-x-20  px-5 md:max-w-6xl lg:max-w-7xl mx-auto">
             <div className="font-poppins text-lead-black">
 
-               <h1 className="text-3xl lg:text-5xl font-bold md:leading-snug mb-2 md:mb-5">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span> Online Coding Classes</h1>
-               <h1 className="mb-3 md:mb-5 text-sm md:text-base">Elevate Learning with Online Coding Classes Empowering Kids and  <br className="hidden md:flex"/> Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
+               <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold md:leading-snug mb-2 md:mb-5">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span> Online Coding Classes</h1>
+               <h1 className="mb-3 md:mb-5 text-sm md:text-base">Elevate Learning with Online Coding Classes Empowering Kids and  <br className="hidden sm:flex"/> Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
 
                <Button path="" title="Discover Course"/>
 
             </div>
 
-            <img src="./homeIllustration.svg" alt="home illustration" className=" mx-auto w-4/5 md:max-lg:w-2/5 lg:w-2/5"/>
+            <img src="./homeIllustration.svg" alt="home illustration" className=" mx-auto w-4/5 md:w-2/5"/>
          </div>
       </div>
    )
