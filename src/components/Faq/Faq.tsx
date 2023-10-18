@@ -37,7 +37,7 @@ export const Faq: React.FC = () => {
          {
          accordionData.map((data, index) => (
             <div key={index} className='mb-4 border-b border-gray-300 cursor-pointer py-2'>
-               <div className="flex justify-between"
+               <div className="flex justify-between items-center"
                   onClick={
                      () => toggleTab(index + 1)
                }>
