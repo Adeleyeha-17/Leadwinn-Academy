@@ -32,8 +32,8 @@ export const Faq: React.FC = () => {
    ];
 
    return (
-      <div className="lg:max-xl:px-10 lg:space-x-20 px-40 p-16 md:max-w-6xl lg:max-w-7xl mx-auto">
-        <h1 className="text-head-black font-bold text-3xl mb-8 flex items-center justify-center">Frequency Asked Question</h1>
+      <div className="lg:max-xl:px-10 lg:space-x-20 sm:px-34 lg:px-40 p-16 md:max-w-6xl lg:max-w-7xl mx-auto">
+        <h1 className="text-head-black font-bold text-lg sm:text-xl lg:text-4xl mb-8 flex items-center justify-center">Frequency Asked Question</h1>
          {
          accordionData.map((data, index) => (
             <div key={index} className='mb-4 border-b border-gray-300 cursor-pointer py-2'>
@@ -41,7 +41,7 @@ export const Faq: React.FC = () => {
                   onClick={
                      () => toggleTab(index + 1)
                }>
-                  <h3 className='text-head-black font-bold'>{
+                  <h3 className='text-head-black text-sm sm:text-lg font-bold'>{
                      `${data.title}?`
                   }</h3>
                   <span>{
