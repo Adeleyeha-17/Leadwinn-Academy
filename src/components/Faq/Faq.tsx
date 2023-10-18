@@ -41,10 +41,10 @@ export const Faq: React.FC = () => {
                   onClick={
                      () => toggleTab(index + 1)
                }>
-                  <h3 className='text-head-black text-sm sm:text-lg font-bold focus:border-none'>{
+                  <h3 className='text-head-black w-3/4 sm:w-full text-sm sm:px-0 sm:text-lg font-bold focus:border-none'>{
                      `${data.title}?`
                   }</h3>
-                  <span>{
+                  <span className="w-1/4 flex items-end justify-end">{
                      activeAccordion === index + 1 ? <img src="./accordionBtnUp.svg" className='w-4 sm:w-8'/> : <img src="./accordionBtnDown.svg" className='w-4 sm:w-8'/>
                   }</span>
                </div>
