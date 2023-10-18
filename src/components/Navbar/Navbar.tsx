@@ -32,9 +32,6 @@ export const Navbar: React.FC = () => {
       {
          link: "Plans",
          path: "/plans"
-      }, {
-         link: "FAQ",
-         path: "/faq"
       }
    ];
 

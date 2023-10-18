@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import { useEffect, useState } from "react";
+import Faq from "../components/Faq";
 
 type HomeProps = {
   words: string[];
@@ -65,6 +66,8 @@ export const Home: React.FC<HomeProps> = () => {
           <h1>Over 10+ Countries</h1>
         </div>
       </div>
+
+      <Faq />
     </div>
   );
 };
