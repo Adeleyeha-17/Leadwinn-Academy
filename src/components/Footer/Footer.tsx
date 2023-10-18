@@ -39,7 +39,7 @@ export const Footer:React.FC = () => {
 
    return (
     <div className="bg-footer-blue text-white font-poppins pb-20">
-      <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 sm:max-md:gap-0 lg:gap-0 py-16 sm:max-lg:px-2 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto">
+      <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 sm:max-md:gap-0 lg:gap-0 py-16 sm:max-lg:px-2 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-w-6xl lg:max-w-7xl mx-auto sm:max-lg:ml-9">
 
          <div className="flex flex-col gap-2">
             <h1 className="sm:max-md:text-base font-bold md:text-lg ">Contact Us</h1>
@@ -51,7 +51,7 @@ export const Footer:React.FC = () => {
 
                <div className="flex flex-col gap-1">
                   <h1 className="text-xs md:font-medium md:text-base">Email</h1>
-                  <h1 className="text-xs lg:text-sm">info@leadwinnacademy@gmail.com</h1>
+                  <h1 className="text-xs sm:text-sm lg:text-base">info@leadwinnacademy@gmail.com</h1>
                </div>
             </div>
 
@@ -71,7 +71,7 @@ export const Footer:React.FC = () => {
 
          <div className="flex flex-col gap-2 w-full">
             <h1 className="sm:max-md:text-base font-bold md:text-lg">Quick Links</h1>
-            <div className="flex flex-col gap-2 text-xs md:text-base">
+            <div className="flex flex-col gap-2 text-xs sm:text-sm md:text-base">
                {
                quickLinks.map(links => (
                   <Link to={
