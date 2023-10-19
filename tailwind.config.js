@@ -14,6 +14,7 @@ export default {
       },
       fontSize: {
         "myXL" : "33px",
+        "head" : "50px"
       }
       ,
       colors: {

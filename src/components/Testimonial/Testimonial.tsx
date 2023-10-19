@@ -45,8 +45,8 @@ export const Testimonial = () => {
 };
 
   return (
-    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-64 md:h-96 lg:h-81 xl:h-80 font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
-      <h1 className="text-sm lg:text-2xl xl:text-3xl font-bold text-white mb-10 absolute top-16 left-20 lg:top-16 lg:left-36 ">What are the parents saying?</h1>
+    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-64 md:h-96 lg:h-81 xl:h-[768px] font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
+      <h1 className="md:text-base lg:text-2xl xl:text-4xl font-bold text-white mb-10 absolute top-16 left-20 lg:top-16 xl:top-36 lg:left-36 xl:left-[120px] ">What are the parents saying?</h1>
       
       <div className="grid grid-cols-2 items-center mt-10">
          <div>
@@ -54,7 +54,7 @@ export const Testimonial = () => {
 
          </div>
 
-      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-40 lg:h-72 xl:h-96 w-full flex items-center justify-center md:-ml-24 lg:-ml-48 lg:pt-20'>
+      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-40 lg:h-72 xl:h-96 w-full flex items-center justify-center md:-ml-24 lg:-ml-44 xl:-ml-56 lg:pt-20'>
       <Slider {...sliderSettings} className='w-full lg:w-4/5'>
       {testimonials.map((testimonial, index) => (
         <div key={index} className='md:py-6 md:max-lg:px-4'>
