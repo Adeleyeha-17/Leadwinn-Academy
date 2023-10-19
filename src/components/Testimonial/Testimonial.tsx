@@ -35,6 +35,8 @@ export const Testimonial = () => {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000
     };
   return (
     <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-81 flex items-center justify-center p-32 overflow-hidden">

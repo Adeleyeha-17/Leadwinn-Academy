@@ -10,7 +10,7 @@ type HomeProps = {
 export const Hero: React.FC<HomeProps> = () => {
 
    const words: string[] = ["Interactive", "Educative", "Informative"];
-   const colors: string[] = ["text-hero-blue", "text-yellow-600", "text-green-500"];
+   const colors: string[] = ["text-hero-blue"];
  
    const [currentIndex, setCurrentIndex] = useState<number>(0);
  
@@ -25,7 +25,7 @@ export const Hero: React.FC<HomeProps> = () => {
    }, []);
  
    const currentWord: string = words[currentIndex];
-   const currentColorClass: string = colors[currentIndex];
+   const currentColorClass = colors;
  
  
 
