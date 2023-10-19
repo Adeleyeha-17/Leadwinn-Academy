@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
             } </div>
 
             <div className="hidden sm:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
-               <Link to="" className='flex justify-center items-center text-head-blue text-xs md:max-lg:text-sm lg:text-base xl:text-xl font-normal'>Sign In</Link>
+               <Link to="" className='flex justify-center items-center text-head-blue text-xs md:max-lg:text-sm lg:text-base xl:text-xl font-semibold'>Sign In</Link>
                <Button path="" title="Enroll Now"/>
                </div>
 
