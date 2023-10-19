@@ -13,7 +13,8 @@ export default {
         "25" : "20.5px"
       },
       fontSize: {
-        "myXL" : "33px"
+        "myXL" : "33px",
+        "xl" : "50px"
       }
       ,
       colors: {
