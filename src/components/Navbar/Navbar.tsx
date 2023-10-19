@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
          <div className="flex justify-between items-center lg:max-xl:px-10 lg:space-x-20 xl:space-x-2 h-16 px-5 xl:px-20 pt-10 xl:pt-16 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/></Link>
-               <span className="flex flex-col text-lead-black text-base font-medium font-poppins">
+               <span className="flex flex-col text-lead-black text-base font-semibold font-poppins">
                   <h1>Leadwinn</h1>
                   <h1>Academy</h1>
                </span>
@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
             } </div>
 
             <div className="hidden sm:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
-               <Link to="" className='flex justify-center items-center text-head-blue text-xs md:max-lg:text-sm lg:text-base xl:text-xl font-semibold'>Sign In</Link>
+               <Link to="" className='flex justify-center items-center text-head-blue text-xs md:max-lg:text-sm lg:text-base font-semibold'>Sign In</Link>
                <Button path="" title="Enroll Now"/>
                </div>
 
