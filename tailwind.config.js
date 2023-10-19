@@ -20,6 +20,7 @@ export default {
         "lead-black" : "#001928",
         "head-black" : "#0E2A4C",
         "head-blue" : "#07F",
+        "hero-blue" : "#0077FF",
         "nav-blue" : "#ECF5FF",
         "footer-blue" : "#003B80",
         "home-gra" : "#012956",

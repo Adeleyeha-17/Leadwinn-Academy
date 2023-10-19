@@ -10,23 +10,23 @@ export const Faq: React.FC = () => {
    const accordionData = [
       {
          title: 'What is Leadwinn',
-         content: 'This is the hidden content for Accordion 1. This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.'
+         content: 'Leadwinn is an online learning platform that offers coding and technology education for kids aged 6-17. We provide interactive classes to help children learn coding skills in a fun and engaging way.'
       }, {
         title: 'How can I get started with Leadwinn',
-         content: 'This is the hidden content for Accordion 1. This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.'
+         content: 'To get started, simply visit our website, explore our course offerings, and sign up for a trial class. Our team is here to assist you every step of the way.'
       },  {
         title: 'How do online class work',
-        content: 'This is the hidden content for Accordion 1. This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.'
+        content: 'Our online classes are conducted live by experienced instructors. Students can join from the comfort of their homes using a PC. Classes are interactive, and students can ask questions and participate in coding projects.'
      }, {
       title: 'What benefits will my child gain from Leadwinn classes',
-        content: 'This is the hidden content for Accordion 1. This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.'
+        content: `{Your child will develop coding skills, problem-solving abilities, creativity, and a strong foundation in technology. These skills are essential in today's digital world and can open up future career opportunities.}`
      },
      {
       title: 'Do I need any prior coding experience to enroll my child',
-      content: 'This is the hidden content for Accordion 1. This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.'
+      content: 'No, prior coding experience is not required. Our courses are designed to accommodate beginners, and our instructors provide step-by-step guidance.'
    }, {
-      title: `Can I track my child's progress`,
-      content: 'This is the hidden content for Accordion 1. This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.This is the hidden content for Accordion 1.'
+      title: `What coding languages are taught at Leadwinn`,
+      content: 'Leadwinn offers courses in popular coding languages such as Python, Scratch, JavaScript, and more. The specific languages taught may vary based on the course and age group.'
    },
 
    ];
@@ -50,8 +50,8 @@ export const Faq: React.FC = () => {
                </div>
                {
                activeAccordion === index + 1 && (
-                  <div>
-                     <p>{
+                  <div className='sm:pr-6'>
+                     <p className='text-head-black'>{
                         data.content
                      }</p>
                   </div>
