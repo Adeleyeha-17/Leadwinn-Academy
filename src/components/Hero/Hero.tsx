@@ -31,7 +31,7 @@ export const Hero: React.FC<HomeProps> = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row mt-14 md:mt-0 justify-between lg:space-x-20 py-20 px-5 lg:px-0 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 py-20 px-5 lg:px-0 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
         <div className="font-poppins text-lead-black">
 
           <h1 className="text-3xl sm:text-4xl md:text-myXL xl:text-head font-semibold xl:font-bold md:max-xl:leading-snug xl:leading-heading mb-6 md:mb-5 md:max-lg:w-[450px] xl:w-[689px]">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span>  Online Coding Classes</h1>
