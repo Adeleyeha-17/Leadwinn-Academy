@@ -41,7 +41,7 @@ export const Hero: React.FC<HomeProps> = () => {
 
         </div>
 
-        <img src="./homeIllustration.svg" alt="home illustration" className="mx-auto sm:w-3/4 md:w-2/5 xl:w-auto xl:-ml-10"/>
+        <img src="./homeIllustration.svg" alt="home illustration" className=" sm:w-3/4 md:w-2/5 xl:w-auto xl:-ml-32"/>
       </div>
 
       <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-20 md:h-56 xl:h-72 w-4/5 xl:w-4/6 rounded-3xl font-poppins text-white md:font-bold text-xs md:text-sm lg:text-base xl:text-xl items-center justify-between px-10 mt-3 xl:mt-16 mx-auto hidden md:flex md:mb-36">
