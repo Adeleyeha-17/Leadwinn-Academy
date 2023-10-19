@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
          <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 sm:max-md:gap-0 lg:gap-0 py-16 sm:max-lg:px-2 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:max-md:text-base font-bold md:text-lg xl:text-3xl">Contact Us</h1>
+               <h1 className="sm:max-md:text-base font-bold md:text-base xl:text-lg">Contact Us</h1>
 
                <div className="flex gap-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -47,8 +47,8 @@ export const Footer: React.FC = () => {
                   </svg>
 
                   <div className="flex flex-col gap-1">
-                     <h1 className="text-xs md:font-medium md:text-base xl:text-xl">Email</h1>
-                     <h1 className="text-xs sm:text-sm lg:text-base xl:text-xl">info@leadwinnacademy@gmail.com</h1>
+                     <h1 className="text-xs md:font-medium md:text-base xl:text-lg">Email</h1>
+                     <h1 className="text-xs sm:text-sm lg:text-base xl:text-lg">info@leadwinnacademy@gmail.com</h1>
                   </div>
                </div>
 
@@ -60,15 +60,15 @@ export const Footer: React.FC = () => {
                   </h1>
 
                   <div className="flex flex-col gap-1">
-                     <h1 className="text-xs md:font-medium md:text-base xl:text-xl">Phone</h1>
-                     <h1 className="text-xs md:text-sm xl:text-xl">+2348165906106</h1>
+                     <h1 className="text-xs md:font-medium md:text-base xl:text-lg">Phone</h1>
+                     <h1 className="text-xs md:text-sm xl:text-lg">+2348165906106</h1>
                   </div>
                </div>
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:max-md:text-base font-bold md:text-lg xl:text-3xl">Quick Links</h1>
-               <div className="flex flex-col gap-2 text-xs sm:text-sm md:text-base xl:text-xl">
+               <h1 className="sm:max-md:text-base font-bold md:text-base xl:text-lg">Quick Links</h1>
+               <div className="flex flex-col gap-2 text-xs sm:text-sm md:text-base xl:text-lg">
                   {
                   quickLinks.map(links => (
                      <Link to={
@@ -109,9 +109,9 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:max-md:text-base font-bold md:text-lg xl:text-3xl">Newsletter</h1>
+               <h1 className="sm:max-md:text-base font-bold md:text-base xl:text-lg">Newsletter</h1>
 
-               <h1 className="text-xs  md:text-sm xl:text-xl">Sign up with your email to join our mailing list</h1>
+               <h1 className="text-xs  md:text-sm xl:text-lg">Sign up with your email to join our mailing list</h1>
 
                <div className="flex flex-col gap-3">
                   <form>
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
                            onChange={onChange}/>
-                        <label htmlFor="receiveMail" className="text-sm xl:text-xl">I would like to receive emails from Leadwinn</label>
+                        <label htmlFor="receiveMail" className="text-sm xl:text-lg">I would like to receive emails from Leadwinn</label>
                      </div>
 
                      <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:text-base sm:font-normal rounded-3xl">Subscribe</button>
@@ -139,11 +139,11 @@ export const Footer: React.FC = () => {
             <div className='lg:grid lg:grid-cols-2 flex flex-col items-center gap-4 mt-10'>
                <div className='flex items-center gap-3'>
                   <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12 xl:w-16'/></Link>
-                  <h5 className='text-xs sm:text-sm lg:text-base xl:text-xl'>Copyright © 2020 - 2023 Leadwinn Academy.
-                     <span className='hidden sm:inline-block xl:text-xl'>All rights reserved</span>
+                  <h5 className='text-xs sm:text-sm lg:text-base xl:text-lg'>Copyright © 2020 - 2023 Leadwinn Academy.
+                     <span className='hidden sm:inline-block xl:text-lg'>All rights reserved</span>
                   </h5>
                </div>
-               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-sm lg:text-base xl:text-xl'>
+               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-sm lg:text-base xl:text-lg'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                   <Link to="">Modern Slavery Statement</Link>
