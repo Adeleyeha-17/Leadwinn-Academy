@@ -37,7 +37,7 @@ export default {
       height: {
         "80": "80vh",
         "81" : "70vh"
-      }
+      },
     },
     },
   plugins: [
