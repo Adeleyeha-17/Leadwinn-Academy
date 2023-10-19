@@ -13,17 +13,17 @@ export const Testimonial = () => {
          name: 'Mrs Agbetosin',
          message: 'My child has learnt a lot of things in a very short period. The patient and dedication of the organization and tutor are amazing',
        }, {
-         name: 'Mrs Suzanne O',
+         name: 'Mrs Suzanne O.',
          message: 'My daughter enjoyed each session and was always looking forward to the next class',
        },
        {
-         name: 'Mrs Adelopo E',
+         name: 'Mrs Adelopo E.',
          message: 'The classes are highly engaging. Teacher is very patient and loves to carry the students along. My son is always looking forward to the next class. It is great to see him channel his skills in a productive way',
        },{
          name: 'Mrs Obaro',
          message: 'It taught my son how to be independent and create game by himself which made him really happy',
        },{
-         name: 'Mrs Abimbola 0',
+         name: 'Mrs Abimbola 0.',
          message: 'Great Academy where kids can learn to make games independently',
        },
     ];
@@ -39,8 +39,10 @@ export const Testimonial = () => {
       autoplaySpeed: 3000
     };
   return (
-    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-81 flex items-center justify-center p-32 overflow-hidden">
-      <div className="grid grid-cols-2 items-center">
+    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-81 font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
+      <h1 className="text-2xl font-bold text-white mb-10 absolute top-16 left-36 ">What are the parents saying?</h1>
+      
+      <div className="grid grid-cols-2 items-center mt-10">
          <div>
          <img src="./sliderImg.svg" alt="slider Image" className="w-4/5"/>
 
