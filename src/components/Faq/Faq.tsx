@@ -19,7 +19,7 @@ export const Faq: React.FC = () => {
         content: 'Our online classes are conducted live by experienced instructors. Students can join from the comfort of their homes using a PC. Classes are interactive, and students can ask questions and participate in coding projects.'
      }, {
       title: 'What benefits will my child gain from Leadwinn classes',
-        content: `{Your child will develop coding skills, problem-solving abilities, creativity, and a strong foundation in technology. These skills are essential in today's digital world and can open up future career opportunities.}`
+        content: `Your child will develop coding skills, problem-solving abilities, creativity, and a strong foundation in technology. These skills are essential in today's digital world and can open up future career opportunities.`
      },
      {
       title: 'Do I need any prior coding experience to enroll my child',
