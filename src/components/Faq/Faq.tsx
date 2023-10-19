@@ -32,8 +32,8 @@ export const Faq: React.FC = () => {
    ];
 
    return (
-      <div className="lg:max-xl:px-10 lg:space-x-20 px-4 sm:px-24 lg:px-40 p-16 md:max-w-6xl lg:max-w-7xl mx-auto">
-        <h1 className="text-head-black font-bold text-lg sm:text-xl lg:text-4xl mb-8 flex items-center justify-center">Frequency Asked Question</h1>
+      <div className="lg:max-xl:px-10 lg:space-x-20 px-4 sm:px-24 lg:px-40 xl:px-20 p-16 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+        <h1 className="text-head-black font-bold text-lg sm:text-xl lg:text-4xl xl:text-5xl mb-8 flex items-center justify-center">Frequency Asked Question</h1>
          {
          accordionData.map((data, index) => (
             <div key={index} className='mb-4 border-b border-gray-300 cursor-pointer py-2'>
@@ -41,17 +41,17 @@ export const Faq: React.FC = () => {
                   onClick={
                      () => toggleTab(index + 1)
                }>
-                  <h3 className='text-head-black w-3/4 sm:w-full text-sm sm:px-0 sm:text-lg font-bold focus:border-none'>{
+                  <h3 className='text-head-black w-3/4 sm:w-full text-sm sm:px-0 sm:text-lg xl:text-2xl font-bold focus:border-none'>{
                      `${data.title}?`
                   }</h3>
                   <span className="w-1/4 flex items-end justify-end">{
-                     activeAccordion === index + 1 ? <img src="./accordionBtnUp.svg" className='w-4 sm:w-8'/> : <img src="./accordionBtnDown.svg" className='w-4 sm:w-8'/>
+                     activeAccordion === index + 1 ? <img src="./accordionBtnUp.svg" className='w-4 sm:w-8 xl:w-1/6'/> : <img src="./accordionBtnDown.svg" className='w-4 sm:w-8 xl:w-1/6'/>
                   }</span>
                </div>
                {
                activeAccordion === index + 1 && (
                   <div className='sm:pr-6'>
-                     <p className='text-head-black'>{
+                     <p className='text-head-black xl:text-2xl'>{
                         data.content
                      }</p>
                   </div>

@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
 
    return (
       <div>
-         <div className="flex justify-between items-center lg:max-xl:px-10 lg:space-x-20 h-16 px-5 pt-10 md:max-w-6xl lg:max-w-7xl mx-auto">
+         <div className="flex justify-between items-center lg:max-xl:px-10 lg:space-x-20 xl:space-x-2 h-16 px-5 xl:px-20 pt-10 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/></Link>
                <span className="flex flex-col text-lead-black text-base font-semibold font-poppins">

@@ -39,6 +39,9 @@ export default {
         "81" : "70vh",
         "82" : "90vh"
       },
+      lineHeight: {
+        "heading" : "1.385"
+      }
     },
     },
   plugins: [
