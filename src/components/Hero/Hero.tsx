@@ -34,14 +34,14 @@ export const Hero: React.FC<HomeProps> = () => {
       <div className="flex flex-col md:flex-row mt-14 md:mt-0 justify-between lg:max-xl:px-10 lg:space-x-20 sm:p-20 px-5 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
         <div className="font-poppins text-lead-black">
 
-          <h1 className="text-3xl sm:text-4xl md:text-myXL xl:text-5xl font-semibold md:max-xl:leading-snug xl:leading-heading mb-2 md:mb-5 xl:pr-8">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span>  Online Coding Classes</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-myXL xl:text-5xl font-semibold md:max-xl:leading-snug xl:leading-heading mb-2 md:mb-5 xl:pr-7">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span>  Online Coding Classes</h1>
           <h1 className="mb-3 md:mb-5 lg:pr-20 text-sm md:max-lg:text-base lg:text-base xl:text-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
 
           <Button path="" title="Discover Course" />
 
         </div>
 
-        <img src="./homeIllustration.svg" alt="home illustration" className="mx-auto sm:w-3/4 md:w-2/5 xl:w-full" />
+        <img src="./homeIllustration.svg" alt="home illustration" className="mx-auto xl:mx-0 sm:w-3/4 md:w-2/5 xl:w-full" />
       </div>
 
       <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-20 md:h-48 xl:h-72 w-4/5 xl:w-3/4 rounded-3xl font-poppins text-white md:font-bold text-xs md:text-sm lg:text-base xl:text-xl items-center justify-between px-10 -mt-10 xl:mt-16 mx-auto hidden md:flex">
