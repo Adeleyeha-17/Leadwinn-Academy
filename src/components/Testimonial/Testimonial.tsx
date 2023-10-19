@@ -29,15 +29,16 @@ export const Testimonial = () => {
     ];
 
     const sliderSettings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 3000
-    };
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+};
+
   return (
     <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-81 font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
       <h1 className="text-2xl font-bold text-white mb-10 absolute top-16 left-36 ">What are the parents saying?</h1>
