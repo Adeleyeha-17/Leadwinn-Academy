@@ -45,8 +45,8 @@ export const Testimonial = () => {
 };
 
   return (
-    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-81 font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
-      <h1 className="text-sm lg:text-2xl font-bold text-white mb-10 absolute top-16 left-36 ">What are the parents saying?</h1>
+    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-81 xl:h-80 font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
+      <h1 className="text-sm lg:text-2xl xl:text-4xl font-bold text-white mb-10 absolute top-16 left-36 ">What are the parents saying?</h1>
       
       <div className="grid grid-cols-2 items-center mt-10">
          <div>
@@ -54,12 +54,12 @@ export const Testimonial = () => {
 
          </div>
 
-      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-60 xl:h-96 w-full flex items-center justify-center lg:-ml-36 xl:-ml-44 pt-14 '>
+      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-72 xl:h-96 w-full flex items-center justify-center lg:-ml-34 xl:-ml-48 pt-14 '>
       <Slider {...sliderSettings} className='w-4/5'>
       {testimonials.map((testimonial, index) => (
         <div key={index} className='py-6'>
-          <p className="mb-12 flex items-center justify-center">{`"${testimonial.message}"`}</p>
-          <h3 className="flex items-center justify-center">{testimonial.name}</h3>
+          <p className="xl:text-2xl mb-12 flex items-center justify-center">{`"${testimonial.message}"`}</p>
+          <h3 className="xl:text-2xl flex items-center justify-center">{testimonial.name}</h3>
         </div>
       ))}
     </Slider>
