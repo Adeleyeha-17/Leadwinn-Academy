@@ -54,7 +54,7 @@ export const Testimonial = () => {
 
          </div>
 
-      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-40 lg:h-72 xl:h-96 w-full flex items-center justify-center md:-ml-24 lg:-ml-44 xl:-ml-56 lg:pt-20'>
+      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-40 lg:h-72 xl:h-96 w-full flex items-center justify-center md:-ml-24 lg:-ml-44 xl:-ml-52 lg:pt-20'>
       <Slider {...sliderSettings} className='w-full lg:w-4/5'>
       {testimonials.map((testimonial, index) => (
         <div key={index} className='md:py-6 md:max-lg:px-4'>
