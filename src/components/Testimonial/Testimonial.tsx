@@ -46,16 +46,16 @@ export const Testimonial = () => {
 
   return (
     <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-81 font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
-      <h1 className="text-2xl font-bold text-white mb-10 absolute top-16 left-36 ">What are the parents saying?</h1>
+      <h1 className="text-sm lg:text-2xl font-bold text-white mb-10 absolute top-16 left-36 ">What are the parents saying?</h1>
       
       <div className="grid grid-cols-2 items-center mt-10">
          <div>
-         <img src="./sliderImg.svg" alt="slider Image" className="w-4/5"/>
+         <img src="./sliderImg.svg" alt="slider Image" className="w-full xl:w-4/5"/>
 
          </div>
 
-      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-72 w-full flex items-center justify-center -ml-36 pt-14 '>
-      <Slider {...sliderSettings} className='w-4/5 '>
+      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-60 xl:h-72 w-full flex items-center justify-center xl:-ml-36  pt-14 '>
+      <Slider {...sliderSettings} className='w-4/5'>
       {testimonials.map((testimonial, index) => (
         <div key={index} className='py-6'>
           <p className="mb-12 flex items-center justify-center">{`"${testimonial.message}"`}</p>
