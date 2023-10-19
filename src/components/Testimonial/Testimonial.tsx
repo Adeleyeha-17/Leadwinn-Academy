@@ -50,14 +50,14 @@ export const Testimonial = () => {
       
       <div className="grid grid-cols-2 items-center mt-10">
          <div>
-         <img src="./sliderImg.svg" alt="slider Image" className="sm:w-3/4 xl:w-4/5"/>
+         <img src="./sliderImg.svg" alt="slider Image" className="w-3/4 xl:w-4/5"/>
 
          </div>
 
-      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-56 sm:h-72 xl:h-96 w-full flex items-center justify-center lg:-ml-48 p-0 sm:pt-20 xl:pt-20'>
-      <Slider {...sliderSettings} className='w-full sm:w-4/5'>
+      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-40 lg:h-72 xl:h-96 w-full flex items-center justify-center lg:-ml-48 lg:pt-20'>
+      <Slider {...sliderSettings} className='w-full lg:w-4/5'>
       {testimonials.map((testimonial, index) => (
-        <div key={index} className='md:py-6'>
+        <div key={index} className='lg:py-6'>
           <p className="xl:text-2xl mb-12 flex items-center justify-center">{`"${testimonial.message}"`}</p>
           <h3 className="xl:text-2xl xl:pt-20 flex items-center justify-center">{testimonial.name}</h3>
         </div>
