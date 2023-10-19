@@ -7,3 +7,8 @@
    color: #0077FF !important;
 }
  
+.slick-dots li button:before {
+   color: #FFFFFF !important;
+   font-size: 0.5rem !important
+}
+ 
