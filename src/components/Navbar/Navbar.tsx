@@ -80,10 +80,10 @@ export const Navbar: React.FC = () => {
          <div className={
             nav ? "fixed left-0 top-0 w-1/2 h-full bg-nav-blue border-r border-gray-200 sm:hidden transition-all ease-in-out duration-500 z-10" : "fixed -left-full"
          }>
-            <div className="font-poppins pt-20 mx-3 flex flex-col font-normal">
+            <div className="font-poppins pt-20 mx-3 flex flex-col font-semibold">
                <div className="flex items-center gap-2 ml-2 -mt-15">
                   <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 sm:w-full'/></Link>
-                  <span className="flex flex-col text-lead-black font-normal font-poppins">
+                  <span className="flex flex-col text-lead-black font-semibold font-poppins">
                      <h1>Leadwinn</h1>
                      <h1>Academy</h1>
                   </span>
