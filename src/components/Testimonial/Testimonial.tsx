@@ -59,7 +59,7 @@ export const Testimonial = () => {
       {testimonials.map((testimonial, index) => (
         <div key={index} className='md:py-6 md:max-lg:px-4'>
           <p className="md:text-base xl:text-lg md:mb-3 lg:mb-12 flex items-center justify-center">{`"${testimonial.message}"`}</p>
-          <h3 className="xl:text-lg xl:pt-20 flex items-center justify-center">{testimonial.name}</h3>
+          <h3 className="xl:text-lg xl:pt-12 flex items-center justify-center">{testimonial.name}</h3>
         </div>
       ))}
     </Slider>
