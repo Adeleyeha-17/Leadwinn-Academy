@@ -146,7 +146,6 @@ export const Footer: React.FC = () => {
                <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-sm lg:text-base xl:text-lg'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
-                  <Link to="">Modern Slavery Statement</Link>
                </div>
             </div>
          </div>

@@ -39,11 +39,12 @@ export const Navbar: React.FC = () => {
       <div>
          <div className="flex justify-between items-center lg:space-x-20 xl:space-x-2 h-16 xl:px-5 xl:px-36 pt-10 xl:pt-16 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
-               <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/></Link>
+               <Link to="/" className="flex items-center gap-2"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/>
                <span className="flex flex-col text-lead-black text-base font-semibold font-poppins">
                   <h1>Leadwinn</h1>
                   <h1>Academy</h1>
                </span>
+               </Link>
             </div>
 
             <div className='hidden sm:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:max-lg:text-sm lg:text-base font-semibold text-head-black'>
