@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
                </span>
             </div>
 
-            <div className='hidden sm:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:max-lg:text-sm lg:text-base font-medium text-head-black'>
+            <div className='hidden sm:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:max-lg:text-sm lg:text-base font-semibold text-head-black'>
                {
                navLinks.map(link => (
                   <Link key={
