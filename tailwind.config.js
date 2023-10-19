@@ -23,7 +23,9 @@ export default {
         "nav-blue" : "#ECF5FF",
         "footer-blue" : "#003B80",
         "home-gra" : "#012956",
-        "home-gra-2" : "#2587F7"
+        "home-gra-2" : "#2587F7",
+        "test-gra" : "#0965CE",
+        "test-gra-2" : "#01152C"
       },
       backgroundImage: {
         "home" : "url(/wave.svg)"
@@ -32,7 +34,8 @@ export default {
         "15" : "54.4px"
       },
       height: {
-        "80": "80vh"
+        "80": "80vh",
+        "81" : "70vh"
       }
     },
     },
