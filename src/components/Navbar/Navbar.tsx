@@ -40,14 +40,14 @@ export const Navbar: React.FC = () => {
          <div className="flex justify-between items-center sm:max-md:px-20 lg:space-x-20 xl:space-x-2 h-16 px-5 lg:px-0 xl:px-36 pt-10 xl:pt-16 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/" className="flex items-center gap-2"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/>
-               <span className="flex flex-col text-lead-black text-base font-semibold font-poppins">
+               <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
                   <h1>Leadwinn</h1>
                   <h1>Academy</h1>
                </span>
                </Link>
             </div>
 
-            <div className='hidden sm:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:max-lg:text-sm lg:text-base font-semibold text-head-black'>
+            <div className='hidden sm:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:text-sm font-semibold text-head-black'>
                {
                navLinks.map(link => (
                   <Link key={
@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
             } </div>
 
             <div className="hidden sm:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
-               <Link to="" className='flex justify-center items-center text-head-blue text-xs md:max-lg:text-sm lg:text-base font-semibold'>Sign In</Link>
+               <Link to="" className='flex justify-center items-center text-head-blue text-xs md:text-sm  font-semibold'>Sign In</Link>
                <Button path="" title="Enroll Now"/>
                </div>
 
@@ -85,7 +85,7 @@ export const Navbar: React.FC = () => {
             <div className="font-poppins pt-20 mx-3 flex flex-col font-semibold">
                <div className="flex items-center gap-2 ml-2 -mt-15">
                   <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 sm:w-full'/></Link>
-                  <span className="flex flex-col text-lead-black font-semibold font-poppins">
+                  <span className="flex flex-col text-lead-black text-xs md:text-sm font-semibold font-poppins">
                      <h1>Leadwinn</h1>
                      <h1>Academy</h1>
                   </span>
@@ -105,8 +105,8 @@ export const Navbar: React.FC = () => {
                   }</Link>
                ))
             }
-               <Link to="/sign-in" className="p-4 border-b text-head-blue">Sign In</Link>
-               <Link to="register" className="p-4 text-head-blue">Enroll Now</Link>
+               <Link to="/sign-in" className="p-4 border-b text-head-bluetext-xs ">Sign In</Link>
+               <Link to="register" className="p-4 text-head-blue text-xs ">Enroll Now</Link>
             </div>
          </div>
       </div>
