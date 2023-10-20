@@ -34,7 +34,7 @@ export const Hero: React.FC<HomeProps> = () => {
       <div className="flex flex-col sm:flex-row justify-between lg:space-x-20 py-10 sm:max-md:px-20 md:py-20 px-5 lg:px-0 xl:px-36 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
         <div className="font-poppins text-lead-black w-full">
 
-          <h1 className="text-3xl sm:text-4xl xl:text-head font-semibold xl:font-bold md:max-xl:leading-snug xl:leading-heading mb-6 md:mb-5 sm:max-md:w-[420px]  lg:max-xl:w-[400px] xl:w-[689px]">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span>  Online Coding Classes</h1>
+          <h1 className="text-3xl sm:text-head font-semibold md:leading-snug mb-6 md:mb-5 sm:max-md:w-[420px] lg:max-xl:w-[400px] xl:w-[689px]">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span>  Online Coding Classes</h1>
           <h1 className="xl:w-[500px] md:max-lg:w-[420px] sm:max-md:w-[350px] mb-6 md:mb-5 text-sm md:text-base lg:text-lg xl:text-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
 
           <Button path="" title="Discover Course" />
