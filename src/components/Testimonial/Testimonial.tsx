@@ -45,8 +45,8 @@ export const Testimonial = () => {
 };
 
   return (
-    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-64 md:h-96 lg:h-[90vh] xl:h-[768px] font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
-      <h1 className="md:text-base lg:text-2xl xl:text-4xl font-bold text-white mb-10 absolute top-16 left-20 md:max-lg:top-10 lg:top-16 xl:top-36 lg:left-36 xl:left-[120px]">What are the parents saying?</h1>
+    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-64 md:h-96 lg:h-[450px] xl:h-[768px] font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
+      <h1 className="md:text-base lg:text-2xl xl:text-4xl font-bold text-white mb-10 absolute top-16 left-20 md:max-lg:top-10 lg:top-24 xl:top-36 lg:left-36 xl:left-[120px]">What are the parents saying?</h1>
       
       <div className="grid grid-cols-2 items-center md:max-lg:-ml-16 mt-10">
          <div>
