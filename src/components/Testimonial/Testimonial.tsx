@@ -48,9 +48,9 @@ export const Testimonial = () => {
     <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-64 md:h-96 lg:h-81 xl:h-[768px] font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
       <h1 className="md:text-base lg:text-2xl xl:text-4xl font-bold text-white mb-10 absolute top-16 left-20 lg:top-16 xl:top-36 lg:left-36 xl:left-[120px] ">What are the parents saying?</h1>
       
-      <div className="grid grid-cols-2 items-center mt-10">
+      <div className="grid grid-cols-2 items-center -ml-32 mt-10">
          <div>
-         <img src="./sliderImg.svg" alt="slider Image" className="w-3/4 xl:w-4/5"/>
+         <img src="./sliderImg.svg" alt="slider Image" className="w-4/5 xl:w-4/5"/>
 
          </div>
 
