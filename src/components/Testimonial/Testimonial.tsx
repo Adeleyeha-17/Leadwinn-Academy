@@ -45,21 +45,21 @@ export const Testimonial = () => {
 };
 
   return (
-    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-64 md:h-96 lg:h-81 xl:h-[768px] font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
-      <h1 className="md:text-base lg:text-2xl xl:text-4xl font-bold text-white mb-10 absolute top-16 left-20 lg:top-16 xl:top-36 lg:left-36 xl:left-[120px] ">What are the parents saying?</h1>
+    <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-64 md:h-96 lg:h-[90vh] xl:h-[768px] font-poppins flex flex-col items-center justify-center p-36 overflow-hidden relative">
+      <h1 className="md:text-base lg:text-2xl xl:text-4xl font-bold text-white mb-10 absolute top-16 left-20 md:max-lg:top-10 lg:top-16 xl:top-36 lg:left-36 xl:left-[120px]">What are the parents saying?</h1>
       
-      <div className="grid grid-cols-2 items-center -ml-32 mt-10">
+      <div className="grid grid-cols-2 items-center md:max-lg:-ml-16 mt-10">
          <div>
-         <img src="./sliderImg.svg" alt="slider Image" className="w-4/5 xl:w-4/5"/>
+         <img src="./sliderImg.svg" alt="slider Image" className="md:w-4/5"/>
 
          </div>
 
-      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-40 lg:h-72 xl:h-96 w-full flex items-center justify-center md:-ml-24 lg:-ml-44 xl:-ml-52 lg:pt-20'>
+      <div className='bg-white text-white font-poppins bg-opacity-10 rounded-lg h-40 md:max-lg:h-52 lg:h-72 xl:h-96 w-full flex items-center justify-center md:max-lg:-ml-20 lg:max-xl:-ml-32 xl:-ml-52 lg:pt-20'>
       <Slider {...sliderSettings} className='w-full lg:w-4/5'>
       {testimonials.map((testimonial, index) => (
         <div key={index} className='md:py-6 md:max-lg:px-4'>
-          <p className="md:text-base xl:text-lg md:mb-3 lg:mb-12 flex items-center justify-center">{`"${testimonial.message}"`}</p>
-          <h3 className="xl:text-lg xl:pt-12 flex items-center justify-center">{testimonial.name}</h3>
+          <p className="md:text-base xl:text-2xl md:mb-3 lg:mb-12 flex items-center justify-center">{`"${testimonial.message}"`}</p>
+          <h3 className="xl:text-2xl xl:pt-12 flex items-center justify-center">{testimonial.name}</h3>
         </div>
       ))}
     </Slider>
