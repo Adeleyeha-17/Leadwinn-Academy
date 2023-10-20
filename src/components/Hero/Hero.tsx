@@ -33,7 +33,7 @@ export const Hero: React.FC<HomeProps> = () => {
     <div>
       <div className="flex flex-col sm:flex-row justify-between lg:space-x-20 py-10 sm:max-md:px-20 md:py-20 px-5 lg:px-0 xl:px-36 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
         <div className="font-poppins text-lead-black w-4/5">
-          <h1 className="text-3xl sm:text-head font-semibold mb-6 leading-normal md:max-w-4xl">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span>  Online Coding Classes</h1>
+          <h1 className="text-3xl sm:text-head font-semibold mb-6 leading-normal md:max-w-3xl">Engage in the Future of Learning with <span className={`animate-slide-top ${currentColorClass}`}>{currentWord}</span>  Online Coding Classes</h1>
           <h1 className=" mb-6 text-sm md:text-base">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
           <Button path="" title="Discover Course" />
         </div>
