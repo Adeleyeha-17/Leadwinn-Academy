@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:max-md:text-base font-bold md:text-lg xl:text-3xl">Socials</h1>
+               <h1 className="sm:text-base font-bold">Socials</h1>
 
                <div className="flex gap-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
@@ -109,9 +109,9 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:max-md:text-base font-bold md:text-base xl:text-lg">Newsletter</h1>
+               <h1 className="sm:text-base font-bold">Newsletter</h1>
 
-               <h1 className="text-xs  md:text-sm xl:text-lg">Sign up with your email to join our mailing list</h1>
+               <h1 className="text-xs  md:text-sm">Sign up with your email to join our mailing list</h1>
 
                <div className="flex flex-col gap-3">
                   <form>
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
                            onChange={onChange}/>
-                        <label htmlFor="receiveMail" className="text-sm xl:text-lg">I would like to receive emails from Leadwinn</label>
+                        <label htmlFor="receiveMail" className="text-sm">I would like to receive emails from Leadwinn</label>
                      </div>
 
                      <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:text-base sm:font-normal rounded-3xl">Subscribe</button>
@@ -139,11 +139,10 @@ export const Footer: React.FC = () => {
             <div className='lg:grid lg:grid-cols-2 flex flex-col items-center gap-4 mt-10'>
                <div className='flex items-center gap-3'>
                   <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12 xl:w-16'/></Link>
-                  <h5 className='text-xs sm:text-sm lg:text-base xl:text-lg'>Copyright © 2020 - 2023 Leadwinn Academy.
-                     <span className='hidden sm:inline-block xl:text-lg'>All rights reserved</span>
+                  <h5 className='text-xs sm:text-sm lg:text-base'>Copyright © 2020 - 2023 Leadwinn Academy.All rights reserved
                   </h5>
                </div>
-               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-sm lg:text-base xl:text-lg'>
+               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-sm lg:text-base'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                </div>
