@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
                            onChange={onChange}/>
-                        <label htmlFor="receiveMail" className="text-sm">I would like to receive emails from Leadwinn</label>
+                        <label htmlFor="receiveMail" className="text-xs md:text-sm">I would like to receive emails from Leadwinn</label>
                      </div>
 
                      <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:text-sm sm:font-normal rounded-3xl">Subscribe</button>
