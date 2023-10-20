@@ -11,7 +11,6 @@ export default {
       },
       padding: {
         "25" : "20.5px",
-        "mobile" : "73.5px"
       },
       fontSize: {
         "myXL" : "33px",
