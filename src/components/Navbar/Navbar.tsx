@@ -85,7 +85,7 @@ export const Navbar: React.FC = () => {
             <div className="font-poppins pt-20 mx-3 flex flex-col font-semibold">
                <div className="flex items-center gap-2 ml-2 -mt-15">
                   <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 sm:w-full'/></Link>
-                  <span className="flex flex-col text-lead-black text-xs md:text-sm font-semibold font-poppins">
+                  <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
                      <h1>Leadwinn</h1>
                      <h1>Academy</h1>
                   </span>
@@ -99,14 +99,14 @@ export const Navbar: React.FC = () => {
                      to={
                         link.path
                      }
-                     className="p-4 border-b text-head-black">
+                     className="p-4 border-b text-sm text-head-black">
                      {
                      link.link
                   }</Link>
                ))
             }
-               <Link to="/sign-in" className="p-4 border-b text-head-bluetext-xs ">Sign In</Link>
-               <Link to="register" className="p-4 text-head-blue text-xs ">Enroll Now</Link>
+               <Link to="/sign-in" className="p-4 border-b text-head-blue text-sm ">Sign In</Link>
+               <Link to="register" className="p-4 text-head-blue text-sm ">Enroll Now</Link>
             </div>
          </div>
       </div>
