@@ -52,7 +52,7 @@ export const Faq: React.FC = () => {
                </div>
                {
                activeAccordion === index + 1 && (
-                  <div className='sm:pr-10'>
+                  <div className='pr-6 sm:pr-10'>
                      <p className='text-head-black text-xs sm:text-base'>{
                         data.content
                      }</p>
