@@ -42,7 +42,7 @@ export const Hero: React.FC<HomeProps> = () => {
         </div>
     <div className="w-full">
 
-        <img src="./homeIllustration.svg" alt="home illustration" className="mx-auto sm:w-full md:w-4/5 xl:w-full"/>
+        <img src="./homeIllustration.svg" alt="home illustration" className="xl:mx-auto sm:w-full md:w-4/5 xl:w-full"/>
     </div>
       </div>
 
