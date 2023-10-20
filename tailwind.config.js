@@ -10,7 +10,8 @@ export default {
         poppins: ["Poppins", "sans-serif"]
       },
       padding: {
-        "25" : "20.5px"
+        "25" : "20.5px",
+        "mobile" : "73.5px"
       },
       fontSize: {
         "myXL" : "33px",
