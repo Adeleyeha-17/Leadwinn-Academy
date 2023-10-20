@@ -70,9 +70,9 @@ export const Navbar: React.FC = () => {
                <div onClick={toggleFunc}
                className="cursor-pointer sm:hidden">
                {
-               nav ? <AiOutlineClose size={28}
+               nav ? <AiOutlineClose size={30}
                   className="sm:hidden"/> : 
-                  <AiOutlineMenu size={28}
+                  <AiOutlineMenu size={30}
                   className="sm:hidden"/>}
              </div>
             
