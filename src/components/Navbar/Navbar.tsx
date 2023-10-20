@@ -67,16 +67,17 @@ export const Navbar: React.FC = () => {
                <Button path="" title="Enroll Now"/>
                </div>
 
-            
-         </div>
-         <div onClick={toggleFunc}
-               className="cursor-pointer md:hidden">
+               <div onClick={toggleFunc}
+               className="cursor-pointer sm:hidden">
                {
                nav ? <AiOutlineClose size={28}
                   className="sm:hidden"/> : 
                   <AiOutlineMenu size={28}
                   className="sm:hidden"/>}
              </div>
+            
+         </div>
+         
 
          <div className={
             nav ? "fixed left-0 top-0 w-1/2 h-full bg-nav-blue border-r border-gray-200 sm:hidden transition-all ease-in-out duration-500 z-10" : "fixed -left-full"
