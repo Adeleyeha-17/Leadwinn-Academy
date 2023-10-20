@@ -36,19 +36,19 @@ export const Footer: React.FC = () => {
 
    return (
       <div className="bg-footer-blue text-white font-poppins pb-20">
-         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 sm:max-md:gap-0 lg:gap-0 py-16 sm:max-lg:px-2 px-6 md:py-24 md:max-xl:px-18 xl:px-28 lg:max-xl:px-10 lg:space-x-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 py-16 px-6 md:py-24 md:max-lg:px-18 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="sm:max-md:text-base font-bold md:text-base">Contact Us</h1>
 
                <div className="flex gap-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                     <path d="M7 9L10.75 12C11.1047 12.284 11.5456 12.4388 12 12.4388C12.4544 12.4388 12.8953 12.284 13.25 12L17 9M21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M7 9L10.75 12C11.1047 12.284 11.5456 12.4388 12 12.4388C12.4544 12.4388 12.8953 12.284 13.25 12L17 9M21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-xs md:font-medium md:text-base">Email</h1>
-                     <h1 className="text-xs sm:text-sm">info@leadwinnacademy@gmail.com</h1>
+                     <h1 className="text-xs sm:text-base">info@leadwinnacademy@gmail.com</h1>
                   </div>
                </div>
 
@@ -61,14 +61,14 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-xs md:font-medium md:text-base">Phone</h1>
-                     <h1 className="text-xs md:text-sm">+2348165906106</h1>
+                     <h1 className="text-xs md:text-base">+2348165906106</h1>
                   </div>
                </div>
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="sm:max-md:text-base font-bold md:text-base">Quick Links</h1>
-               <div className="flex flex-col gap-2 text-xs sm:text-sm">
+               <div className="flex flex-col gap-2 text-xs sm:text-base">
                   {
                   quickLinks.map(links => (
                      <Link to={
@@ -111,7 +111,7 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="sm:text-base font-bold">Newsletter</h1>
 
-               <h1 className="text-xs md:text-sm">Sign up with your email to join our mailing list</h1>
+               <h1 className="text-xs md:text-base">Sign up with your email to join our mailing list</h1>
 
                <div className="flex flex-col gap-3">
                   <form>
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
                            onChange={onChange}/>
-                        <label htmlFor="receiveMail" className="text-xs md:text-sm">I would like to receive emails from Leadwinn</label>
+                        <label htmlFor="receiveMail" className="text-xs md:text-base">I would like to receive emails from Leadwinn</label>
                      </div>
 
                      <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:text-sm sm:font-normal rounded-3xl">Subscribe</button>
@@ -134,15 +134,15 @@ export const Footer: React.FC = () => {
 
          </div>
 
-         <div className='border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 lg:max-xl:px-10 xl:px-28 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto'>
+         <div className='border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto'>
 
             <div className='flex flex-col lg:flex-row items-center gap-4 mt-10'>
-               <div className='flex items-center gap-3 px-6 sm:px-0'>
-                  <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12 xl:w-16'/></Link>
-                  <h5 className='text-xs sm:text-sm flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
+               <div className='flex items-center gap-3'>
+                  <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12 md:w-16'/></Link>
+                  <h5 className='text-xs sm:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
                </div>
-               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-sm'>
+               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-base'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                </div>
