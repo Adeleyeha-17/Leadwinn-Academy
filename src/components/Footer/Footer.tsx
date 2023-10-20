@@ -137,7 +137,7 @@ export const Footer: React.FC = () => {
          <div className='border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto'>
 
             <div className='flex flex-col lg:flex-row items-center gap-4 mt-10'>
-               <div className='flex items-center gap-3'>
+               <div className='flex items-center gap-3 px-6 sm:px-0'>
                   <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12 md:w-16'/></Link>
                   <h5 className='text-xs sm:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
