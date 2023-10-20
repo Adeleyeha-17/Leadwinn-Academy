@@ -32,13 +32,13 @@ export const Faq: React.FC = () => {
    ];
 
    return (
-      <div className="lg:max-xl:px-10 lg:space-x-20 px-4 sm:px-24 lg:px-40 xl:space-x-60 p-16 md:max-lg:max-w-6xl lg:max-lg:max-w-7xl mx-auto">
+      <div className="  px-4 sm:px-24 lg:px-10 p-16 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
         <h1 className="text-head-black font-bold text-lg sm:text-xl lg:text-3xl xl:text-4xl mb-8 flex items-center justify-center">Frequency Asked Question</h1>
          
 
          {
             accordionData.map((data, index) => (
-            <div key={index} className='mb-4 border-b border-gray-300 cursor-pointer py-2 flex flex-col itesm-center justify-center'>
+            <div key={index} className='mb-4 border-b border-gray-300 cursor-pointer py-2 flex flex-col'>
                <div className="flex justify-between items-center"
                   onClick={
                      () => toggleTab(index + 1)
@@ -52,7 +52,7 @@ export const Faq: React.FC = () => {
                </div>
                {
                activeAccordion === index + 1 && (
-                  <div className='sm:pr-6 xl:pr-10'>
+                  <div className='sm:pr-10'>
                      <p className='text-head-black xl:text-lg'>{
                         data.content
                      }</p>
