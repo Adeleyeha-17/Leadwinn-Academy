@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="sm:max-md:text-base font-bold md:text-base">Quick Links</h1>
-               <div className="flex flex-col gap-2 text-xs sm:text-base">
+               <div className="flex flex-col gap-2 text-xs md:text-base">
                   {
                   quickLinks.map(links => (
                      <Link to={
@@ -120,7 +120,7 @@ export const Footer: React.FC = () => {
                         placeholder='Email Address'
                         onChange={onChange}
                         className='px-2 py-1 lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
-                     <div className='flex gap-2 mb-4'>
+                     <div className='flex gap-2 mb-4 sm:max-md:w-2/3'>
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
                            onChange={onChange}/>
