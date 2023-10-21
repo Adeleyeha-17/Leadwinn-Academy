@@ -32,7 +32,7 @@ export const Faq: React.FC = () => {
    ];
 
    return (
-      <div className="  px-4 sm:px-24 lg:px-10 p-16 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
+      <div className="  px-4 sm:px-10 lg:px-10 p-16 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
         <h1 className="text-head-black font-bold text-lg sm:text-xl lg:text-3xl xl:text-4xl mb-8 flex items-center justify-center">Frequency Asked Question</h1>
          
 
