@@ -120,10 +120,10 @@ export const Footer: React.FC = () => {
                         placeholder='Email Address'
                         onChange={onChange}
                         className='px-2 py-1 lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
-                     <div className='flex gap-2 mb-4 sm:max-md:w-2/3'>
+                     <div className='flex gap-2 mb-4'>
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
-                           onChange={onChange}/>
+                           onChange={onChange} className='sm:max-md:w-2/3'/>
                         <label htmlFor="receiveMail" className="text-xs md:text-base">I would like to receive emails from Leadwinn</label>
                      </div>
 
