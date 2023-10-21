@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
                         value={email}
                         placeholder='Email Address'
                         onChange={onChange}
-                        className='px-2 py-1 sm:max-md:w-3/4 lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
+                        className='px-2 py-1 sm:max-md:w-3/4 md:w-full lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
                      <div className='flex gap-2 mb-4'>
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
