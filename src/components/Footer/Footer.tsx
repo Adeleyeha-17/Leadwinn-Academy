@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
          <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 py-16 px-6 sm:max-md:px-0 md:py-24 md:max-lg:px-18 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:max-md:text-base font-bold md:text-base">Contact Us</h1>
+               <h1 className="sm:text-base font-bold">Contact Us</h1>
 
                <div className="flex gap-4">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-xs md:font-medium md:text-base">Email</h1>
-                     <h1 className="text-xs sm:text-base">info@leadwinnacademy@gmail.com</h1>
+                     <h1 className="text-xs md:text-base">info@leadwinnacademy@gmail.com</h1>
                   </div>
                </div>
 
@@ -139,10 +139,10 @@ export const Footer: React.FC = () => {
             <div className='flex flex-col lg:flex-row items-center gap-4 mt-10'>
                <div className='flex items-center gap-3 px-6 sm:px-0'>
                   <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12 md:w-16'/></Link>
-                  <h5 className='text-xs sm:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
+                  <h5 className='text-xs md:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
                </div>
-               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs sm:text-base'>
+               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs md:text-base'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                </div>
