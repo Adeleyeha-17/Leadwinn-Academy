@@ -46,20 +46,20 @@ export const Hero: React.FC<HomeProps> = () => {
         <div className="items-center justify-between sm:flex mt-10 sm:mt-0">
 
         <div className="flex flex-col mb-8 sm:mb-12 items-center mx-auto">
-          <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-14 md:w-3/4" />
+          <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-28 md:w-3/4" />
           <h1>Over 100+ Students</h1>
         </div>
         <div className="w-14 sm:w-20 mb-8 sm:m-12 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex flex-col mb-10 sm:mb-14 items-center justify-center mx-auto">
-          <img src="./edu2.svg" alt="" className="mx-auto mb-4 w-14 md:w-3/4" />
+          <img src="./edu2.svg" alt="" className="mx-auto mb-4 w-28 md:w-3/4" />
           <h1>Over 100+ Certified</h1>
         </div>
 
         <div className="w-14 sm:w-20 mb-8 sm:m-12 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex flex-col mb-8 sm:mb-12 items-center mx-auto">
-          <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-14 md:w-3/4" />
+          <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-28 md:w-3/4" />
           <h1>Over 10+ Countries</h1>
         </div>
         </div>
