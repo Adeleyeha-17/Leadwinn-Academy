@@ -123,7 +123,7 @@ export const Footer: React.FC = () => {
                      <div className='flex gap-2 mb-4'>
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
-                           onChange={onChange} className='sm:max-md:w-2/3'/>
+                           onChange={onChange} className='sm:max-md:w-1/3'/>
                         <label htmlFor="receiveMail" className="text-xs md:text-base">I would like to receive emails from Leadwinn</label>
                      </div>
 
