@@ -62,18 +62,18 @@ export const Navbar: React.FC = () => {
                ))
             } </div>
 
-            <div className="hidden sm:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
+            <div className="hidden md:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
                <Link to="" className='flex justify-center items-center text-head-blue text-xs md:text-sm  font-semibold'>Sign In</Link>
                <Button path="" title="Enroll Now"/>
                </div>
 
                <div onClick={toggleFunc}
-               className="cursor-pointer sm:hidden">
+               className="cursor-pointer md:hidden">
                {
                nav ? <AiOutlineClose size={28}
-                  className="sm:hidden"/> : 
+                  className="md:hidden"/> : 
                   <AiOutlineMenu size={28}
-                  className="sm:hidden"/>}
+                  className="md:hidden"/>}
              </div>
             
          </div>
