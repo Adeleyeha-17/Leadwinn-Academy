@@ -36,8 +36,8 @@ export const Navbar: React.FC = () => {
    ];
 
    return (
-      <div>
-         <div className="flex justify-between items-center sm:max-md:px-20 lg:space-x-20 xl:space-x-20 px-5 lg:px-0 xl:px-36 pt-10 xl:pt-16 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+      <div className="bg-nav-blue">
+         <div className="flex justify-between items-center sm:max-md:px-20 lg:space-x-20 xl:space-x-20 px-5 pt-10 xl:pt-16 lg:px-0 xl:px-36 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/" className="flex items-center gap-2"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/>
                <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
@@ -80,10 +80,10 @@ export const Navbar: React.FC = () => {
          
 
          <div className={
-            nav ? "fixed left-0 top-0 w-1/2 h-full bg-nav-blue border-r border-gray-200 sm:hidden transition-all ease-in-out duration-500 z-10" : "fixed -left-full"
+            nav ? "fixed left-0 top-0 w-1/2 h-full pt-10 bg-nav-blue border-r border-gray-200 sm:hidden transition-all ease-in-out duration-500 z-10" : "fixed -left-full"
          }>
-            <div className="font-poppins pt-28 mx-3 flex flex-col font-semibold">
-               <div className="flex items-center gap-2 ml-2 -mt-15">
+            <div className="font-poppins mx-3 flex flex-col font-semibold">
+               <div className="flex items-center gap-2 ml-2">
                   <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 sm:w-full'/></Link>
                   <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
                      <h1>Leadwinn</h1>

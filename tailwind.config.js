@@ -31,7 +31,8 @@ export default {
         "test-gra-2" : "#01152C"
       },
       backgroundImage: {
-        "home" : "url(/wave.svg)"
+        "desktop" : "url(/desktop.svg)",
+        "mobile" : "url(/mobile.svg)"
       },
       margin: {
         "15" : "54.4px"
