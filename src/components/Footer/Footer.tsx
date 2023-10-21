@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
 
    return (
       <div className="bg-footer-blue text-white font-poppins pb-20">
-         <div className="grid grid-flow-row sm:max-md:grid-cols-2 lg:grid-flow-col gap-6 py-16 px-6 sm:max-md:px-0 md:py-24 md:max-lg:px-18 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
+         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 py-16 px-6 sm:max-md:px-0 md:py-24 md:max-lg:px-18 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="sm:text-base font-bold">Contact Us</h1>
