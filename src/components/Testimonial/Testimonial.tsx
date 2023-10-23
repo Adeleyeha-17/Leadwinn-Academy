@@ -63,7 +63,7 @@ export const Testimonial = () => {
                   testimonials.map((testimonial, index) => (
                      <div key={index}
                         className='py-2 xl:py-5'>
-                        <p className="text-xs lg:text-sm xl:text-base max-sm:mb-3 lg:mb-12 flex items-center justify-center">
+                        <p className="text-xs lg:text-sm xl:text-base max-sm:mb-3 lg:mb-16 flex items-center justify-center">
                            {
                            `"${
                               testimonial.message
