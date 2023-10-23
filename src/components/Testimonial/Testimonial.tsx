@@ -57,19 +57,19 @@ export const Testimonial = () => {
                <img src="./sliderImg.svg" alt="slider Image" className="hidden md:flex md:w-4/5"/>
             </div>
 
-            <div className='bg-white font-poppins bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 w-full flex items-center justify-center md:max-lg:-ml-20 lg:max-xl:-ml-24 xl:-ml-40'>
-               <Slider {...sliderSettings} className='w-full  lg:w-4/5'>
+            <div className='bg-white font-poppins bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 w-full flex items-center justify-center md:-ml-10 lg:-ml-24 xl:-ml-40'>
+               <Slider {...sliderSettings} className='w-full lg:w-4/5'>
                   {
                   testimonials.map((testimonial, index) => (
                      <div key={index}
-                        className='md:py-2 lg:py-3 xl:py-5'>
-                        <p className="text-xs md:text-sm lg:text-base xl:text-lg md:mb lg:mb-12 flex items-center justify-center">
+                        className='md:py-2 xl:py-5'>
+                        <p className="text-xs lg:text-sm xl:text-base md:mb lg:mb-12 flex items-center justify-center">
                            {
                            `"${
                               testimonial.message
                            }"`
                         }</p>
-                        <h3 className="text-xs md:text-sm lg:text-base xl:text-lg xl:pt-12 flex items-center justify-center">
+                        <h3 className="text-xs lg:text-sm xl:text-base xl:pt-12 flex items-center justify-center">
                            {
                            testimonial.name
                         }</h3>
