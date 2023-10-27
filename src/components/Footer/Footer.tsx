@@ -113,7 +113,7 @@ export const Footer: React.FC = () => {
                </div>
             </div>
 
-            <div className="flex flex-col gap-4 sm:gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
+            <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="text-sm lg:text-base font-bold">Newsletter</h1>
 
                <h1 className="text-xs md:text-sm lg:text-base">Sign up with your email to join our mailing list</h1>
