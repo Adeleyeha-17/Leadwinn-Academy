@@ -49,9 +49,9 @@ export const Testimonial = () => {
       <div className="relative bg-gradient-to-tl from-test-gra-2 to-test-gra md:h-[340px] lg:h-[440px] xl:h-4/5 font-poppins md:flex flex-col md:justify-center max-sm:px-10 max-sm:py-8 md:p-28 text-white overflow-hidden ">
          <div className='rounded-full w-12 h-12 md:bg-white md:bg-opacity-5 absolute top-6'></div>
          <div className='rounded-full w-14 h-14 md:bg-white md:bg-opacity-5 absolute right-9 bottom-28'></div>
-         <div className='rounded-full w-40 h-40 md:bg-white md:bg-opacity-5 absolute top-40 left-[600px]'></div>
-         <div className='rounded-full w-32 h-32 md:bg-white md:bg-opacity-5 absolute bottom-20 left-18'></div>
-         <div className='rounded-full w-28 h-28 md:bg-white md:bg-opacity-5 absolute top-32 right-40'></div>
+         <div className='rounded-full w-40 h-40 md:bg-white md:bg-opacity-5 absolute top-20 xl:top-40 left-[400px] xl:left-[600px]'></div>
+         <div className='rounded-full w-32 h-32 md:bg-white md:bg-opacity-5 absolute bottom-10 xl:bottom-20 left-10 xl:left-18'></div>
+         <div className='rounded-full w-28 h-28 md:bg-white md:bg-opacity-5 absolute top-12 xl:top-32 right-40'></div>
          <div className='rounded-full w-32 h-32 md:bg-white md:bg-opacity-5 absolute right-40 bottom-4'></div>
          <div className='rounded-full w-20 h-20 md:bg-white md:bg-opacity-5 absolute top-62 left-96 right-96'></div>
          <div className='rounded-full w-20 h-20 md:bg-white md:bg-opacity-5 absolute left-52 top-40'></div>
