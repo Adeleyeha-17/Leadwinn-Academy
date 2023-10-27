@@ -45,7 +45,7 @@ export const Hero: React.FC<HomeProps> = () => {
       <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/4 sm:h-2/5 md:h-52 w-6/12 sm:w-3/4 rounded-[50px] font-poppins text-white font-semibold max-md:text-sm md:text-xs  xl:text-lg mt-2 sm:mt-34 mx-auto mb-28 sm:max-md:px-10 md:max-xl:px-6 py-3 md:max-xl:py-9 xl:py-3 sm:mb-36">
         <div className="items-center justify-between sm:flex sm:mt-0">
 
-        <div className="flex flex-col mb-10 sm:mb-12 items-center mx-auto">
+        <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
           <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-20 md:w-3/4" />
           <h1>Over 100+ Students</h1>
         </div>
@@ -58,7 +58,7 @@ export const Hero: React.FC<HomeProps> = () => {
 
         <div className="w-16 sm:w-20 mb-8 sm:m-12 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
-        <div className="flex flex-col mb-8 sm:mb-12 items-center mx-auto">
+        <div className="flex justify-center flex-col mb-8 sm:mb-12 items-center mx-auto">
           <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-20 md:w-3/4" />
           <h1>Over 10+ Countries</h1>
         </div>
