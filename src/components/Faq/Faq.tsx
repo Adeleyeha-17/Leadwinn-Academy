@@ -43,7 +43,7 @@ export const Faq: React.FC = () => {
                   onClick={
                      () => toggleTab(index + 1)
                }>
-                  <h3 className='text-head-black w-3/4 sm:w-full text-sm md:text-base xl:text-xl font-bold focus:border-none'>{
+                  <h3 className='text-head-black w-3/4 sm:w-full text-xs md:text-base xl:text-xl font-bold focus:border-none'>{
                      `${data.title}?`
                   }</h3>
                   <span className="w-1/4 flex items-end justify-end">{
