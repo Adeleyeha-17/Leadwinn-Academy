@@ -49,7 +49,7 @@ export const Testimonial = () => {
       <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra md:h-[340px] lg:h-[440px] xl:h-4/5 font-poppins md:flex flex-col md:justify-center max-sm:px-10 max-sm:py-8 md:p-28 text-white overflow-hidden ">
 
          <div>
-            <h1 className="text-xs md:text-base lg:text-2xl font-bold mb-3 md:mb-6 max-md:text-center">What are the parents saying?</h1>
+            <h1 className="text-sm md:text-base lg:text-2xl font-bold mb-3 md:mb-6 max-md:text-center">What are the parents saying?</h1>
          </div>
 
          <div className="grid md:grid-cols-2 items-center mb-10">
