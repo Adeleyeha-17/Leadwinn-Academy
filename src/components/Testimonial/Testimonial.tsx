@@ -53,7 +53,7 @@ export const Testimonial = () => {
          </div>
 
          <div className="grid md:grid-cols-2 items-center mb-10">
-            <div className='flex items-center justify-center max-sm:mb-10'>
+            <div className='flex items-center justify-center max-sm:mb-5'>
                <img src="./sliderImg.svg" alt="slider Image" className="w-4/5"/>
             </div>
 
