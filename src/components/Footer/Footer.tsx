@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
 
    return (
       <div className="bg-footer-blue text-white font-poppins pb-20">
-         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 lg:gap-6 py-10 px-6 lg:px-14 xl:px-0 md:py-24 md:max-w-6xl lg:max-w-7xl mx-auto">
+         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 py-10 sm:px-20 lg:px-0 xl:px-28 md:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
           
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="text-sm lg:text-base font-bold">Contact Us</h1>
@@ -139,7 +139,7 @@ export const Footer: React.FC = () => {
 
          </div>
 
-         <div className='border-t-2 sm:border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 max-w-[22rem] md:max-lg:max-w-2xl lg:max-w-7xl mx-auto'>
+         <div className='border-t-2 sm:border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 lg:max-xl:max-w-[100rem] xl:max-w-[75rem] mx-auto'>
 
             <div className='flex flex-col lg:flex-row items-center gap-2 sm:gap-4 mt-10'>
                <div className='flex gap-3'>
