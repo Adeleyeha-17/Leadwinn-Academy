@@ -28,7 +28,11 @@ export const Footer: React.FC = () => {
       }, {
          link: "Privacy Policy",
          path: "/"
-      }, {
+      },{
+         link: "FAQ",
+         path: ""
+      }, 
+       {
          link: "Send Us a Feedback",
          path: ""
       }
@@ -48,7 +52,7 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-xs md:font-medium md:text-base">Email</h1>
-                     <h1 className="text-xs md:text-base">info@leadwinnacademy@gmail.com</h1>
+                     <h1 className="text-[9px] sm:text-xs md:text-base">info@leadwinnacademy@gmail.com</h1>
                   </div>
                </div>
 
@@ -61,7 +65,7 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-xs md:font-medium md:text-base">Phone</h1>
-                     <h1 className="text-xs md:text-base">+2348165906106</h1>
+                     <h1 className="text-[9px] sm:text-xs md:text-base">+2348165906106</h1>
                   </div>
                </div>
             </div>
@@ -119,7 +123,7 @@ export const Footer: React.FC = () => {
                         value={email}
                         placeholder='Email Address'
                         onChange={onChange}
-                        className='px-2 py-1 sm:max-md:w-3/4 md:w-full lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
+                        className='px-2 py-3 w-3/4 md:w-full lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
                      <div className='flex gap-2 mb-4'>
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
@@ -138,11 +142,11 @@ export const Footer: React.FC = () => {
 
             <div className='flex flex-col lg:flex-row items-center gap-4 mt-10'>
                <div className='flex items-center gap-3 px-6 sm:px-0'>
-                  <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-12 md:w-16'/></Link>
-                  <h5 className='text-xs md:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
+                  <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-9 md:w-16'/></Link>
+                  <h5 className='text-[9px] sm:text-xs md:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
                </div>
-               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs md:text-base'>
+               <div className='flex items-center gap-3 px-2 sm:gap-4 text-[9px] md:text-base'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                </div>
