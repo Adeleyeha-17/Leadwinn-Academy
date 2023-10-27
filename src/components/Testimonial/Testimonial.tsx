@@ -46,18 +46,18 @@ export const Testimonial = () => {
    };
 
    return (
-      <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra h-[270px] md:h-[320px] lg:h-[440px] xl:h-4/5 font-poppins md:flex flex-col md:justify-center max-sm:px-10 max-sm:py-8 md:p-28 text-white overflow-hidden ">
+      <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra md:h-[340px] lg:h-[440px] xl:h-4/5 font-poppins md:flex flex-col md:justify-center max-sm:px-10 max-sm:py-8 md:p-28 text-white overflow-hidden ">
 
          <div>
-            <h1 className="text-xs md:text-base lg:text-2xl font-bold mb-3 md:mb-6 ">What are the parents saying?</h1>
+            <h1 className="text-xs md:text-base lg:text-2xl font-bold mb-3 md:mb-6 max-md:text-center">What are the parents saying?</h1>
          </div>
 
-         <div className="grid grid-cols-2 items-center mb-10">
-            <div className='hidden md:flex'>
-               <img src="./sliderImg.svg" alt="slider Image" className="md:w-4/5"/>
+         <div className="grid md:grid-cols-2 items-center mb-10">
+            <div className='flex items-center justify-center max-sm:mb-10'>
+               <img src="./sliderImg.svg" alt="slider Image" className="w-4/5"/>
             </div>
 
-            <div className='bg-white font-poppins bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 max-sm:py- flex items-center justify-center md:-ml-20 lg:-ml-28 xl:-ml-40'>
+            <div className='md:bg-white font-poppins md:bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 max-sm:py- flex items-center justify-center md:-ml-20 lg:-ml-28 xl:-ml-40'>
                <Slider {...sliderSettings} className='w-full lg:w-4/5'>
                   {
                   testimonials.map((testimonial, index) => (
