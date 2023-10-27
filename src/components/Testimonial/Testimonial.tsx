@@ -57,19 +57,19 @@ export const Testimonial = () => {
                <img src="./sliderImg.svg" alt="slider Image" className="md:w-4/5"/>
             </div>
 
-            <div className='bg-white font-poppins bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-sm:px-5 max-sm:py- flex items-center justify-center md:-ml-10 lg:-ml-24 xl:-ml-40'>
+            <div className='bg-white font-poppins bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 max-sm:py- flex items-center justify-center md:-ml-20 lg:-ml-28 xl:-ml-40'>
                <Slider {...sliderSettings} className='w-full lg:w-4/5'>
                   {
                   testimonials.map((testimonial, index) => (
                      <div key={index}
                         className='py-2 xl:py-5'>
-                        <p className="text-xs lg:text-base xl:text-xl max-sm:mb-3 sm:mb-2 lg:mb-4 max-sm:pt-3 xl:pt-10 flex items-center justify-center">
+                        <p className="text-xs lg:text-base xl:text-xl max-sm:mb-3 sm:mb-2 lg:mb-4 max-sm:pt-3 xl:pt-10 text-center">
                            {
                            `"${
                               testimonial.message
                            }"`
                         }</p>
-                        <h3 className="text-xs lg:text-base xl:text-xl sm:max-xl:pt-6 xl:pt-12 xl:mb-20 flex items-center justify-center">
+                        <h3 className="text-xs lg:text-base xl:text-xl sm:max-xl:pt-6 xl:pt-12 xl:mb-20 font-bold flex items-center justify-center">
                            {
                            testimonial.name
                         }</h3>

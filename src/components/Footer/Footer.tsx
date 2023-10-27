@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
 
    return (
       <div className="bg-footer-blue text-white font-poppins pb-20">
-         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 py-10 sm:px-20 lg:px-0 xl:px-28 md:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 sm:max-lg:gap-8 px-5 py-10 lg:px- xl:px-28 md:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
           
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="text-sm lg:text-base font-bold">Contact Us</h1>
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-sm md:font-medium md:text-base">Email</h1>
-                     <h1 className="text-xs md:text-base">info@leadwinnacademy@gmail.com</h1>
+                     <h1 className="text-xs md:text-sm lg:text-base">info@leadwinnacademy@gmail.com</h1>
                   </div>
                </div>
 
@@ -65,14 +65,14 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-sm md:font-medium md:text-base">Phone</h1>
-                     <h1 className="text-xs md:text-base">+2348165906106</h1>
+                     <h1 className="text-xs md:text-sm lg:text-base">+2348165906106</h1>
                   </div>
                </div>
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="text-sm font-bold lg:text-base">Quick Links</h1>
-               <div className="flex flex-col gap-2 text-sm md:text-base">
+               <div className="flex flex-col gap-2 text-xs md:text-sm lg:text-base">
                   {
                   quickLinks.map(links => (
                      <Link to={
@@ -116,7 +116,7 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-4 sm:gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="text-sm lg:text-base font-bold">Newsletter</h1>
 
-               <h1 className="text-xs md:text-base">Sign up with your email to join our mailing list</h1>
+               <h1 className="text-xs md:text-sm lg:text-base">Sign up with your email to join our mailing list</h1>
 
                <div className="flex flex-col gap-4">
                   <form>
@@ -129,7 +129,7 @@ export const Footer: React.FC = () => {
                         <input type="checkbox" name="receiveMail" id="receiveMail"
                            checked={receiveMail}
                            onChange={onChange}/>
-                        <label htmlFor="receiveMail" className="text-xs md:text-base">I would like to receive emails from Leadwinn</label>
+                        <label htmlFor="receiveMail" className="text-xs md:text-sm lg:text-base">I would like to receive emails from Leadwinn</label>
                      </div>
 
                      <button className="flex justify-center items-center sm:max-md:w-28 sm:max-md:h-8 md:w-32 md:h-10 w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:text-sm sm:font-normal rounded-3xl">Subscribe</button>
@@ -141,13 +141,13 @@ export const Footer: React.FC = () => {
 
          <div className='border-t-2 sm:border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 lg:max-xl:max-w-[100rem] xl:max-w-[75rem] mx-auto'>
 
-            <div className='flex flex-col lg:flex-row items-center gap-2 sm:gap-4 mt-10'>
+            <div className='flex flex-col lg:flex-row items-center gap-4 mt-10 max-sm:px-8 text-center'>
                <div className='flex gap-3'>
                   <Link to="/"><img src="./leadwinn.svg" alt="leadwinn logo" className='w-9 md:w-16'/></Link>
-                  <h5 className='text-[9px] sm:text-xs md:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
+                  <h5 className='text-xs md:text-sm lg:text-base flex items-center justify-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
                </div>
-               <div className='flex items-center gap-3 px-2 sm:gap-4 text-[9px] md:text-base'>
+               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs md:text-sm lg:text-base'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                </div>
