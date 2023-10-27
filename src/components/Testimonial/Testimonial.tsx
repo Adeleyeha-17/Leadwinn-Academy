@@ -64,7 +64,7 @@ export const Testimonial = () => {
                      <div key={index}
                         className='py-2 xl:py-5'>
                         <p className="text-xs lg:text-base xl:text-xl max-sm:mb-3 sm:mb-2 lg:mb-4 max-sm:pt-3 xl:pt-10 text-center">
-                           {
+                          {
                            `"${
                               testimonial.message
                            }"`
