@@ -43,7 +43,7 @@ export const Faq: React.FC = () => {
                   onClick={
                      () => toggleTab(index + 1)
                }>
-                  <h3 className='text-head-black w-3/4 sm:w-full text-sm sm:px-0 md:text-base xl:text-lg font-bold focus:border-none'>{
+                  <h3 className='text-head-black w-3/4 sm:w-full text-[9px] sm:text-sm sm:px-0 md:text-base xl:text-lg font-bold focus:border-none'>{
                      `${data.title}?`
                   }</h3>
                   <span className="w-1/4 flex items-end justify-end">{
@@ -53,7 +53,7 @@ export const Faq: React.FC = () => {
                {
                activeAccordion === index + 1 && (
                   <div className='pr-6 sm:pr-10'>
-                     <p className='text-head-black text-xs md:text-base'>{
+                     <p className='text-head-black text-[9px] sm:text-xs md:text-base'>{
                         data.content
                      }</p>
                   </div>

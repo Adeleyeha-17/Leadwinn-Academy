@@ -13,10 +13,7 @@ export default {
         "25" : "20.5px",
       },
       fontSize: {
-        "myXL" : "33px",
-        "head-2" : "37px",
-        "head" : "40px",
-        "xlHead" : "47px"
+      
       }
       ,
       colors: {
