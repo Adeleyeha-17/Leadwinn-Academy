@@ -40,10 +40,11 @@ export const Footer: React.FC = () => {
 
    return (
       <div className="bg-footer-blue text-white font-poppins pb-20">
-         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-6 py-16 px-6 sm:max-md:px-0 md:py-24 md:max-lg:px-18 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
+         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 lg:gap-6 py-16 px-6 sm:max-md:px-0 md:py-24 md:max-lg:px-18 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
 
+            <div className="flex gap-10">
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:text-base font-bold">Contact Us</h1>
+               <h1 className="text-sm lg:text-base font-bold">Contact Us</h1>
 
                <div className="flex gap-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -71,8 +72,8 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:max-md:text-base font-bold md:text-base">Quick Links</h1>
-               <div className="flex flex-col gap-2 text-xs md:text-base">
+               <h1 className="text-sm font-bold lg:text-base">Quick Links</h1>
+               <div className="flex flex-col gap-4 md:gap-2 text-[9px] md:text-base">
                   {
                   quickLinks.map(links => (
                      <Link to={
@@ -88,10 +89,12 @@ export const Footer: React.FC = () => {
                } </div>
             </div>
 
+            </div>
+            
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:text-base font-bold">Socials</h1>
+               <h1 className="text-sm lg:text-base font-bold">Socials</h1>
 
-               <div className="flex gap-4">
+               <div className="flex gap-5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
                      <path fill-rule="evenodd" clip-rule="evenodd" d="M32 16C32 24.8615 24.8615 32 16 32C7.13846 32 0 24.8615 0 16C0 7.13846 7.13846 0 16 0C24.8615 0 32 7.13846 32 16ZM11.9385 6.15385C13.0462 6.15385 13.2923 6.15385 16 6.15385C18.7077 6.15385 18.9538 6.15385 20.0615 6.15385C21.1692 6.15385 21.7846 6.4 22.4 6.64615C23.0154 6.89231 23.6308 7.26154 24.1231 7.75385C24.6154 8.24615 24.9846 8.86154 25.2308 9.47692C25.4769 10.0923 25.6 10.8308 25.7231 11.8154C25.7231 12.9231 25.7231 13.1692 25.7231 15.8769C25.7231 18.5846 25.7231 18.8308 25.7231 19.9385C25.7231 21.0462 25.4769 21.6615 25.2308 22.2769C24.9846 22.8923 24.6154 23.5077 24.1231 24C23.6308 24.4923 23.0154 24.8615 22.4 25.1077C21.7846 25.3538 21.0462 25.4769 20.0615 25.6C18.9538 25.6 18.7077 25.6 16 25.6C13.2923 25.6 13.0462 25.6 11.9385 25.6C10.8308 25.6 10.2154 25.3538 9.6 25.1077C8.98462 24.8615 8.36923 24.4923 7.87692 24C7.38462 23.5077 7.01538 22.8923 6.76923 22.2769C6.52308 21.6615 6.4 20.9231 6.27692 19.9385C6.27692 18.8308 6.27692 18.5846 6.27692 15.8769C6.27692 13.1692 6.27692 12.9231 6.27692 11.8154C6.27692 10.7077 6.52308 10.0923 6.76923 9.47692C7.01538 8.86154 7.38462 8.24615 7.87692 7.75385C8.36923 7.26154 8.98462 6.89231 9.6 6.64615C10.2154 6.4 10.9538 6.27692 11.9385 6.15385ZM19.9385 8C18.9538 8 18.5846 8 16 8C13.4154 8 13.0462 8 12.0615 8C11.0769 8 10.5846 8.24615 10.2154 8.36923C9.72308 8.49231 9.35385 8.73846 9.10769 9.10769C8.73846 9.35385 8.49231 9.72308 8.36923 10.2154C8.24615 10.5846 8 11.0769 8 12.0615C8 13.0462 8 13.4154 8 16C8 18.5846 8 18.9538 8 19.9385C8 20.9231 8.24615 21.4154 8.36923 21.7846C8.49231 22.2769 8.73846 22.5231 9.10769 22.8923C9.47692 23.2615 9.72308 23.5077 10.2154 23.6308C10.5846 23.7538 11.0769 23.8769 12.0615 24C13.0462 24 13.4154 24 16 24C18.5846 24 18.9538 24 19.9385 24C20.9231 24 21.4154 23.7538 21.7846 23.6308C22.2769 23.5077 22.5231 23.2615 22.8923 22.8923C23.2615 22.5231 23.5077 22.2769 23.6308 21.7846C23.7538 21.4154 23.8769 20.9231 24 19.9385C24 18.9538 24 18.5846 24 16C24 13.4154 24 13.0462 24 12.0615C24 11.0769 23.7538 10.5846 23.6308 10.2154C23.5077 9.72308 23.2615 9.47692 22.8923 9.10769C22.5231 8.73846 22.2769 8.49231 21.7846 8.36923C21.4154 8.24615 20.9231 8 19.9385 8ZM12.6769 16C12.6769 17.8462 14.1538 19.3231 16 19.3231C17.8462 19.3231 19.3231 17.8462 19.3231 16C19.3231 14.1538 17.8462 12.6769 16 12.6769C14.1538 12.6769 12.6769 14.1538 12.6769 16ZM10.9538 16C10.9538 13.1692 13.1692 10.9538 16 10.9538C18.8308 10.9538 21.0462 13.1692 21.0462 16C21.0462 18.8308 18.8308 21.0462 16 21.0462C13.1692 21.0462 10.9538 18.8308 10.9538 16ZM22.4 10.7077C22.4 11.3231 21.9077 11.9385 21.1692 11.9385C20.5538 11.9385 19.9385 11.4462 19.9385 10.7077C19.9385 9.96923 20.4308 9.47692 21.1692 9.47692C21.9077 9.6 22.4 10.0923 22.4 10.7077Z" fill="white"/>
                   </svg>
@@ -112,12 +115,12 @@ export const Footer: React.FC = () => {
                </div>
             </div>
 
-            <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
-               <h1 className="sm:text-base font-bold">Newsletter</h1>
+            <div className="flex flex-col gap-4 sm:gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
+               <h1 className="text-sm lg:text-base font-bold">Newsletter</h1>
 
                <h1 className="text-xs md:text-base">Sign up with your email to join our mailing list</h1>
 
-               <div className="flex flex-col gap-3">
+               <div className="flex flex-col gap-4">
                   <form>
                      <input type="email" id='email' name='email'
                         value={email}
@@ -138,7 +141,7 @@ export const Footer: React.FC = () => {
 
          </div>
 
-         <div className='border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto'>
+         <div className='border-t border-gray-400 mt-1 md:mt-2 lg:mt-6 max-w-[22rem] md:max-lg:max-w-6xl lg:max-w-7xl mx-auto'>
 
             <div className='flex flex-col lg:flex-row items-center gap-4 mt-10'>
                <div className='flex items-center gap-3 px-6 sm:px-0'>
