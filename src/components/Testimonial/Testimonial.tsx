@@ -57,7 +57,7 @@ export const Testimonial = () => {
                <img src="./sliderImg.svg" alt="slider Image" className="w-4/5"/>
             </div>
 
-            <div className='md:bg-white font-poppins md:bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 max-sm:py- flex items-center justify-center md:-ml-20 lg:-ml-28 xl:-ml-40'>
+            <div className='md:bg-white font-poppins md:bg-opacity-10 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 max-sm:py- flex items-center justify-center md:-ml-16 lg:-ml-28 xl:-ml-40'>
                <Slider {...sliderSettings} className='w-full lg:w-4/5'>
                   {
                   testimonials.map((testimonial, index) => (
