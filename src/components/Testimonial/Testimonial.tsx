@@ -58,7 +58,7 @@ export const Testimonial = () => {
          <div className='rounded-full w-10 h-10 md:bg-white md:bg-opacity-5 absolute top-6 right-12'></div>
 
          <div>
-            <h1 className="text-sm md:text-base lg:text-2xl font-bold mb-3 md:mb-6 max-md:text-center z-10">What are the parents saying?</h1>
+            <h1 className="text-sm md:text-base lg:text-2xl font-bold mb-3 md:mb-6 max-md:text-center z-10 lg:ml-20">What are the parents saying?</h1>
          </div>
 
          <div className="grid md:grid-cols-2 items-center mb-10">
