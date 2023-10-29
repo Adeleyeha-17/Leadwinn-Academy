@@ -42,7 +42,7 @@ export const Hero: React.FC<HomeProps> = () => {
     </div>
       </div>
 
-      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/4 sm:h-2/5 md:h-52 w-6/12 sm:w-3/4 rounded-[50px] font-poppins text-white font-semibold max-md:text-sm md:text-xs  xl:text-base mt-2 sm:mt-34 mx-auto mb-28 sm:max-md:px-10 md:max-xl:px-6 py-3 md:max-xl:py-9 xl:py-3 sm:mb-36">
+      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/4 sm:h-2/5 md:h-52 w-6/12 sm:w-3/4 rounded-[50px] font-poppins text-white font-semibold max-md:text-sm md:text-xs  xl:text-base mt-2 sm:mt-34 mx-auto mb-28 sm:max-md:px-10 md:max-xl:px-6 xl:px-10 py-3 md:max-xl:py-9 xl:py-3 sm:mb-36">
         <div className="items-center justify-between sm:flex sm:mt-0">
 
         <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
