@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-sm md:font-medium md:text-base">Email</h1>
-                     <h1 className="text-xs md:text-sm lg:text-base">info@leadwinnacademy@gmail.com</h1>
+                     <h1 className="text-xs md:text-sm ">info@leadwinnacademy@gmail.com</h1>
                   </div>
                </div>
 
@@ -65,14 +65,14 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-sm md:font-medium md:text-base">Phone</h1>
-                     <h1 className="text-xs md:text-sm lg:text-base">+2348165906106</h1>
+                     <h1 className="text-xs md:text-sm">+2348165906106</h1>
                   </div>
                </div>
             </div>
 
             <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
                <h1 className="text-sm font-bold lg:text-base">Quick Links</h1>
-               <div className="flex flex-col gap-2 text-xs md:text-sm lg:text-base">
+               <div className="flex flex-col gap-2 text-xs md:text-sm ">
                   {
                   quickLinks.map(links => (
                      <Link to={
