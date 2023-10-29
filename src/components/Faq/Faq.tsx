@@ -32,7 +32,7 @@ export const Faq: React.FC = () => {
    ];
 
    return (
-      <div className="px-6 sm:px-10 md:px-20 lg:px-28 2xl:px-36 p-10 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
+      <div className="px-6 sm:px-10 md:px-20 lg:px-28 p-10 md:max-lg:max-w-6xl lg:max-w-7xl mx-auto">
         <h1 className="text-head-black font-bold text-[16px] sm:text-xl lg:text-3xl xl:text-4xl mb-8 flex items-center justify-center">Frequency Asked Question</h1>
          
 
@@ -43,7 +43,7 @@ export const Faq: React.FC = () => {
                   onClick={
                      () => toggleTab(index + 1)
                }>
-                  <h3 className='text-head-black w-3/4 sm:w-full text-xs md:text-base xl:text-xl font-bold focus:border-none'>{
+                  <h3 className='text-head-black w-3/4 sm:w-full text-xs md:text-base xl:text-lg font-bold focus:border-none'>{
                      `${data.title}?`
                   }</h3>
                   <span className="w-1/4 flex items-end justify-end">{
