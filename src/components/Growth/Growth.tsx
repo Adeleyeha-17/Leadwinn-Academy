@@ -6,7 +6,7 @@ export const Growth = () => {
     <div className="flex justify-between items-center">
       <div className="flex flex-col gap-6 text-head-black ">
          <h1 className=" font-bold text-4xl max-w-[420px]">See our growth, progress, and <span className="text-hero-blue">evolution</span></h1>
-         <h4 className="text-base max-w-[400px]">Founded in 2020, Leadwinn has trained 100+ students in 10+ countries, demonstrating a global commitment to top-notch coding education. Our mission is to shape the future of education in an evolving digital landscape.</h4>
+         <h4 className="text-base max-w-[390px]">Founded in 2020, Leadwinn has trained 100+ students in 10+ countries, demonstrating a global commitment to top-notch coding education. Our mission is to shape the future of education in an evolving digital landscape.</h4>
 
          <Button path="" title="LEARN MORE"/>
       </div>
