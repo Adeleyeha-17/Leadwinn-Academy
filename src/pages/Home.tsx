@@ -1,5 +1,6 @@
 import Faq from "../components/Faq";
 import Hero from "../components/Hero";
+import Learning from "../components/Learning";
 import Testimonial from "../components/Testimonial";
 
 
@@ -14,6 +15,8 @@ export const Home: React.FC = () => {
             colors={
                []
             }/>
+
+            <Learning />
 
          <Testimonial/>
 

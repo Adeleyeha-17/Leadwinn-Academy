@@ -30,7 +30,8 @@ export default {
       },
       backgroundImage: {
         "desktop" : "url(/desktop.svg)",
-        "mobile" : "url(/mobile.svg)"
+        "mobile" : "url(/mobile.svg)",
+        "learning" : "url(/startlearning.svg)"
       },
       margin: {
         "15" : "54.4px"
