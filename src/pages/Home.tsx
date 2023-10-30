@@ -1,4 +1,5 @@
 import Faq from "../components/Faq";
+import Growth from "../components/Growth";
 import Hero from "../components/Hero";
 import Learning from "../components/Learning";
 import Testimonial from "../components/Testimonial";
@@ -18,9 +19,11 @@ export const Home: React.FC = () => {
 
             <Learning />
 
-         <Testimonial/>
+            <Growth />
 
-         <Faq/>
+            <Testimonial/>
+
+            <Faq/>
 
 
       </div>
