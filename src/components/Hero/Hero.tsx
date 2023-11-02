@@ -36,7 +36,7 @@ export const Hero: React.FC<HomeProps> = () => {
           <h1 className="max-sm:text-[25px] sm:max-lg:text-[30px] lg:max-2xl:text-[40.5px] 2xl:text-[50px] font-bold mb-6 leading-normal max-w-md mx-auto sm:mx-0 md:max-w-[400px] lg:max-w-[560px]">Engage in the Future of Learning with <span className={`${currentColorClass}`}>
   {currentWord}
 </span>  Online Coding Classes</h1>
-          <h1 className="hidden md:flex mb-6 text-xs lg:text-base md:max-w-sm lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
+          <h1 className="hidden md:flex mb-6 text-xs lg:text-base md:max-w-md lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
           <Button path="" title="Discover Course" />
         </div>
     <div className="md:w-2/5">
