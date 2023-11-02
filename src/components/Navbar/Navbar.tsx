@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
 import Button from '../Button';
 
@@ -9,6 +9,11 @@ type NavLink = {
 };
 
 export const Navbar: React.FC = () => {
+   const location = useLocation();
+
+   const currentPath = (route: string) => {
+      return location.pathname === route ? "bg-nav-blue" : "bg-white"
+   }
   
    const [nav, setNav] = useState(false);
 
@@ -36,8 +41,8 @@ export const Navbar: React.FC = () => {
    ];
 
    return (
-      <div className="bg-nav-blue">
-         <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 pt-7 sm:px-12 xl:px-28 lg:max-xl:max-w-6xl xlmax-w-7xl mx-auto">
+      <div className={`${currentPath("/")}`}>
+         <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-7 sm:px-12 xl:px-28 lg:max-xl:max-w-6xl xlmax-w-7xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/" className="flex items-center gap-2"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105'/>
                <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">

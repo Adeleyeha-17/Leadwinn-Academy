@@ -1,4 +1,5 @@
 import Faq from "../components/Faq";
+import Goal from "../components/Goal";
 import Growth from "../components/Growth";
 import Hero from "../components/Hero";
 import Learning from "../components/Learning";
@@ -18,6 +19,8 @@ export const Home: React.FC = () => {
             }/>
 
             <Learning />
+
+            <Goal />
 
             <Growth />
 
