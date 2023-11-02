@@ -29,7 +29,7 @@ export const Goal = () => {
       <div className="flex flex-col lg:flex-row gap-5 lg:justify-between mt-5 sm:mt-10">
 
    {goalData.map((data, index) => (
-      <div key={index} className="w-[340px] lg:w-[350px] h-[94px] rounded-xl shadow-lg shadow-outline bg-white flex items-center relative">
+      <div key={index} className="w-[350px] h-[94px] rounded-xl shadow-lg shadow-outline bg-white flex items-center relative">
          <h1 className="w-[227px] ml-5 text-sm flex flex-col">{data.text}<span className="text-head-black font-semibold"> {data.boldedText}</span></h1>
          <img src={data.img} alt="sign post" className="w-[63px] h-[63px] absolute right-0 bottom-0" />
          </div>
