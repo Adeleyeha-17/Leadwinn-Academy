@@ -44,21 +44,21 @@ export const Hero: React.FC<HomeProps> = () => {
     </div>
       </div>
 
-      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:h-[184] w-2/5 sm:w-[811px] rounded-[50px] font-poppins text-white font-semibold text-xs mx-auto max-sm:mt-16 py-3 sm:px-6">
-        <div className="items-center justify-between sm:flex mt-5">
+      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:max-lg:h-[160px] sm:max-lg:w-[650px] lg:h-[184] w-2/5 lg:w-[811px] rounded-[50px] font-poppins text-white font-semibold text-xs sm:text-[9px] lg:text-sm mx-auto max-sm:mt-16 py-3 sm:px-6 xl:mt-32">
+        <div className="items-center justify-between sm:flex mt-5 sm:mt-3 lg:mt-5">
 
         <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
           <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-16 lg:w-3/4" />
           <h1>Over 100+ Students</h1>
         </div>
-        <div className="w-16 sm:w-20 mb-8 sm:m-12 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
+        <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex flex-col mb-10 sm:mb-14 items-center justify-center mx-auto">
           <img src="./edu2.svg" alt="" className="mx-auto mb-4 w-16 lg:w-3/4" />
           <h1>Over 100+ Certified</h1>
         </div>
 
-        <div className="w-16 sm:w-20 mb-8 sm:m-12 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
+        <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex justify-center flex-col mb-8 sm:mb-12 items-center mx-auto">
           <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-16 lg:w-3/4" />
