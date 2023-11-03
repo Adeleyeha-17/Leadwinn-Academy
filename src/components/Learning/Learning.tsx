@@ -8,7 +8,7 @@ export const Learning = () => {
       <h1 className="font-bold text-sm sm:text-xl lg:text-3xl">Start your learning journey today!</h1>
       <h1 className="text-xs sm:text-xs lg:text-base mb-2 sm:mb-5">Start Your Learning Journey and Discover a World of Opportunities Await</h1>
 
-      <Link to="" className="flex justify-center items-center py-2 lg:py-3 px-4 lg:px-6 bg-head-blue text-white text-xs md:text-sm font-semibold rounded-3xl">Sign up now</Link>
+      <Link to="" className="flex justify-center items-center py-2 lg:py-3 px-4 lg:px-6 bg-head-blue text-white text-xs md:text-sm font-medium sm:font-semibold rounded-3xl">Sign up now</Link>
 
       </div>
     </div>
