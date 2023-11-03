@@ -58,7 +58,7 @@ export const Testimonial = () => {
          <div className='rounded-full w-10 h-10 md:bg-white md:bg-opacity-5 absolute top-6 right-12'></div>
 
          <div>
-            <h1 className="text-sm md:text-base lg:text-2xl font-bold mb-3 md:mb-6 max-md:text-center z-10">What are the parents saying?</h1>
+            <h1 className="text-sm md:text-base lg:text-2xl font-bold mb-3 md:mb-6 max-sm:text-center z-10">What are the parents saying?</h1>
          </div>
 
          <div className="grid sm:grid-cols-2 items-center mb-10">
@@ -66,7 +66,7 @@ export const Testimonial = () => {
                <img src="./sliderImg.svg" alt="slider Image" className="w-4/5"/>
             </div>
 
-            <div className=' md:bg-white font-poppins md:bg-opacity-30 rounded-lg h-32 md:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 flex items-center justify-center md:-ml-12 lg:-ml-28'>
+            <div className=' md:bg-white font-poppins md:bg-opacity-30 rounded-lg h-32 sm:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 flex items-center justify-center md:-ml-12 lg:-ml-28'>
                <Slider {...sliderSettings} className='w-full lg:w-4/5'>
                   {
                   testimonials.map((testimonial, index) => (
