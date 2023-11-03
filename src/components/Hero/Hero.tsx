@@ -33,10 +33,10 @@ export const Hero: React.FC<HomeProps> = () => {
     <div>
       <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 md:py-6 px-5 xl:px-28 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
         <div className="font-poppins text-head-black md:w-3/5">
-          <h1 className="max-sm:text-[25px] sm:max-lg:text-[30px] lg:max-xl:text-[37px] xl:max-2xl:text-[40.5px] 2xl:text-[60px] font-bold mb-6 leading-normal max-w-md sm:mx-0 sm:max-w-[400px] lg:max-2xl:max-w-[540px] 2xl:max-w-[820px]">Engage in the Future of Learning with <span className={`${currentColorClass}`}>
+          <h1 className="max-sm:text-[25px] sm:max-lg:text-[30px] lg:max-xl:text-[37px] xl:max-2xl:text-[2.56rem] 2xl:text-[60px] font-bold mb-6 leading-normal max-w-md sm:mx-0 sm:max-w-[400px] lg:max-2xl:max-w-[545px] 2xl:max-w-[820px]">Engage in the Future of Learning with <span className={`${currentColorClass}`}>
   {currentWord}
 </span>  Online Coding Classes</h1>
-          <h1 className="hidden md:flex mb-6 text-xs lg:text-base md:max-w-[430px] lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
+          <h1 className="hidden md:flex mb-6 text-xs lg:text-base sm:max-w-[26rem] lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
           <Button path="" title="Discover Course" />
         </div>
     <div className="md:w-2/5">
@@ -44,24 +44,24 @@ export const Hero: React.FC<HomeProps> = () => {
     </div>
       </div>
 
-      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:h-52 w-2/5 sm:w-2/4 rounded-[50px] font-poppins text-white font-semibold text-xs xl:text-base mx-auto max-sm:mt-16 py-4">
-        <div className="items-center justify-between sm:flex">
+      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:h-[184] w-2/5 sm:w-[811px] rounded-[50px] font-poppins text-white font-semibold text-xs mx-auto max-sm:mt-16 py-3 sm:px-6">
+        <div className="items-center justify-between sm:flex mt-5">
 
         <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
-          <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-20 sm:w-3/4" />
+          <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-16 lg:w-3/4" />
           <h1>Over 100+ Students</h1>
         </div>
         <div className="w-16 sm:w-20 mb-8 sm:m-12 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex flex-col mb-10 sm:mb-14 items-center justify-center mx-auto">
-          <img src="./edu2.svg" alt="" className="mx-auto mb-4 w-20 sm:w-3/4" />
+          <img src="./edu2.svg" alt="" className="mx-auto mb-4 w-16 lg:w-3/4" />
           <h1>Over 100+ Certified</h1>
         </div>
 
         <div className="w-16 sm:w-20 mb-8 sm:m-12 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex justify-center flex-col mb-8 sm:mb-12 items-center mx-auto">
-          <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-20 sm:w-3/4" />
+          <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-16 lg:w-3/4" />
           <h1>Over 10+ Countries</h1>
         </div>
         </div>
