@@ -59,7 +59,7 @@ export const Testimonial = () => {
 
          <div className="py-10 md:px-12 md:py-20 px-5 xl:px-28 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
           <div>
-            <h1 className="text-sm md:text-base lg:text-[40px] leading-[48px] font-bold mb-3 md:mb-12 text-center sm:text-left z-10">What are the parents saying?</h1>
+            <h1 className="text-sm md:text-xl lg:text-[40px] leading-[48px] font-bold mb-3 lg:mb-12 text-center sm:text-left z-10">What are the parents saying?</h1>
          </div>
       
          <div className="grid sm:grid-cols-2 items-center mb-10">
