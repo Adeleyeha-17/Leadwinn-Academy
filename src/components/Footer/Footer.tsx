@@ -39,10 +39,10 @@ export const Footer: React.FC = () => {
    ]
 
    return (
-      <div className="bg-footer-blue text-white font-poppins pb-20 md:px-12 px-5 py-10 xl:px-28 md:py-20  lg:max-xl:max-w-6xl mx-auto">
-         <div className="grid grid-flow-row sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 ">
+      <div className="bg-footer-blue text-white font-poppins pb-20 md:px-12 px-5 py-10 xl:px-28 md:py-20 lg:max-xl:max-w-6xl mx-auto">
+         <div className="grid sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 ">
           
-            <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
+            <div className="flex flex-col gap-2 w-full">
                <h1 className="text-sm lg:text-base font-bold">Contact Us</h1>
 
                <div className="flex gap-4">
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
                </div>
             </div>
 
-            <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
+            <div className="flex flex-col gap-2 w-full">
                <h1 className="text-sm font-bold lg:text-base">Quick Links</h1>
                <div className="flex flex-col gap-2 text-xs md:text-sm ">
                   {
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
             </div>
   
             
-            <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
+            <div className="flex flex-col gap-2 w-full">
                <h1 className="text-sm lg:text-base font-bold">Socials</h1>
 
                <div className="flex gap-5">
@@ -123,7 +123,7 @@ export const Footer: React.FC = () => {
                </div>
             </div>
 
-            <div className="flex flex-col gap-2 w-full sm:max-lg:w-2/3 sm:max-lg:mx-auto">
+            <div className="flex flex-col gap-2 w-full">
                <h1 className="text-sm lg:text-base font-bold">Newsletter</h1>
 
                <h1 className="text-xs md:text-sm">Sign up with your email to join our mailing list</h1>
