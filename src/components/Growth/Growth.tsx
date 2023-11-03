@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export const Growth = () => {
   return (
-   <div className="flex flex-col md:flex-row justify-between py-10 sm:px-12 md:py-20 px-5 xl:px-28 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto md:bg-[#F4F7FA] font-poppins">
+   <div className="flex flex-col md:flex-row justify-between py-10 lg:px-12 md:py-20 px-5 xl:px-28 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto md:bg-[#F4F7FA] font-poppins">
     <div className="flex max-sm:flex-col justify-between items-center w-full">
       <div className="flex flex-col gap-4 lg:gap-6 text-head-black md:w-3/5 max-sm:mb-10">
          <h1 className=" font-bold text-2xl lg:text-4xl max-w-[330px] lg:max-w-[440px] max-sm:capitalize">See our growth, progress, and <span className="text-hero-blue">evolution</span></h1>
