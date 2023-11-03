@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const Learning = () => {
   return (
-    <div className="bg-learning-mobile bg-learning bg-contain bg-no-repeat flex items-center justify-center sm:h-[240px] lg:h-[300px] xl:h-[400px] font-poppins mx-auto">
+    <div className="bg-learning-mobile sm:bg-learning bg-contain bg-no-repeat flex items-center justify-center sm:h-[240px] lg:h-[300px] xl:h-[400px] font-poppins mx-auto">
       <div className="flex flex-col gap-2 items-center text-center text-head-black">
       <h1 className="font-bold text-xs sm:text-xl lg:text-3xl">Start your learning journey today!</h1>
       <h1 className="text-[10px] sm:text-xs lg:text-base mb-5">Start Your Learning Journey and Discover a World of Opportunities Await</h1>
