@@ -33,10 +33,10 @@ export const Hero: React.FC<HomeProps> = () => {
     <div>
       <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 md:py-6 px-5 xl:px-28 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
         <div className="font-poppins text-head-black md:w-3/5">
-          <h1 className="max-sm:text-[25px] sm:max-lg:text-[30px] lg:max-xl:text-[37px] xl:max-2xl:text-[40.5px] 2xl:text-[50px] font-bold mb-6 leading-normal max-w-md mx-auto sm:mx-0 md:max-w-[560px] ">Engage in the Future of Learning with <span className={`${currentColorClass}`}>
+          <h1 className="max-sm:text-[25px] sm:max-lg:text-[30px] lg:max-xl:text-[37px] xl:max-2xl:text-[40.5px] 2xl:text-[60px] font-bold mb-6 leading-normal max-w-md sm:mx-0 md:max-2xl:max-w-[570px] 2xl:max-w-[820px]">Engage in the Future of Learning with <span className={`${currentColorClass}`}>
   {currentWord}
 </span>  Online Coding Classes</h1>
-          <h1 className="hidden md:flex mb-6 text-xs lg:text-base md:max-w-md lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
+          <h1 className="hidden md:flex mb-6 text-xs lg:text-base 2xl:text-2xl md:max-w-md lg:max-w-xl 2xl:max-w-[52rem]">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
           <Button path="" title="Discover Course" />
         </div>
     <div className="md:w-2/5">
