@@ -31,7 +31,7 @@ export const Hero: React.FC<HomeProps> = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 sm:px-12 md:py-6 px-5 xl:px-28 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
+      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 md:py-6 px-5 xl:px-28 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
         <div className="font-poppins text-head-black md:w-3/5">
           <h1 className="max-sm:text-[25px] sm:max-lg:text-[30px] lg:max-xl:text-[37px] xl:max-2xl:text-[40.5px] 2xl:text-[50px] font-bold mb-6 leading-normal max-w-md mx-auto sm:mx-0 md:max-w-[400px] lg:max-w-[580px]">Engage in the Future of Learning with <span className={`${currentColorClass}`}>
   {currentWord}
@@ -40,7 +40,7 @@ export const Hero: React.FC<HomeProps> = () => {
           <Button path="" title="Discover Course" />
         </div>
     <div className="md:w-2/5">
-        <img src="./homeIllustration.svg" alt="home illustration" className="w-3/4 md:w-full h-full"/>
+        <img src="./homeIllustration.svg" alt="home illustration" className="max-lg:mx-auto w-3/4 md:w-full h-full"/>
     </div>
       </div>
 
