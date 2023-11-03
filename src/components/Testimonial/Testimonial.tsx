@@ -46,7 +46,7 @@ export const Testimonial = () => {
    };
 
    return (
-      <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra md:h-4/5 font-poppins text-white overflow-hidden relative ">
+      <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra md:h-4/5 font-poppins text-white overflow-hidden relative">
          <div className='rounded-full w-12 h-12 md:bg-white md:bg-opacity-5 absolute top-6'></div>
          <div className='rounded-full w-14 h-14 md:bg-white md:bg-opacity-5 absolute right-9 bottom-28'></div>
          <div className='rounded-full w-40 h-40 md:bg-white md:bg-opacity-5 absolute top-20 xl:top-40 left-[400px] xl:left-[600px]'></div>
@@ -61,11 +61,7 @@ export const Testimonial = () => {
           <div>
             <h1 className="text-sm md:text-base lg:text-2xl font-bold mb-3 md:mb-6 text-center sm:text-left z-10">What are the parents saying?</h1>
          </div>
-   <div className="flex flex-col md:flex-row justify-between ">
-         
-
-        
-
+      
          <div className="grid sm:grid-cols-2 items-center mb-10">
             <div className='max-sm:mb-5'>
                <img src="./sliderImg.svg" alt="slider Image" className="max-sm:w-3/5 max-sm:mx-auto"/>
@@ -92,7 +88,6 @@ export const Testimonial = () => {
                } </Slider>
             </div>
          </div>
-      </div>
       </div>
       </div>
    )

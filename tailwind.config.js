@@ -31,7 +31,8 @@ export default {
       backgroundImage: {
         "desktop" : "url(/desktop.svg)",
         "mobile" : "url(/mobile.svg)",
-        "learning" : "url(/startlearning.svg)"
+        "learning" : "url(/startlearning.svg)",
+        "learning-mobile": "url(/learningmobile.svg)"
       },
       margin: {
         "15" : "54.4px"

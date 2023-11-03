@@ -1,6 +1,10 @@
 
 export const Whychoose = () => {
+
+
   return (
-    <div>Whychoose</div>
-  )
-}
+    
+  <div className='flex'>
+    wHYCHOOSE
+     </div>
+)}
