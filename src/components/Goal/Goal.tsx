@@ -29,8 +29,8 @@ export const Goal = () => {
       <div className="sm:max-lg:grid sm:max-lg:grid-cols-2 flex flex-col lg:flex-row gap-5 lg:justify-between mt-5 sm:mt-10">
 
    {goalData.map((data, index) => (
-      <div key={index} className="w-[22rem] sm:w-[19rem] md:w-[21rem] mx-auto sm:mx-0 lg:w-[22rem] h-[6rem] rounded-xl shadow-lg shadow-outline bg-white flex items-center relative">
-         <h1 className="w-[14.1875rem] ml-5 text-sm flex flex-col">{data.text}<span className="text-head-black font-semibold"> {data.boldedText}</span></h1>
+      <div key={index} className="w-full sm:w-11/12 mx-auto sm:mx-0 h-[6rem] rounded-xl shadow-lg shadow-outline bg-white flex items-center relative">
+         <h1 className="w-[14rem] ml-5 text-sm flex flex-col">{data.text}<span className="text-head-black font-semibold"> {data.boldedText}</span></h1>
          <img src={data.img} alt="sign post" className="absolute right-0 bottom-0" />
          </div>
    ))}
