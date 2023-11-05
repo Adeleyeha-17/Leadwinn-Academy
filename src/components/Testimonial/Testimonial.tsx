@@ -49,7 +49,7 @@ export const Testimonial = () => {
       <div className="bg-gradient-to-tl from-test-gra-2 to-test-gra md:h-4/5 font-poppins text-white overflow-hidden relative">
          <div className='rounded-full w-12 h-12 md:bg-white md:bg-opacity-5 absolute top-6'></div>
          <div className='rounded-full w-14 h-14 md:bg-white md:bg-opacity-5 absolute right-9 bottom-28'></div>
-         <div className='rounded-full w-40 h-40 md:bg-white md:bg-opacity-5 absolute top-20 xl:top-40 left-[400px] xl:left-[600px]'></div>
+         <div className='rounded-full w-40 h-40 md:bg-white md:bg-opacity-5 absolute top-20 xl:top-40 left-[25rem] xl:left-[37.5rem]'></div>
          <div className='rounded-full w-32 h-32 md:bg-white md:bg-opacity-5 absolute bottom-10 xl:bottom-20 left-10 xl:left-18'></div>
          <div className='rounded-full w-28 h-28 md:bg-white md:bg-opacity-5 absolute top-12 xl:top-32 right-40'></div>
          <div className='rounded-full w-32 h-32 md:bg-white md:bg-opacity-5 absolute right-40 bottom-4'></div>
@@ -59,7 +59,7 @@ export const Testimonial = () => {
 
          <div className="py-10 md:px-12 md:py-20 px-5 xl:px-28 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
           <div>
-            <h1 className="text-xl lg:text-[40px] lg:leading-[48px] font-bold mb-3 lg:mb-12 text-center sm:text-left z-10">What are the parents saying?</h1>
+            <h1 className="text-xl lg:text-[2.5rem] lg:leading-[3rem] font-bold mb-3 lg:mb-12 text-center sm:text-left z-10">What are the parents saying?</h1>
          </div>
       
          <div className="grid sm:grid-cols-2 items-center mb-10">
