@@ -18,18 +18,18 @@ export const Home: React.FC = () => {
             colors={
                []
             }/>
-            <Whychoose />
+            {/* <Whychoose /> */}
 
-            <Learning />
+            {/* <Learning /> */}
 
 
-            <Goal />
+            {/* <Goal /> */}
 
-            <Growth />
+            {/* <Growth /> */}
 
-            <Testimonial/>
+            {/* <Testimonial/> */}
 
-            <Faq/>
+            {/* <Faq/> */}
 
 
       </div>
