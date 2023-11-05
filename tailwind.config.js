@@ -26,7 +26,7 @@ export default {
         "home-gra" : "#012956",
         "home-gra-2" : "#2587F7",
         "test-gra" : "#0965CE",
-        "test-gra-2" : "#01152C"
+        "test-gra-2" : "#01152C",
       },
       backgroundImage: {
         "desktop" : "url(/desktop.png)",
