@@ -31,7 +31,7 @@ export const Goal = () => {
    {goalData.map((data, index) => (
       <div key={index} className="w-full sm:w-11/12 mx-auto sm:mx-0 h-[6rem] rounded-xl shadow-lg shadow-outline bg-white flex items-center relative">
          <h1 className="w-[14rem] ml-5 text-sm flex flex-col">{data.text}<span className="text-head-black font-semibold"> {data.boldedText}</span></h1>
-         <img src={data.img} alt="sign post" className="absolute right-0 bottom-0" />
+         <img src={data.img} alt="sign post" className="w-full absolute right-0 bottom-0" />
          </div>
    ))}
    </div>
