@@ -11,15 +11,15 @@ export const Goal = () => {
       {
          text: "I wish to enhance my skills and",
          boldedText: "expand my understanding",
-         img: "./Clip path group.svg"
+         img: "./flag.png"
       }, {
          text: "I aim to investigate and",
          boldedText: "chart my career trajectory",
-         img: "./signpost.svg.svg"
+         img: "./signpost.png"
       }, {
          text: "I want to explore my",
          boldedText: "hobbies and interests",
-         img: "./jigsaw.svg.svg"
+         img: "./Clippath.png"
       }
    ]
   return (
@@ -31,7 +31,7 @@ export const Goal = () => {
    {goalData.map((data, index) => (
       <div key={index} className="w-full sm:w-11/12 mx-auto sm:mx-0 h-[6rem] rounded-xl shadow-md shadow-outline bg-white flex items-center relative">
          <h1 className="w-[14rem] ml-5 text-sm flex flex-col">{data.text}<span className="text-head-black font-semibold"> {data.boldedText}</span></h1>
-         {/* <img src={data.img} alt="sign post" className="w-1/5 absolute right-0 bottom-0" />*/}
+         <img src={data.img} alt="sign post" className="w-1/5 absolute right-0 bottom-0" />
          </div>
    ))}
    </div>
