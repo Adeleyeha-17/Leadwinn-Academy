@@ -40,7 +40,7 @@ export const Hero: React.FC<HomeProps> = () => {
           <Button path="" title="Discover Course" />
         </div>
     <div className="md:w-2/5">
-        <img src="./homeIllustration.svg" alt="home illustration" className="max-lg:mx-auto w-3/4 md:w-full h-full"/>
+        {/* <img src="./homeIllustration.svg" alt="home illustration" className="max-lg:mx-auto w-3/4 md:w-full h-full"/> */}
     </div>
       </div>
 
@@ -48,20 +48,20 @@ export const Hero: React.FC<HomeProps> = () => {
         <div className="items-center justify-between sm:flex mt-5 sm:mt-3 lg:mt-0">
 
         <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
-          <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+          {/* <img src="./edu1.svg" alt="" className="mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" /> */}
           <h1>Over 100+ Students</h1>
         </div>
         <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex flex-col mb-10 sm:mb-14 items-center justify-center mx-auto mt-2">
-          <img src="./edu2.svg" alt="" className="mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+          {/*<img src="./edu2.svg" alt="" className="mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" /> */}
           <h1>Over 100+ Certified</h1>
         </div>
 
         <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
         <div className="flex justify-center flex-col mb-8 sm:mb-12 items-center mx-auto">
-          <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+          {/* <img src="./edu3.svg" alt="" className="mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" /> */}
           <h1>Over 10+ Countries</h1>
         </div>
         </div>
