@@ -40,7 +40,7 @@ export const Hero: React.FC<HomeProps> = () => {
           <Button path="" title="Discover Course" />
         </div>
     <div className="md:w-2/5">
-        <img src="./Eden.png" alt="home illustration" className="max-w-full max-lg:mx-auto w-3/4 md:w-11/12"/>
+        <img src="./homeIllustration.png" alt="home illustration" className="max-w-full max-lg:mx-auto w-3/4 md:w-11/12"/>
     </div>
       </div>
 
