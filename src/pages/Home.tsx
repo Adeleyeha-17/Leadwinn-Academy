@@ -3,7 +3,7 @@
 // import Growth from "../components/Growth";
 // import Hero from "../components/Hero";
 // import Learning from "../components/Learning";
-// import Testimonial from "../components/Testimonial";
+import Testimonial from "../components/Testimonial";
 import Whychoose from "../components/Whychoose";
 
 
@@ -27,7 +27,7 @@ export const Home: React.FC = () => {
 
             {/* <Growth /> */}
 
-            {/* <Testimonial/> */}
+            <Testimonial/>
 
             {/* <Faq/> */}
 
