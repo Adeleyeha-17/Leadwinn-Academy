@@ -13,7 +13,7 @@ export const Growth = () => {
       </div>
 
       <div className="md:w-3/6">
-         <img src="./growth.png" alt="growth image" className="max-w-full w-10/12 md:w-full"/>
+         <img src="./growth.png" alt="growth image" className="max-w-full w-full"/>
       </div>
     </div>
     </div>
