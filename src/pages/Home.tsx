@@ -10,7 +10,7 @@ import Whychoose from "../components/Whychoose";
 export const Home: React.FC = () => {
 
    return (
-      <div className="bg-mobile sm:bg-desktop bg-contain bg-no-repeat">
+      <div className="">
          
          {/*<Hero words={
                []
@@ -35,3 +35,4 @@ export const Home: React.FC = () => {
       </div>
    );
 };
+//bg-mobile sm:bg-desktop bg-contain bg-no-repeat
