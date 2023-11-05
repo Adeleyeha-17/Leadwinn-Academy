@@ -29,10 +29,10 @@ export default {
         "test-gra-2" : "#01152C"
       },
       backgroundImage: {
-        "desktop" : "url(/desktop.svg)",
-        "mobile" : "url(/mobile.svg)",
-        "learning" : "url(/startlearning.svg)",
-        "learning-mobile": "url(/learningmobile.svg)"
+        "desktop" : "url(/desktop.png)",
+        "mobile" : "url(/mobile.png)",
+        "learning" : "url(/startlearning.png)",
+        "learning-mobile": "url(/startlearningmobile.png)"
       },
       margin: {
         "15" : "54.4px"
