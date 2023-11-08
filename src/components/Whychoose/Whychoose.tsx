@@ -70,14 +70,15 @@ export const Whychoose = () => {
         {WhyChoose.map((data, index) => (
           <div key={index} className="flex">
             <div className='w-1/2'>
-            <img src={activeIndex === index && data.img}/>
+            <img src={activeIndex === index ? data.img : ''} alt={data.heading} />
             </div>
 
             <div className='w-1/2'>
-            <img src={activeIndex === index ? data.active : data.notActive} onClick={() => handleItemClick(index)} className='mb-7 w-10 flex mr-20' />
-              <h1 className='font-bold text-3xl text-head-black mb-7'>{activeIndex === index && data.heading}</h1>
-              <h4 className='text-base'>{activeIndex === index && data.text}</h4>
-            </div>
+  {activeIndex === index && <img src={data.active} onClick={() => handleItemClick(index)} className='mb-7 w-10 flex mr-20' />}
+  {activeIndex === index && <h1 className='font-bold text-3xl text-head-black mb-7'>{data.heading}</h1>}
+  {activeIndex === index && <h4 className='text-base'>{data.text}</h4>}
+</div>
+
           </div>
         ))}
       </div>
