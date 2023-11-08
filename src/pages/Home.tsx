@@ -1,3 +1,4 @@
+import Courses from "../components/Courses";
 import Faq from "../components/Faq";
 import Goal from "../components/Goal";
 import Growth from "../components/Growth";
@@ -25,6 +26,8 @@ export const Home: React.FC = () => {
 
 
             <Goal />
+
+            <Courses />
 
             <Growth />
 
