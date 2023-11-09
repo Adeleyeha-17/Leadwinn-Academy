@@ -46,9 +46,9 @@ export const Courses = () => {
 
       <div className="grid grid-cols-6 sm:grid-cols-2 lg:grid-cols-3 gap-72 sm:gap-10">
          {courses.map((data, index) => (
-            <div key={index} className="w-[17rem] sm:w-[17rem] xl:w-[21rem] relative rounded-xl overflow-hidden mx-auto">
+            <div key={index} className="w-[17rem] sm:w-[17rem] xl:w-[21rem] relative rounded-3xl overflow-hidden mx-auto">
                <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
-               <div className="absolute translate-y-40 xl:translate-y-48 hover:translate-y-0 transition ease-in-out duration-680 flex flex-col justify-center items-center gap-10 bg-courses bg-opacity-70 backdrop-blur-sm inset-0 text-white rounded-3xl rounded-t-none">
+               <div className="absolute translate-y-40 xl:translate-y-52 hover:translate-y-0 transition ease-in-out duration-680 flex flex-col justify-center items-center gap-10 bg-courses bg-opacity-70 backdrop-blur-sm inset-0 text-white rounded-3xl rounded-t-none">
                   <h1 className="font-bold text-xs sm:text-base xl:text-xl">{data.heading}</h1>
                   <img src={data.overlayImg} alt={data.heading} className="max-sm:w-[2rem] max-xl:w-[3rem]"/>
 
