@@ -38,7 +38,7 @@ export const Courses = () => {
    ]
 
   return (
-    <div className="bg-footer-blue h-screen py-10 md:px-12 md:py-20 px-5 xl:px-28 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto font-poppins">
+    <div className="bg-footer-blue h-screen py-10 md:px-12 md:py-20 px-5 xl:px-52 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto font-poppins">
       <div className="text-center text-white">
          <h1 className="font-bold text-3xl mb-3">Explore Our Courses</h1>
          <h4 className="max-w-2xl mx-auto">Our Microdegrees are specialized programs which upon completion will set you firmly on your chosen IT career path</h4>
