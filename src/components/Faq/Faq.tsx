@@ -32,7 +32,7 @@ export const Faq: React.FC = () => {
    ];
 
    return (
-      <div className="px-6 sm:px-10 md:px-20 lg:px-52 p-10 md:max-lg:max-w-6xl mx-auto font-poppins">
+      <div className="px-6 sm:px-10 md:px-20 lg:px-52 xl:px-64 p-10 md:max-lg:max-w-6xl mx-auto font-poppins">
         <h1 className="text-head-black font-bold text-base sm:text-xl lg:text-3xl xl:text-4xl mb-8 flex items-center justify-center">Frequency Asked Question
         </h1>
          
