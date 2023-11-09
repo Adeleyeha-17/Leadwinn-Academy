@@ -56,7 +56,7 @@ export const Whychoose = () => {
   }, [activeIndex]);
 
   return (
-    <div className="py-10 md:px-12 md:py-20 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto font-poppins">
+    <div className="py-10 md:px-12 md:py-20 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto font-poppins hidden">
       <div>
         <h2 className="text-head-black font-bold max-sm:text-xl sm:text-[2.5rem] leading-[3rem] sm:mb-3">
           Why Choose <span className="text-hero-blue">Leadwinn?</span>
