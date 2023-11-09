@@ -57,7 +57,7 @@ export const Testimonial = () => {
          <div className='rounded-full w-20 h-20 md:bg-white md:bg-opacity-5 absolute left-52 top-40'></div>
          <div className='rounded-full w-10 h-10 md:bg-white md:bg-opacity-5 absolute top-6 right-12'></div>
 
-         <div className="py-10 md:px-12 md:py-20 px-5 xl:px-52 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+         <div className="py-10 md:px-12 md:py-20 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
           <div>
             <h1 className="text-xl lg:text-[2.5rem] lg:leading-[3rem] font-bold mb-3 lg:mb-12 text-center sm:text-left z-10">What are the parents saying?</h1>
          </div>
