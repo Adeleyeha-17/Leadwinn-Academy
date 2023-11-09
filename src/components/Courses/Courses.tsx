@@ -48,7 +48,7 @@ export const Courses = () => {
          {courses.map((data, index) => (
             <div key={index} className="w-[26rem] relative rounded-xl overflow-hidden">
                <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
-               <div className="absolute translate-y-56 hover:translate-y-0 transition ease-in-out duration-400 flex flex-col justify-center items-center gap-10 bg-courses bg-opacity-1 backdrop-blur-sm inset-0 text-white rounded-xl rounded-t-none">
+               <div className="absolute translate-y-56 hover:translate-y-0 transition ease-in-out duration-400 flex flex-col justify-center items-center gap-10 bg-courses bg-opacity-70 backdrop-blur-sm inset-0 text-white rounded-xl rounded-t-none">
                   <h1 className="font-bold text-xl">{data.heading}</h1>
                   <img src={data.overlayImg} alt={data.heading} />
 

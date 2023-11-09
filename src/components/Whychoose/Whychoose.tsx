@@ -74,7 +74,7 @@ export const Whychoose = () => {
             </div>
 
             <div className='w-1/2'>
-  {activeIndex === index && <img src={data.active} onClick={() => handleItemClick(index)} className='mb-7 w-10 flex mr-20' />}
+  <img src={activeIndex === index ? data.active : data.notActive} onClick={() => handleItemClick(index)} className='mb-7 w-10 flex mr-20' />
   {activeIndex === index && <h1 className='font-bold text-3xl text-head-black mb-7'>{data.heading}</h1>}
   {activeIndex === index && <h4 className='text-base'>{data.text}</h4>}
 </div>
