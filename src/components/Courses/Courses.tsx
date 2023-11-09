@@ -48,7 +48,7 @@ export const Courses = () => {
          {courses.map((data, index) => (
             <div key={index} className="w-[25rem] relative mx-auto rounded-xl overflow-hidden">
                <img src={data.img} alt={data.heading} className="w-[29rem] rounded-xl mx-auto" />
-               <div className="absolute top-0 bottom-0 right-0 left-0 flex flex-col justify-center items-center gap-10 bg-black bg-opacity-70 backdrop-blur-md text-white rounded-xl">
+               <div className="absolute top-0 bottom-0 right-0 left-0 flex flex-col justify-center items-center gap-10 bg-black bg-opacity-70 backdrop-blur-sm text-white rounded-xl">
                   <h1>{data.heading}</h1>
                   <img src={data.overlayImg} alt={data.heading} />
 
