@@ -54,7 +54,7 @@ export const Whychoose: React.FC = () => {
   ];
 
   return (
-    <div className="my-24 flex flex-col justify-center overflow-hidden">
+    <div className="my-24 flex flex-col justify-center overflow-hidden font-poppins">
 
 <div>
         <h2 className="text-head-black font-bold max-sm:text-xl sm:text-[2.5rem] leading-[3rem] sm:mb-3">

@@ -55,7 +55,11 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIn
             ))}
           </div>
         </div>
-        <h1 className="w-[50rem] whitespace-normal text-3xl">{item.description}</h1>
+        <div className="w-[40rem]">
+
+              <h1 className="mb-6 text-3xl font-bold text-head-black">{item.title}</h1>
+        <h1 className=" whitespace-normal text-base">{item.description}</h1>
+        </div>
       </div>
     </div>
   );
