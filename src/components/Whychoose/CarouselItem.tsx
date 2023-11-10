@@ -38,18 +38,18 @@ const Icons: Icon[] = [
 
 const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIndex }) => {
   return (
-    <div className="carousel-item w-full font-poppins">
+    <div className="inline-flex justify-center bg-white w-full font-poppins">
       <div className="w-1/2">
-        <img className="carousel-img" src={item.icon} alt={item.title} />
+        <img src={item.icon} alt={item.title} />
       </div>
 
       <div className="w-1/2">
-        <div className="carousel-buttons">
-          <div className="indicators">
+        <div className="cursor-pointer border-none">
+          <div className="flex items-center justify-start space-x-5 mb-4">
             {Icons.map((icon, i) => (
-              <button key={i} className="indicator-buttons" onClick={() => updateIndex(i)}>
-                <span className={`${i === activeIndex ? "indicator-symbol-active" : "indicator-symbol"}`}>
-                  <img src={i === activeIndex ? icon.active : icon.notActive} alt="" />
+              <button key={i} className="m-1 bg-none" onClick={() => updateIndex(i)}>
+                <span>
+                  <img src={i === activeIndex ? icon.active : icon.notActive} />
                 </span>
               </button>
             ))}

@@ -54,7 +54,18 @@ export const Whychoose: React.FC = () => {
   ];
 
   return (
-    <div className="carousel my-24">
+    <div className="my-24 flex flex-col justify-center overflow-hidden">
+
+<div>
+        <h2 className="text-head-black font-bold max-sm:text-xl sm:text-[2.5rem] leading-[3rem] sm:mb-3">
+          Why Choose <span className="text-hero-blue">Leadwinn?</span>
+        </h2>
+        <h3 className="max-sm:text-xs text-base text-head-black max-w-[20rem] sm:max-w-[30rem]">
+          At Leadwinn, we're dedicated to providing the best online coding education for kids and teens. Here are the compelling reasons why you should choose us
+        </h3>
+      </div>
+
+
       <div className="inner" style={{ transform: `translate(-${activeIndex * 100}%)` }}>
         {items.map((item, index) => (
           <CarouselItem key={index} item={item} activeIndex={activeIndex} updateIndex={updateIndex} />
