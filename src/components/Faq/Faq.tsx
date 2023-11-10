@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
+import { motion } from "framer-motion"
 
 export const Faq: React.FC = () => {
    const [activeAccordion, setActiveAccordion] = useState(0);
-
    const toggleTab = (index : number) => {
       setActiveAccordion(index === activeAccordion ? 0 : index);
    };
@@ -51,15 +51,18 @@ export const Faq: React.FC = () => {
                      activeAccordion === index + 1 ? <img src="./accordionBtnUp.svg" className='w-4 md:w-8'/> : <img src="./accordionBtnDown.svg" className='w-5 md:w-8'/>
                   }</span>
                </div>
-               {
-               activeAccordion === index + 1 && (
-                  <div className='pr-6 sm:pr-10'>
-                     <p className='text-head-black text-xs md:text-base '>{
-                        data.content
-                     }</p>
-                  </div>
-               )
-            } </div>
+               <motion.div
+  className="pr-6 sm:pr-10 overflow-hidden"
+  initial={{ opacity: 0, height: 0 }}
+  animate={{
+    opacity: activeAccordion === index + 1 ? 1 : 0,
+    height: activeAccordion === index + 1 ? 'auto' : 0,
+  }}
+  transition={{ duration: 0.3 }}
+>
+  <p className="text-head-black text-xs md:text-base ">{data.content}</p>
+</motion.div>
+ </div>
             ))
          } </div>
          
