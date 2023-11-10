@@ -57,7 +57,7 @@ export const Whychoose: React.FC = () => {
     <div className="carousel my-24">
       <div className="inner" style={{ transform: `translate(-${activeIndex * 100}%)` }}>
         {items.map((item, index) => (
-          <CarouselItem key={index} item={item} activeIndex={activeIndex} index={index} updateIndex={updateIndex} />
+          <CarouselItem key={index} item={item} activeIndex={activeIndex} updateIndex={updateIndex} />
         ))}
       </div>
     </div>

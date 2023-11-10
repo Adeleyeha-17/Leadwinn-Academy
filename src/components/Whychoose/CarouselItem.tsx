@@ -9,9 +9,32 @@ interface CarouselItemProps {
     active: string;
   };
   activeIndex: number;
-  index: number;
   updateIndex: (newIndex: number) => void;
 }
+
+interface Icon {
+  notActive: string;
+  active: string;
+}
+
+const Icons: Icon[] = [
+  {
+    notActive: './expert.png',
+    active: './active_expert.png',
+  },
+  {
+    notActive: './age.png',
+    active: './active_age.png',
+  },
+  {
+    notActive: './learning.png',
+    active: './active_learning.png',
+  },
+  {
+    notActive: './convenient.png',
+    active: './active_convenient.png',
+  }
+];
 
 const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIndex }) => {
   return (
@@ -23,10 +46,10 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIn
       <div className="w-1/2">
         <div className="carousel-buttons">
           <div className="indicators">
-            {Array.from({ length: 4 }).map((_, i) => (
+            {Icons.map((icon, i) => (
               <button key={i} className="indicator-buttons" onClick={() => updateIndex(i)}>
                 <span className={`${i === activeIndex ? "indicator-symbol-active" : "indicator-symbol"}`}>
-                  radio_button_checked
+                  <img src={i === activeIndex ? icon.active : icon.notActive} alt="" />
                 </span>
               </button>
             ))}
