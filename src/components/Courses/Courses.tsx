@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
 export const Courses = () => {
+
 
    type course = {
       img: string;
