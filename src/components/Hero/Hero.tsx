@@ -12,11 +12,16 @@ export const Hero: React.FC<HomeProps> = () => {
    const words: string[] = ["Interactive", "Educative", "Informative"];
  
    const [currentIndex, setCurrentIndex] = useState<number>(0);
+   const [onloadAfter10Sec, setOnloadAfter10Sec] = useState(false);
  
    useEffect(() => {
      const interval = setInterval(() => {
        setCurrentIndex((index) => (index + 1) % words.length);
      }, 2000);
+
+     setTimeout(() => {
+      setOnloadAfter10Sec(true);
+    }, 1000);
  
      return () => {
        clearInterval(interval);
@@ -54,9 +59,15 @@ export const Hero: React.FC<HomeProps> = () => {
           <h1 className="hidden md:flex mb-6 text-xs lg:text-base sm:max-w-[26rem] lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
           <Button path="" title="Discover Course"/>
         </div>
-    <div className="md:w-2/5">
-        <img src="./homeIllustration.png" alt="home illustration" className="max-w-full max-lg:mx-auto w-3/4 md:w-11/12"/>
-    </div>
+       <div className="md:w-2/5">
+       <motion.img
+    src={onloadAfter10Sec ? "./homeillus.png" : "./homeIllustration.png"}
+    alt="home illustration"
+    className="max-w-full max-lg:mx-auto w-3/4 md:w-11/12"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1, transition: { duration: 1, ease: "easeInOut" } }}
+  />
+       </div>
       </div>
 
       <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:max-lg:h-[10rem] sm:max-lg:w-[40.625rem] lg:h-[10.3125rem] xl:h-[13.125rem] w-1/2 lg:w-3/4 rounded-[3.125rem] font-poppins text-white font-semibold text-sm xl:text-lg mx-auto max-sm:mt-16 py-3 sm:px-6 xl:mt-32">
