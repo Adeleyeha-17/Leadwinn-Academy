@@ -1,16 +1,15 @@
 
 import { useEffect, useState } from "react";
 import Button from "../Button";
+import { motion } from "framer-motion";
 
 type HomeProps = {
    words: string[];
-   colors: string[];
  };
 
 export const Hero: React.FC<HomeProps> = () => {
 
    const words: string[] = ["Interactive", "Educative", "Informative"];
-   const colors: string[] = ["text-hero-blue"];
  
    const [currentIndex, setCurrentIndex] = useState<number>(0);
  
@@ -25,7 +24,6 @@ export const Hero: React.FC<HomeProps> = () => {
    }, []);
  
    const currentWord: string = words[currentIndex];
-   const currentColorClass = colors;
  
  
 
@@ -33,11 +31,28 @@ export const Hero: React.FC<HomeProps> = () => {
     <div>
       <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 md:py-6 px-5 xl:px-40 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
         <div className="font-poppins text-head-black md:w-3/5">
-          <h1 className="max-sm:text-[1.625rem] sm:max-lg:text-[1.875rem] lg:max-xl:text-[2.3125rem] xl:max-2xl:text-[2.53125rem] 2xl:text-[3.125rem] font-bold mb-6 leading-normal sm:mx-0 max-w-[25rem] lg:max-2xl:max-w-[34.0625rem] 2xl:max-w-[43.75rem]">Engage in the Future of Learning with <span className={`${currentColorClass}`}>
-  {currentWord}
-</span>  Online Coding Classes</h1>
+          <motion.h1  initial={{ y: -50, opacity: 0.2 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 1.5, type: "spring", damping: 10, stiffness: 100,ease: "easeInOut" }
+            }}
+            className="max-sm:text-[1.625rem] sm:max-lg:text-[1.875rem] lg:max-xl:text-[2.3125rem] xl:max-2xl:text-[2.53125rem] 2xl:text-[3.125rem] font-bold mb-6 leading-normal sm:mx-0 max-w-[25rem] lg:max-2xl:max-w-[34.0625rem] 2xl:max-w-[43.75rem]">Engage in the Future of Learning with  
+          <motion.span className="text-hero-blue ml-2" key={currentWord}  initial={{ y: -50, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 1, ease: "easeInOut" },
+            }}
+            exit={{
+              y: -100,
+              opacity: 0,
+              transition: { duration: 0.6, ease: "easeInOut" },
+            }}>
+              {currentWord}
+          </motion.span>  Online Coding Classes</motion.h1>
           <h1 className="hidden md:flex mb-6 text-xs lg:text-base sm:max-w-[26rem] lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
-          <Button path="" title="Discover Course" />
+          <Button path="" title="Discover Course"/>
         </div>
     <div className="md:w-2/5">
         <img src="./homeIllustration.png" alt="home illustration" className="max-w-full max-lg:mx-auto w-3/4 md:w-11/12"/>

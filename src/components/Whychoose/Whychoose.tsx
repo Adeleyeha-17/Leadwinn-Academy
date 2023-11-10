@@ -78,12 +78,9 @@ export const Whychoose = () => {
   {activeIndex === index && <h1 className='font-bold text-3xl text-head-black mb-7'>{data.heading}</h1>}
   {activeIndex === index && <h4 className='text-base'>{data.text}</h4>}
 </div>
-
           </div>
         ))}
       </div>
-
-      
     </div>
   );
 };
