@@ -16,9 +16,7 @@ export const Home: React.FC = () => {
          <Hero words={
                []
             }
-            colors={
-               []
-            }/>
+            />
 
              <Whychoose /> 
 
