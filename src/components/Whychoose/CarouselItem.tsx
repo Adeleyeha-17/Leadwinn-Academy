@@ -38,7 +38,7 @@ const Icons: Icon[] = [
 
 const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIndex }) => {
   return (
-    <div className="inline-flex max-lg:flex-col justify-center bg-white w-full font-poppins px-5 sm:max-lg:px-12">
+    <div className="inline-flex max-lg:flex-col justify-center bg-white w-full font-poppins px-5 sm:max-lg:px-12 lg:px-0">
       <div className="xl:px-40">
         <img src={item.icon} alt={item.title} />
       </div>
@@ -55,7 +55,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIn
             ))}
           </div>
         </div>
-        <div className="w-[20rem] sm:w-[35rem] lg:w-[25rem] xl:w-[46rem]">
+        <div className="w-[20rem] sm:w-[35rem] lg:w-[25rem] xl:w-[41rem]">
 
               <h1 className="mb-2 text-lg xl:text-3xl font-bold text-head-black">{item.title}</h1>
         <h1 className=" whitespace-normal text-xs sm:text-base">{item.description}</h1>
