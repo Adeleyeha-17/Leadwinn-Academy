@@ -1,5 +1,6 @@
 import React, {useState, ChangeEvent} from 'react'
 import {Link} from "react-router-dom"
+import Scroll from '../Scroll';
 
 type quickLink = {
    link: string;
@@ -161,6 +162,7 @@ export const Footer: React.FC = () => {
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                </div>
+         <Scroll />
             </div>
          </div>
 

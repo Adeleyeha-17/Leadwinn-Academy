@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html, body {
+   scroll-behavior: smooth;
+ }
+ 
 
 .slick-dots li.slick-active button:before {
    color: #0077FF !important;
