@@ -5,12 +5,6 @@
 html, body {
    scroll-behavior: smooth;
  }
- 
- .inner {
-   white-space: nowrap;
-   transition: transform 0.3s;
-   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
- }
 
 .slick-dots li.slick-active button:before {
    color: #0077FF !important;

@@ -28,14 +28,11 @@ export const Footer: React.FC = () => {
          path: "/about"
       }, {
          link: "Privacy Policy",
-         path: "/"
-      },{
-         link: "FAQ",
-         path: ""
+         path: "/privacy"
       }, 
        {
          link: "Send Us a Feedback",
-         path: ""
+         path: "/feedback"
       }
    ]
 

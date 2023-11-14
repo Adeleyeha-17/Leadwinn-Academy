@@ -66,7 +66,7 @@ export const Whychoose: React.FC = () => {
       </div>
 
 
-      <div className="inner" style={{ transform: `translate(-${activeIndex * 100}%)` }}>
+      <div className="transform duration-300 whitespace-nowrap shadow-md" style={{ transform: `translate(-${activeIndex * 100}%)` }}>
         {items.map((item, index) => (
           <CarouselItem key={index} item={item} activeIndex={activeIndex} updateIndex={updateIndex} />
         ))}
