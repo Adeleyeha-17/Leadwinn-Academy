@@ -22,6 +22,10 @@ export const Footer: React.FC = () => {
       }))
    }
 
+   const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
    const quickLinks: quickLink[] = [
       {
          link: "About Us",
@@ -79,7 +83,8 @@ export const Footer: React.FC = () => {
                         }
                         key={
                            links.path
-                     }>
+                     }
+                     onClick={scrollToTop}>
                         {
                         links.link
                      }</Link>

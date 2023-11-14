@@ -1,51 +1,58 @@
+import React from "react";
+import { Link } from "react-router-dom";
 
-export  const Feedback = () => {
-   
+interface FeedbackProps {}
 
+export const Feedback: React.FC<FeedbackProps> = () => {
   return (
     <div className="contact pt-8 font-poppins pb-20 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
       <h2 className="text-center font-semibold mb-8">Send Us Your Feedback</h2>
 
       <div className="grid max-sm:grid-cols-1 grid-cols-2 justify-center gap-4 pb-12">
-         <div className="mx-auto">
-            <h3 className="text-center text-[1.125rem] font-semibold mb-12">
-               Talk to Us
-            </h3>
+        <div className="mx-auto">
+          <h3 className="text-center text-[1.125rem] font-semibold mb-12">
+            Talk to Us
+          </h3>
 
-            <div className="grid gap-y-4 grid-cols-[300px]">
-               <div className="p-4 rounded-[0.75rem] text-center border border-opacity-10">
-                  <i className="bx bx-mail-send text-3xl"></i>
-                  
-                  <h3 className="text-[0.875rem] font-semibold">Email</h3>
-                     <span className="block mb-[0.75rem]">
-                        info@leadwinnacademy@gmail.com
-                     </span>
+          <div className="grid gap-y-4 grid-cols-[300px]">
+            <div className="p-4 rounded-[0.75rem] text-center border border-opacity-10">
+              <i className="bx bx-mail-send text-3xl"></i>
 
-                     <a href="mailto:info@leadwinnacademy@gmail.com" className="text-[0.75rem] inline-block items-center justify-center gap-x-1">Write us {" "} <i className="bx bx-right-arrow-alt text-sm"></i></a>
-                  
-               </div>
+              <h3 className="text-[0.875rem] font-semibold">Email</h3>
+              <span className="block mb-[0.75rem]">
+                info@leadwinnacademy@gmail.com
+              </span>
 
-               <div className="p-4 rounded-[0.75rem] text-center border border-opacity-10">
-                  <i className="bx bxl-whatsapp text-3xl"></i>
-                  
-                  <h3 className="text-[0.875rem] font-semibold">Whatsapp</h3>
-                     <span className="block mb-[0.75rem]">
-                     +2348165906106
-                     </span>
-
-                     <a href="https://api.whatsapp.com/send?phone=08165906106&text=Hello" className="text-[0.75rem] inline-block items-center justify-center gap-x-1">Write us {" "} <i className="bx bx-right-arrow-alt text-sm"></i></a>
-                  
-               </div>
-               
+              <Link
+                to="mailto:info@leadwinnacademy@gmail.com"
+                className="text-[0.75rem] inline-block items-center justify-center gap-x-1"
+              >
+                Write us <i className="bx bx-right-arrow-alt text-sm"></i>
+              </Link>
             </div>
-         </div>
 
-         <div className="mx-auto">
-            <h3 className="text-center font-semibold mb-[1.5rem]">
-               Write your feedback
-            </h3>
+            <div className="p-4 rounded-[0.75rem] text-center border border-opacity-10">
+              <i className="bx bxl-whatsapp text-3xl"></i>
 
-            <form className="w-[360px]">
+              <h3 className="text-[0.875rem] font-semibold">Whatsapp</h3>
+              <span className="block mb-[0.75rem]">+2348165906106</span>
+
+              <Link
+                to="https://api.whatsapp.com/send?phone=08165906106&text=Hello"
+                className="text-[0.75rem] inline-block items-center justify-center gap-x-1"
+              >
+                Write us <i className="bx bx-right-arrow-alt text-sm"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto">
+          <h3 className="text-center font-semibold mb-[1.5rem]">
+            Write your feedback
+          </h3>
+
+          <form className="w-[360px]">
                <div className="relative mb-8 h-16">
                   <label htmlFor="name" className="absolute -top-[0.75rem] left-[1.25rem] text-[0.875rem] p-[0.25rem] z-10 bg-[#fbfbfb]">Name</label>
                   <input type="text" name="name" className="relative top-0 left-0 w-full h-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 -z-10" placeholder="Insert your name"/>
@@ -81,9 +88,8 @@ export  const Feedback = () => {
                  </svg>
        </button>
             </form>
-         </div>
+        </div>
       </div>
     </div>
-  )
-}
-
+  );
+};
