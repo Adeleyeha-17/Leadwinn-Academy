@@ -36,7 +36,7 @@ export const Feedback: FC<FeedbackProps> = () => {
               <i className="bx bx-mail-send text-3xl"></i>
 
               <h3 className="text-[0.875rem] font-semibold">Email</h3>
-              <span className="max-sm:text-xs block mb-[0.75rem]">
+              <span className="max-lg:text-xs block mb-[0.75rem]">
                 info@leadwinnacademy@gmail.com
               </span>
 
@@ -52,7 +52,7 @@ export const Feedback: FC<FeedbackProps> = () => {
               <i className="bx bxl-whatsapp text-3xl"></i>
 
               <h3 className="text-[0.875rem] font-semibold">Whatsapp</h3>
-              <span className="max-sm:text-xs block mb-[0.75rem]">+2348165906106</span>
+              <span className="max-lg:text-xs block mb-[0.75rem]">+2348165906106</span>
 
               <Link
                 to="https://api.whatsapp.com/send?phone=08165906106&text=Hello"

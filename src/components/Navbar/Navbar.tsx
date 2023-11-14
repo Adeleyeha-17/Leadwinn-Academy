@@ -85,7 +85,7 @@ export const Navbar: React.FC = () => {
 
 
          <div className={
-            nav ? "fixed left-0 top-0 w-1/2 h-full pt-7 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-10" : "fixed -left-full"
+            nav ? "fixed left-0 top-0 w-1/2 h-full pt-7 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20" : "fixed -left-full"
          }>
             <div className="font-poppins mx-3 flex flex-col font-semibold">
                <div className="flex items-center gap-2 ml-2">
