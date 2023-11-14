@@ -23,7 +23,7 @@ export const Feedback: FC<FeedbackProps> = () => {
 
   return (
     <div className="contact pt-8 font-poppins pb-20 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
-      <h2 className="text-center font-semibold mb-8">Send Us Your Feedback</h2>
+      <h2 className="text-center text-2xl font-semibold mb-8">Send Us Your Feedback</h2>
 
       <div className="grid max-sm:grid-cols-1 grid-cols-2 justify-center gap-4 pb-12">
         <div className="mx-auto mb-8">
