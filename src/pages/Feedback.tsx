@@ -4,8 +4,7 @@ export  const Feedback = () => {
 
   return (
     <div className="contact pt-8 font-poppins pb-20 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
-      <h2 className="text-center font-semibold mb-[1.5rem]">Send Us Your Feedback</h2>
-      <span className="block mb-16 text-center text-[0.875rem]">Contact Us</span>
+      <h2 className="text-center font-semibold mb-8">Send Us Your Feedback</h2>
 
       <div className="grid max-sm:grid-cols-1 grid-cols-2 justify-center gap-4 pb-12">
          <div className="mx-auto">
@@ -34,7 +33,7 @@ export  const Feedback = () => {
                      +2348165906106
                      </span>
 
-                     <a href="https://pi.whatsapp.com/send?phone=08165906106&text=Hello" className="text-[0.75rem] inline-block items-center justify-center gap-x-1">Write us {" "} <i className="bx bx-right-arrow-alt text-sm"></i></a>
+                     <a href="https://api.whatsapp.com/send?phone=08165906106&text=Hello" className="text-[0.75rem] inline-block items-center justify-center gap-x-1">Write us {" "} <i className="bx bx-right-arrow-alt text-sm"></i></a>
                   
                </div>
                
@@ -43,7 +42,7 @@ export  const Feedback = () => {
 
          <div className="mx-auto">
             <h3 className="text-center font-semibold mb-[1.5rem]">
-               Write me your project
+               Write your feedback
             </h3>
 
             <form className="w-[360px]">
@@ -58,8 +57,8 @@ export  const Feedback = () => {
                </div>
 
                <div className="relative mb-28 h-16 contact__form-area">
-                  <label htmlFor="project" className="absolute -top-[0.75rem] left-[1.25rem] text-[0.875rem] p-[0.25rem] z-10 bg-[#fbfbfb]">Project</label>
-                  <textarea name="project" cols={30} rows={10} className="relative top-0 left-0 w-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 -z-10 h-[8.4rem]" placeholder="write your project"></textarea>
+                  <label htmlFor="project" className="absolute -top-[0.75rem] left-[1.25rem] text-[0.875rem] p-[0.25rem] z-10 bg-[#fbfbfb]">Feedback</label>
+                  <textarea name="project" cols={30} rows={10} className="relative top-0 left-0 w-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 -z-10 h-[8.4rem]" placeholder="write your feedback"></textarea>
                </div>
 
                <button className="text-sm inline-flex items-center rounded-[1rem] border py-[1.25rem] px-[2rem]">Send Message
