@@ -8,7 +8,7 @@ export  const Feedback = () => {
       <span className="block mb-16 text-center text-[0.875rem]">Contact Us</span>
 
       <div className="grid max-sm:grid-cols-1 grid-cols-2 justify-center gap-4 pb-12">
-         <div className="contact__content">
+         <div className="mx-auto">
             <h3 className="text-center text-[1.125rem] font-semibold mb-12">
                Talk to Us
             </h3>
@@ -41,7 +41,7 @@ export  const Feedback = () => {
             </div>
          </div>
 
-         <div className="">
+         <div className="mx-auto">
             <h3 className="text-center font-semibold mb-[1.5rem]">
                Write me your project
             </h3>
