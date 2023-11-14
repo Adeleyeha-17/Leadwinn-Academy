@@ -22,7 +22,7 @@ export const Feedback: FC<FeedbackProps> = () => {
   };
 
   return (
-    <div className="contact pt-8 font-poppins pb-20 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
+    <div className="contact font-poppins pb-20 md:px-12 px-5 xl:px-40 md:py-6 lg:max-xl:max-w-6xl mx-auto text-head-black ">
       <h2 className="text-center text-2xl font-semibold mb-8">Send Us Your Feedback</h2>
 
       <div className="grid max-sm:grid-cols-1 grid-cols-2 justify-center gap-4 pb-12">
@@ -43,7 +43,7 @@ export const Feedback: FC<FeedbackProps> = () => {
               <Link
                 to="mailto:info@leadwinnacademy@gmail.com"
                 className="text-[0.75rem] inline-block items-center justify-center gap-x-1"
-              >
+               target="_blank">
                 Write us <i className="bx bx-right-arrow-alt text-sm"></i>
               </Link>
             </div>
@@ -57,7 +57,7 @@ export const Feedback: FC<FeedbackProps> = () => {
               <Link
                 to="https://api.whatsapp.com/send?phone=08165906106&text=Hello"
                 className="text-[0.75rem] inline-block items-center justify-center gap-x-1"
-              >
+               target="_blank">
                 Write us <i className="bx bx-right-arrow-alt text-sm"></i>
               </Link>
             </div>

@@ -21,6 +21,10 @@ export const Navbar: React.FC = () => {
       setNav((prevState) => !prevState);
    };
 
+   const closeNav = () => {
+      setNav(false)
+   }
+
    const navLinks: NavLink[] = [
       {
          link: "About",
@@ -104,14 +108,13 @@ export const Navbar: React.FC = () => {
                         to={
                            link.path
                         }
-                        className="p-4 border-b text-sm text-head-black">
+                        className="p-4 border-b text-sm text-head-black" onClick={closeNav}>
                         {
-                           link.link
-                        }</Link>
+                           link.link}</Link>
                   ))
                }
-               <Link to="/sign-in" className="p-4 border-b text-head-blue text-sm ">Sign In</Link>
-               <Link to="register" className="p-4 text-head-blue text-sm ">Enroll Now</Link>
+               <Link to="/sign-in" className="p-4 border-b text-head-blue text-sm " onClick={closeNav}>Sign In</Link>
+               <Link to="register" className="p-4 text-head-blue text-sm" onClick={closeNav}>Enroll Now</Link>
             </div>
          </div>
       </div>
