@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
 
    return (
       <div className={`${currentPath("/")}`}>
-         <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-7 sm:py-2 md:px-12 xl:px-40 lg:max-xl:max-w-6xl mx-auto">
+         <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 xl:px-40 lg:max-xl:max-w-6xl mx-auto">
             <div className="flex justify-between items-center gap-2">
                <Link to="/" className="flex items-center gap-2"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-12 md:w-full transition duration-200 ease-in-out md:hover:scale-105' />
                   <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
@@ -89,11 +89,11 @@ export const Navbar: React.FC = () => {
 
 
          <div className={
-            nav ? "fixed left-0 top-0 w-1/2 h-full pt-7 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20" : "fixed -left-full"
+            nav ? "fixed left-0 top-0 w-1/2 h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20" : "fixed -left-full"
          }>
             <div className="font-poppins mx-3 flex flex-col font-semibold">
                <div className="flex items-center gap-2 ml-2">
-                  <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-14 sm:w-full' /></Link>
+                  <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-12 sm:w-full' /></Link>
                   <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
                      <h1>Leadwinn</h1>
                      <h1>Academy</h1>
