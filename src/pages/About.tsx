@@ -1,5 +1,4 @@
 import Innovators from "../components/Innovators"
-import Learning from "../components/Learning"
 import Values from "../components/Values"
 
 export const About = () => {
@@ -14,7 +13,6 @@ export const About = () => {
 
       <Values />
 
-      <Learning />
     </div>
   )
 }
