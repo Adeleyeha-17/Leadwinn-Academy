@@ -26,8 +26,8 @@ export const Feedback: FC<FeedbackProps> = () => {
       <h2 className="text-center font-semibold mb-8">Send Us Your Feedback</h2>
 
       <div className="grid max-sm:grid-cols-1 grid-cols-2 justify-center gap-4 pb-12">
-        <div className="mx-auto">
-          <h3 className="text-center text-[1.125rem] font-semibold mb-12">
+        <div className="mx-auto mb-8">
+          <h3 className="text-center text-[1.125rem] font-semibold mb-8">
             Talk to Us
           </h3>
 
@@ -65,7 +65,7 @@ export const Feedback: FC<FeedbackProps> = () => {
         </div>
 
         <div className="mx-auto">
-          <h3 className="text-center font-semibold mb-[1.5rem]">
+          <h3 className="text-center font-semibold mb-8">
             Write your feedback
           </h3>
          
