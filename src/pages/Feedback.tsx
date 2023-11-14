@@ -65,7 +65,7 @@ export const Feedback: FC<FeedbackProps> = () => {
         </div>
 
         <div className="mx-auto">
-          <h3 className="text-center font-semibold mb-8">
+          <h3 className="text-center text-[1.125rem] font-semibold mb-8">
             Write your feedback
           </h3>
          
