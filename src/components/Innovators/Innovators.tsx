@@ -2,7 +2,7 @@
 export const Innovators:React.FC = () => {
   return (
     <div>
-      <div className="bg-footer-blue flex flex-col justify-center items-center h-[30rem] text-white font-poppins">
+      <div className="bg-footer-blue flex flex-col justify-center items-center max-sm:h-[18rem] h-[23.5rem] text-white font-poppins">
         <h1 className="text-base sm:text-3xl xl:text-5xl font-semibold mb-5">
         Shaping Tech Innovators Of Tommorrow
         </h1>
