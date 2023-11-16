@@ -14,33 +14,33 @@ export const IgnitingMind = () => {
       </div>
 
 
-      <div className="py-20">
-        <div className="bg-nav-blue sm:max-lg:h-[10rem] lg:h-[10.3125rem] xl:h-[13.125rem] w-1/2 sm:w-full rounded-[3.125rem] font-poppin mx-auto max-sm:mt-16 py-3 flex justify-center items-center">
-          <div className="items-center justify-evenly sm:flex sm:mt-3 w-full sm:px-20">
+      <div className="py-5 sm:py-20">
+        <div className="bg-nav-blue sm:max-lg:h-[10rem] lg:h-[13.125rem] w-3/5 sm:w-full rounded-[3.125rem] font-poppin mx-auto max-sm:mt-16 max-sm:py-10 flex justify-center items-center">
+          <div className="items-center justify-evenly sm:flex sm:mt-3 w-full px-10 xl:px-20">
 
-            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-cennter gap-5 xl:mt-6">
-              <h1 className="text-head-blue text-5xl font-medium">100+</h1>
-              <h4 className="w-[13rem] text-center text-base">Trained students across 10 countries</h4>
+            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-cennter gap-5 sm:mt-5 lg:mt-6">
+              <h1 className="text-head-blue text-4xl xl:text-5xl font-medium">100+</h1>
+              <h4 className="w-[13rem] max-lg:text-xs text-base text-center">Trained students across 10 countries</h4>
             </div>
-            <div className="w-16 lg:w-28 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
+            <div className="w-16 lg:w-40 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
             <div className="flex flex-col mb-10 sm:mb-0 items-center justify-center gap-5">
-              <h1 className="text-head-blue text-5xl font-medium">50+</h1>
-              <h4 className="w-[10rem] text-base">projects submitted</h4>
+              <h1 className="text-head-blue text-4xl xl:text-5xl font-medium">50+</h1>
+              <h4 className="w-[10rem] max-lg:text-xs text-base text-center">projects submitted</h4>
             </div>
 
-            <div className="w-16 lg:w-28 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
+            <div className="w-16 lg:w-40 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
             <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center gap-5">
-              <h1 className="text-head-blue text-5xl font-medium">100+</h1>
-              <h4 className="w-[10rem] text-base">certificates earned</h4>
+              <h1 className="text-head-blue text-4xl xl:text-5xl font-medium">100+</h1>
+              <h4 className="w-[10rem] max-lg:text-xs text-base text-center">certificates earned</h4>
             </div>
 
-            <div className="w-16 lg:w-28 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
+            <div className="w-16 lg:w-40 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
             <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center gap-5">
-              <h1 className="text-head-blue text-5xl font-medium">99%</h1>
-              <h4 className="w-[13rem] text-base">of graduates recorded</h4>
+              <h1 className="text-head-blue text-4xl xl:text-5xl font-medium">99%</h1>
+              <h4 className="w-[13rem] max-lg:text-xs text-base text-center">of graduates recorded</h4>
             </div>
           </div>
 
