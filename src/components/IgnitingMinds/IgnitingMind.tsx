@@ -14,12 +14,12 @@ export const IgnitingMind = () => {
         </div>
 
         
-        <div className="flex max-sm:flex-col-reverse justify-center items-center gap-10 sm:px-16 max-sm:mt-5">
+        <div className="flex max-sm:flex-col-reverse sm:justify-center sm:items-center gap-10 sm:px-16 max-sm:mt-5">
         <div>
-          <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem]"/>
+          <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem] mx-auto"/>
         </div>
         
-        <div className="text-head-black sm:w-[27.8125rem]">
+        <div className="text-head-black w-[20rem] sm:w-[27.8125rem]">
           <h1 className="text-xl lg:text-3xl xl:text-[2.375rem] xl:leading-[3rem] font-bold mb-5 sm:mb-10">Empowering the  <span className="text-hero-blue">Future of Technology</span></h1>
           <div className="text-xs lg:text-sm xl:text-base max-sm:pr-5">
             <h4 className="mb-5">Our Vision is to be the Premier Global Academy in Information Technology, Pioneering Excellence in Education, Innovation, and Leadership Worldwide.</h4>
