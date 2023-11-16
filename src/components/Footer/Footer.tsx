@@ -1,6 +1,7 @@
 import React, {useState, ChangeEvent} from 'react'
 import {Link} from "react-router-dom"
 import Scroll from '../Scroll';
+import useScrollToTop from '../../hooks/ScrollToTop';
 
 type quickLink = {
    link: string;
@@ -8,6 +9,8 @@ type quickLink = {
 }
 
 export const Footer: React.FC = () => {
+
+   const { scrollToTop } = useScrollToTop()
 
    const [emailData, setEmailData] = useState({email: "", receiveMail: true})
 
@@ -21,10 +24,7 @@ export const Footer: React.FC = () => {
          [name]: type === "checkbox" ? checked : value
       }))
    }
-
-   const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+  
 
    const quickLinks: quickLink[] = [
       {

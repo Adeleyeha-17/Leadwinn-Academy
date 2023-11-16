@@ -92,8 +92,8 @@ export const Navbar: React.FC = () => {
             nav ? "fixed left-0 top-0 w-1/2 h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20" : "fixed -left-full"
          }>
             <div className="font-poppins mx-3 flex flex-col font-semibold">
-               <div className="flex items-center gap-2 ml-2">
-                  <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-12 sm:w-full' /></Link>
+               <div className="flex items-center gap-2 ml-2" onClick={closeNav}>
+                  <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-12 sm:w-full'/></Link>
                   <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
                      <h1>Leadwinn</h1>
                      <h1>Academy</h1>
