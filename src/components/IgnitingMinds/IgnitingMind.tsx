@@ -15,7 +15,7 @@ export const IgnitingMind = () => {
 
 
       <div className="py-5 sm:py-20">
-        <div className="bg-nav-blue sm:max-lg:h-[10rem] lg:h-[13.125rem] w-3/5 sm:w-full rounded-[3.125rem] font-poppin mx-auto max-sm:mt-16 max-sm:py-10 flex justify-center items-center">
+        <div className="bg-nav-blue sm:max-lg:h-[11rem] lg:h-[13.125rem] w-1/2 sm:w-full rounded-[3.125rem] font-poppin mx-auto max-sm:mt-16 max-sm:py-10 flex justify-center items-center">
           <div className="items-center justify-evenly sm:flex sm:mt-3 w-full px-10 xl:px-20">
 
             <div className="flex flex-col mb-10 sm:mb-0 items-center justify-cennter gap-5 sm:mt-5 lg:mt-6">
