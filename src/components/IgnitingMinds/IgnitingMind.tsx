@@ -53,8 +53,8 @@ export const IgnitingMind = () => {
           <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem] mx-auto" />
         </div>
 
-        <div className="text-head-black sm:w-[25.8125rem]">
-          <h1 className="text-xl lg:text-[2.1rem] xl:text-[2.375rem] lg:leading-[2.5rem] xl:leading-[3rem] font-bold mb-5 sm:mb-10 max-lg:w-[13.7rem]">Empowering the  <span className="text-hero-blue">Future of Technology</span></h1>
+        <div className="text-head-black sm:w-[27.8125rem]">
+          <h1 className="text-xl lg:text-[2.1rem] xl:text-[2.375rem] lg:leading-[2.5rem] xl:leading-[3rem] font-bold mb-5 sm:mb-10 max-xl:w-[14rem]">Empowering the  <span className="text-hero-blue">Future of Technology</span></h1>
           <div className="text-xs lg:text-sm xl:text-base max-sm:pr-10">
             <h4 className="mb-5">Our Vision is to be the Premier Global Academy in Information Technology, Pioneering Excellence in Education, Innovation, and Leadership Worldwide.</h4>
 
