@@ -15,32 +15,32 @@ export const IgnitingMind = () => {
 
 
       <div className="py-20">
-        <div className="bg-nav-blue sm:max-lg:h-[10rem] sm:max-lg:w-[40.625rem] lg:h-[10.3125rem] xl:h-[13.125rem] w-1/2 lg:w-full rounded-[3.125rem] font-poppin mx-auto max-sm:mt-16 py-3 flex justify-center items-center">
-          <div className="items-center justify-between sm:flex sm:mt-3">
+        <div className="bg-nav-blue sm:max-lg:h-[10rem] lg:h-[10.3125rem] xl:h-[13.125rem] w-1/2 sm:w-full rounded-[3.125rem] font-poppin mx-auto max-sm:mt-16 py-3 flex justify-center items-center">
+          <div className="items-center justify-evenly sm:flex sm:mt-3 w-full sm:px-20">
 
-            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-center gap-5 xl:mt-6">
+            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-cennter gap-5 xl:mt-6">
               <h1 className="text-head-blue text-5xl font-medium">100+</h1>
-              <h4 className="w-[13rem] text-center">Trained students across 10 countries</h4>
+              <h4 className="w-[13rem] text-center text-base">Trained students across 10 countries</h4>
             </div>
             <div className="w-16 lg:w-28 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
             <div className="flex flex-col mb-10 sm:mb-0 items-center justify-center gap-5">
               <h1 className="text-head-blue text-5xl font-medium">50+</h1>
-              <h4>projects submitted</h4>
+              <h4 className="w-[10rem] text-base">projects submitted</h4>
             </div>
 
             <div className="w-16 lg:w-28 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
             <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center gap-5">
               <h1 className="text-head-blue text-5xl font-medium">100+</h1>
-              <h4>certificates earned</h4>
+              <h4 className="w-[10rem] text-base">certificates earned</h4>
             </div>
 
             <div className="w-16 lg:w-28 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
             <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center gap-5">
               <h1 className="text-head-blue text-5xl font-medium">99%</h1>
-              <h4>of graduates recorded</h4>
+              <h4 className="w-[13rem] text-base">of graduates recorded</h4>
             </div>
           </div>
 
