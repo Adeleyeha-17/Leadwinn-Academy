@@ -1,15 +1,15 @@
 
 export const IgnitingMind = () => {
   return (
-    <div className="py-5 md:px-12 px-5 xl:px-40 lg:py-10 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
-      <div className="flex max-sm:flex-col justify-center items-center gap-20 sm:px-16">
+    <div className="font-poppins pb-10 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
+      <div className="flex max-sm:flex-col justify-center items-center gap-10 sm:px-16">
         <div className="text-head-black sm:w-[27.8125rem]">
           <h1 className="text-xl lg:text-3xl xl:text-[2.375rem] xl:leading-[3rem] font-bold mb-5 sm:mb-10 max-lg:w-[14rem]">Igniting Minds and Fostering <span className="text-hero-blue">Innovators</span></h1>
           <h4 className="text-xs lg:text-sm xl:text-base max-sm:pr-9">Leadwinn Academy passionately embraces a mission to kindle the sparks of curiosity and creativity in young minds through the realms of computer programming and software development. Our dedicated efforts are aimed at nurturing critical thinking and problem-solving skills, with the ultimate goal of transforming children, aged 6 to 17, into budding tech innovators and confident problem-solvers of the future</h4>
         </div>
 
         <div>
-          <img src="./Enroll.png" className="w-[18.5rem] sm:w-[27.875rem]" />
+          <img src="./Enroll.png" className="w-[18.5rem] sm:w-[27.875rem] xl:w-[30rem]" />
         </div>
       </div>
 
@@ -48,9 +48,9 @@ export const IgnitingMind = () => {
       </div>
 
 
-      <div className="flex max-sm:flex-col-reverse sm:justify-center sm:items-center gap-20 sm:px-16 max-sm:mt-5">
+      <div className="flex max-sm:flex-col-reverse sm:justify-center sm:items-center gap-10 sm:px-16 max-sm:mt-5">
         <div>
-          <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem] mx-auto" />
+          <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem] xl:w-full mx-auto" />
         </div>
 
         <div className="text-head-black sm:w-[27.8125rem]">
