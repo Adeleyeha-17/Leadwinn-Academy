@@ -53,10 +53,9 @@ export const Team = () => {
 
         <div className="text-head-black lg:mt-6">
           {teamMember.map((data, index) => (
-            <div key={index} className="flex items-center gap-10 xl:gap-20 border-b-2 mb-3 sm:mb-1 lg:mb-5">
+            <div key={index} className="flex items-center gap-10 xl:gap-20 border-b-2 mb-3 sm:mb-1 lg:mb-5 cursor-pointer" onClick={() => setSelectedImage(data.img)}>
               <h1
                 className="w-20 sm:w-18 lg:w-28 text-center text-sm lg:text-base xl:text-lg font-semibold mb-3"
-                onClick={() => setSelectedImage(data.img)}
               >
                 {data.name}
               </h1>
