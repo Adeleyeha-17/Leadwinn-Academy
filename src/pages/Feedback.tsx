@@ -1,6 +1,7 @@
 import {FC, useRef, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 interface FeedbackProps {}
 
@@ -22,7 +23,8 @@ export const Feedback: FC<FeedbackProps> = () => {
   };
 
   return (
-    <div className="contact font-poppins pb-20 md:px-12 px-5 xl:px-40 md:py-6 lg:max-xl:max-w-6xl mx-auto text-head-black ">
+
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="contact font-poppins pb-20 md:px-12 px-5 xl:px-40 md:py-6 lg:max-xl:max-w-6xl mx-auto text-head-black ">
       <h2 className="text-center text-2xl font-semibold mb-8">Send Us Your Feedback</h2>
 
       <div className="grid max-sm:grid-cols-1 grid-cols-2 justify-center gap-4 pb-12">
@@ -107,7 +109,7 @@ export const Feedback: FC<FeedbackProps> = () => {
             </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -7,22 +7,25 @@ import { Techhub } from "./pages/Techhub";
 import { Plans } from "./pages/Plans";
 import { Privacy } from "./pages/Privacy";
 import { Feedback } from "./pages/Feedback";
-
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Layout><Home /></Layout>} />
-          <Route path="/about" element={<Layout><About /></Layout>} />
-          <Route path="/library" element={<Layout><Library /></Layout>} />
-          <Route path="/tech-hub" element={<Layout><Techhub /></Layout>} />
-          <Route path="/plans" element={<Layout><Plans /></Layout>} />
-          <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
-          <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
-        </Routes>
-      </Router>
+      <AnimatePresence mode='wait'>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Layout><Home /></Layout>} />
+            <Route path="/about" element={<Layout><About /></Layout>} />
+            <Route path="/library" element={<Layout><Library /></Layout>} />
+            <Route path="/tech-hub" element={<Layout><Techhub /></Layout>} />
+            <Route path="/plans" element={<Layout><Plans /></Layout>} />
+            <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
+            <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
+          </Routes>
+        </Router>
+      </AnimatePresence>
     </>
   );
 }

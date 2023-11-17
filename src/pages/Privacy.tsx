@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 
 export const Privacy: React.FC = () => {
 
   return (
-<div className="md:px-12 md:py-6 px-5 xl:px-40 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins">
+<motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}  className="md:px-12 md:py-6 px-5 xl:px-40 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins">
    <h1 className="bg-nav-blue h-10">Leadwinn Policies</h1>
    <h4>
    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Vulputate mi sit amet mauris commodo quis. Et netus et malesuada fames ac. Justo nec ultrices dui sapien eget mi proin sed libero. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Sem nulla pharetra diam sit amet nisl. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Porttitor leo a diam sollicitudin tempor id. Cursus risus at ultrices mi tempus imperdiet nulla. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Enim ut tellus elementum sagittis. Nec dui nunc mattis enim.
@@ -13,6 +14,6 @@ Est placerat in egestas erat imperdiet sed euismod nisi porta. Dapibus ultrices 
 
 Amet tellus cras adipiscing enim eu turpis. Fermentum posuere urna nec tincidunt. Mattis pellentesque id nibh tortor. Id faucibus nisl tincidunt eget nullam. Condimentum mattis pellentesque id nibh tortor id. Congue quisque egestas diam in arcu cursus euismod quis viverra. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Sed id semper risus in hendrerit gravida rutrum quisque.
 </h4>
-</div>
+</motion.div>
   );
 };
