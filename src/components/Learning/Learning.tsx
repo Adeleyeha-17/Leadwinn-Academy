@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const Learning = () => {
   return (
-    <div className="bg-nav-blue w-full h-full py-10 sm:py-16 lg:py-24 xl:py-32 flex items-center justify-center font-poppins relative">
+    <div className="bg-nav-blue w-full h-full py-10 sm:py-16 lg:py-24 xl:py-32 flex items-center justify-center font-poppins relative mx-auto">
       <img src="./puzzle left.png" className="absolute top-0 left-4 sm:left-16 xl:left-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem] xl:w-[12rem]"/>
       <img src="./puzzle right.png" className="absolute top-0 right-4 sm:right-16 xl:right-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem] xl:w-[12rem]"/>
       <img src="./monitor left.png" className="absolute bottom-0 left-0 w-[6rem] sm:w-[12rem] lg:w-[15rem] xl:w-[20rem]"/>
