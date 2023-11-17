@@ -1,7 +1,7 @@
 
 export const IgnitingMind = () => {
   return (
-    <div className="py-5 md:px-12 px-5 xl:px-40 lg:py-10 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins">
+    <div className="py-5 md:px-12 px-5 xl:px-40 lg:py-10 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
       <div className="flex max-sm:flex-col justify-center items-center gap-10 sm:px-16">
         <div className="text-head-black sm:w-[27.8125rem]">
           <h1 className="text-xl lg:text-3xl xl:text-[2.375rem] xl:leading-[3rem] font-bold mb-5 sm:mb-10 max-lg:w-[14rem]">Igniting Minds and Fostering <span className="text-hero-blue">Innovators</span></h1>
