@@ -3,8 +3,13 @@ import { Link } from "react-router-dom"
 
 export const Learning = () => {
   return (
-    <div className="bg-learning-mobile sm:bg-learning bg-contain bg-no-repeat flex items-center justify-center h-[16.25rem] sm:h-[18rem] lg:h-[20rem] xl:h-[32rem] 2xl:h-[45rem] max-sm:-mb-32 sm:-mb-20 lg:-mb-10 font-poppins">
-      <div className="flex flex-col gap-1 sm:gap-2 items-center justify-center text-center text-head-black -mt-28 sm:max-md:-mt-16 md:-mt-6 xl:-mt-20">
+    <div className="bg-nav-blue w-full h-full py-8 sm:py-16 lg:py-24 xl:py-32 flex items-center justify-center font-poppins relative">
+      <img src="./puzzle left.png" className="absolute top-0 left-4 sm:left-16 xl:left-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem] xl:w-[12rem]"/>
+      <img src="./puzzle right.png" className="absolute top-0 right-4 sm:right-16 xl:right-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem] xl:w-[12rem]"/>
+      <img src="./monitor left.png" className="absolute bottom-0 left-0 w-[6rem] sm:w-[12rem] lg:w-[15rem] xl:w-[20rem]"/>
+      <img src="./monitor right.png" className="absolute bottom-0 right-0 w-[6rem] sm:w-[12rem] lg:w-[15rem] xl:w-[20rem] "/>
+
+      <div className="flex flex-col gap-1 sm:gap-2 items-center justify-center text-center text-head-black">
         <h1 className="font-bold text-sm sm:text-xl lg:text-[2rem] lg:leading-[2.75rem] lg:mb-3">Start your learning journey today!</h1>
         <h1 className="max-sm:max-w-[18.75rem] text-xs lg:text-base mb-2 sm:mb-5">Start Your Learning Journey and Discover a World of Opportunities Await</h1>
 
