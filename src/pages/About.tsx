@@ -1,6 +1,7 @@
 import Experience from "../components/Expereince"
 import IgnitingMind from "../components/IgnitingMinds"
 import Innovators from "../components/Innovators"
+import Team from "../components/Team"
 import Values from "../components/Values"
 
 export const About = () => {
@@ -14,6 +15,8 @@ export const About = () => {
       <Experience />
 
       <Values />
+
+      <Team />
 
     </div>
   )
