@@ -7,9 +7,9 @@ export const Experience = () => {
             <img src="./Experience.png" className="sm:w-3/5 lg:w-4/5 max-sm:mb-7"/>
             </div>
 
-            <div className="text-white flex flex-col">
+            <div className="text-white flex flex-col justify-center items-center">
                <h1 className="font-semibold text-xl lg:text-3xl xl:text-4xl sm:w-52 lg:w-80 mb-3 lg:mb-5">Leadwinn Skills Experience</h1>
-               <ul className="flex flex-col gap-2 lg:gap-3 xl:gap-5 max-lg:text-xs text-lg">
+               <ul className="flex flex-col gap-2 max-lg:text-xs text-lg">
                   <li>Problem Solving</li>
                   <li>Skills Assessment</li>
                   <li>Guided Learning Journeys</li>
