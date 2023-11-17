@@ -50,7 +50,7 @@ export const IgnitingMind = () => {
 
       <div className="flex max-sm:flex-col-reverse sm:justify-center sm:items-center gap-10 sm:px-16 max-sm:mt-5">
         <div>
-          <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem] xl:w-full mx-auto" />
+          <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem] xl:w-[30rem] mx-auto" />
         </div>
 
         <div className="text-head-black sm:w-[27.8125rem]">
