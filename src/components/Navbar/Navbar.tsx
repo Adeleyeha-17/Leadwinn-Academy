@@ -12,8 +12,13 @@ export const Navbar: React.FC = () => {
    const location = useLocation();
 
    const currentPath = (route: string) => {
-      return location.pathname === route ? "bg-nav-blue" : "bg-white"
+      return location.pathname === route ? "text-head-blue bg-nav-blue" : " text-head-black bg-white"
    }
+
+   const currentMatchPath = (route: string) => {
+      return location.pathname === route ? "text-head-blue" : " text-head-black"
+   }
+
 
    const [nav, setNav] = useState(false);
 
@@ -56,7 +61,7 @@ export const Navbar: React.FC = () => {
                </Link>
             </div>
 
-            <div className='hidden md:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:text-sm font-semibold text-head-black'>
+            <div className='hidden md:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:text-sm font-semibold'>
                {
                   navLinks.map(link => (
                      <Link key={
@@ -64,7 +69,7 @@ export const Navbar: React.FC = () => {
                      }
                         to={
                            link.path
-                        }>
+                        } className={`${currentMatchPath(link.path)}`}>
                         {
                            link.link
                         }</Link>
@@ -108,7 +113,7 @@ export const Navbar: React.FC = () => {
                         to={
                            link.path
                         }
-                        className="p-4 border-b text-sm text-head-black" onClick={closeNav}>
+                        className={`p-4 border-b text-sm ${currentMatchPath(link.path)}`} onClick={closeNav}>
                         {
                            link.link}</Link>
                   ))

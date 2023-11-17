@@ -39,7 +39,7 @@ export const Team = () => {
 
   return (
     <div className="font-poppins pb-10 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
-      <div className="text-center text-courses hover:text-hero-blue mb-10">
+      <div className="text-center text-courses mb-10">
         <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2">Our Team</h1>
         <h4 className="text-xs sm:text-sm lg:text-base">Introducing the Dedicated Minds Powering Our Vision and Innovation"</h4>
       </div>
