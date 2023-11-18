@@ -3,6 +3,7 @@ import IgnitingMind from "../components/IgnitingMinds"
 import Innovators from "../components/Innovators"
 import Team from "../components/Team"
 import Values from "../components/Values"
+import Learning from "../components/Learning"
 import { motion } from "framer-motion"
 
 export const About = () => {
@@ -17,7 +18,9 @@ export const About = () => {
 
       <Values />
 
-      <Team />
+      <Team /> 
+      
+      <Learning />
 
     </motion.div>
   )
