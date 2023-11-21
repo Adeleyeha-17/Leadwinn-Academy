@@ -1,3 +1,6 @@
+import flagImage from '../../assets/flag.png';
+import signpostImage from '../../assets/signpost.png';
+import clippathImage from '../../assets/Clippath.png';
 
 export const Goal = () => {
 
@@ -11,15 +14,15 @@ export const Goal = () => {
       {
          text: "I wish to enhance my skills and",
          boldedText: "expand my understanding",
-         img: "./flag.png"
+         img: flagImage
       }, {
          text: "I aim to investigate and",
          boldedText: "chart my career trajectory",
-         img: "./signpost.png"
+         img: signpostImage
       }, {
          text: "I want to explore my",
          boldedText: "hobbies and interests",
-         img: "./Clippath.png"
+         img: clippathImage
       }
    ]
    return (

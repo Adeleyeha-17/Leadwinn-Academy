@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import accordionbtnupImage from "../../assets/accordionBtnUp.svg"
+import accordionbtndownImage from "../../assets/accordionBtnDown.svg"
 
 export const Faq: React.FC = () => {
    const [activeAccordion, setActiveAccordion] = useState(0);
@@ -48,7 +50,7 @@ export const Faq: React.FC = () => {
                         `${data.title}?`
                      }</h3>
                      <span className="w-1/4 flex items-end justify-end">{
-                        activeAccordion === index + 1 ? <img src="./accordionBtnUp.svg" className='w-4 md:w-8' /> : <img src="./accordionBtnDown.svg" className='w-5 md:w-8' />
+                        activeAccordion === index + 1 ? <img src={accordionbtnupImage} className='w-4 md:w-8' /> : <img src={accordionbtndownImage} className='w-5 md:w-8' />
                      }</span>
                   </div>
                   <motion.div

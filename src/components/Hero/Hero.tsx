@@ -2,6 +2,11 @@
 import { useEffect, useState } from "react";
 import Button from "../Button";
 import { motion } from "framer-motion";
+import HomeIllus from "../../assets/homeillus.png"
+import HomeIllustration from "../../assets/homeIllustration.png"
+import Edu1 from "../../assets/edu1.png"
+import Edu2 from "../../assets/edu2.png"
+import Edu3 from "../../assets/edu3.png"
 
 type HomeProps = {
   words: string[];
@@ -61,7 +66,7 @@ export const Hero: React.FC<HomeProps> = () => {
         </div>
         <div className="md:w-2/5">
           <motion.img
-            src={onloadAfter10Sec ? "./homeillus.png" : "./homeIllustration.png"}
+            src={onloadAfter10Sec ? HomeIllus : HomeIllustration}
             alt="home illustration"
             className="max-w-full max-lg:mx-auto w-3/4 md:w-11/12"
             initial={{ opacity: 0 }}
@@ -74,20 +79,20 @@ export const Hero: React.FC<HomeProps> = () => {
         <div className="items-center justify-between sm:flex mt-5 sm:mt-3 lg:mt-0">
 
           <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
-            <img src="./edu1.png" alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+            <img src={Edu1} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
             <h1>Over 100+ Students</h1>
           </div>
           <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
           <div className="flex flex-col mb-10 sm:mb-14 items-center justify-center mx-auto mt-2">
-            <img src="./edu2.png" alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+            <img src={Edu2} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
             <h1>Over 100+ Certified</h1>
           </div>
 
           <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
           <div className="flex justify-center flex-col mb-8 sm:mb-12 items-center mx-auto">
-            <img src="./edu3.png" alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+            <img src={Edu3} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
             <h1>Over 10+ Countries</h1>
           </div>
         </div>

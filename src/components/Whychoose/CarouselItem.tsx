@@ -1,12 +1,18 @@
 import React from "react";
+import notactiveexpertImage from '../../assets/expert.png'
+import activeexpertImage from '../../assets/active_expert.png'
+import notactiveageImage from '../../assets/age.png'
+import activeageImage from '../../assets/active_age.png'
+import notactiveinteractiveImage from '../../assets/learning.png'
+import activeinteractiveImage from '../../assets/active_learning.png'
+import notactiveconvenientsImage from '../../assets/convenient.png'
+import activeconvenientsImage from '../../assets/active_convenient.png'
 
 interface CarouselItemProps {
   item: {
     title: string;
     description: string;
     icon: string;
-    notActive: string;
-    active: string;
   };
   activeIndex: number;
   updateIndex: (newIndex: number) => void;
@@ -19,20 +25,20 @@ interface Icon {
 
 const Icons: Icon[] = [
   {
-    notActive: './expert.png',
-    active: './active_expert.png',
+    notActive: notactiveexpertImage,
+    active: activeexpertImage
   },
   {
-    notActive: './age.png',
-    active: './active_age.png',
+    notActive: notactiveageImage,
+    active: activeageImage,
   },
   {
-    notActive: './learning.png',
-    active: './active_learning.png',
+    notActive: notactiveinteractiveImage,
+    active: activeinteractiveImage,
   },
   {
-    notActive: './convenient.png',
-    active: './active_convenient.png',
+    notActive: notactiveconvenientsImage,
+      active: activeconvenientsImage,
   }
 ];
 
@@ -43,11 +49,11 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIn
         <img src={item.icon} alt={item.title} />
       </div>
 
-      <div className="w-1/2">
+      <div className="w-1/2 max-sm:flex max-sm:flex-col-reverse">
         <div className="cursor-pointer border-none">
           <div className="flex items-center justify-start space-x-5 mb-4">
             {Icons.map((icon, i) => (
-              <button key={i} className="m-1 bg-none" onClick={() => updateIndex(i)}>
+              <button key={i} className="m-1 bg-none max-sm:mt-4" onClick={() => updateIndex(i)}>
                 <span>
                   <img src={i === activeIndex ? icon.active : icon.notActive} />
                 </span>
@@ -56,7 +62,6 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ item, activeIndex, updateIn
           </div>
         </div>
         <div className="w-[20rem] sm:w-[23rem] lg:w-[25rem] xl:w-[41rem]">
-
               <h1 className="mb-2 text-lg xl:text-3xl font-bold text-head-black">{item.title}</h1>
         <h1 className=" whitespace-normal text-xs sm:text-base">{item.description}</h1>
         </div>

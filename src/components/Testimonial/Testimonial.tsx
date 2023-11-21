@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import SliderImg from "../../assets/sliderimg.png"
 
 export const Testimonial = () => {
 
@@ -64,7 +65,7 @@ export const Testimonial = () => {
 
             <div className="grid sm:grid-cols-2 items-center mb-10">
                <div className='max-sm:mb-5'>
-                  <img src="./sliderimg.png" alt="slider Image" className="max-sm:w-4/5 max-sm:mx-auto" />
+                  <img src={SliderImg} alt="slider Image" className="max-sm:w-4/5 max-sm:mx-auto" />
                </div>
 
                <div className='md:bg-white font-poppins md:bg-opacity-30 rounded-lg h-32 sm:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 flex items-center justify-center max-sm:mx-auto sm:-ml-12 md:-ml-10 xl:-ml-10 2xl:-ml-24'>

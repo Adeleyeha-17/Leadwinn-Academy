@@ -1,5 +1,17 @@
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
+import  mitImage from "../../assets/mit-img.png"
+import  mit from "../../assets/mit.png"
+import  pythonImage from "../../assets/python-img.png"
+import  python from "../../assets/python.png"
+import  robloxImage from "../../assets/roblox-img.png"
+import  roblox from "../../assets/roblox.png"
+import  scratchImage from "../../assets/scratch-img.png"
+import  scratch from "../../assets/scratch.png"
+import  uiImage from "../../assets/ui-img.png"
+import  ui from "../../assets/uiux.png"
+import  webImage from "../../assets/web-img.png"
+import  web from "../../assets/web.png"
 
 export const Courses = () => {
 
@@ -12,30 +24,30 @@ export const Courses = () => {
 
    const courses: course[] = [
       {
-         img: "./mit.png",
+         img: mit,
          heading: "MIT",
-         overlayImg: "./mit-img.png"
+         overlayImg: mitImage
       },
       {
-         img: "./python.png",
+         img: python,
          heading: "Python Programming",
-         overlayImg: "./python-img.png"
+         overlayImg: pythonImage
       }, {
-         img: "./roblox.png",
+         img: roblox,
          heading: "Roblox Design",
-         overlayImg: "./roblox-img.png"
+         overlayImg: robloxImage
       }, {
-         img: "./scratch.png",
+         img: scratch,
          heading: "Scratch",
-         overlayImg: "./scratch-img.png"
+         overlayImg: scratchImage
       }, {
-         img: "./uiux.png",
+         img: ui,
          heading: "UI/UX Design",
-         overlayImg: "./ui-img.png"
+         overlayImg: uiImage
       }, {
-         img: "./web.png",
+         img: web,
          heading: "Web Development",
-         overlayImg: "./web-img.png"
+         overlayImg: webImage
       }
    ]
 

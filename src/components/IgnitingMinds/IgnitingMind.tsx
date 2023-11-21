@@ -1,3 +1,5 @@
+import Enroll from "../../assets/Enroll.png"
+import Empowering from "../../assets/Empowering.png"
 
 export const IgnitingMind = () => {
   return (
@@ -9,7 +11,7 @@ export const IgnitingMind = () => {
         </div>
 
         <div>
-          <img src="./Enroll.png" className="w-[18.5rem] sm:w-[27.875rem] xl:w-[30rem]" />
+          <img src={Enroll} className="w-[18.5rem] sm:w-[27.875rem] xl:w-[30rem]" />
         </div>
       </div>
 
@@ -50,7 +52,7 @@ export const IgnitingMind = () => {
 
       <div className="flex max-sm:flex-col-reverse sm:justify-center sm:items-center gap-10 sm:px-16 max-sm:mt-5">
         <div>
-          <img src="./Empowering.png" className="w-[18.5rem] sm:w-[27.875rem] xl:w-[30rem] mx-auto" />
+          <img src={Empowering} className="w-[18.5rem] sm:w-[27.875rem] xl:w-[30rem] mx-auto" />
         </div>
 
         <div className="text-head-black sm:w-[27.8125rem]">

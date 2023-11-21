@@ -1,10 +1,11 @@
+import experienceImage from "../../assets/Experience.png";
 
 export const Experience = () => {
   return (
     <div className="bg-footer-blue w-full h-full mt-5 sm:mt-10 font-poppins">
       <div className="md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto flex max-sm:flex-col justify-between">
          <div>
-            <img src="./Experience.png" className="w-3/5 sm:w-4/5 max-sm:mb-7"/>
+            <img src={experienceImage} className="w-3/5 sm:w-4/5 max-sm:mb-7"/>
             </div>
 
             <div className="text-white flex flex-col sm:justify-center sm:items-center">

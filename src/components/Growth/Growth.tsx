@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import useScrollToTop from "../../hooks/ScrollToTop"
+import GrowthImg from "../../assets/growth.png"
 
 export const Growth = () => {
 
@@ -19,7 +20,7 @@ export const Growth = () => {
         </div>
 
         <div className="md:w-3/5">
-          <img src="./growth.png" alt="growth image" className="max-w-full w-full" />
+          <img src={GrowthImg} alt="growth image" className="max-w-full w-full" />
         </div>
       </div>
     </div>

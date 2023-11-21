@@ -30,8 +30,8 @@ export default {
         "courses" : "#0E2A4C"
       },
       backgroundImage: {
-        "desktop" : "url(/desktop.png)",
-        "mobile" : "url(/mobile.png)"
+        "desktop" : "url(./assets/desktop.png)",
+        "mobile" : "url(./mobile.png)"
       },
       margin: {
         "15" : "54.4px"

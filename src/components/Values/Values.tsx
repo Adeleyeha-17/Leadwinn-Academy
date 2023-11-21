@@ -1,3 +1,4 @@
+import ValueImg from "../../assets/values.png"
 
 export const Values = () => {
   return (
@@ -5,7 +6,7 @@ export const Values = () => {
       <h1 className="text-base sm:text-3xl lg:text-4xl font-semibold mb-2">Our Core Values</h1>
       <h4 className="text-xs sm:text-base mb-5 max-sm:text-center">Our core mission is to empower every child for the tech-driven future.</h4>
 
-      <img src="./values.png" alt="Core values" className="w-4/5 sm:w-[30rem] xl:w-[40rem]"/>
+      <img src={ValueImg} alt="Core values" className="w-4/5 sm:w-[30rem] xl:w-[40rem]"/>
     </div>
   )
 }

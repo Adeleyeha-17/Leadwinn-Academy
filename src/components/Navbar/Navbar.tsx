@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Button from '../Button';
+import Logo from "../../assets/leadwinn.svg"
 
 type NavLink = {
    link: string;
@@ -53,7 +54,7 @@ export const Navbar: React.FC = () => {
       <div className={`${currentPath("/")}`}>
          <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 xl:px-40 lg:max-xl:max-w-6xl mx-auto">
             <div className="flex justify-between items-center gap-2">
-               <Link to="/" className="flex items-center gap-2"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-12 md:w-full transition duration-200 ease-in-out md:hover:scale-105' />
+               <Link to="/" className="flex items-center gap-2"><img src={Logo} alt="leadwinn logo" className='w-12 md:w-full transition duration-200 ease-in-out md:hover:scale-105' />
                   <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
                      <h1>Leadwinn</h1>
                      <h1>Academy</h1>
@@ -98,7 +99,7 @@ export const Navbar: React.FC = () => {
          }>
             <div className="font-poppins mx-3 flex flex-col font-semibold">
                <div className="flex items-center gap-2 ml-2" onClick={closeNav}>
-                  <Link to="/"><img src="../leadwinn.svg" alt="leadwinn logo" className='w-12 sm:w-full'/></Link>
+                  <Link to="/"><img src={Logo} alt="leadwinn logo" className='w-12 sm:w-full'/></Link>
                   <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
                      <h1>Leadwinn</h1>
                      <h1>Academy</h1>
