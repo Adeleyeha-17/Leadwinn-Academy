@@ -37,19 +37,19 @@ export const Signin = () => {
     }))
   }
   return (
-    <div className="h-screen flex font-poppins">
+    <div className="h-screen  flex font-poppins">
 
-      <div className="bg-head-black text-white w-6/12 h-screen flex flex-col justify-center ">
-        <div className=" w-[28rem] flex flex-col gap-10 ml-12">
-          <h2 className=" font-medium text-5xl">Welcome Back To Leadwinn</h2>
-          <img src={dotImage} className="w-11/12" />
-          <h4 className="w-[24rem] font-bold text-2xl">Sign in to continue to your account</h4>
+      <div className="bg-head-black sm:max-md:h-[120vh] text-white w-6/12 h-screen flex flex-col justify-center ">
+        <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
+          <h2 className=" font-medium sm:text-lg lg:text-2xl xl:text-5xl">Welcome Back To Leadwinn</h2>
+          <img src={dotImage} className="sm:w-8/12 xl:w-11/12" />
+          <h4 className="sm:w-[11rem] lg:w-[13rem] xl:w-[24rem] font-bold text-lg xl:text-2xl">Sign in to continue to your account</h4>
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center pt-32">
+      <div className="w-full flex flex-col items-center sm:pt-24 xl:pt-32">
 
-        <div className="flex items-center flex-col gap-10 text-xl text-head-black font-bold">
+        <div className="flex items-center flex-col gap-6 xl:gap-10 text-base lg:text-xl text-head-black font-bold">
           <span className="text-base font-bold"> <Link to="/register" className={`${routePathMatch("/register")}`}>Register</Link> / <Link to="/sign-in" className={`${routePathMatch("/sign-in")}`}>Sign In</Link></span>
 
           <OAuth />
@@ -61,15 +61,15 @@ export const Signin = () => {
           <div>
 
             <form>
-              <div className="flex gap-10 mb-8">
+              <div className="flex flex-col lg:flex-row gap-10 mb-8">
 
-                <input className="w-[25rem] px-4 py-5 text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
+                <input className="sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
                 <div className="relative">
-                  <input className="w-[25rem] px-4 py-5 text-lg text-gray-700 font-medium bg-white border border-head-black rounded-2xl transition ease-in-out" type={showPassword ? "text" : "password"} name="password" value={password} placeholder="Password" onChange={onChange} />
+                  <input className="sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type={showPassword ? "text" : "password"} name="password" value={password} placeholder="Password" onChange={onChange} />
                   {showPassword ? (
-                    <AiFillEyeInvisible className="absolute right-3 top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
+                    <AiFillEyeInvisible className="absolute right-3 sm:top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
                   ) : (
-                    <AiFillEye className="absolute right-3 top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
+                    <AiFillEye className="absolute right-3 sm:top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
                   )}
                 </div>
               </div>
@@ -87,7 +87,7 @@ export const Signin = () => {
             </form>
 
           </div>
-            <p className="mb-6 font-medium">{"Not a member yet?"} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign Up</Link></p>
+            <p className="mb-6 font-medium text-base">{"Not a member yet?"} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign Up</Link></p>
         </div>
 
       </div>
