@@ -8,6 +8,7 @@ import { Plans } from "./pages/Plans";
 import { Privacy } from "./pages/Privacy";
 import { Feedback } from "./pages/Feedback";
 import { AnimatePresence } from "framer-motion";
+import { Signin } from "./pages/Signin";
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
             <Route path="/plans" element={<Layout><Plans /></Layout>} />
             <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
             <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
+            <Route path="/sign-in" element={<Signin />} />
+
           </Routes>
         </Router>
       </AnimatePresence>
