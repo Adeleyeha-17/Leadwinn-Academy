@@ -9,6 +9,7 @@ import { Privacy } from "./pages/Privacy";
 import { Feedback } from "./pages/Feedback";
 import { AnimatePresence } from "framer-motion";
 import { Signin } from "./pages/Signin";
+import { Register } from "./pages/Register";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
             <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
             <Route path="/sign-in" element={<Signin />} />
+            <Route path="/register" element={<Register />} />
 
           </Routes>
         </Router>
