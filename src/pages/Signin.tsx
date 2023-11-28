@@ -22,7 +22,7 @@ export const Signin = () => {
 
   const { email, password, showPassword } = formData
 
-  const onChange = (e) => {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
     setFormData(prevState => ({
       ...prevState,
