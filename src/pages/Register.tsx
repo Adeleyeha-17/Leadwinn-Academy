@@ -57,7 +57,7 @@ export const Register = () => {
         
        </div>
         
-        <div className="flex items-center flex-col gap-10 text-xl text-head-black font-bold">
+        <div className="flex items-center flex-col gap-6 xl:gap-10 text-sm sm:text-base lg:text-xl text-head-black font-bold">
         <span className="text-base font-bold"> <Link to="/register" className={`${routePathMatch("/register")}`}>Register</Link> / <Link to="/sign-in" className={`${routePathMatch("/sign-in")}`}>Sign In</Link></span>
 
         <OAuth />
