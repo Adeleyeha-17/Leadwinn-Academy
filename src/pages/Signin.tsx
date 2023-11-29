@@ -5,7 +5,7 @@ import { AiFillEyeInvisible, AiFillEye, AiOutlineClose} from "react-icons/ai";
 import { useState } from 'react';
 
 
-export const Signin = () => {
+export const Signin: React.FC = () => {
 
   const location = useLocation();
   const history = useNavigate();
@@ -17,16 +17,17 @@ export const Signin = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-    showPassword: false
+    showPassword: false,
+    rememberMe: true
   })
 
-  const { email, password, showPassword } = formData
+  const { email, password, showPassword, rememberMe } = formData
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target
+    const { name, value, type, checked } = e.target
     setFormData(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: type === "checkbox" ? checked : value
     }))
   }
 
@@ -84,8 +85,13 @@ export const Signin = () => {
                 </div>
               </div>
               <div className="flex justify-between whitespace-nowrap font-medium  text-xs sm:text-sm">
-                <p className="mb-6">
-                  Remember me
+                <p className="mb-6 ">
+                <div className='flex gap-2 mb-4'>
+                        <input type="checkbox" name="rememberMe" id="rememberMe"
+                           checked={rememberMe}
+                           onChange={onChange}/>
+                        <label htmlFor="rememberMe" className="text-xs md:text-sm cursor-pointer">Remember me</label>
+                     </div>
                 </p>
                 <p>
                   <Link to="/forgot-password" className="text-hero-blue hover:text-blue-800 transition duration-200 ease-in-out">Forgot password?
