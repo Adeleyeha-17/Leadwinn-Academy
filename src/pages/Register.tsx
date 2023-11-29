@@ -3,7 +3,7 @@ import dotImage from "../../src/assets/dots.png";
 import OAuth from "../components/OAuth";
 import { motion } from "framer-motion";
 import { useState } from 'react';
-import { AiFillEyeInvisible, AiFillEye, AiOutlineClose} from "react-icons/ai";
+import { AiOutlineClose} from "react-icons/ai";
 
 export const Register = () => {
 
@@ -15,28 +15,24 @@ export const Register = () => {
    }
 
    const [formData, setFormData] = useState({
-      email: "",
+      firstName: "",
+      lastName: "",
       password: "",
       showPassword: false,
       rememberMe: true
     })
   
-    const { email, password, showPassword, rememberMe } = formData
+    const { firstName, lastName } = formData
   
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      const { name, value, type, checked } = e.target
+      const { name, value } = e.target
       setFormData(prevState => ({
         ...prevState,
-        [name]: type === "checkbox" ? checked : value
+        [name]: value
       }))
     }
   
-    const toggleShowPassword = () => {
-      setFormData(prevState => ({
-        ...prevState,
-        showPassword: !prevState.showPassword
-      }))
-    }
+    
   
     const handleGoBack = () => {
       history(-1)
@@ -75,36 +71,18 @@ export const Register = () => {
 <form>
   <div className="flex flex-col lg:flex-row gap-10 mb-8">
 
-    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
-    <div className="relative">
-      <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type={showPassword ? "text" : "password"} name="password" value={password} placeholder="Password" onChange={onChange} />
-      {showPassword ? (
-        <AiFillEyeInvisible className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
-      ) : (
-        <AiFillEye className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
-      )}
-    </div>
-  </div>
-  <div className="flex justify-between whitespace-nowrap font-medium  text-xs sm:text-sm">
-    <p className="mb-6 ">
-    <div className='flex gap-2 mb-4'>
-            <input type="checkbox" name="rememberMe" id="rememberMe"
-               checked={rememberMe}
-               onChange={onChange}/>
-            <label htmlFor="rememberMe" className="text-xs md:text-sm cursor-pointer">Remember me</label>
-         </div>
-    </p>
-    <p>
-      <Link to="/forgot-password" className="text-hero-blue hover:text-blue-800 transition duration-200 ease-in-out">Forgot password?
-      </Link></p>
+    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="firstName" value={firstName} placeholder="First Name" onChange={onChange} />
+    
+    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="lastName" value={lastName} placeholder="Last Name" onChange={onChange} />
   </div>
 
-  <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">Sign In</button>
+
+  <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">Sign Up</button>
 
 </form>
 
 </div>
-<p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Not a member yet?"} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign Up</Link></p>
+<p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Already a member?"} <Link to="/sign-in" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign In</Link></p>
 </div>
 
         </div>

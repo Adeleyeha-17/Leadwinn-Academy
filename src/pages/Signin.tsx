@@ -87,10 +87,10 @@ export const Signin: React.FC = () => {
               </div>
               <div className="flex justify-between whitespace-nowrap font-medium  text-xs sm:text-sm">
                 <p className="mb-6 ">
-                <div className='flex gap-2 mb-4'>
+                <div className='flex items-center gap-2 mb-4'>
                         <input type="checkbox" name="rememberMe" id="rememberMe"
                            checked={rememberMe}
-                           onChange={onChange}/>
+                           onChange={onChange} className="w-6 h-6"/>
                         <label htmlFor="rememberMe" className="text-xs md:text-sm cursor-pointer">Remember me</label>
                      </div>
                 </p>
