@@ -41,9 +41,9 @@ export const Signin = () => {
     history(-1)
   }
   return (
-    <div className="h-screen  flex font-poppins">
+    <div className="flex font-poppins">
 
-      <div className="bg-head-black hidden text-white w-6/12 h-screen sm:flex flex-col justify-center ">
+      <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
           <h2 className=" font-medium sm:text-lg lg:text-2xl xl:text-4xl">Welcome Back To Leadwinn</h2>
           <img src={dotImage} className="sm:w-8/12 xl:w-8/12" />
@@ -51,9 +51,9 @@ export const Signin = () => {
         </div>
       </div>
 
-      <div className="relative w-full flex flex-col items-center pt-24 xl:pt-32">
+      <div className="relative w-full max-sm:h-screen lg:h-screen flex flex-col items-center pt-24 xl:pt-32">
 
-      <div className="absolute top-16 right-14 mb-5">
+      <div className="absolute top-16 right-8 sm:right-14 lg:right-14 mb-5">
        
       <AiOutlineClose className="cursor-pointer" onClick={handleGoBack}/>
        
