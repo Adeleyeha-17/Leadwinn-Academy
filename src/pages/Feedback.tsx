@@ -13,10 +13,10 @@ export const Feedback: FC<FeedbackProps> = () => {
 
     if (form.current) {
       emailjs.sendForm(
-        "service_fnlyk4i",
-        "template_b1c5jwj",
+        "service_m8uc24g",
+        "template_dgkdca7",
         form.current,
-        "zACzMzsFyBJCvFwsk"
+        "erv9rfFsX3zpHkvcC"
       );
       e.currentTarget.reset();
     }
