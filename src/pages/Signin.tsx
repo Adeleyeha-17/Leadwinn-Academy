@@ -1,19 +1,19 @@
-import { Link, useLocation } from "react-router-dom"
+import {Link, useLocation, useNavigate } from "react-router-dom"
 import dotImage from "../../src/assets/dots.png"
 import OAuth from "../components/OAuth";
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { AiFillEyeInvisible, AiFillEye, AiOutlineClose} from "react-icons/ai";
 import { useState } from 'react';
 
 
 export const Signin = () => {
 
   const location = useLocation();
+  const history = useNavigate();
 
   const routePathMatch = (route: string) => {
     return location.pathname === route ? "text-hero-blue" : "text-black";
   }
-
-
+  
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -36,6 +36,10 @@ export const Signin = () => {
       showPassword: !prevState.showPassword
     }))
   }
+
+  const handleGoBack = () => {
+    history(-1)
+  }
   return (
     <div className="h-screen  flex font-poppins">
 
@@ -47,7 +51,13 @@ export const Signin = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center pt-24 xl:pt-32">
+      <div className="relative w-full flex flex-col items-center pt-24 xl:pt-32">
+
+      <div className="absolute top-16 right-14 mb-5">
+       
+      <AiOutlineClose className="cursor-pointer" onClick={handleGoBack}/>
+       
+      </div>
 
         <div className="flex items-center flex-col gap-6 xl:gap-10 text-sm sm:text-base lg:text-xl text-head-black font-bold">
           <span className="text-sm sm:text-base font-bold"> <Link to="/register" className={`${routePathMatch("/register")}`}>Register</Link> / <Link to="/sign-in" className={`${routePathMatch("/sign-in")}`}>Sign In</Link></span>
