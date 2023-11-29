@@ -79,7 +79,7 @@ export const Navbar: React.FC = () => {
 
             <div className="hidden md:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
                <Link to="/sign-in" className='flex justify-center items-center text-head-blue text-xs md:text-sm  font-semibold'>Sign In</Link>
-               <Button path="" title="Enroll Now" />
+               <Button path="/register" title="Enroll Now" />
             </div>
 
             <div onClick={toggleFunc}
@@ -120,7 +120,7 @@ export const Navbar: React.FC = () => {
                   ))
                }
                <Link to="/sign-in" className="p-4 border-b text-head-blue text-sm " onClick={closeNav}>Sign In</Link>
-               <Link to="register" className="p-4 text-head-blue text-sm" onClick={closeNav}>Enroll Now</Link>
+               <Link to="/register" className="p-4 text-head-blue text-sm" onClick={closeNav}>Enroll Now</Link>
             </div>
          </div>
       </div>
