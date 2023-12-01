@@ -3,7 +3,7 @@ import dotImage from "../../src/assets/dots.png";
 import OAuth from "../components/OAuth";
 import { motion } from "framer-motion";
 import { useState } from 'react';
-import { AiOutlineClose, AiFillEyeInvisible, AiFillEye,} from "react-icons/ai";
+import { AiOutlineClose} from "react-icons/ai";
 import editSvg from "../../src/assets/editname.svg"
 import mailSvg from "../../src/assets/mail.svg"
 import passwordSvg from "../../src/assets/password.svg"
@@ -23,11 +23,11 @@ export const Register = () => {
       lastName: "",
       email: "",
       password: "",
-      showPassword: false,
+      confirmPassword: "",
       rememberMe: true
     })
   
-    const { firstName, lastName, email, password, showPassword } = formData
+    const { firstName, lastName, email, password, confirmPassword } = formData
   
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const { name, value } = e.target
@@ -39,13 +39,6 @@ export const Register = () => {
   
     const handleGoBack = () => {
       history(-1)
-    }
-
-    const toggleShowPassword = () => {
-      setFormData(prevState => ({
-        ...prevState,
-        showPassword: !prevState.showPassword
-      }))
     }
 
   return (
@@ -113,25 +106,13 @@ export const Register = () => {
     </div>
 
     <div className="relative">
-                  <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type={showPassword ? "text" : "password"} name="password" value={password} placeholder="Password" onChange={onChange} />
-                  {showPassword ? (
-                    <AiFillEyeInvisible className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
-                  ) : (
-                    <AiFillEye className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
-                  )}
-
+                  <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="password" value={password} placeholder="Password" onChange={onChange} />
                   
                 <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
                 </div>
 
                 <div className="relative">
-                  <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type={showPassword ? "text" : "password"} name="password" value={password} placeholder="Password" onChange={onChange} />
-                  {showPassword ? (
-                    <AiFillEyeInvisible className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
-                  ) : (
-                    <AiFillEye className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
-                  )}
-
+                  <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="confirmPassword" value={confirmPassword} placeholder="Confirm Password" onChange={onChange} />
                   
                 <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
                 </div>
