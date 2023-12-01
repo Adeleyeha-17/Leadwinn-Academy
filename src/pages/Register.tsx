@@ -3,8 +3,11 @@ import dotImage from "../../src/assets/dots.png";
 import OAuth from "../components/OAuth";
 import { motion } from "framer-motion";
 import { useState } from 'react';
-import { AiOutlineClose} from "react-icons/ai";
+import { AiOutlineClose, AiFillEyeInvisible, AiFillEye,} from "react-icons/ai";
 import editSvg from "../../src/assets/editname.svg"
+import mailSvg from "../../src/assets/mail.svg"
+import passwordSvg from "../../src/assets/password.svg"
+
 
 export const Register = () => {
 
@@ -18,12 +21,13 @@ export const Register = () => {
    const [formData, setFormData] = useState({
       firstName: "",
       lastName: "",
+      email: "",
       password: "",
       showPassword: false,
       rememberMe: true
     })
   
-    const { firstName, lastName } = formData
+    const { firstName, lastName, email, password, showPassword } = formData
   
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const { name, value } = e.target
@@ -33,10 +37,15 @@ export const Register = () => {
       }))
     }
   
-    
-  
     const handleGoBack = () => {
       history(-1)
+    }
+
+    const toggleShowPassword = () => {
+      setFormData(prevState => ({
+        ...prevState,
+        showPassword: !prevState.showPassword
+      }))
     }
 
   return (
@@ -70,7 +79,7 @@ export const Register = () => {
         <div>
 
 <form>
-  <div className="flex flex-col lg:flex-row gap-10 mb-8">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8">
 
    <div className="relative ">
 
@@ -86,6 +95,48 @@ export const Register = () => {
 
     <img src={editSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
     </div>
+
+    <div className="relative">
+
+                <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
+
+                <img src={mailSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+                
+    </div>
+
+    <div className="relative">
+
+                <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
+
+                <img src={mailSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+                
+    </div>
+
+    <div className="relative">
+                  <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type={showPassword ? "text" : "password"} name="password" value={password} placeholder="Password" onChange={onChange} />
+                  {showPassword ? (
+                    <AiFillEyeInvisible className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
+                  ) : (
+                    <AiFillEye className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
+                  )}
+
+                  
+                <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+                </div>
+
+                <div className="relative">
+                  <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type={showPassword ? "text" : "password"} name="password" value={password} placeholder="Password" onChange={onChange} />
+                  {showPassword ? (
+                    <AiFillEyeInvisible className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
+                  ) : (
+                    <AiFillEye className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
+                  )}
+
+                  
+                <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+                </div>
+
+
   </div>
 
 
