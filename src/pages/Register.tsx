@@ -4,6 +4,7 @@ import OAuth from "../components/OAuth";
 import { motion } from "framer-motion";
 import { useState } from 'react';
 import { AiOutlineClose} from "react-icons/ai";
+import editSvg from "../../src/assets/editname.svg"
 
 export const Register = () => {
 
@@ -71,9 +72,20 @@ export const Register = () => {
 <form>
   <div className="flex flex-col lg:flex-row gap-10 mb-8">
 
-    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="firstName" value={firstName} placeholder="First Name" onChange={onChange} />
+   <div className="relative ">
+
+    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="firstName" value={firstName} placeholder="First Name" onChange={onChange} />
+
+    <img src={editSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+   </div>
+
     
-    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] xl:px-4 px-2 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="lastName" value={lastName} placeholder="Last Name" onChange={onChange} />
+    <div className="relative">
+
+    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="lastName" value={lastName} placeholder="Last Name" onChange={onChange} />
+
+    <img src={editSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+    </div>
   </div>
 
 

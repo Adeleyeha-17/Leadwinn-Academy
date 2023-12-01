@@ -14,9 +14,9 @@ export const Feedback: FC<FeedbackProps> = () => {
     if (form.current) {
       emailjs.sendForm(
         "service_m8uc24g",
-        "template_dgkdca7",
+        "template_0wboj38",
         form.current,
-        "erv9rfFsX3zpHkvcC"
+        "DQKugPQ4meza9DwOG"
       );
       e.currentTarget.reset();
     }
