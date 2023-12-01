@@ -16,7 +16,7 @@ export const Feedback: FC<FeedbackProps> = () => {
         "service_1l751sg",
         "template_0wboj38",
         form.current,
-        "DQKugPQ4meza9DwOG"
+        "xw-05FedmoQeFTClZ"
       );
       e.currentTarget.reset();
     }
