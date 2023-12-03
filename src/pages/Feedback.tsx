@@ -83,8 +83,8 @@ export const Feedback: FC<FeedbackProps> = () => {
                </div>
 
                <div className="relative mb-28 h-16 contact__form-area">
-                  <label htmlFor="project" className="absolute -top-[0.75rem] left-[1.25rem] text-[0.875rem] p-[0.25rem] z-10 bg-[#fbfbfb]">Feedback</label>
-                  <textarea name="project" cols={30} rows={10} className="relative top-0 left-0 w-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 h-[8.4rem]" placeholder="write your feedback"></textarea>
+                  <label htmlFor="feedback" className="absolute -top-[0.75rem] left-[1.25rem] text-[0.875rem] p-[0.25rem] z-10 bg-[#fbfbfb]">Feedback</label>
+                  <textarea name="feedback" cols={30} rows={10} className="relative top-0 left-0 w-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 h-[8.4rem]" placeholder="write your feedback"></textarea>
                </div>
 
                <button className="text-sm inline-flex items-center rounded-[1rem] border py-[1.25rem] px-[2rem]">Send Message
@@ -112,4 +112,5 @@ export const Feedback: FC<FeedbackProps> = () => {
     </motion.div>
   );
 };
+
 
