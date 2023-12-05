@@ -1,7 +1,7 @@
 import {Link, useLocation, useNavigate } from "react-router-dom"
 import dotImage from "../../src/assets/dots.png"
 import {AiOutlineClose} from "react-icons/ai";
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { motion } from "framer-motion";
 import mailSvg from "../../src/assets/mail.svg";
 import { sendPasswordResetEmail } from 'firebase/auth';
@@ -37,7 +37,7 @@ export const ForgotPassword: React.FC = () => {
     history(-1)
   }
 
-  async function onSubmit(e: React.ChangeEvent<HTMLInputElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
    e.preventDefault();
 
    try {
