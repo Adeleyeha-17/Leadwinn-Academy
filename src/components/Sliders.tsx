@@ -64,11 +64,11 @@ const Sliders = () => {
   return (
     <Slider {...settings}>
       {courses.map((data, index) => (
-        <div key={index} className="relative rounded-3xl overflow-hidden border-2 border-white">
+        <div key={index} className="w-[17rem] relative rounded-3xl overflow-hidden border-2 border-white">
           <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
           <motion.div
             animate={{ translateY: 0, transition: { duration: 0.3, ease: 'easeInOut' } }}
-            className="absolute flex flex-col justify-center items-center gap-2 bg-courses bg-opacity-40 inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40"
+            className="absolute flex flex-col justify-center items-center gap-2 bg-courses bg-opacity-40 inset-0 text-white rounded-3xl rounded-t-none"
           >
             <h1 className="font-bold text-sm">{data.heading}</h1>
             <Link
