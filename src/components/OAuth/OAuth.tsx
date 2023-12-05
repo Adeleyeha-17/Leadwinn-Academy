@@ -1,21 +1,48 @@
 import { FcGoogle } from 'react-icons/fc';
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../../config/firebase"
+import { toast } from "react-toastify"
+import { db } from '../../config/firebase';
+import { useNavigate } from 'react-router-dom';
+import { doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore';
 
 export const OAuth: React.FC = () => {
+
+  const navigate = useNavigate()
   
   async function onGoogleClick() {
-    const provider = new GoogleAuthProvider
-  signInWithPopup(auth, provider)
-    .then((result) => {
-     
-      const user = result.user;
-     console.log(user)
-    }).catch((error) => {
-      // Handle Errors here.
-     console.log({error})
-    });
 
+    try{
+    const provider = new GoogleAuthProvider();
+  const result = await signInWithPopup(auth, provider)
+      const user = result.user;
+      const docRef = doc(db, "users", user.uid)
+      const docSnap = await getDoc(docRef)
+
+      if (!docSnap.exists()) {
+        await setDoc(docRef, {
+          name: user.displayName,
+          email: user.email,
+          timestamp: serverTimestamp(),
+        });
+      }
+
+      navigate("/");
+      console.log(user);
+    } catch (error) {
+      if (error === 'auth/cancelled-popup-request') {
+
+        // Handle canceled popup request
+        console.error("Popup request was cancelled");
+      } else {
+
+        // Handle other errors
+        toast.error("Could not authorize with Google");
+        console.error(error);
+    
+      }
+    }
+    
   }
 
   return (

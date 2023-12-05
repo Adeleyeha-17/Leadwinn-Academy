@@ -10,6 +10,9 @@ import { Feedback } from "./pages/Feedback";
 import { AnimatePresence } from "framer-motion";
 import { Signin } from "./pages/Signin";
 import { Register } from "./pages/Register";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import { ForgotPassword } from "./pages/ForgotPassword";
 
 function App() {
 
@@ -27,10 +30,25 @@ function App() {
             <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
             <Route path="/sign-in" element={<Signin />} />
             <Route path="/register" element={<Register />} />
+            <Route path="forgot-password" element={<ForgotPassword />}/>
 
           </Routes>
         </Router>
       </AnimatePresence>
+
+      <ToastContainer
+      position="bottom-center"
+      autoClose={1000}
+      limit={1}
+      hideProgressBar={true}
+      newestOnTop={false}
+      closeOnClick={false}
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="colored"
+      />
     </>
   );
 }
