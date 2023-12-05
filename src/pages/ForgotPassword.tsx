@@ -37,7 +37,7 @@ export const ForgotPassword: React.FC = () => {
     history(-1)
   }
 
-  async function onSubmit(e) {
+  async function onSubmit(e: React.ChangeEvent<HTMLInputElement>) {
    e.preventDefault();
 
    try {
