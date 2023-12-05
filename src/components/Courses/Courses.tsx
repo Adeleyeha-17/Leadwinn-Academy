@@ -69,7 +69,7 @@ export const Courses = () => {
                      <h1 className="font-bold text-xs sm:text-base xl:text-xl">{data.heading}</h1>
                      <img src={data.overlayImg} alt={data.heading} className="max-sm:w-[2rem] max-xl:w-[3rem]" />
 
-                     <Link to="" className={`inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs md:text-sm md:font-semibold rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
+                     <Link to="/register" className={`inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs md:text-sm md:font-semibold rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
                   </motion.div>
                </div>
             ))}
@@ -85,7 +85,7 @@ export const Courses = () => {
               animate={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-2 bg-courses bg-opacity-30 backdrop-blur-sm inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
                      <h1 className="font-bold text-sm">{data.heading}</h1>
 
-                     <Link to="" className={`inline-block justify-center items-center py-4 px-6 bg-head-blue text-white text-xs rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
+                     <Link to="/register" className={`inline-block justify-center items-center py-4 px-6 bg-head-blue text-white text-xs rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
                   </motion.div>
                </div>
             ))}
