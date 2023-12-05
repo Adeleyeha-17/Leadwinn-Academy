@@ -81,8 +81,8 @@ export const Courses = () => {
             {courses.map((data, index) => (
                <div key={index} className="w-[17rem] relative rounded-3xl overflow-hidden mx-auto">
                   <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
-                  <motion.div   whileHover={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }}
-              animate={{ translateY: 200, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-10 bg-courses bg-opacity-70 backdrop-blur-sm inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
+                  <motion.div
+              animate={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-10 bg-courses bg-opacity-70 backdrop-blur-sm inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
                      <h1 className="font-bold text-xs sm:text-base xl:text-xl">{data.heading}</h1>
                      <img src={data.overlayImg} alt={data.heading} className="max-sm:w-[2rem] max-xl:w-[3rem]" />
 
