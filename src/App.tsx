@@ -13,6 +13,7 @@ import { Register } from "./pages/Register";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { ForgotPassword } from "./pages/ForgotPassword";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <>
       <AnimatePresence mode='wait'>
         <Router>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Layout><Home /></Layout>} />
             <Route path="/about" element={<Layout><About /></Layout>} />

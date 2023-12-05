@@ -1,7 +1,6 @@
 import React, {useState, ChangeEvent} from 'react'
 import {Link} from "react-router-dom"
 import Scroll from '../Scroll';
-import useScrollToTop from '../../hooks/ScrollToTop';
 import Logo from "../../assets/leadwinn.svg"
 
 type quickLink = {
@@ -10,8 +9,7 @@ type quickLink = {
 }
 
 export const Footer: React.FC = () => {
-
-   const { scrollToTop } = useScrollToTop()
+  
 
    const [emailData, setEmailData] = useState({email: "", receiveMail: true})
 
@@ -86,7 +84,7 @@ export const Footer: React.FC = () => {
                         key={
                            links.path
                      }
-                     onClick={scrollToTop}>
+                     >
                         {
                         links.link
                      }</Link>
@@ -158,7 +156,7 @@ export const Footer: React.FC = () => {
 
             <div className='flex flex-col lg:flex-row items-center gap-4 mt-10 text-center max-sm:px-4'>
                <div className='flex gap-3 '>
-                  <Link to="/"><img src={Logo} alt="leadwinn logo" className='w-9 md:w-10' onClick={scrollToTop}/></Link>
+                  <Link to="/"><img src={Logo} alt="leadwinn logo" className='w-9 md:w-10'/></Link>
                   <h5 className='text-xs md:text-sm flex items-center justify-center text-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
                </div>
