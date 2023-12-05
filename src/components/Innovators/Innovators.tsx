@@ -15,6 +15,7 @@ export const Innovators:React.FC = () => {
         Leadwinn is dedicated to transforming learners, inspiring progress, and nurturing the future of tech education.
         </h4>
     
+    
       </div>
     </div>
   )
