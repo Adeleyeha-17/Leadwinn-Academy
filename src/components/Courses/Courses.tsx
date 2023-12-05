@@ -82,7 +82,7 @@ export const Courses = () => {
                <div key={index} className="w-[17rem] relative rounded-3xl overflow-hidden mx-auto border-2 border-white">
                   <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
                   <motion.div
-              animate={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-2 bg-courses bg-opacity-40 backdrop-blu inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
+              animate={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-2 bg-courses bg-opacity-40 inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
                      <h1 className="font-bold text-sm">{data.heading}</h1>
 
                      <Link to="/register" className={`inline-block justify-center items-center py-4 px-8 bg-head-blue text-white text-xs rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
