@@ -1,4 +1,4 @@
-import {Link, useLocation, useNavigate } from "react-router-dom"
+import {Link, useNavigate } from "react-router-dom"
 import dotImage from "../../src/assets/dots.png"
 import {AiOutlineClose} from "react-icons/ai";
 import { FormEvent, useState } from 'react';
@@ -12,12 +12,9 @@ import { auth } from "../config/firebase"
 
 export const ForgotPassword: React.FC = () => {
 
-  const location = useLocation();
   const history = useNavigate();
 
-  const routePathMatch = (route: string) => {
-    return location.pathname === route ? "text-hero-blue" : "text-black";
-  }
+  
   
   const [formData, setFormData] = useState({
     email: ""
@@ -67,7 +64,7 @@ export const ForgotPassword: React.FC = () => {
       </div>
 
         <div className="flex items-center flex-col gap-6 xl:gap-10 text-sm sm:text-base lg:text-xl text-head-black font-bold">
-          <span className="text-sm sm:text-base font-bold"> <Link to="/register" className={`${routePathMatch("/register")}`}>Register</Link> / <Link to="/sign-in" className={`${routePathMatch("/sign-in")}`}>Sign In</Link></span>
+        
 
        
 
