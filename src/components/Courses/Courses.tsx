@@ -85,7 +85,7 @@ export const Courses = () => {
               animate={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-2 bg-courses bg-opacity-40 backdrop-blu inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
                      <h1 className="font-bold text-sm">{data.heading}</h1>
 
-                     <Link to="/register" className={`inline-block justify-center items-center py-4 px-6 bg-head-blue text-white text-xs rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
+                     <Link to="/register" className={`inline-block justify-center items-center py-4 px-8 bg-head-blue text-white text-xs rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
                   </motion.div>
                </div>
             ))}
