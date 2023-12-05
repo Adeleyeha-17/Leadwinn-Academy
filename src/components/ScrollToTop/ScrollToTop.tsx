@@ -11,9 +11,6 @@ const ScrollToTop = () => {
 
     window.history.scrollRestoration = 'auto';
 
-    // Optionally, restore the previous scroll position after a short delay
-    // setTimeout(() => window.scrollTo(0, scrollY), 100);
-
   }, [pathname]);
 
   return null;
