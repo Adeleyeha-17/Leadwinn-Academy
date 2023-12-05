@@ -79,7 +79,7 @@ export const Courses = () => {
          {/*Mobile*/}
          <div className="grid sm:hidden grid-cols-6 gap-72">
             {courses.map((data, index) => (
-               <div key={index} className="w-[17rem] relative rounded-3xl overflow-hidden mx-auto">
+               <div key={index} className="w-[17rem] relative rounded-3xl overflow-hidden mx-auto border border-white">
                   <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
                   <motion.div
               animate={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-6 bg-courses bg-opacity-30 backdrop-blur-sm inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
