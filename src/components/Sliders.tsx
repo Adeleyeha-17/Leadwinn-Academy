@@ -57,7 +57,7 @@ const Sliders = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1.3,
+    slidesToShow: 1.42,
     slidesToScroll: 1,
     arrows: false,
          cssEase: "linear"
