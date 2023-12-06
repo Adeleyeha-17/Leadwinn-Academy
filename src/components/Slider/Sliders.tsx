@@ -1,21 +1,18 @@
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import  mitImage from "../assets/mit-img.png"
-import  mit from "../assets/mit.png"
-import  pythonImage from "../assets/python-img.png"
-import  python from "../assets/python.png"
-import  robloxImage from "../assets/roblox-img.png"
-import  roblox from "../assets/roblox.png"
-import  scratchImage from "../assets/scratch-img.png"
-import  scratch from "../assets/scratch.png"
-import  uiImage from "../assets/ui-img.png"
-import  ui from "../assets/uiux.png"
-import  webImage from "../assets/web-img.png"
-import  web from "../assets/web.png"
-
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import  mitImage from "../../assets/mit-img.png"
+import  mit from "../../assets/mit.png"
+import  pythonImage from "../../assets/python-img.png"
+import  python from "../../assets/python.png"
+import  robloxImage from "../../assets/roblox-img.png"
+import  roblox from "../../assets/roblox.png"
+import  scratchImage from "../../assets/scratch-img.png"
+import  scratch from "../../assets/scratch.png"
+import  uiImage from "../../assets/ui-img.png"
+import  ui from "../../assets/uiux.png"
+import  webImage from "../../assets/web-img.png"
+import  web from "../../assets/web.png"
 
 const Sliders = () => {
 
@@ -60,12 +57,12 @@ const Sliders = () => {
     slidesToShow: 1.42,
     slidesToScroll: 1,
     arrows: false,
-         cssEase: "linear"
+    cssEase: "linear"
 
   };
 
   return (
-    <Slider {...settings} className="grid sm:hidden">
+    <Slider {...settings} className="grid sm:hidden slider">
       {courses.map((data, index) => (
         <div key={index} className="relative rounded-3xl overflow-hidden border-2 border-white">
           <img src={data.img} alt={data.heading} className="w-full rounded-xl" />

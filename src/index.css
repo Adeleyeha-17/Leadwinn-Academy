@@ -16,13 +16,13 @@ html, body {
    top: 1rem !important;
 }
 
-.slick-track {
+.slider .slick-track {
    display: grid !important;
    grid-template-columns: repeat(14, 1fr);
       gap: 1rem;
  }
 
- .slick-slide {
+.slider .slick-slide {
    width: 100% !important;
    box-sizing: border-box;
  }

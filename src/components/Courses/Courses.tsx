@@ -12,7 +12,7 @@ import  uiImage from "../../assets/ui-img.png"
 import  ui from "../../assets/uiux.png"
 import  webImage from "../../assets/web-img.png"
 import  web from "../../assets/web.png"
-import Sliders from "../Sliders"
+import Sliders from "../Slider/Sliders"
 
 export const Courses = () => {
 
