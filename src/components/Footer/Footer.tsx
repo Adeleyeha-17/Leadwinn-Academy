@@ -154,15 +154,19 @@ export const Footer: React.FC = () => {
 
          <div className='border-t-2 sm:border-t border-gray-400 mt-20'>
 
-            <div className='flex flex-col lg:flex-row items-center gap-4 mt-10 text-center max-sm:px-4'>
-               <div className='flex gap-3 '>
-                  <Link to="/"><img src={Logo} alt="leadwinn logo" className='w-9 md:w-10'/></Link>
-                  <h5 className='text-xs md:text-sm flex items-center justify-center text-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
+            <div className='flex flex-col max-sm:items-center lg:flex-row gap-4 mt-10 text-center'>
+               <div className='flex gap-4'>
+                  <Link to="/"><img src={Logo} alt="leadwinn logo" className='w-7 md:w-10'/></Link>
+
+                  <div className='lg:flex gap-5'>
+
+                  <h5 className='text-[0.59375rem] md:text-sm flex items-center justify-center text-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
-               </div>
-               <div className='flex items-center gap-3 px-2 sm:gap-4 text-xs md:text-sm'>
+               <div className='flex items-center gap-3 sm:gap-4 text-[0.59375rem] md:text-sm'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
+               </div>
+                  </div>
                </div>
          <Scroll />
             </div>
