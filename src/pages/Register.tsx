@@ -56,7 +56,7 @@ export const Register = () => {
 
    <div className="absolute top-16 right-8 sm:right-14 lg:right-14 mb-5">
        
-       <AiOutlineClose className="cursor-pointer" onClick={handleGoBack}/>
+       <AiOutlineClose className="cursor-pointer relative max-sm:-top-8" onClick={handleGoBack}/>
         
        </div>
         
