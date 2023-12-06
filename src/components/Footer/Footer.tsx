@@ -154,7 +154,7 @@ export const Footer: React.FC = () => {
 
          <div className='border-t-2 sm:border-t border-gray-400 mt-20'>
 
-            <div className='flex flex-col max-sm:items-center lg:flex-row gap-4 mt-10 text-center'>
+            <div className='flex flex-col lg:flex-row gap-4 mt-10 text-center'>
                <div className='flex gap-4'>
                   <Link to="/"><img src={Logo} alt="leadwinn logo" className='w-7 md:w-10'/></Link>
 
