@@ -13,6 +13,8 @@ import { Register } from "./pages/Register";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { ForgotPassword } from "./pages/ForgotPassword";
+import { Profile } from "./pages/Profile";
+import { PrivateRoute } from "./hooks/PrivateRoute";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
@@ -25,11 +27,20 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout><Home /></Layout>} />
             <Route path="/about" element={<Layout><About /></Layout>} />
+
+            <Route path="/library" element={<PrivateRoute />}>
             <Route path="/library" element={<Layout><Library /></Layout>} />
+            </Route>
+
             <Route path="/tech-hub" element={<Layout><Techhub /></Layout>} />
             <Route path="/plans" element={<Layout><Plans /></Layout>} />
             <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
             <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
+            
+            <Route path="/profile" element={<PrivateRoute />}>
+            <Route path="/profile" element={<Layout><Profile /></Layout>} />
+            </Route>
+
             <Route path="/sign-in" element={<Signin />} />
             <Route path="/register" element={<Register />} />
             <Route path="forgot-password" element={<ForgotPassword />}/>

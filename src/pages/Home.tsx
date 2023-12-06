@@ -23,7 +23,6 @@ export const Home: React.FC = () => {
 
             <Learning /> 
 
-
             <Goal />
 
             <Courses />
