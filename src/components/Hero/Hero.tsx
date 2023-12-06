@@ -1,12 +1,13 @@
 
 import { useEffect, useState } from "react";
-import Button from "../Button";
 import { motion } from "framer-motion";
+import {Link} from "react-scroll"
 import HomeIllus from "../../assets/homeillus.png"
 import HomeIllustration from "../../assets/homeIllustration.png"
 import Edu1 from "../../assets/edu1.png"
 import Edu2 from "../../assets/edu2.png"
 import Edu3 from "../../assets/edu3.png"
+
 
 type HomeProps = {
   words: string[];
@@ -62,7 +63,9 @@ export const Hero: React.FC<HomeProps> = () => {
               {currentWord}
             </motion.span>  Online Coding Classes</motion.h1>
           <h1 className="hidden md:flex mb-6 text-xs lg:text-base sm:max-w-[26rem] lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
-          <Button path="" title="Discover Course" />
+
+          <Link to="courses" className={ `hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white md:text-sm md:font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Discover Course</Link>
+        
         </div>
         <div className="md:w-2/5">
           <motion.img

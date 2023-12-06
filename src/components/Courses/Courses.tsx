@@ -53,7 +53,7 @@ export const Courses = () => {
    ]
 
    return (
-      <div className="bg-footer-blue">
+      <div className="bg-footer-blue" id="courses">
 
       <div className="h-[30rem] sm:h-[65rem] lg:h-[50rem] xl:h-[55rem]  font-poppins py-10 md:px-12 md:py-20 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto overflow-hidden">
          <div className="text-center text-white mb-16">
