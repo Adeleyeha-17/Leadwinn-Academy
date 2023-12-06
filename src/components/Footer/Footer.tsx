@@ -160,9 +160,9 @@ export const Footer: React.FC = () => {
 
                   <div className='lg:flex gap-5'>
 
-                  <h5 className='text-[0.59375rem] sm:text-sm flex items-center justify-center text-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
+                  <h5 className='text-[0.59375rem] sm:text-xs md:text-sm flex items-center justify-center text-center'>Copyright © 2020 - 2023 Leadwinn Academy. All rights reserved
                   </h5>
-               <div className='flex items-center gap-3 sm:gap-4 text-[0.59375rem] sm:text-sm'>
+               <div className='flex items-center gap-3 sm:gap-4 text-[0.59375rem] sm:text-xs md:text-sm'>
                   <Link to="">Terms of Use</Link>
                   <Link to="">Privacy Notice</Link>
                </div>
