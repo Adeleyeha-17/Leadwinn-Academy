@@ -54,7 +54,7 @@ export const Team = () => {
       <div className="flex max-sm:flex-col gap-5 lg:gap-10 sm:px-16 justify-center items-center">
         <div>
           {selectedImage && (
-            <img src={selectedImage} className="w-[18.5rem] sm:w-[20rem] lg:w-[27.875rem]" alt="Selected Team Member" />
+            <img src={selectedImage} className="w-[18.5rem] sm:w-[20rem] lg:w-[27.875rem]" alt={selectedImage} />
           )}
         </div>
 

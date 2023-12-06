@@ -60,16 +60,12 @@ const Sliders = () => {
     slidesToShow: 1.3,
     slidesToScroll: 1,
     arrows: false,
-    autoplay:true,
-    autoplaySpeed: 2500,
-      pauseOnHover: true,
-      pauseOnFocus: true,
-      cssEase: "linear"
+         cssEase: "linear"
 
   };
 
   return (
-    <Slider {...settings} >
+    <Slider {...settings} className="grid sm:hidden">
       {courses.map((data, index) => (
         <div key={index} className="relative rounded-3xl overflow-hidden border-2 border-white">
           <img src={data.img} alt={data.heading} className="w-full rounded-xl" />

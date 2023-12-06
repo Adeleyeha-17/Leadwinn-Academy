@@ -78,7 +78,7 @@ export const Courses = () => {
 
 
          {/*Mobile*/}
-         <div className="sm:grid hidden grid-cols-6 gap-72">
+         <div className="hidden grid-cols-6 gap-72">
             {courses.map((data, index) => (
                <div key={index} className="w-[17rem] relative rounded-3xl overflow-hidden mx-auto border-2 border-white">
                   <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
