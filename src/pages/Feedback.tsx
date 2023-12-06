@@ -95,8 +95,8 @@ export const Feedback: FC<FeedbackProps> = () => {
 
                </div>
 
-               <div className="relative mb-28 h-16 contact__form-area">
-                  <textarea name="feedback" cols={30} rows={10} className="relative top-0 left-0 w-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 h-[8.4rem]" placeholder="Type your message"></textarea>
+               <div className="relative mb-28 h-32 contact__form-area">
+                  <textarea name="feedback" cols={30} rows={10} className="relative top-0 left-0 w-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 h-[12rem]" placeholder="Type your message"></textarea>
                </div>
 
                <button className="text-sm inline-flex items-center bg-hero-blue text-white rounded-[1rem] border py-[1.25rem] px-[2rem]">Send Message
