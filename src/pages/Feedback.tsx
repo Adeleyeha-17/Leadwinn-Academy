@@ -68,7 +68,7 @@ export const Feedback: FC<FeedbackProps> = () => {
               <span className="text-xs block mb-[0.75rem]">+2348165906106</span>
 
               <Link
-                to="https://api.whatsapp.com/send?phone=08165906106&text=Hello"
+                to="https://api.whatsapp.com/send?phone=08165906106&text=Hello Leadwinn,"
                 className="text-[0.75rem] inline-block items-center justify-center gap-x-1 text-hero-blue"
                 target="_blank">
                 Write us
