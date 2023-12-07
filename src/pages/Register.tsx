@@ -82,7 +82,7 @@ export const Register = () => {
           await setDoc(doc(db, "users", user.uid), formDataCopy);
   
           history("/");
-          toast.success("You have been registered successfully!");
+          //toast.success("You have been registered successfully!");
         }
       } catch (error) {
         toast.error(`Registration failed`);
