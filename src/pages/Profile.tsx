@@ -117,6 +117,7 @@ export const Profile: React.FC = () => {
                 <input
                   type="file"
                   id="fileInput"
+                  accept="image/*"
                   onChange={handleFileChange}
                   className="fileInput"
                   />
