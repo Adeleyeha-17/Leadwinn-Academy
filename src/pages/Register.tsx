@@ -79,9 +79,6 @@ export const Register = () => {
   
           const formDataCopy = { fullName, email, timeStamp: serverTimestamp() };
   
-          delete formDataCopy.password;
-          delete formDataCopy.confirmPassword;
-  
           await setDoc(doc(db, "users", user.uid), formDataCopy);
   
           history("/");
