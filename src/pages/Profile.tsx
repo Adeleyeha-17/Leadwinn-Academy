@@ -14,11 +14,11 @@ export const Profile: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [changeDetails, setChangeDetails] = useState(false)
   const [formData, setFormData] = useState({
-    fullname: auth.currentUser?.displayName || "",
+    fullName: auth.currentUser?.displayName || "",
     email: auth.currentUser?.email || ""
   })
 
-  const {fullname, email} = formData
+  const {fullName, email} = formData
   const navigate = useNavigate()
 
   function onChange(e: React.ChangeEvent<HTMLInputElement>){
@@ -47,9 +47,9 @@ export const Profile: React.FC = () => {
       const user = auth.currentUser;
   
       if (user) {
-        if (user.displayName !== fullname) {
+        if (user.displayName !== fullName) {
           await updateProfile(user, {
-            displayName: fullname,
+            displayName: fullName,
           });
         }
   
@@ -61,13 +61,13 @@ export const Profile: React.FC = () => {
   
           const docRef = doc(db, "users", user.uid);
           await updateDoc(docRef, {
-            name: fullname,
+            fullName: fullName,
             profileImageURL: downloadURL,
           });
         } else {
           const docRef = doc(db, "users", user.uid);
           await updateDoc(docRef, {
-            name: fullname,
+            fullName: fullName,
           });
         }
   
@@ -126,7 +126,7 @@ export const Profile: React.FC = () => {
                 )}
               </div>
           {/* Name input */}
-          <input type="text" name="fullname" value={fullname} onChange={onChange} disabled={!changeDetails} className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out ${changeDetails && "bg-red-200 focus:bg-red-200"}`}/>
+          <input type="text" name="fullName" value={fullName} onChange={onChange} disabled={!changeDetails} className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out ${changeDetails && "bg-red-200 focus:bg-red-200"}`}/>
           
           {/* Email input */}
           <input type="email" name="email" value={email} onChange={onChange} disabled={!changeDetails} className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out`}/>
