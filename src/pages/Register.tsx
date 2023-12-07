@@ -1,13 +1,17 @@
 import { Link, useLocation, useNavigate} from "react-router-dom";
 import dotImage from "../../src/assets/dots.png";
 import OAuth from "../components/OAuth";
+import { createUserWithEmailAndPassword, updateProfile} from "firebase/auth";
+import { db } from "../config/firebase"
+import { setDoc, doc, serverTimestamp, FieldValue } from 'firebase/firestore';
+import { toast } from 'react-toastify';
 import { motion } from "framer-motion";
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { AiOutlineClose} from "react-icons/ai";
 import editSvg from "../../src/assets/editname.svg"
 import mailSvg from "../../src/assets/mail.svg"
 import passwordSvg from "../../src/assets/password.svg"
-{/*import { auth } from "../config/firebase.ts"*/}
+import { auth } from "../config/firebase.ts"
 
 export const Register = () => {
    const location = useLocation();
@@ -17,14 +21,25 @@ export const Register = () => {
      return location.pathname === route ? "text-hero-blue" : "text-black";
    }
 
-   const [formData, setFormData] = useState({
-      fullName: "",
-      email: "",
-      password: "",
-      confirmPassword: "",
-      rememberMe: true
-    })
+   const [formData, setFormData] = useState<{
+    fullName: string;
+    email: string;
+    password: string; 
+    confirmPassword: string;
+    rememberMe?: boolean;
+    timeStamp: FieldValue;
+  }>({
+    fullName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    rememberMe: false,
+    timeStamp: serverTimestamp(),
+  });
   
+  
+  
+  const [loading, setLoading] = useState(false);
     const { fullName, email, password, confirmPassword } = formData
   
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,6 +53,48 @@ export const Register = () => {
     const handleGoBack = () => {
       history(-1)
     }
+
+    const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+  
+      if (password !== confirmPassword) {
+        toast.error("Passwords do not match");
+        return;
+      }
+  
+      try {
+        setLoading(true);
+  
+        const userCredential = await createUserWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
+        const user = userCredential.user;
+  
+        if (user) {
+          await updateProfile(user, {
+            displayName: fullName,
+          });
+  
+          const formDataCopy = { fullName, email, timeStamp: serverTimestamp() };
+  
+          delete formDataCopy.password;
+          delete formDataCopy.confirmPassword;
+  
+          await setDoc(doc(db, "users", user.uid), formDataCopy);
+  
+          history("/");
+          toast.success("You have been registered successfully!");
+        }
+      } catch (error) {
+        toast.error(`Registration failed`);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    
 
   return (
    <motion.div initial={{opacity: 0}} animate={{opacity:1}} exit={{opacity: 0}} transition={{duration: 2.5}}  className="h-screen flex font-poppins">
@@ -71,7 +128,7 @@ export const Register = () => {
 
         <div>
 
-<form>
+<form onSubmit={onSubmit}>
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8">
 
    <div className="relative ">
@@ -105,8 +162,13 @@ export const Register = () => {
   </div>
 
 
-  <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">Sign Up</button>
-
+  <button
+            className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800"
+            type="submit"
+            disabled={loading}
+          >
+            {loading ? "Signing Up..." : "Sign Up"}
+          </button>
 </form>
 
 </div>
