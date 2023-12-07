@@ -18,15 +18,14 @@ export const Register = () => {
    }
 
    const [formData, setFormData] = useState({
-      firstName: "",
-      lastName: "",
+      fullName: "",
       email: "",
       password: "",
       confirmPassword: "",
       rememberMe: true
     })
   
-    const { firstName, lastName, email, password, confirmPassword } = formData
+    const { fullName, email, password, confirmPassword } = formData
   
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const { name, value } = e.target
@@ -77,35 +76,19 @@ export const Register = () => {
 
    <div className="relative ">
 
-    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="firstName" value={firstName} placeholder="First Name" onChange={onChange} />
+    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="fullName" value={fullName} placeholder="Full Name" onChange={onChange} />
 
     <img src={editSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
    </div>
 
+    <div className="relative">
+
+                <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
+
+                <img src={mailSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+                
+    </div>
     
-    <div className="relative">
-
-    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="lastName" value={lastName} placeholder="Last Name" onChange={onChange} />
-
-    <img src={editSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
-    </div>
-
-    <div className="relative">
-
-                <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
-
-                <img src={mailSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
-                
-    </div>
-
-    <div className="relative">
-
-                <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
-
-                <img src={mailSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
-                
-    </div>
-
     <div className="relative">
                   <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="password" value={password} placeholder="Password" onChange={onChange} autoComplete="true"/>
                   
