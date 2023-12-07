@@ -6,11 +6,13 @@ import basitImage from "../../assets/Basit.png"
 import joshuaImage from "../../assets/Joshua.png"
 import LinkedIn from "../../assets/LinkedIn.svg"
 import LinkedInActive from "../../assets/LinkedInA.svg"
+import { Link } from "react-router-dom";
 
 interface TeamMember {
   name: string;
   img: string;
   position: string;
+  linkedin: string;
 }
 
 export const Team = () => {
@@ -19,26 +21,31 @@ export const Team = () => {
       name: "Adetokunbo Adeyemi",
       img: tokunboImage,
       position: "Business Manager",
+      linkedin: "https://www.linkedin.com/in/ade-ha17/"
     },
     {
       name: "Adesubomi Fetuga",
       img: subomiImage,
       position: "International Facilitator",
+      linkedin: "https://www.linkedin.com/in/ade-ha17/"
     },
     {
       name: "Adedamola Adeleye",
       img: adeleyeImage,
       position: "International Facilitator",
+      linkedin: "https://www.linkedin.com/in/ade-ha17/"
     },
     {
       name: "Abdulbasit Oyesiji",
       img: basitImage,
       position: "International Facilitator",
+      linkedin: "https://www.linkedin.com/in/ade-ha17/"
     },
     {
       name: "Joshua Owonla",
       img: joshuaImage,
       position: "Brand & Communication",
+      linkedin: "https://www.linkedin.com/in/ade-ha17/"
     },
   ];
 
@@ -68,7 +75,9 @@ export const Team = () => {
               </h1>
               <h4 className="mb-3 w-28 lg:w-40 xl:w-48 text-xs lg:text-sm xl:text-base text-center">{data.position}</h4>
 
+<Link to={data.linkedin}>
               <img src={selectedImage ? LinkedIn : LinkedInActive}/>
+</Link>
             </div>
           ))}
         </div>
