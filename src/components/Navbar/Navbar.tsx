@@ -132,25 +132,25 @@ export const Navbar: React.FC = () => {
 
       {user ? (
         <>
-          <Link to="/profile" className={`p-4 border-b text-head-blue text-sm ${currentMatchPath('/profile')}`} onClick={closeNav}>
+          <Link to="/profile" className={`p-4 border-b text-sm ${currentMatchPath('/profile')}`} onClick={closeNav}>
             Profile
           </Link>
-          <button
-            className="p-4 text-head-blue text-sm cursor-pointer focus:outline-none"
+          <Link to="/"
+            className={`p-4 border-b text-sm ${currentMatchPath('/sign-out')}`} 
             onClick={() => {
               signOut(auth);
               closeNav();
             }}
           >
             Sign Out
-          </button>
+          </Link>
         </>
       ) : (
         <>
-          <Link to="/sign-in" className="p-4 border-b text-head-blue text-sm " onClick={closeNav}>
+          <Link to="/sign-in" className={`p-4 border-b text-sm ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
             Sign In
           </Link>
-          <Link to="/register" className="p-4 text-head-blue text-sm" onClick={closeNav}>
+          <Link to="/register" className={`p-4 border-b text-sm ${currentMatchPath('/register')}`}  onClick={closeNav}>
             Enroll Now
           </Link>
         </>
