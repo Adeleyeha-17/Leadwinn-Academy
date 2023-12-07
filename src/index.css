@@ -26,3 +26,17 @@ html, body {
    width: 100% !important;
    box-sizing: border-box;
  }
+
+ .fileInputLabel {
+   display: inline-block;
+   padding: 5px 20px;
+   background-color: #3498db;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+ 
+ .fileInput {
+   display: none; /* visually hide the input element */
+ }
+ 
