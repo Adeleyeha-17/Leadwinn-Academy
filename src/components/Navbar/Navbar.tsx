@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Button from '../Button';
 import Logo from '../../assets/leadwinn.svg';
 import { auth } from '../../config/firebase.ts';
-import { User } from 'firebase/auth';
+import { User, signOut } from 'firebase/auth';
 
 type NavLink = {
   link: string;
@@ -89,9 +89,12 @@ export const Navbar: React.FC = () => {
             <>
               <Link to="/profile" className="flex justify-center items-center text-head-blue text-xs md:text-sm font-semibold">
                 Profile
-              </Link>
-              <Button path="/sign-in" title="Sign Out" />
-            </>
+              </Link> 
+              <Link to="/" className={ `hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white md:text-sm md:font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} onClick={() => {
+              signOut(auth);
+              closeNav();
+            }}>Sign Out</Link>
+              </>
           ) : (
             <>
               <Link to="/sign-in" className="flex justify-center items-center text-head-blue text-xs md:text-sm font-semibold">
@@ -106,34 +109,55 @@ export const Navbar: React.FC = () => {
           {nav ? <AiOutlineClose size={28} className="md:hidden" /> : <AiOutlineMenu size={28} className="md:hidden" />}
         </div>
       </div>
+      
+  <div
+    className={nav ? 'fixed left-0 top-0 w-1/2 h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -left-full'}
+  >
+    <div className="font-poppins mx-3 flex flex-col font-semibold">
+      <div className="flex items-center gap-2 ml-2" onClick={closeNav}>
+        <Link to="/">
+          <img src={Logo} alt="leadwinn logo" className="w-12 sm:w-full" />
+        </Link>
+        <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
+          <h1>Leadwinn</h1>
+          <h1>Academy</h1>
+        </span>
+      </div>
 
-      <div
-        className={nav ? 'fixed left-0 top-0 w-1/2 h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -left-full'}
-      >
-        <div className="font-poppins mx-3 flex flex-col font-semibold">
-          <div className="flex items-center gap-2 ml-2" onClick={closeNav}>
-            <Link to="/">
-              <img src={Logo} alt="leadwinn logo" className="w-12 sm:w-full" />
-            </Link>
-            <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
-              <h1>Leadwinn</h1>
-              <h1>Academy</h1>
-            </span>
-          </div>
+      {navLinks.map((link) => (
+        <Link key={link.path} to={link.path} className={`p-4 border-b text-sm ${currentMatchPath(link.path)}`} onClick={closeNav}>
+          {link.link}
+        </Link>
+      ))}
 
-          {navLinks.map((link) => (
-            <Link key={link.path} to={link.path} className={`p-4 border-b text-sm ${currentMatchPath(link.path)}`} onClick={closeNav}>
-              {link.link}
-            </Link>
-          ))}
+      {user ? (
+        <>
+          <Link to="/profile" className={`p-4 border-b text-head-blue text-sm ${currentMatchPath('/profile')}`} onClick={closeNav}>
+            Profile
+          </Link>
+          <button
+            className="p-4 text-head-blue text-sm cursor-pointer focus:outline-none"
+            onClick={() => {
+              signOut(auth);
+              closeNav();
+            }}
+          >
+            Sign Out
+          </button>
+        </>
+      ) : (
+        <>
           <Link to="/sign-in" className="p-4 border-b text-head-blue text-sm " onClick={closeNav}>
             Sign In
           </Link>
           <Link to="/register" className="p-4 text-head-blue text-sm" onClick={closeNav}>
             Enroll Now
           </Link>
-        </div>
-      </div>
+        </>
+      )}
+    </div>
+  </div>
+
     </div>
   );
 };
