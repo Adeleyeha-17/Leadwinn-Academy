@@ -27,16 +27,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout><Home /></Layout>} />
             <Route path="/about" element={<Layout><About /></Layout>} />
-
-            <Route path="/library" element={<PrivateRoute />}>
             <Route path="/library" element={<Layout><Library /></Layout>} />
-            </Route>
-
             <Route path="/tech-hub" element={<Layout><Techhub /></Layout>} />
             <Route path="/plans" element={<Layout><Plans /></Layout>} />
             <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
             <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
-            
             <Route path="/profile" element={<PrivateRoute />}>
             <Route path="/profile" element={<Layout><Profile /></Layout>} />
             </Route>
