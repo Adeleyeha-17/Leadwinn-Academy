@@ -123,6 +123,15 @@ export const Footer: React.FC = () => {
                   </svg>
                   </Link>
 
+                  <Link
+                to="https://api.whatsapp.com/send?phone=+2348165906106&text=Hello Leadwinn,"
+                className="text-[0.75rem] inline-block items-center justify-center gap-x-1 text-hero-blue"
+                target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                     <path fillRule="evenodd" clipRule="evenodd" d="M14.025 31.9275C6.35248 30.8137 0.412476 24.1312 0.412476 16.0875C0.412476 7.1775 7.58998 0 16.5 0C25.41 0 32.5875 7.1775 32.5875 16.0875C32.5875 24.1312 26.6475 30.8137 18.975 31.9275V20.6663H22.6875L23.43 15.9637H18.975V12.9937C18.975 11.7562 19.5937 10.5187 21.5737 10.5187H23.5537V6.55875C23.5537 6.55875 21.6975 6.1875 19.965 6.1875C16.2525 6.1875 13.9012 8.415 13.9012 12.4987V16.0875H9.94123V20.79H14.025V31.9275Z" fill="white"/>
+                  </svg>
+              </Link>
+
                </div>
             </div>
 

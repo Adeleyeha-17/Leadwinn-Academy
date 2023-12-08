@@ -32,6 +32,7 @@ function App() {
             <Route path="/plans" element={<Layout><Plans /></Layout>} />
             <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
             <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
+            
             <Route path="/profile" element={<PrivateRoute />}>
             <Route path="/profile" element={<Layout><Profile /></Layout>} />
             </Route>
