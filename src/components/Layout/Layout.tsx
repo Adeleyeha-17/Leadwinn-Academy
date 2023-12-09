@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 
@@ -11,9 +12,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <Navbar />
 
-      <div>{children}</div>
+          <div>{children}</div>
 
       <Footer />
+    
     </>
   );
 };

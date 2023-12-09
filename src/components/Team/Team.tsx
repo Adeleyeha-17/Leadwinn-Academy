@@ -6,7 +6,6 @@ import basitImage from "../../assets/Basit.png"
 import joshuaImage from "../../assets/Joshua.png"
 import LinkedIn from "../../assets/LinkedIn.svg"
 import LinkedInActive from "../../assets/LinkedInA.svg"
-import { Link } from "react-router-dom";
 
 interface TeamMember {
   name: string;
@@ -21,13 +20,13 @@ export const Team = () => {
       name: "Adetokunbo Adeyemi",
       img: tokunboImage,
       position: "Business Manager",
-      linkedin: "https://www.linkedin.com/in/ade-ha17/"
+      linkedin: "https://www.linkedin.com/in/tokunbo-adeyemi-mba-2381b8169/"
     },
     {
       name: "Adesubomi Fetuga",
       img: subomiImage,
       position: "International Facilitator",
-      linkedin: "https://www.linkedin.com/in/ade-ha17/"
+      linkedin: "https://www.linkedin.com/in/adesubomi-fetuga-7ba3b5199/"
     },
     {
       name: "Adedamola Adeleye",
@@ -39,13 +38,13 @@ export const Team = () => {
       name: "Abdulbasit Oyesiji",
       img: basitImage,
       position: "International Facilitator",
-      linkedin: "https://www.linkedin.com/in/ade-ha17/"
+      linkedin: "https://www.linkedin.com"
     },
     {
       name: "Joshua Owonla",
       img: joshuaImage,
       position: "Brand & Communication",
-      linkedin: "https://www.linkedin.com/in/ade-ha17/"
+      linkedin: "https://www.linkedin.com/in/joshua-owonla/"
     },
   ];
 
@@ -75,9 +74,9 @@ export const Team = () => {
               </h1>
               <h4 className="mb-3 w-28 lg:w-40 xl:w-48 text-xs lg:text-sm xl:text-base text-center">{data.position}</h4>
 
-<Link to={data.linkedin}>
+<a href={data.linkedin} target="_blank" rel="noopener noreferrer">
               <img src={selectedImage ? LinkedIn : LinkedInActive}/>
-</Link>
+</a>
             </div>
           ))}
         </div>
