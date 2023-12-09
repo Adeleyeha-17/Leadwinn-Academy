@@ -18,10 +18,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
-
-  if ('scrollRestoration' in window.history) {
-    window.history.scrollRestoration = 'manual';
-  }
+  
 
   
   return (
