@@ -7,7 +7,6 @@ import { Techhub } from "./pages/Techhub";
 import { Plans } from "./pages/Plans";
 import { Privacy } from "./pages/Privacy";
 import { Feedback } from "./pages/Feedback";
-import { AnimatePresence } from "framer-motion";
 import { Signin } from "./pages/Signin";
 import { Register } from "./pages/Register";
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,13 +14,17 @@ import { ToastContainer } from "react-toastify";
 import { ForgotPassword } from "./pages/ForgotPassword";
 import { Profile } from "./pages/Profile";
 import { PrivateRoute } from "./hooks/PrivateRoute";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
 
   
   return (
-    <AnimatePresence mode='wait'>
-      <Router>
+    <>
+    <Router>
+      <AnimatePresence mode="wait"/>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/about" element={<Layout><About /></Layout>} />
@@ -39,6 +42,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
+        <AnimatePresence />
       </Router>
 
       <ToastContainer
@@ -53,8 +57,8 @@ function App() {
         draggable
         pauseOnHover
         theme="colored"
-      />
-    </AnimatePresence>
+        />
+        </>
   );
 }
 
