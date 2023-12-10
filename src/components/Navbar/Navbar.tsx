@@ -106,22 +106,27 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div onClick={toggleFunc} className="cursor-pointer md:hidden">
-          {nav ? <AiOutlineClose size={28} className="md:hidden" /> : <AiOutlineMenu size={28} className="md:hidden" />}
+          <AiOutlineMenu size={28} className="md:hidden" />
         </div>
       </div>
       
   <div
-    className={nav ? 'fixed left-0 top-0 w-1/2 h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -left-full'}
+    className={nav ? 'fixed left-0 top-0 w-full h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -left-full'}
   >
     <div className="font-poppins mx-3 flex flex-col font-semibold">
-      <div className="flex items-center gap-2 ml-2" onClick={closeNav}>
+      <div className="flex items-center justify-between gap-2 ml-2" onClick={closeNav}>
+        <div className="flex items-center gap-2 ml-2">
+
         <Link to="/">
           <img src={Logo} alt="leadwinn logo" className="w-12 sm:w-full" />
         </Link>
         <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
           <h1>Leadwinn</h1>
           <h1>Academy</h1>
+
         </span>
+        </div>
+          <AiOutlineClose size={28} className="md:hidden" />
       </div>
 
       {navLinks.map((link) => (
