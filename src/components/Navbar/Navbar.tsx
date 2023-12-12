@@ -1,4 +1,3 @@
-// Import necessary dependencies
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
@@ -17,12 +16,10 @@ export const Navbar: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    // Add a listener for changes in authentication status
     const unsubscribe = auth.onAuthStateChanged((user) => {
       return setUser(user);
     });
 
-    // Clean up the listener on component unmount
     return () => unsubscribe();
   }, []);
 
@@ -111,10 +108,10 @@ export const Navbar: React.FC = () => {
       </div>
       
   <div
-    className={nav ? 'fixed left-0 top-0 w-full h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -left-full'}
+    className={nav ? 'fixed left-0 bottom-0 top-0 w-full h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -top-full'}
   >
-    <div className="font-poppins mx-3 flex flex-col font-semibold">
-      <div className="flex items-center justify-between gap-2 ml-2" onClick={closeNav}>
+    <div className="font-poppins mx-1 mr-4 flex flex-col font-semibold">
+      <div className="flex items-center justify-between gap-2 ml-2">
         <div className="flex items-center gap-2 ml-2">
 
         <Link to="/">
@@ -126,7 +123,7 @@ export const Navbar: React.FC = () => {
 
         </span>
         </div>
-          <AiOutlineClose size={28} className="md:hidden" />
+          <AiOutlineClose size={28} className="md:hidden cursor-pointer" onClick={closeNav}/>
       </div>
 
       {navLinks.map((link) => (
