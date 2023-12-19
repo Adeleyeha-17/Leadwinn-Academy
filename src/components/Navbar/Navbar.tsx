@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
             <img src={Logo} alt="leadwinn logo" className="w-12 md:w-full transition duration-200 ease-in-out md:hover:scale-105" />
-            <span className="flex flex-col text-lead-black text-sm sm:text-sm font-semibold font-poppins">
+            <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
               <h1>Leadwinn</h1>
               <h1>Academy</h1>
             </span>
@@ -111,7 +111,7 @@ export const Navbar: React.FC = () => {
     className={nav ? 'fixed left-0 bottom-0 top-0 w-full h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -top-full bottom-0 h-full w-full transition-all ease-in-out duration-700 z-20'}
   >
     <div className="font-poppins mx-1 mr-4 flex flex-col font-semibold">
-      <div className="flex items-center justify-between gap-2 ml-2">
+      <div className="flex items-center justify-between gap-2 ml-2 mb-5">
         <div className="flex items-center gap-2 ml-2">
 
         <Link to="/">
@@ -127,18 +127,18 @@ export const Navbar: React.FC = () => {
       </div>
 
       {navLinks.map((link) => (
-        <Link key={link.path} to={link.path} className={`p-4 border-b text-base ${currentMatchPath(link.path)}`} onClick={closeNav}>
+        <Link key={link.path} to={link.path} className={`px-4 py-3 border-b text-base ${currentMatchPath(link.path)}`} onClick={closeNav}>
           {link.link}
         </Link>
       ))}
 
       {user ? (
         <>
-          <Link to="/profile" className={`p-4 border-b text-base ${currentMatchPath('/profile')}`} onClick={closeNav}>
+          <Link to="/profile" className={`px-4 py-3 border-b text-base ${currentMatchPath('/profile')}`} onClick={closeNav}>
             Profile
           </Link>
           <Link to="/"
-            className={`p-4 border-b text-base ${currentMatchPath('/sign-out')}`} 
+            className={`px-4 py-3 border-b text-base ${currentMatchPath('/sign-out')}`} 
             onClick={() => {
               signOut(auth);
               closeNav();
@@ -149,10 +149,10 @@ export const Navbar: React.FC = () => {
         </>
       ) : (
         <>
-          <Link to="/sign-in" className={`p-4 border-b text-base ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
+          <Link to="/sign-in" className={`px-4 py-3 border-b text-base ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
             Sign In
           </Link>
-          <Link to="/register" className={`p-4 border-b text-base ${currentMatchPath('/register')}`}  onClick={closeNav}>
+          <Link to="/register" className={`px-4 py-3 border-b text-base ${currentMatchPath('/register')}`}  onClick={closeNav}>
             Enroll Now
           </Link>
         </>
