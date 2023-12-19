@@ -65,8 +65,8 @@ export const Navbar: React.FC = () => {
       <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 xl:px-40 lg:max-xl:max-w-6xl mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
-            <img src={Logo} alt="leadwinn logo" className="w-14 md:w-full transition duration-200 ease-in-out md:hover:scale-105" />
-            <span className="flex flex-col text-lead-black text-base sm:text-sm font-semibold font-poppins">
+            <img src={Logo} alt="leadwinn logo" className="w-12 md:w-full transition duration-200 ease-in-out md:hover:scale-105" />
+            <span className="flex flex-col text-lead-black text-sm sm:text-sm font-semibold font-poppins">
               <h1>Leadwinn</h1>
               <h1>Academy</h1>
             </span>
@@ -115,9 +115,9 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-2 ml-2">
 
         <Link to="/">
-          <img src={Logo} alt="leadwinn logo" className="w-14 sm:w-full" />
+          <img src={Logo} alt="leadwinn logo" className="w-12 sm:w-full" />
         </Link>
-        <span className="flex flex-col text-lead-black text-base font-semibold font-poppins">
+        <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
           <h1>Leadwinn</h1>
           <h1>Academy</h1>
 
