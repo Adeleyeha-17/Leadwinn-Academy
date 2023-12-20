@@ -1,4 +1,4 @@
-import React, {useState, ChangeEvent} from 'react'
+import React, {useState, ChangeEvent, FormEvent} from 'react'
 import {Link} from "react-router-dom"
 import Scroll from '../Scroll';
 import Logo from "../../assets/leadwinn.svg"
@@ -25,6 +25,9 @@ export const Footer: React.FC = () => {
       }))
    }
   
+   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
+   }
 
    const quickLinks: quickLink[] = [
       {
@@ -125,9 +128,12 @@ export const Footer: React.FC = () => {
                 href="https://api.whatsapp.com/send?phone=+2348165906106&text=Hello Leadwinn,"
                 className="text-[0.75rem] inline-block items-center justify-center gap-x-1 text-hero-blue"
                 target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
-                     <path fillRule="evenodd" clipRule="evenodd" d="M14.025 31.9275C6.35248 30.8137 0.412476 24.1312 0.412476 16.0875C0.412476 7.1775 7.58998 0 16.5 0C25.41 0 32.5875 7.1775 32.5875 16.0875C32.5875 24.1312 26.6475 30.8137 18.975 31.9275V20.6663H22.6875L23.43 15.9637H18.975V12.9937C18.975 11.7562 19.5937 10.5187 21.5737 10.5187H23.5537V6.55875C23.5537 6.55875 21.6975 6.1875 19.965 6.1875C16.2525 6.1875 13.9012 8.415 13.9012 12.4987V16.0875H9.94123V20.79H14.025V31.9275Z" fill="white"/>
-                  </svg>
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="16" cy="16" r="16" fill="white"/>
+<path d="M7 24.9831L8.6493 21.1831C7.3875 19.3912 6.82274 17.2002 7.06102 15.0212C7.29929 12.8423 8.32422 10.8253 9.94345 9.34864C11.5627 7.87203 13.6649 7.03734 15.8556 7.00122C18.0463 6.96511 20.1749 7.73005 21.8418 9.1525C23.5088 10.5749 24.5996 12.5571 24.9095 14.727C25.2194 16.8969 24.7271 19.1053 23.525 20.9379C22.3229 22.7705 20.4937 24.1011 18.3805 24.6802C16.2674 25.2593 14.0156 25.047 12.0478 24.0831L7 24.9831Z" stroke="#003B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.9974 13.9832C12.9974 14.1158 13.0501 14.2429 13.1438 14.3367C13.2375 14.4305 13.3647 14.4832 13.4972 14.4832C13.6298 14.4832 13.7569 14.4305 13.8506 14.3367C13.9444 14.2429 13.997 14.1158 13.997 13.9832V12.9832C13.997 12.8505 13.9444 12.7234 13.8506 12.6296C13.7569 12.5358 13.6298 12.4832 13.4972 12.4832C13.3647 12.4832 13.2375 12.5358 13.1438 12.6296C13.0501 12.7234 12.9974 12.8505 12.9974 12.9832V13.9832ZM12.9974 13.9832C12.9974 15.3092 13.524 16.581 14.4613 17.5187C15.3986 18.4564 16.6698 18.9832 17.9953 18.9832M17.9953 18.9832H18.9949C19.1274 18.9832 19.2545 18.9305 19.3483 18.8367C19.442 18.7429 19.4947 18.6158 19.4947 18.4832C19.4947 18.3505 19.442 18.2234 19.3483 18.1296C19.2545 18.0358 19.1274 17.9832 18.9949 17.9832H17.9953C17.8628 17.9832 17.7356 18.0358 17.6419 18.1296C17.5482 18.2234 17.4955 18.3505 17.4955 18.4832C17.4955 18.6158 17.5482 18.7429 17.6419 18.8367C17.7356 18.9305 17.8628 18.9832 17.9953 18.9832Z" stroke="#003B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
               </a>
 
                </div>
@@ -139,7 +145,7 @@ export const Footer: React.FC = () => {
                <h1 className="text-xs md:text-sm">Sign up with your email to join our mailing list</h1>
 
                <div className="flex flex-col gap-4">
-                  <form>
+                  <form onSubmit={onSubmit}>
                      <input type="email" id='email' name='email'
                         value={email}
                         placeholder='Email Address'
