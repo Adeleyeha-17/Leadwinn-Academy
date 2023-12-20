@@ -27,7 +27,9 @@ export default {
         "home-gra-2" : "#2587F7",
         "test-gra" : "#0965CE",
         "test-gra-2" : "#01152C",
-        "courses" : "#0E2A4C"
+        "courses" : "#0E2A4C",
+        "plans-gra" : "#0965CE",
+        "plans-gra-2" : "#409BFF"
       },
       backgroundImage: {
         "desktop" : "url(./assets/desktop.png)",
