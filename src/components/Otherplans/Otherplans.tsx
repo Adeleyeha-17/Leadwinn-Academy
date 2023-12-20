@@ -1,8 +1,9 @@
 import Button from "../Button"
+import HomeIllus from "../../assets/homeillus.png"
 
 export const Otherplans = () => {
   return (
-<div className="bg-nav-blue h-full font-poppins p-10">
+<div className="bg-nav-blue h-full font-poppins max-sm:px-5 py-20 sm:py-28 sm:px-10 flex max-sm:flex-col gap-10 justify-center sm:items-center">
          <div className="flex flex-col gap-3">
             <h4 className="sm:mb-2 xl:mb-4 text-lg sm:text-xl font-semibold text-footer-blue"> Other Plans</h4>
 
@@ -11,6 +12,10 @@ export const Otherplans = () => {
             <h5 className="text-courses text-xs xl:text-sm w-[19rem] lg:w-[27rem] xl:w-[30rem] mb-5">Unlock personalized education solutions designed for your child's success, bridging the gap between classroom teachings and individualized growth.</h5>
          
             <Button path="" title="Learn more"/>
+         </div>
+
+         <div>
+            <img src={HomeIllus} alt="" className="w-[20rem] sm:w-full rounded-3xl"/>
          </div>
 </div>
 
