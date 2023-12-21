@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate} from "react-router-dom";
-import dotImage from "../../src/assets/dots.png";
+import { dots } from "../../src/assets/images";
 import OAuth from "../components/OAuth";
 import { createUserWithEmailAndPassword, updateProfile} from "firebase/auth";
 import { db } from "../config/firebase"
@@ -8,9 +8,7 @@ import { toast } from 'react-toastify';
 import { motion } from "framer-motion";
 import { FormEvent, useState } from 'react';
 import { AiOutlineClose} from "react-icons/ai";
-import editSvg from "../../src/assets/editname.svg"
-import mailSvg from "../../src/assets/mail.svg"
-import passwordSvg from "../../src/assets/password.svg"
+import { edit, mail, passwordSvg } from "../../src/assets/icons"
 import { auth } from "../config/firebase.ts"
 
 export const Register = () => {
@@ -100,7 +98,7 @@ export const Register = () => {
    <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
    <div className="w-[15rem] lg:w-[14rem] xl:w-[25rem] flex flex-col gap-10 ml-12">
      <h2 className="font-medium sm:text-lg lg:text-2xl xl:text-4xl">Join Leadwinn For Free</h2>
-     <img src={dotImage}  className="sm:w-10/12 xl:w-10/12"/>
+     <img src={dots}  className="sm:w-10/12 xl:w-10/12"/>
      <h4 className="sm:w-[11rem] lg:w-[15rem] xl:w-[22.5rem] font-bold text-lg xl:text-2xl">Fuel your creativity at Leadwinn with cutting-edge courses in coding, tech skills, and more.</h4>
    </div>
    </div>
@@ -132,14 +130,14 @@ export const Register = () => {
 
     <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="fullName" value={fullName} placeholder="Full Name" onChange={onChange} />
 
-    <img src={editSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+    <img src={edit} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
    </div>
 
     <div className="relative">
 
                 <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
 
-                <img src={mailSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+                <img src={mail} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
                 
     </div>
     

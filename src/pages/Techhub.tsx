@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import comingSoon from "../assets/coming soon.png"
+import { comingSoon } from "../assets/images"
 
 export const Techhub = () => {
   return (

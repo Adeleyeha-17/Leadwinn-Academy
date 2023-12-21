@@ -2,9 +2,8 @@ import {FC, useRef, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import feedbackSvg from "../assets/feedbacksvg.png"
-import editSvg from "../../src/assets/editname.svg"
-import mailSvg from "../../src/assets/mail.svg"
+import { edit, mail } from "../../src/assets/icons"
+import { feedback } from "../../src/assets/images"
 
 interface FeedbackProps {}
 
@@ -13,7 +12,7 @@ export const Feedback: FC<FeedbackProps> = () => {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+ 
     if (form.current) {
       emailjs.sendForm(
         "service_1l751sg",
@@ -31,7 +30,7 @@ export const Feedback: FC<FeedbackProps> = () => {
 
       <div className="bg-feedback bg-no-repeat bg-cover py-8 flex flex-col justify-center items-center font-poppins">
       <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 text-head-black">Send Us Your Feedback</h2>
-        <img src={feedbackSvg} className="w-[10rem] md:w-[14rem]"/>
+        <img src={feedback} className="w-[10rem] md:w-[14rem]"/>
       </div>
 
     <div className="contact font-poppins pb-20 md:px-12 px-5 xl:px-40 py-10 lg:max-xl:max-w-6xl mx-auto text-head-black ">
@@ -85,13 +84,13 @@ export const Feedback: FC<FeedbackProps> = () => {
           <form ref={form} onSubmit={sendEmail} className="w-[350px] sm:max-xl:w-[320px] xl:w-[360px]">
                <div className="relative mb-8 h-16">
                   <input type="text" name="name" className="relative top-0 left-0 w-full h-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 pl-12" placeholder="Full Name"/>
-                  <img src={editSvg} className="absolute left-4 top-5"/>
+                  <img src={edit} className="absolute left-4 top-5"/>
 
                </div>
 
                <div className="relative mb-8 h-16">
                   <input type="email" name="email" className="relative top-0 left-0 w-full h-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 pl-12" placeholder="Email"/>
-                  <img src={mailSvg} className="absolute left-4 top-5"/>
+                  <img src={mail} className="absolute left-4 top-5"/>
 
                </div>
 

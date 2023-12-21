@@ -1,18 +1,8 @@
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import  mitImage from "../../assets/mit-img.png"
-import  mit from "../../assets/mit.png"
-import  pythonImage from "../../assets/python-img.png"
-import  python from "../../assets/python.png"
-import  robloxImage from "../../assets/roblox-img.png"
-import  roblox from "../../assets/roblox.png"
-import  scratchImage from "../../assets/scratch-img.png"
-import  scratch from "../../assets/scratch.png"
-import  uiImage from "../../assets/ui-img.png"
-import  ui from "../../assets/uiux.png"
-import  webImage from "../../assets/web-img.png"
-import  web from "../../assets/web.png"
+import { mitImage, mit, robloxImage, roblox, python, pythonImage, scratch, scratchImage, uiUx, uiImage, web, webImage } from "../../assets/images"
+
 
 const Sliders = () => {
 
@@ -41,7 +31,7 @@ const Sliders = () => {
          heading: "Scratch",
          overlayImg: scratchImage
       }, {
-         img: ui,
+         img: uiUx,
          heading: "UI/UX Design",
          overlayImg: uiImage
       }, {

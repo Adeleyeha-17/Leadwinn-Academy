@@ -7,7 +7,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router"
 import { toast } from "react-toastify"
 import { db, auth } from "../config/firebase"
-import profileImage from "../assets/profile.jpg"
+import  { profile } from "../assets/images"
 
 
 export const Profile: React.FC = () => {
@@ -103,7 +103,7 @@ export const Profile: React.FC = () => {
                   />
                 ) : (
                   <img
-                    src={profileImage}
+                    src={profile}
                     alt="profile"
                     className="rounded-full w-28 h-28 object-cover mb-4"
                   />

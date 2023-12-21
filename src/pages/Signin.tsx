@@ -1,5 +1,5 @@
 import {Link, useLocation, useNavigate } from "react-router-dom"
-import dotImage from "../../src/assets/dots.png"
+import { dots } from "../../src/assets/images"
 import OAuth from "../components/OAuth";
 import { AiFillEyeInvisible, AiFillEye, AiOutlineClose} from "react-icons/ai";
 import { FormEvent, useState } from 'react';
@@ -7,8 +7,7 @@ import { motion } from "framer-motion";
 import { signInWithEmailAndPassword} from 'firebase/auth';
 import { auth } from "../config/firebase"
 import { toast } from 'react-toastify';
-import mailSvg from "../../src/assets/mail.svg"
-import passwordSvg from "../../src/assets/password.svg"
+import { mail, passwordSvg } from "../../src/assets/icons"
 
 
 export const Signin: React.FC = () => {
@@ -70,7 +69,7 @@ export const Signin: React.FC = () => {
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
           <h2 className=" font-medium sm:text-lg lg:text-2xl xl:text-4xl">Welcome Back To Leadwinn</h2>
-          <img src={dotImage} className="sm:w-8/12 xl:w-8/12" />
+          <img src={dots} className="sm:w-8/12 xl:w-8/12" />
           <h4 className="sm:w-[11rem] lg:w-[13rem] xl:w-[24rem] font-bold text-lg xl:text-2xl">Sign in to continue to your account</h4>
         </div>
       </div>
@@ -101,7 +100,7 @@ export const Signin: React.FC = () => {
 
                 <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[25rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
 
-                <img src={mailSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
+                <img src={mail} className="absolute left-4 top-3 sm:top-4 xl:top-6"/>
                 
     </div>
                 <div className="relative">

@@ -1,8 +1,6 @@
 import { motion } from "framer-motion"
 import Faq from "../components/Faq"
-import Path from "../components/Path"
-import PlanCourses from "../components/PlanCourses"
-import Otherplans from "../components/Otherplans"
+import { Path, PlanCourses, Otherplans } from "../sections"
 
 export const Plans = () => {
   return (

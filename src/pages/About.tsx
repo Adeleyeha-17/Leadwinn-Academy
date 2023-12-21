@@ -1,9 +1,4 @@
-import Experience from "../components/Expereince"
-import IgnitingMind from "../components/IgnitingMinds"
-import Innovators from "../components/Innovators"
-import Team from "../components/Team"
-import Values from "../components/Values"
-import Learning from "../components/Learning"
+import { Experience, IgnitingMind, Innovators, Team, Values, Learning } from "../sections"
 import { motion } from "framer-motion"
 
 export const About = () => {
