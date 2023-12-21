@@ -173,7 +173,7 @@ export const Footer: React.FC = () => {
 
                   <div className='lg:flex gap-5'>
 
-                  <h5 className='text-xs md:text-sm flex items-center justify-center text-center'>{`Copyright © 2020 - ${year} Leadwinn Academy. All rights reserved`}
+                  <h5 className='text-[0.6rem] md:text-sm flex items-center justify-center text-center'>{`Copyright © 2020 - ${year} Leadwinn Academy. All rights reserved`}
                   </h5>
                { /* <div className='flex items-center gap-3 sm:gap-4 text-[0.59375rem] sm:text-xs md:text-sm'>
                   <Link to="">Terms of Use</Link>
