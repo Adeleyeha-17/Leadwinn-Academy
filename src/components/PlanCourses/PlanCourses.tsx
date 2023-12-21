@@ -42,9 +42,9 @@ export const PlanCourses = () => {
 
    return (
       <div className="bg-home-gra flex flex-col justify-center items-center w-full h-full py-[4rem] text-white font-poppins relative overflow-hidden">
-         <h4 className="text-3xl font-semibold mb-7">Courses We Teach</h4>
+         <h4 className="text-xl xl:text-3xl font-semibold mb-7">Courses We Teach</h4>
 
-         <div className="flex">
+         <div className="grid grid-cols-3 sm:flex">
             {courses.map((plans, index) => (
                <div key={index} className="p-4 xl:p-9">
                   <div className="bg-plans-gra flex items-center justify-center h-[5rem] lg:h-[7rem] lg w-[5rem] lg:w-[7rem] rounded-3xl mx-auto">
