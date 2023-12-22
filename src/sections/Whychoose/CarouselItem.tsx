@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { expert, activeExpert, age, activeAge, learning, activeLearning, convenient, activeConvenient, instructors, curriculum, interactive, convenients } from '../../assets/images'
+import Button from "../../components/Button";
 
 
 interface Items {
@@ -68,6 +69,11 @@ const CarouselItem: React.FC = () => {
                <h1 className="mb-2 text-lg xl:text-2xl font-bold text-head-black">{selected.title}</h1>
         <h1 className=" whitespace-normal text-xs sm:text-base xl:w-[30rem]">{selected.description}</h1> 
         </div> }
+
+        <div className=" mt-5 xl:mt-7">
+
+        <Button path="/about" title="Learn More"/>
+        </div>
       </div>
     </div>
   );
