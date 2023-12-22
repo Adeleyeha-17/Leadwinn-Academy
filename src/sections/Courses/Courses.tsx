@@ -45,13 +45,13 @@ export const Courses = () => {
    return (
       <div className="bg-footer-blue" id="courses">
 
-      <div className="h-[30rem] sm:h-[65rem] lg:h-[50rem] xl:h-[55rem]  font-poppins py-10 md:px-12 md:py-20 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto overflow-hidden">
+      <div className="h-[30rem] sm:h-[65rem] lg:h-[50rem] xl:h-[55rem]  font-poppins py-10 md:px-12 md:py-20 px-5 xl:px-24 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto overflow-hidden">
          <div className="text-center text-white mb-16">
             <h1 className="font-semibold text-xl xl:text-3xl mb-3">Explore Our Courses</h1>
             <h4 className="max-sm:text-xs text-sm max-w-xs sm:max-w-2xl mx-auto">Our Microdegrees are specialized programs which upon completion will set you firmly on your chosen IT career path</h4>
          </div>
 
-         <div className="hidden sm:grid grid-cols-6 sm:grid-cols-2 lg:grid-cols-3 gap-72 sm:gap-10">
+         <div className="hidden sm:grid grid-cols-6 sm:grid-cols-2 lg:grid-cols-3 gap-72 sm:gap-10 xl:gap-x-32">
             {courses.map((data, index) => (
                <div key={index} className="w-[17rem] sm:w-[17rem] xl:w-[21rem] relative rounded-3xl overflow-hidden mx-auto">
                   <img src={data.img} alt={data.heading} className="w-full rounded-xl"
