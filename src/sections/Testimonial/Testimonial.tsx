@@ -60,26 +60,26 @@ export const Testimonial = () => {
 
          <div className="py-10 md:px-12 md:py-20 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
             <div>
-               <h1 className="text-xl lg:text-[2.5rem] lg:leading-[3rem] font-bold mb-3 lg:mb-12 text-center sm:text-left z-10">What are the parents saying?</h1>
+               <h1 className="text-xl lg:text-3xl font-semibold mb-3 lg:mb-12 text-center sm:text-left z-10">What are the parents saying?</h1>
             </div>
 
             <div className="grid sm:grid-cols-2 items-center mb-10">
                <div className='max-sm:mb-5'>
-                  <img src={sliderImage} alt="slider Image" className="max-sm:w-4/5 max-sm:mx-auto" />
+                  <img src={sliderImage} alt="slider Image" className="max-sm:w-4/5 xl:w-11/12 max-sm:mx-auto" />
                </div>
 
-               <div className='md:bg-white font-poppins md:bg-opacity-30 rounded-lg h-32 sm:h-40 lg:h-52 xl:h-72 max-sm:w-72 max-lg:px-5 flex items-center justify-center max-sm:mx-auto sm:-ml-12 md:-ml-10 xl:-ml-10 2xl:-ml-24'>
+               <div className='md:bg-white font-poppins md:bg-opacity-30 rounded-lg h-32 sm:h-40 lg:h-48 xl:h-60 max-sm:w-72 max-lg:px-5 flex items-center justify-center max-sm:mx-auto sm:-ml-12 md:-ml-10 xl:-ml-20 '>
                   <Slider {...sliderSettings} className='w-full sm:w-4/5 lg:w-10/12'>
                      {
                         testimonials.map((testimonial, index) => (
                            <div key={index}
                               className='py-2 xl:py-5'>
-                              <p className="text-xs lg:text-base xl:text-xl max-sm:mb-3 sm:mb-2 lg:mb-4 max-sm:pt-3 xl:pt-10 text-center">
+                              <p className="text-xs lg:text-sm max-sm:mb-3 sm:mb-2 lg:mb-4 max-sm:pt-3 xl:pt-10 text-center">
                                  {
                                     `"${testimonial.message
                                     }"`
                                  }</p>
-                              <h3 className="text-xs lg:text-base xl:text-xl sm:max-xl:pt-6 xl:pt-12 font-bold flex items-center justify-center">
+                              <h3 className="text-xs lg:text-base xl:text-xl sm:max-xl:pt-6 xl:pt-12 font-semibold flex items-center justify-center">
                                  {
                                     testimonial.name
                                  }</h3>

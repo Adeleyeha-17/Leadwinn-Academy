@@ -63,7 +63,7 @@ const Sliders = () => {
             <h1 className="font-bold text-sm">{data.heading}</h1>
             <Link
               to="/register"
-              className={`inline-block justify-center items-center py-4 px-8 bg-head-blue text-white text-xs rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}
+              className={`inline-block justify-center items-center py-3 px-6 bg-head-blue text-white text-xs rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}
             >
               Enroll Now
             </Link>

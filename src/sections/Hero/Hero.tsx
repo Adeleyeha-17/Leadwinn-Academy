@@ -36,7 +36,7 @@ export const Hero: React.FC<HomeProps> = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 md:py-6 px-5 xl:px-40 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 md:py-6 px-5 xl:px-24 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
         <div className="font-poppins text-head-black md:w-3/5">
           <motion.h1 initial={{ y: -50, opacity: 0.2 }}
             animate={{
@@ -58,9 +58,9 @@ export const Hero: React.FC<HomeProps> = () => {
               }}>
               {currentWord}
             </motion.span>  Online Coding Classes</motion.h1>
-          <h1 className="hidden md:flex mb-6 text-xs lg:text-base sm:max-w-[26rem] lg:max-w-xl">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
+          <h1 className="hidden md:flex mb-6 text-xs lg:text-sm sm:max-w-[26rem] lg:max-w-[30rem]">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
 
-          <Link to="courses" className={ `hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white md:text-sm md:font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Discover Course</Link>
+          <Link to="courses" className={ `hidden md:inline-block justify-center items-center py-2 px-4 bg-head-blue text-white  text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Discover Course</Link>
         
         </div>
         <div className="md:w-2/5">
@@ -74,24 +74,24 @@ export const Hero: React.FC<HomeProps> = () => {
         </div>
       </div>
 
-      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:max-lg:h-[10rem] sm:max-lg:w-[40.625rem] lg:h-[10.3125rem] xl:h-[13.125rem] w-1/2 lg:w-3/4 rounded-[3.125rem] font-poppins text-white font-semibold text-sm xl:text-lg mx-auto max-sm:mt-16 py-3 sm:px-6 xl:mt-32">
+      <div className=" bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:h-[10rem] sm:max-lg:w-[40.625rem] xl:h-[10rem] w-1/2 lg:w-3/5 rounded-[3.125rem] font-poppins text-white font-semibold text-xs mx-auto max-sm:mt-16 py-3 sm:px-6 xl:mt-32">
         <div className="items-center justify-between sm:flex mt-5 sm:mt-3 lg:mt-0">
 
           <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
-            <img src={edu1} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+            <img src={edu1} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/5" />
             <h1>Over 100+ Students</h1>
           </div>
           <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
           <div className="flex flex-col mb-10 sm:mb-14 items-center justify-center mx-auto mt-2">
-            <img src={edu2} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+            <img src={edu2} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/5" />
             <h1>Over 100+ Certified</h1>
           </div>
 
           <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
 
           <div className="flex justify-center flex-col mb-8 sm:mb-12 items-center mx-auto">
-            <img src={edu3} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/4" />
+            <img src={edu3} alt="" className="max-w-full mx-auto mb-4 w-16 lg:w-20 xl:w-3/5" />
             <h1>Over 10+ Countries</h1>
           </div>
         </div>

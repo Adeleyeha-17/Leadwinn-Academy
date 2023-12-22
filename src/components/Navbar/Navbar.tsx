@@ -47,6 +47,10 @@ export const Navbar: React.FC = () => {
       path: '/about',
     },
     {
+      link: 'Plans',
+      path: '/plans',
+    },
+    {
       link: 'Library',
       path: '/library',
     },
@@ -54,26 +58,22 @@ export const Navbar: React.FC = () => {
       link: 'Tech Hub',
       path: '/tech-hub',
     },
-    {
-      link: 'Plans',
-      path: '/plans',
-    },
   ];
 
   return (
     <div className={`${currentPath('/')}`}>
-      <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 xl:px-40 lg:max-xl:max-w-6xl mx-auto">
+      <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-24 mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
-            <img src={leadwinnLogo} alt="leadwinn logo" className="w-12 md:w-full transition duration-200 ease-in-out md:hover:scale-105" />
-            <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
+            <img src={leadwinnLogo} alt="leadwinn logo" className="w-12 md:w-14  transition duration-200 ease-in-out md:hover:scale-105" />
+            <span className="flex flex-col text-lead-black text-xs font-semibold font-poppins">
               <h1>Leadwinn</h1>
               <h1>Academy</h1>
             </span>
           </Link>
         </div>
 
-        <div className="hidden md:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs md:text-sm font-semibold">
+        <div className="hidden md:flex sm:max-md:space-x-3 md:max-xl:space-x-5 xl:space-x-9 font-poppins text-xs font-semibold">
           {navLinks.map((link) => (
             <Link key={link.path} to={link.path} className={`${currentMatchPath(link.path)}`}>
               {link.link}
@@ -84,17 +84,17 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex sm:max-md:space-x-2 md:max-lg:space-x-4 space-x-8 font-poppins">
           {user ? (
             <>
-              <Link to="/profile" className="flex justify-center items-center text-head-blue text-xs md:text-sm font-semibold">
+              <Link to="/profile" className="flex justify-center items-center text-head-blue text-xs font-semibold">
                 Profile
               </Link> 
-              <Link to="/" className={ `hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white md:text-sm md:font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} onClick={() => {
+              <Link to="/" className={ `hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} onClick={() => {
               signOut(auth);
               closeNav();
             }}>Sign Out</Link>
               </>
           ) : (
             <>
-              <Link to="/sign-in" className="flex justify-center items-center text-head-blue text-xs md:text-sm font-semibold">
+              <Link to="/sign-in" className="flex justify-center items-center text-head-blue text-xs font-semibold">
                 Sign In
               </Link>
               <Button path="/register" title="Enroll Now" />
@@ -103,7 +103,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div onClick={toggleFunc} className="cursor-pointer md:hidden">
-          <AiOutlineMenu size={28} className="md:hidden" />
+          <AiOutlineMenu size={32} className="md:hidden" />
         </div>
       </div>
       
@@ -115,7 +115,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-2 ml-2">
 
         <Link to="/">
-          <img src={leadwinnLogo} alt="leadwinn logo" className="w-12 sm:w-full" />
+          <img src={leadwinnLogo} alt="leadwinn logo" className="w-12" />
         </Link>
         <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
           <h1>Leadwinn</h1>
@@ -123,22 +123,22 @@ export const Navbar: React.FC = () => {
 
         </span>
         </div>
-          <AiOutlineClose size={28} className="md:hidden cursor-pointer" onClick={closeNav}/>
+          <AiOutlineClose size={32} className="md:hidden cursor-pointer" onClick={closeNav}/>
       </div>
 
       {navLinks.map((link) => (
-        <Link key={link.path} to={link.path} className={`px-4 py-3 border-b text-base ${currentMatchPath(link.path)}`} onClick={closeNav}>
+        <Link key={link.path} to={link.path} className={`px-4 py-3 border-b text-sm ${currentMatchPath(link.path)}`} onClick={closeNav}>
           {link.link}
         </Link>
       ))}
 
       {user ? (
         <>
-          <Link to="/profile" className={`px-4 py-3 border-b text-base ${currentMatchPath('/profile')}`} onClick={closeNav}>
+          <Link to="/profile" className={`px-4 py-3 border-b text-sm ${currentMatchPath('/profile')}`} onClick={closeNav}>
             Profile
           </Link>
           <Link to="/"
-            className={`px-4 py-3 border-b text-base ${currentMatchPath('/sign-out')}`} 
+            className={`px-4 py-3 border-b text-sm ${currentMatchPath('/sign-out')}`} 
             onClick={() => {
               signOut(auth);
               closeNav();
@@ -149,10 +149,10 @@ export const Navbar: React.FC = () => {
         </>
       ) : (
         <>
-          <Link to="/sign-in" className={`px-4 py-3 border-b text-base ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
+          <Link to="/sign-in" className={`px-4 py-3 border-b text-sm ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
             Sign In
           </Link>
-          <Link to="/register" className={`px-4 py-3 border-b text-base ${currentMatchPath('/register')}`}  onClick={closeNav}>
+          <Link to="/register" className={`px-4 py-3 border-b text-sm ${currentMatchPath('/register')}`}  onClick={closeNav}>
             Enroll Now
           </Link>
         </>

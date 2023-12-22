@@ -33,8 +33,8 @@ export const Faq: React.FC = () => {
    ];
 
    return (
-      <div className="px-6 sm:px-10 md:px-20 lg:px-52 xl:px-64 p-10 md:max-lg:max-w-6xl mx-auto font-poppins">
-         <h1 className="text-head-black font-bold text-base sm:text-xl lg:text-3xl xl:text-4xl mb-8 flex items-center justify-center">Frequency Asked Question
+      <div className="px-6 sm:px-10 md:px-20 lg:px-28 xl:px-44 p-10 md:max-lg:max-w-6xl mx-auto font-poppins">
+         <h1 className="text-head-black font-semibold text-base sm:text-xl lg:text-3xl mb-8 flex items-center justify-center">Frequency Asked Question
          </h1>
 
 
@@ -45,7 +45,7 @@ export const Faq: React.FC = () => {
                      onClick={
                         () => toggleTab(index + 1)
                      }>
-                     <h3 className='text-head-black w-3/4 sm:w-full text-xs md:text-base xl:text-lg font-bold focus:border-none'>{
+                     <h3 className='text-head-black w-3/4 sm:w-full text-xs md:text-base font-semibold focus:border-none'>{
                         `${data.title}?`
                      }</h3>
                      <span className="w-1/4 flex items-end justify-end">{
@@ -61,7 +61,7 @@ export const Faq: React.FC = () => {
                      }}
                      transition={{ duration: 0.3 }}
                   >
-                     <p className="text-head-black text-xs md:text-base ">{data.content}</p>
+                     <p className="text-head-black text-xs md:text-sm ">{data.content}</p>
                   </motion.div>
                </div>
             ))

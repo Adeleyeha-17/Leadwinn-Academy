@@ -49,8 +49,8 @@ export const Whychoose: React.FC = () => {
   return (
     <div className="my-8 lg:my-20 flex flex-col justify-center overflow-hidden font-poppins">
 
-<div className="py-10 md:px-12 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
-        <h2 className="text-head-black font-bold max-sm:text-xl sm:text-[2.5rem] leading-[3rem] sm:mb-3">
+<div className="py-10 md:px-12 px-5 xl:px-24 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
+        <h2 className="text-head-black font-bold sm:text-2xl lg:text-3xl sm:mb-3">
           Why Choose <span className="text-hero-blue">Leadwinn?</span>
         </h2>
         <h3 className="max-sm:text-xs text-base text-head-black max-w-[20rem] sm:max-w-[30rem]">
