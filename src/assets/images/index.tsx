@@ -57,6 +57,12 @@ import advanced from "../images/advanced-img.png"
 import beginners from "../images/beginners-img.png"
 import intermediate from "../images/intermediate-img.png"
 import plans from "../images/plans-deg.png"
+import beginnerSvg from "../images/beginner.png"
+import intermediateSvg  from "../images/intermediate.png"
+import advancedSvg from "../images/advanced.png"
+import beginnerActive from "../images/beginner-a.png"
+import intermediateActive  from "../images/intermediate-a.png"
+import advancedActive from "../images/advanced-a.png"
 
 export {
    activeAge,
@@ -117,7 +123,13 @@ export {
    advanced,
    beginners, 
    intermediate,
-   plans
+   plans,
+   beginnerSvg,
+   intermediateSvg,
+   advancedSvg,
+   beginnerActive,
+   intermediateActive,
+   advancedActive,
 }
 
 

@@ -7,6 +7,8 @@ interface TeamMember {
   img: string;
   position: string;
   linkedin: string;
+  linkedinActive: string;
+  linkedinNotActive: string;
 }
 
 export const Team = () => {
@@ -15,31 +17,41 @@ export const Team = () => {
       name: "Adetokunbo Adeyemi",
       img: tokunbo,
       position: "Business Manager",
-      linkedin: "https://www.linkedin.com/in/tokunbo-adeyemi-mba-2381b8169/"
+      linkedin: "https://www.linkedin.com/in/tokunbo-adeyemi-mba-2381b8169/",
+      linkedinActive: linkedinA,
+      linkedinNotActive: linkedin
     },
     {
       name: "Adesubomi Fetuga",
       img: subomi,
       position: "International Facilitator",
-      linkedin: "https://www.linkedin.com/in/adesubomi-fetuga-7ba3b5199/"
+      linkedin: "https://www.linkedin.com/in/adesubomi-fetuga-7ba3b5199/",
+      linkedinActive: linkedinA,
+      linkedinNotActive: linkedin
     },
     {
       name: "Adedamola Adeleye",
       img: adeleye,
       position: "International Facilitator",
-      linkedin: "https://www.linkedin.com/in/ade-ha17/"
+      linkedin: "https://www.linkedin.com/in/ade-ha17/",
+      linkedinActive: linkedinA,
+      linkedinNotActive: linkedin
     },
     {
       name: "Abdulbasit Oyesiji",
       img: basit,
       position: "International Facilitator",
-      linkedin: "https://www.linkedin.com"
+      linkedin: "https://www.linkedin.com",
+      linkedinActive: linkedinA,
+      linkedinNotActive: linkedin
     },
     {
       name: "Joshua Owonla",
       img: joshua,
       position: "Brand & Communication",
-      linkedin: "https://www.linkedin.com/in/joshua-owonla/"
+      linkedin: "https://www.linkedin.com/in/joshua-owonla/",
+      linkedinActive: linkedinA,
+      linkedinNotActive: linkedin
     },
   ];
 
@@ -70,7 +82,7 @@ export const Team = () => {
               <h4 className="mb-3 w-28 lg:w-40 text-xs lg:text-sm text-center">{data.position}</h4>
 
 <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
-              <img src={selectedImage ? linkedinA : linkedin}/>
+<img src={selectedImage === data.img ? data.linkedinActive : data.linkedinNotActive} />
 </a>
             </div>
           ))}

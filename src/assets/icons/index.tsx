@@ -7,11 +7,8 @@ import linkedinA from "../icons/LinkedInA.svg"
 import mail from "../icons/mail.svg"
 import passwordSvg from "../icons/password.svg"
 import whatsapp from "../icons/whatsapp.svg"
-import beginnerSvg from "../icons/beginner.svg"
-import intermediateSvg  from "../icons/intermediate.svg"
-import advancedSvg from "../icons/advanced.svg"
-import link from "../icons/Link.svg"
 import rating from "../icons/rating.svg"
+
 
 
 export {
@@ -24,9 +21,5 @@ linkedinA,
 mail,
 passwordSvg,
 whatsapp,
-beginnerSvg,
-intermediateSvg,
-advancedSvg,
-link,
 rating,
 }
