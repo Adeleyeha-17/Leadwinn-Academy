@@ -79,7 +79,7 @@ export const Skill = () => {
 
 
    <div className="font-poppins pb-12 lg:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
-      <div className="text-heading flex flex-col justify-center items-center gap-1 mb-16">
+      <div className="text-heading flex flex-col justify-center items-center gap-1 mb-10 sm:mb-16">
 
       <h2 className="text-lg sm:text-2xl lg:text-3xl font-semibold ">
          Our Courses are based on skill level
@@ -88,7 +88,7 @@ export const Skill = () => {
       <h5 className="max-sm:text-xs max-lg:text-sm text-center"> Elevate Your Skills, Regardless of Your Starting Point.</h5>
       </div>
    <div className="flex max-sm:flex-col-reverse justify-center items-center gap-10 sm:px-16">
-     <div className="h-[26rem] xl:h-[28.8rem] w-[27.8rem] flex flex-col gap-[2.35rem]">
+     <div className="h-auto sm:h-[21rem] lg:h-[26rem] xl:h-[28.8rem] w-[21rem] sm:w-[27.8rem] flex flex-col gap-[2.35rem]">
       {skillLevel.map((data, index) => (
 
        <div key={index} className={`${selected?.level === data.level ? "bg-skill-hov" :"bg-skill"} w-full h-[5.4rem] lg:h-[7.1rem] xl:h-[8rem] rounded-2xl px-6 lg:px-14 py-5 cursor-pointer`} onClick={() => setSelected(data)}>
@@ -106,7 +106,7 @@ export const Skill = () => {
        
      </div>
 
-     <div className="bg-skill sm:max-lg:-mt-20 h-auto sm:h-[21rem] lg:h-[26rem] xl:h-[28.8rem] w-[21rem] sm:w-[27.8rem] rounded-2xl px-6 sm:px-3 lg:px-8 pt-7 sm:pt-5 lg:pt-10 overflow-hidden">
+     <div className="bg-skill h-auto sm:h-[21rem] lg:h-[26rem] xl:h-[28.8rem] w-[21rem] sm:w-[27.8rem] rounded-2xl px-6 sm:px-3 lg:px-8 pt-7 sm:pt-5 lg:pt-10 overflow-hidden">
       <div className="flex flex-wrap gap-y-6 gap-x-4 xl:gap-x-12 w-[18rem] sm:w-[14rem] lg:w-[22rem] sm:mx-auto">
 
       {skills.map((skill, index) => (
