@@ -28,8 +28,11 @@ export default {
         "test-gra" : "#0965CE",
         "test-gra-2" : "#01152C",
         "courses" : "#0E2A4C",
+        "heading" : "#013168",
         "plans-gra" : "#0965CE",
-        "plans-gra-2" : "#409BFF"
+        "plans-gra-2" : "#409BFF",
+        "skill" : "#ECF5FF",
+        "skill-hov" : "#BFDEFF",
       },
       backgroundImage: {
         "desktop" : "url(./assets/desktop.png)",

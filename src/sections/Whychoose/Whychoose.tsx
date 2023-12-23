@@ -9,7 +9,7 @@ export const Whychoose: React.FC = () => {
     <div className="my-10 flex flex-col justify-center overflow-hidden font-poppins md:mb-20">
 
 <div className="py-10 md:px-12 xl:px-24 px-5 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
-        <h2 className="text-head-black font-bold sm:text-2xl lg:text-3xl sm:mb-3">
+        <h2 className="text-heading font-bold sm:text-2xl lg:text-3xl sm:mb-3">
           Why Choose <span className="text-hero-blue">Leadwinn?</span>
         </h2>
         <h3 className="max-sm:text-xs text-base text-head-black max-w-[20rem] sm:max-w-[30rem]">

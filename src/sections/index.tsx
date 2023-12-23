@@ -13,6 +13,7 @@ import Hero from "./Hero"
 import Testimonial from "./Testimonial"
 import Whychoose from "./Whychoose"
 import Courses from "./Courses"
+import Skill from "./Skill"
 
 export {
    IgnitingMind,
@@ -30,4 +31,5 @@ export {
    Testimonial,
    Whychoose,
    Courses,
+   Skill,
 }

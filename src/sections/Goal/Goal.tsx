@@ -25,7 +25,7 @@ export const Goal = () => {
    ]
    return (
       <div className="flex flex-col justify-between py-10 md:px-12 md:py-20 px-5 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto font-poppins md:my-4">
-         <h1 className="text-sm sm:text-xl font-semibold text-head-black text-center capitalize">Not sure where to begin? What is your main goal on Leadwinn?</h1>
+         <h1 className="text-sm sm:text-xl font-semibold text-heading text-center capitalize">Not sure where to begin? What is your main goal on Leadwinn?</h1>
 
          <div className="sm:max-lg:grid sm:max-lg:grid-cols-2 flex flex-col lg:flex-row gap-10 lg:justify-between mt-5 sm:mt-10 cursor-pointer ">
 

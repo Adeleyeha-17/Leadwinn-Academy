@@ -53,6 +53,10 @@ import values from "../images/values.png"
 import webImage from "../images/web-img.png"
 import web from "../images/web.png"
 import roblox from "../images/roblox.png"
+import advanced from "../images/advanced-img.png"
+import beginners from "../images/beginners-img.png"
+import intermediate from "../images/intermediate-img.png"
+import plans from "../images/plans-deg.png"
 
 export {
    activeAge,
@@ -109,7 +113,11 @@ export {
    uiUx,
    values,
    webImage,
-   web
+   web,
+   advanced,
+   beginners, 
+   intermediate,
+   plans
 }
 
 

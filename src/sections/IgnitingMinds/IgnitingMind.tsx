@@ -4,7 +4,7 @@ export const IgnitingMind = () => {
   return (
     <div className="font-poppins pb-10 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
       <div className="flex max-sm:flex-col justify-center items-center gap-10 sm:px-16">
-        <div className="text-head-black sm:w-[22rem] xl:w-[24rem]">
+        <div className="text-heading sm:w-[22rem] xl:w-[24rem]">
           <h1 className="text-xl lg:text-3xl font-semibold mb-5 sm:mb-10 max-lg:w-[14rem]">Igniting Minds and Fostering <span className="text-hero-blue">Innovators</span></h1>
           <h4 className="text-xs xl:text-sm max-sm:pr-9 ">Leadwinn Academy passionately embraces a mission to kindle the sparks of curiosity and creativity in young minds through the realms of computer programming and software development. Our dedicated efforts are aimed at nurturing critical thinking and problem-solving skills, with the ultimate goal of transforming children, aged 6 to 17, into budding tech innovators and confident problem-solvers of the future</h4>
         </div>
@@ -54,8 +54,8 @@ export const IgnitingMind = () => {
           <img src={empowering} className="w-[18.5rem] sm:w-[27rem] mx-auto" />
         </div>
 
-        <div className="text-head-black sm:w-[22rem]">
-          <h1 className="text-xl lg:text-2xl font-bold mb-5 sm:mb-10 max-lg:w-[14rem] lg:w-[17rem]">Empowering the  <span className="text-hero-blue">Future of Technology</span></h1>
+        <div className="text-heading sm:w-[22rem]">
+          <h1 className="text-xl lg:text-3xl font-bold mb-5 sm:mb-10 max-lg:w-[14rem]">Empowering the  <span className="text-hero-blue">Future of Technology</span></h1>
           <div className="text-xs xl:text-sm max-sm:pr-10">
             <h4 className="mb-5">Our Vision is to be the Premier Global Academy in Information Technology, Pioneering Excellence in Education, Innovation, and Leadership Worldwide.</h4>
 

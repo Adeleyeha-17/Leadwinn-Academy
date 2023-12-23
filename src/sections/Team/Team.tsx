@@ -47,7 +47,7 @@ export const Team = () => {
 
   return (
     <div className="font-poppins pb-10 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
-      <div className="text-center text-courses mb-10">
+      <div className="text-center text-heading mb-10">
         <h1 className="text-xl sm:text-3xl lg:text-4xl font-semibold mb-2">Our Team</h1>
         <h4 className="text-xs sm:text-sm">Introducing the Dedicated Minds Powering Our Vision and Innovation</h4>
       </div>
@@ -59,7 +59,7 @@ export const Team = () => {
           )}
         </div>
 
-        <div className="text-head-black lg:mt-6">
+        <div className="text-heading lg:mt-6">
           {teamMember.map((data, index) => (
             <div key={index} className="flex items-center gap-10 xl:gap-20 border-b-2 mb-3 sm:mb-1 lg:mb-5 cursor-pointer hover:text-hero-blue transition ease-in-out duration-300" onMouseOver={() => setSelectedImage(data.img)} >
               <h1

@@ -66,7 +66,7 @@ const CarouselItem: React.FC = () => {
           </div>
         </div>
         {selected && <div className="w-[20rem] sm:w-[23rem] lg:w-[25rem] xl:w-[41rem]">
-               <h1 className="mb-2 text-lg xl:text-2xl font-bold text-head-black">{selected.title}</h1>
+               <h1 className="mb-2 text-lg xl:text-2xl font-bold text-heading">{selected.title}</h1>
         <h1 className=" whitespace-normal text-xs sm:text-base xl:w-[30rem]">{selected.description}</h1> 
         </div> }
 
