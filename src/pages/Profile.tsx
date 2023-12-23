@@ -133,7 +133,7 @@ export const Profile: React.FC = () => {
 
           <div className="flex justify-between whitespace-nowrap text-sm mb-4 items-center">
             <p className="flex max-sm:text-xs">Do you want to change your name? <span className="ml-1 text-red-600 hover:text-red-700 transition ease-in-out duration-200 cursor-pointer" onClick={editDetails}>
-              {changeDetails ? "Apply change" : "Edit"}</span></p>
+              {changeDetails ? "Apply" : "Edit"}</span></p>
             <p className="text-blue-600 hover:text-blue-800 transition ease-in-out duration-200 cursor-pointer max-sm:text-xs" onClick={onSignOut}>Sign out</p>
 
           </div>
