@@ -78,51 +78,51 @@ export const Skill = () => {
   return (
 
 
-   <div className="font-poppins pb-10 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
+   <div className="font-poppins pb-12 lg:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
       <div className="text-heading flex flex-col justify-center items-center gap-1 mb-16">
 
-      <h2 className="text-3xl font-semibold ">
+      <h2 className="text-lg sm:text-2xl lg:text-3xl font-semibold ">
          Our Courses are based on skill level
       </h2>
 
-      <h5> Elevate Your Skills, Regardless of Your Starting Point.</h5>
+      <h5 className="max-sm:text-xs max-lg:text-sm text-center"> Elevate Your Skills, Regardless of Your Starting Point.</h5>
       </div>
-   <div className="flex max-sm:flex-col justify-center items-center gap-10 sm:px-16">
-     <div className="h-[28.8rem] w-[27.8rem] flex flex-col gap-[2.35rem]">
+   <div className="flex max-sm:flex-col-reverse justify-center items-center gap-10 sm:px-16">
+     <div className="h-[26rem] xl:h-[28.8rem] w-[27.8rem] flex flex-col gap-[2.35rem]">
       {skillLevel.map((data, index) => (
 
-       <div key={index} className={`${selected?.level === data.level ? "bg-skill-hov" :"bg-skill"} w-full h-[8rem] rounded-2xl px-14 py-5 cursor-pointer`} onClick={() => setSelected(data)}>
+       <div key={index} className={`${selected?.level === data.level ? "bg-skill-hov" :"bg-skill"} w-full h-[5.4rem] lg:h-[7.1rem] xl:h-[8rem] rounded-2xl px-6 lg:px-14 py-5 cursor-pointer`} onClick={() => setSelected(data)}>
          <div className="flex justify-between items-center relative">
-            <img src={data.btnImg} alt="" className="absolute -right-6 w-[12rem]"/>
+            <img src={data.btnImg} alt="" className="absolute -right-6 w-[7rem] lg:w-[9.5rem] xl:w-[12rem]"/>
          <div className="text-heading flex flex-col gap-1">
-            <h3 className="text-lg font-semibold">{data.level}</h3>
-            <h5 className="text-sm">({data.age})</h5>
+            <h3 className="text-sm lg:text-lg font-semibold">{data.level}</h3>
+            <h5 className="text-xs lg:text-sm">({data.age})</h5>
          </div>
 
-         <img src={selected?.level === data.level ? data.activeSvg : data.svg} className="z-10"/>
+         <img src={selected?.level === data.level ? data.activeSvg : data.svg} className="z-10 max-lg:w-[3.5rem] max-xl:w-[5rem]"/>
          </div>
        </div>
       ))}
        
      </div>
 
-     <div className="bg-skill h-[28.8rem] w-[27.8rem] rounded-2xl px-8 pt-10 overflow-hidden">
-      <div className="flex flex-wrap gap-y-6 gap-x-12 w-[22rem] mx-auto">
+     <div className="bg-skill sm:max-lg:-mt-20 h-auto sm:h-[21rem] lg:h-[26rem] xl:h-[28.8rem] w-[21rem] sm:w-[27.8rem] rounded-2xl px-6 sm:px-3 lg:px-8 pt-7 sm:pt-5 lg:pt-10 overflow-hidden">
+      <div className="flex flex-wrap gap-y-6 gap-x-4 xl:gap-x-12 w-[18rem] sm:w-[14rem] lg:w-[22rem] sm:mx-auto">
 
       {skills.map((skill, index) => (
          <div key={index} className={`flex gap-2 items-center w-max`}>
 
-            <img src={skill.rating} alt={skill.rating} className="w-6"/>
-            <h4 className="text-sm">
+            <img src={skill.rating} alt={skill.rating} className="w-4 lg:w-6"/>
+            <h4 className="text-xs lg:text-sm">
                {skill.skill}
                </h4>
          </div>
       ))}
       </div>
 
-<div className="mt-11">
+<div className="mt-5 lg:mt-11">
 
-     {selected && <img src={selected.img} alt={selected.level} /> }
+     {selected && <img src={selected.img} alt={selected.level}/> }
 </div>
      </div>
    </div>
