@@ -104,16 +104,16 @@ export const SelectedPlans = () => {
 
          <div className="flex gap-8 mx-auto">
             {plans.map((data, index) => (
-               <div key={index} className="bg-white lg:w-[27rem] xl:w-[33rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-10">
+               <div key={index} className="bg-white lg:w-[27rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
                   <div className="mb-5">
-                     <h1 className="text-xl font-semibold mb-1">{data.title}</h1>
-                     <h4 className="text-sm max-w-[22rem]">{data.description}</h4>
+                     <h1 className=" text-base lg:text-xl font-semibold mb-1">{data.title}</h1>
+                     <h4 className="text-xs lg:text-sm max-w-[22rem]">{data.description}</h4>
                   </div>
 
                   <Button path="" title="Get Started" />
 
                   <div className="mt-7">
-                     <h4 className="text-base font-semibold mb-3">{data.feature}</h4>
+                     <h4 className="text-sm lg:text-base font-semibold mb-3">{data.feature}</h4>
 
                      <div>
                         {data.features.map((item, index) => (
@@ -121,46 +121,46 @@ export const SelectedPlans = () => {
                               {item.experience && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.experienceIcon} alt="Experience Icon" className="w-6" />
-                                       <span>{item.experience}</span>
+                                       <img src={item.experienceIcon} alt="Experience Icon" className="w-5 lg:w-6" />
+                                       <span className="max-lg:text-xs" >{item.experience}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2" />
+                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
                                  </div>
                               )}
                               {item.duration && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.durationIcon} alt="Duration Icon" className="w-6" />
-                                       <span>{item.duration}</span>
+                                       <img src={item.durationIcon} alt="Duration Icon" className="w-5 lg:w-6" />
+                                       <span className="max-lg:text-xs">{item.duration}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2" />
+                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
                                  </div>
                               )}
                               {item.review && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.reviewIcon} alt="Review Icon" className="w-6" />
-                                       <span>{item.review}</span>
+                                       <img src={item.reviewIcon} alt="Review Icon" className="w-5 lg:w-6" />
+                                       <span className="max-lg:text-xs">{item.review}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2" />
+                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
                                  </div>
                               )}
                               {item.replay && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.replayIcon} alt="Replay Icon" className="w-6" />
-                                       <span>{item.replay}</span>
+                                       <img src={item.replayIcon} alt="Replay Icon" className="w-5 lg:w-6" />
+                                       <span className="max-lg:text-xs">{item.replay}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2" />
+                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
                                  </div>
                               )}
                               {item.pricing && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.pricingIcon} alt="Pricing Icon" className="w-6" />
-                                       <span>{item.pricing}</span>
+                                       <img src={item.pricingIcon} alt="Pricing Icon" className="w-5 lg:w-6" />
+                                       <span className="max-lg:text-xs">{item.pricing}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2" />
+                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
                                  </div>
                               )}
                            </div>
@@ -168,11 +168,11 @@ export const SelectedPlans = () => {
                      </div>
 
                      <div className="mt-7">
-                        <h3 className="text-base font-semibold mb-3">{data.additionalFeature}</h3>
+                        <h3 className="text-sm lg:text-base font-semibold mb-3">{data.additionalFeature}</h3>
 
                         {data.additionalFeatures.map((features, index) => (
                            <div key={index}>
-                              <h3 className="text-sm mb-2">
+                              <h3 className="text-xs lg:text-sm mb-2">
                                  <span className="mr-2 font-semibold">
                                     {features.title}:
                                  </span>
