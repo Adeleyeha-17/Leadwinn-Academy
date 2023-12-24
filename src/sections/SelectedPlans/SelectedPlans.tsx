@@ -125,43 +125,43 @@ export const SelectedPlans = () => {
                                        <img src={item.experienceIcon} alt="Experience Icon" className=" w-4 sm:w-5 lg:w-6" />
                                        <span className="max-lg:text-xs" >{item.experience}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2 w-4 sm:max-lg:w-5" />
+                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 sm:max-lg:w-5" />
                                  </div>
                               )}
                               {item.duration && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.durationIcon} alt="Duration Icon" className=" w-5 lg:w-6" />
+                                       <img src={item.durationIcon} alt="Duration Icon" className="w-4 sm:w-5 lg:w-6" />
                                        <span className="max-lg:text-xs">{item.duration}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
+                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
                                  </div>
                               )}
                               {item.review && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.reviewIcon} alt="Review Icon" className=" w-5 lg:w-6" />
+                                       <img src={item.reviewIcon} alt="Review Icon" className="w-4 sm:w-5 lg:w-6" />
                                        <span className="max-lg:text-xs">{item.review}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
+                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
                                  </div>
                               )}
                               {item.replay && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.replayIcon} alt="Replay Icon" className="w-5 lg:w-6" />
+                                       <img src={item.replayIcon} alt="Replay Icon" className="w-4 sm:w-5 lg:w-6" />
                                        <span className="max-lg:text-xs">{item.replay}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
+                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
                                  </div>
                               )}
                               {item.pricing && (
                                  <div className="flex justify-between items-center border-skill-hov border-b-2">
                                     <div className="flex gap-2 mb-2">
-                                       <img src={item.pricingIcon} alt="Pricing Icon" className="w-5 lg:w-6" />
+                                       <img src={item.pricingIcon} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
                                        <span className="max-lg:text-xs">{item.pricing}</span>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2 max-lg:w-5" />
+                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
                                  </div>
                               )}
                            </div>
