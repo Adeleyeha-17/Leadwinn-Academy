@@ -1,5 +1,5 @@
 import { experienceA, experienceB, pricing, replay, review, time, tips } from "../../assets/icons";
-import Button from "../../components/Button";
+import { Link } from "react-router-dom"
 
 export const SelectedPlans = () => {
    type PlanFeature = {
@@ -97,20 +97,21 @@ export const SelectedPlans = () => {
 
    return (
       <div className="bg-skill h-full font-poppins max-sm:px-5 py-20 sm:px-10 flex flex-col gap-10 justify-center sm:items-center">
-         <div className="text-heading flex flex-col justify-center items-center gap-1 mb-4">
+         <div className="text-heading flex flex-col justify-center items-center gap-1 sm:mb-4">
             <h3 className="text-lg sm:text-2xl lg:text-3xl font-semibold ">Select Your Preferred Plan</h3>
             <h5 className="max-sm:text-xs max-lg:text-sm text-center">Choose the Perfect Subscription for Personalized Growth with Leadwinn</h5>
          </div>
 
-         <div className="flex gap-8 mx-auto">
+         <div className="flex max-sm:flex-col gap-8 mx-auto">
             {plans.map((data, index) => (
-               <div key={index} className="bg-white lg:w-[27rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
+               <div key={index} className="bg-white mx-auto w-[20rem] lg:w-[27rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
                   <div className="mb-5">
                      <h1 className=" text-base lg:text-xl font-semibold mb-1">{data.title}</h1>
-                     <h4 className="text-xs lg:text-sm max-w-[22rem]">{data.description}</h4>
+                     <h4 className="text-xs lg:text-sm w-[17rem] lg:w-[19.5rem] xl:w-[22rem]">{data.description}</h4>
                   </div>
 
-                  <Button path="" title="Get Started" />
+                  <Link to="" className={ `inline-block justify-center items-center py-3 w-[16rem] lg:w-[19rem] xl:w-[21rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Get Started</Link>
+
 
                   <div className="mt-7">
                      <h4 className="text-sm lg:text-base font-semibold mb-3">{data.feature}</h4>
