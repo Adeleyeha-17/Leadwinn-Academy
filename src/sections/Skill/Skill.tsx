@@ -81,7 +81,7 @@ export const Skill = () => {
    <div className="font-poppins pb-12 lg:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
       <div className="text-heading flex flex-col justify-center items-center gap-1 mb-10 sm:mb-16">
 
-      <h2 className="text-lg sm:text-2xl lg:text-3xl font-semibold ">
+      <h2 className="text-lg sm:text-2xl lg:text-3xl font-semibold">
          Our Courses are based on skill level
       </h2>
 

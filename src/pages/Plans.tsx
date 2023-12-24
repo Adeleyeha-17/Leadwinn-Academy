@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import Faq from "../components/Faq"
-import { Path, PlanCourses, Otherplans, Skill } from "../sections"
+import { Path, PlanCourses, Otherplans, Skill, SelectedPlans } from "../sections"
+
 
 
 export const Plans = () => {
@@ -9,6 +10,8 @@ export const Plans = () => {
       <Path />
 
       <Skill />
+
+      <SelectedPlans />
 
       <PlanCourses />
 

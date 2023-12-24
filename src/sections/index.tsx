@@ -14,6 +14,7 @@ import Testimonial from "./Testimonial"
 import Whychoose from "./Whychoose"
 import Courses from "./Courses"
 import Skill from "./Skill"
+import SelectedPlans from "./SelectedPlans"
 
 export {
    IgnitingMind,
@@ -32,4 +33,5 @@ export {
    Whychoose,
    Courses,
    Skill,
+   SelectedPlans
 }
