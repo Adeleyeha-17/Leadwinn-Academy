@@ -3,7 +3,7 @@ import Brochure from "../../assets/WEB-DEVELOPMENT-GUIDE.pdf"
 
 export const Otherplans = () => {
   return (
-<div className="bg-nav-blue h-full font-poppins max-sm:px-5 py-20 sm:py-28 sm:px-10 flex max-sm:flex-col gap-10 justify-center sm:items-center">
+<div className="bg-nav-blue h-full font-poppins max-sm:px-5 py-20 sm:py-28 sm:px-10 flex max-sm:flex-col gap-10 xl:gap-28 justify-center sm:items-center">
          <div className="flex flex-col gap-3">
             <h4 className="sm:mb-2 xl:mb-4 text-lg sm:text-xl font-semibold text-footer-blue"> Other Plans</h4>
 

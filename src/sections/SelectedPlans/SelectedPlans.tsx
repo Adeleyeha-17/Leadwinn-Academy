@@ -104,7 +104,7 @@ export const SelectedPlans = () => {
 
          <div className="flex max-sm:flex-col gap-8 mx-auto">
             {plans.map((data, index) => (
-               <div key={index} className="bg-white mx-auto w-[20rem] lg:w-[27rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
+               <div key={index} className="bg-white mx-auto w-[20rem] sm:w-[19rem] lg:w-[28rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
                   <div className="mb-5">
                      <h1 className=" text-base lg:text-xl font-semibold mb-1">{data.title}</h1>
                      <h4 className="text-xs lg:text-sm w-[17rem] lg:w-[19.5rem] xl:w-[22rem]">{data.description}</h4>
