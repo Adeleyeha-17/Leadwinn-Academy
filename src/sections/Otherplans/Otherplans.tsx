@@ -11,7 +11,7 @@ export const Otherplans = () => {
 
             <h5 className="text-courses text-xs xl:text-sm w-[19rem] lg:w-[27rem] xl:w-[30rem] mb-5">Unlock personalized education solutions designed for your child's success, bridging the gap between classroom teachings and individualized growth.</h5>
          
-            <a download="" href={Brochure} className={ `inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Learn more</a>
+            <a download="" href={Brochure} className={ `flex justify-center items-center w-[7rem] sm:w-[8rem] py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Learn more</a>
             
          </div>
 
