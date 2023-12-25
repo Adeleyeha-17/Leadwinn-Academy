@@ -1,5 +1,4 @@
 import { experienceA, experienceB, pricing, replay, review, time, tips } from "../../assets/icons";
-import { Link } from "react-router-dom"
 
 export const SelectedPlans = () => {
    type PlanFeature = {
@@ -110,7 +109,13 @@ export const SelectedPlans = () => {
                      <h4 className="text-xs lg:text-sm w-[17rem] lg:w-[19.5rem] xl:w-[22rem]">{data.description}</h4>
                   </div>
 
-                  <Link to="" className={ `inline-block justify-center items-center py-3 w-[16rem] lg:w-[19rem] xl:w-[21rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Get Started</Link>
+                  <a
+  href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20${encodeURIComponent(data.title)}%20plan.%20Can%20we%20discuss%20further?`}
+  className={`inline-block justify-center items-center py-3 w-[16rem] lg:w-[19rem] xl:w-[21rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
+>
+  Get Started
+</a>
+
 
 
                   <div className="mt-7">
