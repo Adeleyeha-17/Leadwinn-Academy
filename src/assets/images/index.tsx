@@ -63,6 +63,7 @@ import advancedSvg from "../images/advanced.png"
 import beginnerActive from "../images/beginner-a.png"
 import intermediateActive  from "../images/intermediate-a.png"
 import advancedActive from "../images/advanced-a.png"
+import otherPlans from "../images/plans.png"
 
 export {
    activeAge,
@@ -130,6 +131,7 @@ export {
    beginnerActive,
    intermediateActive,
    advancedActive,
+   otherPlans
 }
 
 
