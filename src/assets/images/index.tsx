@@ -44,8 +44,6 @@ import scratch from "../images/scratch.png"
 import signPost from "../images/signpost.png"
 import sliderImage from "../images/sliderimg.png"
 import subomi from "../images/Subomi.png"
-import techLeft from "../images/tech-left.png"
-import techRight from "../images/tech-right.png"
 import tokunbo from "../images/Tokunbo.png"
 import uiImage from "../images/ui-img.png"
 import uiUx from "../images/uiux.png"
@@ -113,8 +111,6 @@ export {
    signPost,
    sliderImage,
    subomi,
-   techLeft,
-   techRight,
    tokunbo,
    uiImage,
    uiUx,

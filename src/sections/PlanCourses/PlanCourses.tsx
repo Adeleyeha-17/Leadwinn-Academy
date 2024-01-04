@@ -43,7 +43,7 @@ export const PlanCourses = () => {
          <div className="grid grid-cols-3 sm:flex">
             {courses.map((plans, index) => (
                <div key={index} className="p-4 xl:p-9">
-                  <div className="bg-plans-gra flex items-center justify-center h-[5rem] lg:h-[7rem] lg w-[5rem] lg:w-[7rem] rounded-3xl mx-auto">
+                  <div className="bg-[#409BFF] flex items-center justify-center h-[5rem] lg:h-[7rem] lg w-[5rem] lg:w-[7rem] rounded-3xl mx-auto">
                      <img src={plans.overlayImg} alt={plans.heading} className="w-[4rem] xl:w-[5rem] rounded-xl" />
                   </div>
                   <h4 className="max-lg:w-[4rem] text-center text-xs xl:text-sm font-semibold mt-3 mx-auto">{plans.heading}</h4>

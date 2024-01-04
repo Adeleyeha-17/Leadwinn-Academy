@@ -91,7 +91,7 @@ export const Skill = () => {
      <div className="h-auto sm:h-[21rem] lg:h-[26rem] xl:h-[28.8rem] w-[21rem] sm:w-[27.8rem] flex flex-col gap-[2.35rem]">
       {skillLevel.map((data, index) => (
 
-       <div key={index} className={`${selected?.level === data.level ? "bg-skill-hov" :"bg-skill"} w-full h-[5.4rem] lg:h-[7.1rem] xl:h-[8rem] rounded-2xl px-6 lg:px-14 py-5 cursor-pointer`} onClick={() => setSelected(data)}>
+       <div key={index} className={`${selected?.level === data.level ? "bg-skill-hov" :"bg-skill"} w-full h-[5.4rem] lg:h-[7.1rem] xl:h-[8rem] rounded-2xl px-6 lg:px-14 py-5 cursor-pointer`} onMouseOver={() => setSelected(data)}>
          <div className="flex justify-between items-center relative">
             <img src={data.btnImg} alt="" className="absolute -right-6 w-[7rem] lg:w-[9.5rem] xl:w-[12rem]"/>
          <div className="text-heading flex flex-col gap-1">
