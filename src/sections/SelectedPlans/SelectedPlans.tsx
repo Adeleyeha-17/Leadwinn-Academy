@@ -52,7 +52,7 @@ export const SelectedPlans = () => {
 
                                  {tooltips[0] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[11.4rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[11.4rem] xl:-top-[12.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
                                           Experience a tailored curriculum designed to meet individual needs, fostering focused learning through direct interaction with our expert tutors.
                                        </div>
                                     </div>
@@ -72,7 +72,7 @@ export const SelectedPlans = () => {
 
                                  {tooltips[1] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[11.4rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[11.4rem] xl:-top-[12.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
                                           Experience a tailored curriculum designed to meet individual needs, fostering focused learning through direct interaction with our expert tutors.
                                           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 border-t-4 border-blue-900"></div>
                                        </div>
@@ -94,7 +94,7 @@ export const SelectedPlans = () => {
 
                                  {tooltips[2] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[11.4rem] xl:-top-56 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[11.4rem] xl:-top-[13.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
                                           Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.
                                        </div>
                                     </div>
@@ -115,7 +115,7 @@ export const SelectedPlans = () => {
 
                                  {tooltips[3] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[12.3rem] xl:-top-56 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[12.3rem] xl:-top-[13.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
                                           Enhance your learning with access to recorded sessions for thorough review and reinforcement. Never miss a class, as on-demand replays ensure continuous engagement.
                                        </div>
                                     </div>
@@ -137,7 +137,7 @@ export const SelectedPlans = () => {
 
                                  {tooltips[4] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.5rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.5rem] xl:-top-[12.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
                                           Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
                                        </div>
                                     </div>
@@ -205,8 +205,8 @@ export const SelectedPlans = () => {
 
                                  {tooltips[5] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.4rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
-                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.4rem] xl:-top-[12.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       Engage yourself in a global learning experience by engaging with students from diverse backgrounds and countries.
                                        </div>
                                     </div>
                                  )}
@@ -224,8 +224,8 @@ export const SelectedPlans = () => {
 
                                  {tooltips[6] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.4rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
-                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[12.4rem] xl:-top-[14.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       Experience a structured learning environment with a fixed class schedule. Interact with a group of peers at agreed-upon times, fostering a collaborative and engaging educational atmosphere.
                                        </div>
                                     </div>
                                  )}
@@ -244,8 +244,8 @@ export const SelectedPlans = () => {
 
                                  {tooltips[7] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.4rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
-                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[13.4rem] xl:-top-[14.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       Enhance your learning through constructive feedback on group projects, fostering teamwork and collaborative learning experiences that contribute to your overall educational growth.
                                        </div>
                                     </div>
                                  )}
@@ -264,8 +264,8 @@ export const SelectedPlans = () => {
 
                                  {tooltips[8] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.4rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
-                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.4rem] xl:-top-[11.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       Optimize your learning journey by accessing group session recordings for thorough review and reinforcement. 
                                        </div>
                                     </div>
                                  )}
@@ -284,8 +284,8 @@ export const SelectedPlans = () => {
 
                                  {tooltips[9] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[10.4rem] xl:-top-52 left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
-                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-[10px] xl:text-xs w-48 xl:w-80 rounded-xl p-5 xl:p-10 absolute -top-[11.4rem] xl:-top-[13.4rem] left-[38%] xl:left-[40%] transform -translate-x-1/2 text-center">
+                                       Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.
                                        </div>
                                     </div>
                                  )}
