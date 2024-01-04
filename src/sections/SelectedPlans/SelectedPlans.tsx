@@ -1,98 +1,15 @@
+import { useState } from "react";
 import { experienceA, experienceB, pricing, replay, review, time, tips } from "../../assets/icons";
 
 export const SelectedPlans = () => {
-   type PlanFeature = {
-      experience?: string;
-      experienceIcon: string;
-      duration?: string;
-      durationIcon: string;
-      review?: string;
-      reviewIcon: string;
-      replay?: string;
-      replayIcon: string;
-      pricing?: string;
-      pricingIcon: string;
-      tipIcon: string;
-   };
 
-   type AdditionalFeature = {
-      title: string;
-      description: string;
-   };
+   const [tooltips, setTooltips] = useState([false, false, false, false, false]);
 
-   type Plan = {
-      title: string;
-      description: string;
-      feature: string;
-      features: PlanFeature[];
-      additionalFeature: string;
-      additionalFeatures: AdditionalFeature[];
+   const handleTooltipToggle = (index: number) => {
+      const newTooltips = [...tooltips];
+      newTooltips[index] = !newTooltips[index];
+      setTooltips(newTooltips);
    };
-
-   const plans: Plan[] = [
-      {
-         title: "Virtual Personal Tutoring",
-         description: "Elevate Your Learning with Tutor-Led Live Classes, One-on-One Excellence Tailored to You.",
-         feature: "Features",
-         features: [
-            {
-               experience: "Personalized Learning Experience",
-               experienceIcon: experienceA,
-               duration: "Time Flexibility",
-               durationIcon: time,
-               review: "Project Review",
-               reviewIcon: review,
-               replay: "Replay",
-               replayIcon: replay,
-               pricing: "Premium Pricing",
-               pricingIcon: pricing,
-               tipIcon: tips,
-            },
-         ],
-         additionalFeature: "Additional Features",
-         additionalFeatures: [
-            {
-               title: "Progress Tracking",
-               description: "Monitor and track individual progress through a dedicated dashboard.",
-            },
-            {
-               title: "Priority Support",
-               description: "Get priority access to customer support for a seamless learning journey.",
-            },
-         ],
-      },
-      {
-         title: "Virtual Group Classes",
-         description: "Maximize Learning in Virtual Group Classes with Expert Tutors, Limited to 4 Students per Class.",
-         feature: "Features",
-         features: [
-            {
-               experience: "Networking Opportunities",
-               experienceIcon: experienceB,
-               duration: "Agreed Time (Not Flexible)",
-               durationIcon: time,
-               review: "Project Review",
-               reviewIcon: review,
-               replay: "Replay",
-               replayIcon: replay,
-               pricing: "Standard Pricing",
-               pricingIcon: pricing,
-               tipIcon: tips,
-            },
-         ],
-         additionalFeature: "Additional Features",
-         additionalFeatures: [
-            {
-               title: "Cross-Cultural Learning",
-               description: "Gain insights into different cultures through group discussions and projects.",
-            },
-            {
-               title: "Collaborative Projects",
-               description: "Work on team projects to enhance collaboration and communication skills.",
-            },
-         ],
-      },
-   ];
 
    return (
       <div className="bg-skill h-full font-poppins max-sm:px-5 py-20 sm:px-10 flex flex-col gap-10 justify-center sm:items-center">
@@ -101,96 +18,306 @@ export const SelectedPlans = () => {
             <h5 className="max-sm:text-xs max-lg:text-sm text-center">Choose the Perfect Subscription for Personalized Growth with Leadwinn</h5>
          </div>
 
-         <div className="flex max-sm:flex-col gap-8 mx-auto">
-            {plans.map((data, index) => (
-               <div key={index} className="bg-white mx-auto w-[20rem] sm:w-[19rem] lg:w-[28rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
+         <div className="bg-skill h-full font-poppins max-sm:px-5 sm:px-10 flex flex-col gap-10 justify-center sm:items-center">
+
+            <div className="flex max-sm:flex-col gap-8 mx-auto">
+               <div className="bg-white mx-auto w-[20rem] sm:w-[19rem] lg:w-[28rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
                   <div className="mb-5">
-                     <h1 className=" text-base lg:text-xl font-semibold mb-1">{data.title}</h1>
-                     <h4 className="text-xs lg:text-sm xl:text-base w-[17rem] lg:w-[23rem] xl:w-[25rem]">{data.description}</h4>
+                     <h1 className=" text-base lg:text-xl font-semibold mb-1">Virtual Personal Tutoring</h1>
+                     <h4 className="text-xs lg:text-sm xl:text-base w-[17rem] lg:w-[23rem] xl:w-[25rem]">Elevate Your Learning with Tutor-Led Live Classes, One-on-One Excellence Tailored to You.</h4>
                   </div>
 
                   <a
-  href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20${encodeURIComponent(data.title)}%20plan.%20Can%20we%20discuss%20further?`}
-  className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
->
-  Get Started
-</a>
+                     className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
+                  >
+                     Get Started
+                  </a>
 
 
 
                   <div className="mt-7">
-                     <h4 className="text-sm lg:text-base font-semibold mb-3">{data.feature}</h4>
+                     <h4 className="text-sm lg:text-base font-semibold mb-3">Features</h4>
 
                      <div>
-                        {data.features.map((item, index) => (
-                           <div key={index} className="flex flex-col gap-5">
-                              {item.experience && (
-                                 <div className="flex justify-between items-center border-skill-hov border-b-2">
-                                    <div className="flex gap-2 mb-2">
-                                       <img src={item.experienceIcon} alt="Experience Icon" className=" w-4 sm:w-5 lg:w-6" />
-                                       <span className="max-lg:text-xs" >{item.experience}</span>
+                        <div className="flex flex-col gap-5">
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={experienceA} alt="Experience Icon" className=" w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs" >Personalized Learning Experience</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(0)}
+                                    onMouseLeave={() => handleTooltipToggle(0)} />
+
+                                 {tooltips[0] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Experience a tailored curriculum designed to meet individual needs, fostering focused learning through direct interaction with our expert tutors.
+                                       </div>
                                     </div>
-                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 sm:max-lg:w-5" />
-                                 </div>
-                              )}
-                              {item.duration && (
-                                 <div className="flex justify-between items-center border-skill-hov border-b-2">
-                                    <div className="flex gap-2 mb-2">
-                                       <img src={item.durationIcon} alt="Duration Icon" className="w-4 sm:w-5 lg:w-6" />
-                                       <span className="max-lg:text-xs">{item.duration}</span>
-                                    </div>
-                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
-                                 </div>
-                              )}
-                              {item.review && (
-                                 <div className="flex justify-between items-center border-skill-hov border-b-2">
-                                    <div className="flex gap-2 mb-2">
-                                       <img src={item.reviewIcon} alt="Review Icon" className="w-4 sm:w-5 lg:w-6" />
-                                       <span className="max-lg:text-xs">{item.review}</span>
-                                    </div>
-                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
-                                 </div>
-                              )}
-                              {item.replay && (
-                                 <div className="flex justify-between items-center border-skill-hov border-b-2">
-                                    <div className="flex gap-2 mb-2">
-                                       <img src={item.replayIcon} alt="Replay Icon" className="w-4 sm:w-5 lg:w-6" />
-                                       <span className="max-lg:text-xs">{item.replay}</span>
-                                    </div>
-                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
-                                 </div>
-                              )}
-                              {item.pricing && (
-                                 <div className="flex justify-between items-center border-skill-hov border-b-2">
-                                    <div className="flex gap-2 mb-2">
-                                       <img src={item.pricingIcon} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
-                                       <span className="max-lg:text-xs">{item.pricing}</span>
-                                    </div>
-                                    <img src={item.tipIcon} className="mb-2 max-sm:w-4 max-lg:w-5" />
-                                 </div>
-                              )}
+                                 )}
+
+                              </div>
                            </div>
-                        ))}
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={time} alt="Duration Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Time Flexibility</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(1)}
+                                    onMouseLeave={() => handleTooltipToggle(1)} />
+
+                                 {tooltips[1] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Experience a tailored curriculum designed to meet individual needs, fostering focused learning through direct interaction with our expert tutors.
+                                          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 border-t-4 border-blue-900"></div>
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>
+                           </div>
+
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={review} alt="Review Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Project Review</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(2)}
+                                    onMouseLeave={() => handleTooltipToggle(2)} />
+
+                                 {tooltips[2] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>
+                           </div>
+
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={replay} alt="Replay Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Replay</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(3)}
+                                    onMouseLeave={() => handleTooltipToggle(3)} />
+
+                                 {tooltips[3] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Enhance your learning with access to recorded sessions for thorough review and reinforcement. Never miss a class, as on-demand replays ensure continuous engagement.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>
+                           </div>
+
+
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={pricing} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Premium Pricing</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(4)}
+                                    onMouseLeave={() => handleTooltipToggle(4)} />
+
+                                 {tooltips[4] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>
+                           </div>
+                        </div>
                      </div>
 
                      <div className="mt-7">
-                        <h3 className="text-sm lg:text-base font-semibold mb-3">{data.additionalFeature}</h3>
+                        <h3 className="text-sm lg:text-base font-semibold mb-3">Additional Tracking</h3>
 
-                        {data.additionalFeatures.map((features, index) => (
-                           <div key={index}>
-                              <h3 className="text-xs lg:text-sm mb-2">
-                                 <span className="mr-2 font-semibold">
-                                    {features.title}:
-                                 </span>
-                                 {features.description}
-                              </h3>
-                           </div>
-                        ))}
+                        <div>
+                           <h3 className="text-xs lg:text-sm mb-2">
+                              <span className="mr-2 font-semibold">
+                                 Progress Tracking:
+                              </span>
+                              Monitor and track individual progress through a dedicated dashboard
+                           </h3>
+                        </div>
+                        <div>
+                           <h3 className="text-xs lg:text-sm mb-2">
+                              <span className="mr-2 font-semibold">
+                                 Priority Support:
+                              </span>
+                              Get priority access to customer support for a seamless learning journey.
+                           </h3>
+                        </div>
                      </div>
 
                   </div>
                </div>
-            ))}
+
+
+
+               <div className="bg-white mx-auto w-[20rem] sm:w-[19rem] lg:w-[28rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
+                  <div className="mb-5">
+                     <h1 className=" text-base lg:text-xl font-semibold mb-1">Virtual Group Classes</h1>
+                     <h4 className="text-xs lg:text-sm xl:text-base w-[17rem] lg:w-[23rem] xl:w-[25rem]">Maximize Learning in Virtual Group Classes with Expert Tutors, Limited to 4 Students per Class.</h4>
+                  </div>
+
+                  <a
+                     className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
+                  >
+                     Get Started
+                  </a>
+
+
+
+                  <div className="mt-7">
+                     <h4 className="text-sm lg:text-base font-semibold mb-3">Features</h4>
+
+                     <div>
+                        <div className="flex flex-col gap-5">
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={experienceB} alt="Experience Icon" className=" w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs" >Networking Oppurtunities</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(5)}
+                                    onMouseLeave={() => handleTooltipToggle(5)} />
+
+                                 {tooltips[5] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>                           </div>
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={time} alt="Duration Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Agreed Time (Not Flexible)</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(6)}
+                                    onMouseLeave={() => handleTooltipToggle(6)} />
+
+                                 {tooltips[6] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>                           </div>
+
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={review} alt="Review Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Project Review</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(7)}
+                                    onMouseLeave={() => handleTooltipToggle(7)} />
+
+                                 {tooltips[7] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>                           </div>
+
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={replay} alt="Replay Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Replay</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(8)}
+                                    onMouseLeave={() => handleTooltipToggle(8)} />
+
+                                 {tooltips[8] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>                           </div>
+
+                           <div className="flex justify-between items-center border-skill-hov border-b-2">
+                              <div className="flex gap-2 mb-2">
+                                 <img src={pricing} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
+                                 <span className="max-lg:text-xs">Standard Pricing</span>
+                              </div>
+                              <div className="relative">
+
+                                 <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(9)}
+                                    onMouseLeave={() => handleTooltipToggle(9)} />
+
+                                 {tooltips[9] && (
+                                    <div className="relative">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                          Immerse yourself in a premium learning experience with high-quality, one-on-one tutoring, tailored to meet your unique educational goals.
+                                       </div>
+                                    </div>
+                                 )}
+
+                              </div>                           </div>
+                        </div>
+                     </div>
+
+                     <div className="mt-7">
+                        <h3 className="text-sm lg:text-base font-semibold mb-3">Additional Tracking</h3>
+
+                        <div>
+                           <h3 className="text-xs lg:text-sm mb-2">
+                              <span className="mr-2 font-semibold">
+                                 Cross-Cultural Learning:
+                              </span>
+                              Gain insights into different cultures through group discussions and projects.
+                           </h3>
+                        </div>
+                        <div>
+                           <h3 className="text-xs lg:text-sm mb-2">
+                              <span className="mr-2 font-semibold">
+                                 Collaborative Projects:
+                              </span>
+                              Work on team projects to enhance collaboration and communication skills.
+                           </h3>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    );
