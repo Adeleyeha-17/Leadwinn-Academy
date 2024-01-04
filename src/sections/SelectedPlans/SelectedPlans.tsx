@@ -94,7 +94,7 @@ export const SelectedPlans = () => {
 
                                  {tooltips[2] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-56 left-1/2 transform -translate-x-1/2">
                                           Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.
                                        </div>
                                     </div>
@@ -115,7 +115,7 @@ export const SelectedPlans = () => {
 
                                  {tooltips[3] && (
                                     <div className="relative">
-                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-52 left-1/2 transform -translate-x-1/2">
+                                       <div className="tooltip bg-blue-900  border-blue-900 text-white text-xs w-80 rounded-xl p-10 absolute -top-56 left-1/2 transform -translate-x-1/2">
                                           Enhance your learning with access to recorded sessions for thorough review and reinforcement. Never miss a class, as on-demand replays ensure continuous engagement.
                                        </div>
                                     </div>
