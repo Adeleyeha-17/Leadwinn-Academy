@@ -35,10 +35,10 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={experienceA} alt="Experience Icon" className="w-4" />
-                <div className="flex gap-[6rem]">
+                <div className="flex gap-[5.3rem]">
                 <div>
 
-                <span className="text-[0.7rem]">Networking Opportunities</span>
+                <span className="text-xs">Networking Opportunities</span>
                 </div>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(0 + 1)}/>
                 </div>
@@ -51,7 +51,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 0 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.7rem]">EEngage yourself in a global learning experience by engaging with students from diverse backgrounds and countries.</p>
+              <p className="text-head-black text-[0.7rem]">Engage yourself in a global learning experience by engaging with students from diverse backgrounds and countries.</p>
           </motion.div>
             </div>
        
@@ -59,8 +59,8 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center">
                 <div className="flex gap-2 mb-2">
                 <img src={time} alt="Pricing Icon" className="w-4" />
-                <div className="flex gap-[5.7rem]">
-                <span className="text-[0.7rem]">Agreed Time (Not Flexible)</span>
+                <div className="flex gap-[4.98rem]">
+                <span className="text-xs">Agreed Time (Not Flexible)</span>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(1 + 1)}/>
                 </div>
                 </div>
@@ -81,8 +81,8 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={review} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
-                <div className="flex gap-[9.9rem]">
-                <span className="text-[0.7rem]">Project Review</span>
+                <div className="flex gap-[9.45rem]">
+                <span className="text-xs">Project Review</span>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(2 + 1)}/>
                 </div>
                 </div>
@@ -102,8 +102,8 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={replay} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
-                <div className="flex gap-[12.55rem]">
-                <span className="text-[0.7rem]">Replay</span>
+                <div className="flex gap-[12.35rem]">
+                <span className="text-xs">Replay</span>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(3 + 1)}/>
                 </div>
               </div>
@@ -123,10 +123,10 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={pricing} alt="Experience Icon" className="w-4" />
-                <div className="flex gap-[9.1rem]">
+                <div className="flex gap-[8.7rem]">
                 <div>
 
-                <span className="text-[0.7rem]">Standard Pricing</span>
+                <span className="text-xs">Standard Pricing</span>
                 </div>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(9 + 1)}/>
                 </div>
