@@ -37,7 +37,7 @@ export const PlanCourses = () => {
 
 
    return (
-      <div className="bg-home-gra flex flex-col justify-center items-center w-full h-full py-[4rem] text-white font-poppins relative overflow-hidden">
+      <div className="bg-gradient-to-br from-[#0965CE] to-[#01152C] flex flex-col justify-center items-center w-full h-full py-[4rem] text-white font-poppins relative overflow-hidden">
          <h4 className="text-xl xl:text-2xl font-semibold mb-7">Courses We Teach</h4>
 
          <div className="grid grid-cols-3 sm:flex">

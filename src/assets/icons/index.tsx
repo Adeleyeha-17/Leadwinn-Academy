@@ -15,7 +15,7 @@ import replay from "../icons/replay.svg"
 import review from "../icons/review.svg"
 import time from "../icons/time.svg"
 import tips from "../icons/tips.svg"
-
+import star from "../icons/star.svg"
 
 
 
@@ -40,4 +40,5 @@ replay,
 review,
 time,
 tips,
+star
 }

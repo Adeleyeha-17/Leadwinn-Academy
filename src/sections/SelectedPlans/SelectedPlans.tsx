@@ -28,6 +28,7 @@ export const SelectedPlans = () => {
                   </div>
 
                   <a
+                  href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20Virtual%20Personal%20Tutoring%20plan.%20Can%20we%20discuss%20further?`}
                      className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
                   >
                      Get Started
@@ -180,7 +181,7 @@ export const SelectedPlans = () => {
                      <h4 className="text-xs lg:text-sm xl:text-base w-[17rem] lg:w-[23rem] xl:w-[25rem]">Maximize Learning in Virtual Group Classes with Expert Tutors, Limited to 4 Students per Class.</h4>
                   </div>
 
-                  <a
+                  <a   href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20Virtual%20Group%20Classes%20plan.%20Can%20we%20discuss%20further?`}
                      className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
                   >
                      Get Started
