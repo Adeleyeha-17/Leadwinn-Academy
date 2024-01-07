@@ -35,10 +35,10 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={experienceA} alt="Experience Icon" className="w-4" />
-                <div className="flex gap-[3.3rem]">
+                <div className="flex gap-[6rem]">
                 <div>
 
-                <span className="text-[0.7rem]">Personalized Learning Experience</span>
+                <span className="text-[0.7rem]">Networking Opportunities</span>
                 </div>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(0 + 1)}/>
                 </div>
@@ -51,7 +51,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 0 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.7rem]">Experience a tailored curriculum designed to meet individual needs, fostering focused learning through direct interaction with our expert tutors.</p>
+              <p className="text-head-black text-[0.7rem]">EEngage yourself in a global learning experience by engaging with students from diverse backgrounds and countries.</p>
           </motion.div>
             </div>
        
@@ -59,8 +59,8 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center">
                 <div className="flex gap-2 mb-2">
                 <img src={time} alt="Pricing Icon" className="w-4" />
-                <div className="flex gap-[9.9rem]">
-                <span className="text-[0.7rem]">Time Flexibility</span>
+                <div className="flex gap-[5.7rem]">
+                <span className="text-[0.7rem]">Agreed Time (Not Flexible)</span>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(1 + 1)}/>
                 </div>
                 </div>
@@ -72,7 +72,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 1 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.7rem] ">Empower your learning journey with the flexibility to schedule classes at times convenient for you, offering the freedom to adjust timings.</p>
+              <p className="text-head-black text-[0.7rem] ">Experience a structured learning environment with a fixed class schedule. Interact with a group of peers at agreed-upon times, fostering a collaborative and engaging educational atmosphere.</p>
             </motion.div>
           </div>
        
@@ -93,7 +93,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 2 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.7rem] ">Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.</p>
+              <p className="text-head-black text-[0.7rem] ">Enhance your learning through constructive feedback on group projects, fostering teamwork and collaborative learning experiences that contribute to your overall educational growth..</p>
             </motion.div>
           </div>
        
@@ -114,7 +114,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 3 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className=" overflow-hidden">
-              <p className="text-head-black text-[0.7rem]">Enhance your learning with access to recorded sessions for thorough review and reinforcement. Never miss a class, as on-demand replays ensure continuous engagement.</p>
+              <p className="text-head-black text-[0.7rem]">Optimize your learning journey by accessing group session recordings for thorough review and reinforcement. </p>
             </motion.div>
           </div>
        
@@ -143,10 +143,29 @@ export const MobilePlans = () => {
           </motion.div>
             </div>
        
-      </div>
 
-      
+      <div className="mt-7">
+               <h3 className="text-sm lg:text-base font-semibold mb-3">Additional Tracking</h3>
+
+               <div>
+                  <h3 className="text-xs lg:text-sm mb-2">
+                     <span className="mr-2 font-semibold">
+                        Cross-Cultural Learning:
+                     </span>
+                     Gain insights into different cultures through group discussions and projects.
+                  </h3>
+               </div>
+               <div>
+                  <h3 className="text-xs lg:text-sm mb-2">
+                     <span className="mr-2 font-semibold">
+                        Collaborative Projects:
+                     </span>
+                     Work on team projects to enhance collaboration and communication skills.
+                  </h3>
+               </div>
+            </div>
     </div>
     </div>
+      </div>
   )
 }
