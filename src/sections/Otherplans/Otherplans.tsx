@@ -28,7 +28,7 @@ export const Otherplans = () => {
 
 {plans.otherplan.map((plan, index) => (
   
-  <h1 key={index} className="bg-nav-blue text-heading text-[1rem] font-semibold h-10 w-max flex items-center rounded-2xl px-5 shadow-md sm:shadow-lg">{plan}</h1>
+  <h1 key={index} className="bg-nav-blue text-heading xl:text-[0.8rem] font-medium h-10 w-max flex items-center rounded-2xl px-5 shadow-md sm:shadow-lg">{plan}</h1>
   ))}
   </div>
 
