@@ -15,6 +15,8 @@ import Whychoose from "./Whychoose"
 import Courses from "./Courses"
 import Skill from "./Skill"
 import SelectedPlans from "./SelectedPlans"
+import MobilePlans from "./MobilePlans"
+import DesktopPlans from "./DesktopPlans"
 
 export {
    IgnitingMind,
@@ -33,5 +35,7 @@ export {
    Whychoose,
    Courses,
    Skill,
-   SelectedPlans
+   SelectedPlans,
+   MobilePlans,
+   DesktopPlans
 }
