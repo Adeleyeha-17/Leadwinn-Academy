@@ -1,4 +1,4 @@
-import { experienceA, experienceB, pricing, replay, review, time, tips } from "../../assets/icons";
+import { experienceA, pricing, replay, review, time, tips } from "../../assets/icons";
 import { useState } from "react";
 import { motion } from "framer-motion"
 
