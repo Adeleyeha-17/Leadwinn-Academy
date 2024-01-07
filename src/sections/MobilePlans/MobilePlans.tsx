@@ -51,7 +51,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 0 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.6rem]">Experience a tailored curriculum designed to meet individual needs, fostering focused learning through direct interaction with our expert tutors.</p>
+              <p className="text-head-black text-[0.7rem]">Experience a tailored curriculum designed to meet individual needs, fostering focused learning through direct interaction with our expert tutors.</p>
           </motion.div>
             </div>
        
@@ -72,7 +72,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 1 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.6rem] ">Empower your learning journey with the flexibility to schedule classes at times convenient for you, offering the freedom to adjust timings.</p>
+              <p className="text-head-black text-[0.7rem] ">Empower your learning journey with the flexibility to schedule classes at times convenient for you, offering the freedom to adjust timings.</p>
             </motion.div>
           </div>
        
@@ -93,7 +93,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 2 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.6rem] ">Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.</p>
+              <p className="text-head-black text-[0.7rem] ">Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.</p>
             </motion.div>
           </div>
        
@@ -114,7 +114,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 3 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className=" overflow-hidden">
-              <p className="text-head-black text-[0.6rem]">Enhance your learning with access to recorded sessions for thorough review and reinforcement. Never miss a class, as on-demand replays ensure continuous engagement.</p>
+              <p className="text-head-black text-[0.7rem]">Enhance your learning with access to recorded sessions for thorough review and reinforcement. Never miss a class, as on-demand replays ensure continuous engagement.</p>
             </motion.div>
           </div>
        
@@ -123,7 +123,7 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={pricing} alt="Experience Icon" className="w-4" />
-                <div className="flex gap-[3.3rem]">
+                <div className="flex gap-[9.1rem]">
                 <div>
 
                 <span className="text-[0.7rem]">Standard Pricing</span>
@@ -139,7 +139,7 @@ export const MobilePlans = () => {
                         height: activeAccordion === 9 + 1 ? 'auto' : 0,
                      }}
                      transition={{ duration: 0.3 }} className="overflow-hidden">
-              <p className="text-head-black text-[0.6rem]">Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.</p>
+              <p className="text-head-black text-[0.7rem]">Gain valuable insights with personalized feedback on projects and assignments, fostering close collaboration with our tutors for targeted skill development.</p>
           </motion.div>
             </div>
        
