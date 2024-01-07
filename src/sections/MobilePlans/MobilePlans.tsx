@@ -81,7 +81,7 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={review} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
-                <div className="flex gap-[9.7rem]">
+                <div className="flex gap-[9.9rem]">
                 <span className="text-[0.7rem]">Project Review</span>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(2 + 1)}/>
                 </div>
@@ -102,7 +102,7 @@ export const MobilePlans = () => {
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
                 <img src={replay} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
-                <div className="flex gap-[12.2rem]">
+                <div className="flex gap-[12.55rem]">
                 <span className="text-[0.7rem]">Replay</span>
                 <img src={tips} className='w-4 cursor-pointer' onClick={() => toggleTab(3 + 1)}/>
                 </div>
