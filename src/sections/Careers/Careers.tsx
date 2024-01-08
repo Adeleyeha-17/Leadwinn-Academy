@@ -15,7 +15,7 @@ export const Careers = () => {
    </div>
 
 
-   <div className="flex max-sm:flex-col-reverse justify-center items-center gap-10 sm:px-16 mt-20">
+   <div className="flex max-sm:flex-col-reverse justify-center items-center gap-10 sm:px-16 mt-10 sm:mt-20">
    <div>
        <img src={careerBottom} className="w-[18.5rem] sm:w-[27rem]" />
      </div>
