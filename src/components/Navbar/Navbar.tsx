@@ -55,8 +55,8 @@ export const Navbar: React.FC = () => {
       path: '/library',
     },
     {
-      link: 'Tech Hub',
-      path: '/tech-hub',
+      link: 'Career',
+      path: '/career',
     },
   ];
 

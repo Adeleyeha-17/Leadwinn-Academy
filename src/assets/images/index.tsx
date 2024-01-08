@@ -62,6 +62,13 @@ import beginnerActive from "../images/beginner-a.png"
 import intermediateActive  from "../images/intermediate-a.png"
 import advancedActive from "../images/advanced-a.png"
 import otherPlans from "../images/plans.png"
+import careerBg from "../images/career-bg.png"
+import careerBottom from "../images/career-bottom.png"
+import careerTop from "../images/career-top.png"
+import joinBottom from "../images/join-bottom.png"
+import joinTop from "../images/join-top.png"
+import joinLeft from "../images/join-left.png"
+import joinRight from "../images/join-right.png"
 
 export {
    activeAge,
@@ -127,7 +134,14 @@ export {
    beginnerActive,
    intermediateActive,
    advancedActive,
-   otherPlans
+   otherPlans,
+   careerBg,
+careerBottom,
+careerTop,
+joinBottom,
+joinTop,
+joinLeft,
+joinRight,
 }
 
 

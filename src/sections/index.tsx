@@ -17,6 +17,7 @@ import Skill from "./Skill"
 import SelectedPlans from "./SelectedPlans"
 import MobilePlans from "./MobilePlans"
 import DesktopPlans from "./DesktopPlans"
+import Careers from "./Careers"
 
 export {
    IgnitingMind,
@@ -37,5 +38,6 @@ export {
    Skill,
    SelectedPlans,
    MobilePlans,
-   DesktopPlans
+   DesktopPlans,
+   Careers
 }
