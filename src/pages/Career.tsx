@@ -12,7 +12,7 @@ export const Career = () => {
         Become a Crucial Part of our Educational Journey
         </h1>
 
-        <h4 className="text-xs xl:text-sm w-[20rem] sm:w-[40rem] xl:w-[50rem] text-center">
+        <h4 className="text-xs xl:text-sm w-[20rem] sm:w-[50rem] text-center">
          <p className="max-sm:mb-3 sm:mb-0.5">
          Explore exciting opportunities to mentor and guide the next generation of tech leaders at Leadwinn Academy.         </p>
         </h4>
