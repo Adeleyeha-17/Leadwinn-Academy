@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { leftPlan, rightPlan } from "../assets/images"
-import { Careers } from "../sections"
+import { Careers, JoinLeads } from "../sections"
 
 export const Career = () => {
   return (
@@ -21,6 +21,8 @@ export const Career = () => {
       </div>
       
     <Careers />
+
+    <JoinLeads />
 
 </motion.div>
   )
