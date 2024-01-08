@@ -14,7 +14,7 @@ export const MobilePlans = () => {
   <div className="bg-skill h-full font-poppins px-5 flex flex-col gap-10 items-center justify-center sm:hidden">
   
    <div className="flex max-sm:flex-col gap-8">
-   <div className="bg-white mx-auto w-[20rem] sm:w-[19rem] lg:w-[28rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
+   <div className="bg-white mx-auto w-[20rem]  h-[45rem] rounded-2xl text-heading p-5 lg:p-10">
 
 <div className="mb-5">
       <h1 className=" text-base lg:text-xl font-semibold mb-1">Virtual Personal Tutoring</h1>
@@ -164,7 +164,7 @@ export const MobilePlans = () => {
 </div>
 
 
-      <div className="bg-white mx-auto w-[20rem] sm:w-[19rem] lg:w-[28rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
+      <div className="bg-white mx-auto w-[20rem] h-[45rem] rounded-2xl text-heading p-5 lg:p-10">
 
       <div className="mb-5">
             <h1 className=" text-base lg:text-xl font-semibold mb-1">Virtual Group Classes</h1>
@@ -312,8 +312,7 @@ export const MobilePlans = () => {
                      </span>
                      Work on team projects to enhance collaboration and communication skills.
                   </h3>
-               </div>
-            </div>
+               </div>      </div>
     </div>
     </div>
       </div>
