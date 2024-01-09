@@ -11,7 +11,7 @@ export const JoinLeads = () => {
 
   return (
     <div>
-      <div className="w-full h-[14rem] sm:h-[24rem] lg:h-[27rem] xl:h-[32rem] py-4 sm:py-16 xl:py-20 pl-12 sm:pl-16 lg:pl-24 xl:pl-52" style={joinStyle}>
+      <div className="w-full h-[14rem] sm:h-[23rem] lg:h-[27rem] xl:h-[32rem] py-4 sm:py-16 xl:py-20 pl-12 sm:pl-16 lg:pl-24 xl:pl-52" style={joinStyle}>
         <div className="bg-white text-home-gra opacity-80 w-[18rem] sm:w-[28rem] lg:w-[35rem] xl:w-[39rem] h-[12rem] sm:h-[15rem] lg:h-[19rem] xl:h-[22rem] rounded-2xl py-4 sm:py-[1.9rem] lg:py-[3.75rem] px-5 sm:px-10">
           <h5 className="text-sm sm:text-base lg:text-lg font-semibold w-56 sm:w-64 lg:w-72 mb-2 sm:mb-4">Curious About What Leadwinn Has To Offer?</h5>
 
