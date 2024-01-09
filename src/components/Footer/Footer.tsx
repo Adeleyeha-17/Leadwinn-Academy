@@ -168,7 +168,7 @@ export const Footer: React.FC = () => {
          <div className='fixed bottom-28 right-10'>
          <a
                 href="https://api.whatsapp.com/send?phone=+2348165906106&text=Hello Leadwinn,"
-                className="text-[0.75rem] inline-block items-center justify-center gap-x-1 text-hero-blue"
+                className="text-[0.75rem] inline-block items-center justify-center gap-x-1 text-hero-blue z-20"
                 target="_blank" rel="noopener noreferrer">
                <img src={whatsapp} className='hidden md:flex'/>
 

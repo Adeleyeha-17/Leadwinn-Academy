@@ -25,8 +25,8 @@ export const JoinLeads = () => {
 
 
       <div className="bg-skill-hov w-full h-[65.4rem] relative">
-      <img src={joinLeft} className="absolute left-0 z-10"/>
-      <img src={joinRight} className="absolute right-0 z-10"/>
+      <img src={joinLeft} className="absolute left-0 "/>
+      <img src={joinRight} className="absolute right-0 "/>
       </div>
     </div>
   );
