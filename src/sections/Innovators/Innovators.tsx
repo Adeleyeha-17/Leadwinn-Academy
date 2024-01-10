@@ -4,8 +4,8 @@ export const Innovators:React.FC = () => {
   return (
     <div>
       <div className="bg-footer-blue flex flex-col justify-center items-center w-full h-full py-[7.87rem] text-white font-poppins relative">
-        <img src={leftPlan} className="sm:h-[19rem] lg:h-[21rem] xl:h-[22rem] absolute top-0 left-0 bottom-0"/>
-        <img src={rightPlan} className="sm:h-[20rem] lg:h-[21rem] xl:h-[22rem] absolute top-0 right-0 bottom-0"/>
+        <img src={leftPlan} className="h-[14rem] sm:h-[21rem] xl:h-[22rem] absolute top-0 left-0 bottom-0"/>
+        <img src={rightPlan} className="h-[14rem] sm:h-[21rem] xl:h-[22rem] absolute top-0 right-0 bottom-0"/>
         <h1 className="text-base sm:text-2xl xl:text-4xl mb-5 font-semibold">
         Shaping Tech Innovators Of Tommorrow
         </h1>
