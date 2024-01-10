@@ -49,11 +49,11 @@ export const Feedback: FC<FeedbackProps> = () => {
 
               <h3 className="text-[0.875rem] font-semibold">Email</h3>
               <span className="text-xs block mb-[0.75rem]">
-                info@leadwinnacademy@gmail.com
+                info.leadwinnacademy@gmail.com
               </span>
 
               <Link
-                to="mailto:info@leadwinnacademy@gmail.com"
+                to="mailto:info.leadwinnacademy@gmail.com"
                 className="text-[0.75rem] inline-block items-center justify-center gap-x-1 text-hero-blue"
                target="_blank">
                 Write us

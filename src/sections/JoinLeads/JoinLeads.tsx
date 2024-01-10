@@ -63,7 +63,7 @@ export const JoinLeads = () => {
         <p className="mb-5 sm:mb-10 max-sm:text-xs">Looking to be a Leadwinn Facilitator ? </p>
 
 
-      <Link to="" className={ `inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Send Us Your CV</Link>
+      <Link  to="mailto:info.leadwinnacademy@gmail.com" target="_blank" className={ `inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Send Us Your CV</Link>
       </div>
 </div>
       </div>

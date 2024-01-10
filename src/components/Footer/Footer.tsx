@@ -56,7 +56,7 @@ export const Footer: React.FC = () => {
 
                   <div className="flex flex-col gap-1">
                      <h1 className="text-sm md:font-medium ">Email</h1>
-                     <h1 className="text-xs">info@leadwinnacademy@gmail.com</h1>
+                     <h1 className="text-xs">info.leadwinnacademy@gmail.com</h1>
                   </div>
                </div>
 
