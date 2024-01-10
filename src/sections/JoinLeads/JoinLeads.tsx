@@ -39,28 +39,28 @@ export const JoinLeads = () => {
       </div>
 
 
-      <div className="bg-skill-hov w-full h-[42rem] sm:h-[65.4rem] relative overflow-hidden">
-      <img src={joinLeft} className="absolute left-0 max-xl:w-72 max-xl:h-full"/>
-      <img src={joinRight} className="absolute -right-2 xl:-right-8 max-xl:w-72 max-xl:h-full"/>
+      <div className="bg-skill-hov w-full h-[40rem] sm:h-[55rem] lg:h-[60rem] xl:h-[65.4rem] z-10 relative overflow-hidden">
+      <img src={joinLeft} className="absolute left-0 max-xl:w-72 max-xl:h-full -z-10"/>
+      <img src={joinRight} className="absolute -right-2 xl:-right-8 max-xl:w-72 max-xl:h-full -z-10"/>
 
 <div className="pt-20">
       <div className="text-center mb-[2.5rem]">
-        <h3 className="text-heading text-4xl font-bold pb-1">Join a <span className="text-hero-blue">Lead</span></h3>
-        <p className="text-heading">Discover Our Career Opportunities</p>
+        <h3 className="text-heading text-2xl sm:text-3xl xl:text-4xl font-bold pb-1">Join a <span className="text-hero-blue">Lead</span></h3>
+        <p className="text-heading max-sm:text-sm">Discover Our Career Opportunities</p>
       </div>
 
-      <div className="text-white w-[22rem] sm:w-[39rem] xl:w-[45rem] h-[11rem] sm:h-[19.5rem] xl:h-[22.5rem] mx-auto mb-[1.8rem] flex flex-col justify-center items-center" style={joinStyleImgTop}>
-        <h3 className="font-medium text-3xl pb-1">Students</h3>
-        <p className="mb-10">Start out on your tech journey with Leadwinn</p>
+      <div className="text-white w-[22rem] sm:w-[34rem] lg:w-[39rem] xl:w-[45rem] h-[11rem] sm:h-[17rem] lg:h-[19.5rem] xl:h-[22.5rem] mx-auto mb-[1.3rem] sm:mb-[1.8rem] flex flex-col justify-center items-center" style={joinStyleImgTop}>
+        <h3 className="font-medium text-xl sm:text-3xl pb-1">Students</h3>
+        <p className="mb-5 sm:mb-10 max-sm:text-xs">Start out on your tech journey with Leadwinn</p>
 
 
       <Link to="/register" className={ `inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Get Started</Link>
 
       </div>
 
-      <div className="text-white w-[22rem] sm:w-[39rem] xl:w-[45rem] h-[11rem] sm:h-[19.5rem] xl:h-[22.5rem] mx-auto flex flex-col justify-center items-center" style={joinStyleImgBottom}>
-      <h3 className="font-medium text-3xl pb-1">Experienced Professionals</h3>
-        <p className="mb-10">Looking to be a Leadwinn Facilitator ? </p>
+      <div className="text-white w-[22rem] sm:w-[34rem] lg:w-[39rem] xl:w-[45rem] h-[11rem] sm:h-[17rem] lg:h-[19.5rem] xl:h-[22.5rem] mx-auto flex flex-col justify-center items-center" style={joinStyleImgBottom}>
+      <h3 className="font-medium text-xl sm:text-3xl pb-1">Experienced Professionals</h3>
+        <p className="mb-5 sm:mb-10 max-sm:text-xs">Looking to be a Leadwinn Facilitator ? </p>
 
 
       <Link to="" className={ `inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Send Us Your CV</Link>
