@@ -36,7 +36,7 @@ export const Hero: React.FC<HomeProps> = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 pt-6 max-xl:pb-20 xl:pt-14 px-5 xl:px-24 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 pt-6 sm:pb-10 lg:max-xl:pb-20 xl:pt-14 px-5 xl:px-24 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
         <div className="font-poppins text-heading md:w-3/5">
           <motion.h1 initial={{ y: -50, opacity: 0.2 }}
             animate={{
@@ -74,7 +74,7 @@ export const Hero: React.FC<HomeProps> = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:h-[8rem] sm:max-lg:w-[35.625rem] xl:h-[10rem] w-1/2 lg:w-3/5 rounded-[3.125rem] font-poppins text-white font-semibold text-xs mx-auto max-sm:mt-16 py-3 sm:py-0 lg:py-3 sm:px-6 xl:mt-32">
+      <div className="bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:h-[8rem] lg:h-[9rem] sm:max-lg:w-[35.625rem] xl:h-[10rem] w-1/2 lg:w-3/5 rounded-[3.125rem] font-poppins text-white font-semibold text-xs mx-auto max-sm:mt-16 py-3 sm:py-0 xl:py-3 sm:px-6 xl:mt-32">
         <div className="items-center justify-between sm:flex mt-5 sm:mt-3 lg:mt-0">
 
           <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
