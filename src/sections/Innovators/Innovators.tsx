@@ -6,7 +6,7 @@ export const Innovators:React.FC = () => {
       <div className="bg-footer-blue flex flex-col justify-center items-center w-full h-full py-[7.87rem] text-white font-poppins relative">
         <img src={leftPlan} className="hidden lg:flex h-[21rem] xl:h-[22rem] absolute top-0 left-0 bottom-0"/>
         <img src={rightPlan} className="hidden lg:flex h-[21rem] xl:h-[22rem] absolute top-0 right-0 bottom-0"/>
-        <h1 className="text-base sm:text-2xl xl:text-4xl mb-5 font-medium">
+        <h1 className="text-base sm:text-2xl xl:text-4xl mb-5 font-semibold">
         Shaping Tech Innovators Of Tommorrow
         </h1>
 
