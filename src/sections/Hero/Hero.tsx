@@ -44,7 +44,7 @@ export const Hero: React.FC<HomeProps> = () => {
               opacity: 1,
               transition: { duration: 1.5, type: "spring", damping: 10, stiffness: 100, ease: "easeInOut" }
             }}
-            className="max-sm:text-[1.625rem] sm:max-lg:text-[1.675rem] lg:max-xl:text-[2.3125rem] xl:max-2xl:text-[2.53125rem] 2xl:text-[3.125rem] font-bold mb-6 leading-normal sm:mx-0 max-w-[25rem] sm:max-w-[23rem] lg:max-2xl:max-w-[34.0625rem] 2xl:max-w-[43.75rem]">Engage in the Future of Learning with
+            className="max-sm:text-[1.625rem] sm:max-lg:text-[1.875rem] lg:max-xl:text-[2.3125rem] xl:max-2xl:text-[2.53125rem] 2xl:text-[3.125rem] font-bold mb-6 leading-normal sm:mx-0 max-w-[25rem] lg:max-2xl:max-w-[34.0625rem] 2xl:max-w-[43.75rem]">Engage in the Future of Learning with
             <motion.span className="text-hero-blue ml-2" key={currentWord} initial={{ y: -50, opacity: 0 }}
               animate={{
                 y: 0,
