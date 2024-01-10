@@ -1,5 +1,6 @@
 import { careerBg, joinLeft, joinRight, joinTop, joinBottom } from "../../assets/images"
 import { Link } from "react-router-dom"
+import brochure from "../../assets/brochure.pdf"
 
 
 export const JoinLeads = () => {
@@ -32,7 +33,7 @@ export const JoinLeads = () => {
           Explore our comprehensive brochure to uncover the learning map, detailed information, and the exciting opportunities that await you on your educational journey with Leadwinn.
           </p>
 
-          <a download="" href="" className="inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer">
+          <a download="" href={brochure} className="inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer">
           Download Brochure
         </a>
         </div>
