@@ -1,5 +1,4 @@
-import { careerBg } from "../../assets/images"
-import { joinLeft, joinRight } from "../../assets/images"
+import { careerBg, joinLeft, joinRight, joinTop, joinBottom } from "../../assets/images"
 
 
 export const JoinLeads = () => {
@@ -9,9 +8,22 @@ export const JoinLeads = () => {
     backgroundPosition: 'center',
   };
 
+  const joinStyleImgTop = {
+    background: `url(${joinTop})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
+
+  const joinStyleImgBottom = {
+    background: `url(${joinBottom})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
+
+
   return (
     <div>
-      <div className="w-full h-[14rem] sm:h-[23rem] lg:h-[27rem] xl:h-[32rem] py-4 sm:py-16 xl:py-20 pl-12 sm:pl-16 lg:pl-24 xl:pl-52" style={joinStyle}>
+      <div className="w-full h-[16rem] sm:h-[23rem] lg:h-[27rem] xl:h-[32rem] py-4 sm:py-16 xl:py-20 pl-12 sm:pl-16 lg:pl-24 xl:pl-52" style={joinStyle}>
         <div className="bg-white text-home-gra opacity-80 w-[18rem] sm:w-[28rem] lg:w-[35rem] xl:w-[39rem] h-[12rem] sm:h-[15rem] lg:h-[19rem] xl:h-[22rem] rounded-2xl py-4 sm:py-[1.9rem] lg:py-[3.75rem] px-5 sm:px-10">
           <h5 className="text-sm sm:text-base lg:text-lg font-semibold w-56 sm:w-64 lg:w-72 mb-2 sm:mb-4">Curious About What Leadwinn Has To Offer?</h5>
 
@@ -28,7 +40,19 @@ export const JoinLeads = () => {
 
       <div className="bg-skill-hov w-full h-[50rem] sm:h-[65.4rem] relative">
       <img src={joinLeft} className="absolute left-0 "/>
-      <img src={joinRight} className="absolute right-0 "/>
+      <img src={joinRight} className="absolute right-0"/>
+
+<div className="pt-20">
+      <div className="text-center mb-[2.5rem]">
+        <h3 className="text-heading text-4xl font-bold pb-1">Join a <span className="text-hero-blue">Lead</span></h3>
+        <p className="text-heading">Discover Our Career Opportunities</p>
+      </div>
+
+      <div className="w-[46rem] h-[23rem] mx-auto mb-[1.8rem]" style={joinStyleImgTop}>
+      </div>
+
+      <div className="w-[46rem] h-[23rem] mx-auto" style={joinStyleImgBottom}></div>
+</div>
       </div>
     </div>
   );
