@@ -21,7 +21,7 @@ export const IgnitingMind = () => {
 
             <div className="flex flex-col mb-10 sm:mb-0 items-center justify-cennter gap-5 sm:mt-4">
               <h1 className="sm:max-lg:text-3xl text-4xl font-medium">100+</h1>
-              <h4 className="w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center">Trained students across 10 countries</h4>
+              <h4 className="w-[13rem] sm:w-[10rem] lg:w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center">Trained students across 10 countries</h4>
             </div>
             <div className="w-16 lg:w-40 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
