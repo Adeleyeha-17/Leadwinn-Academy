@@ -33,12 +33,12 @@ export const Testimonial = () => {
    const sliderSettings = {
       dots: true,
       infinite: true,
-      speed: 2000,
+      speed: 4000,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 3500,
       pauseOnHover: true,
       pauseOnFocus: true,
       cssEase: "linear"
