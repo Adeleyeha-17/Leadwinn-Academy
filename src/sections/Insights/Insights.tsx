@@ -15,14 +15,14 @@ export const Insights = () => {
    return (
 
       <div className="h-full md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
-         <div className="bg-gradient-to-br from-[#0965CE] to-[#01152C] h-full sm:h-[17.5rem] flex flex-col gap-10 sm:gap-5 justify-center items-center px-5 py-16 md:py-20 sm:px-20 lg:px-28">
+         <div className="bg-gradient-to-br from-[#0965CE] to-[#01152C] h-full sm:h-[17.5rem] flex flex-col gap-10 sm:gap-8 justify-center items-center px-5 py-16 md:py-20 sm:px-20 lg:px-28">
             <h3 className="text-[#DCEDFF] text-2xl sm:text-3xl font-semibold">More Courses To Learn</h3>
 
             <div className="grid xl:flex max-sm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-auto xl:justify-between gap-6 lg:max-xl:gap-x-2 lg:max-xl:gap-y-4">
 
                {plans.otherplan.map((plan, index) => (
 
-                  <h1 key={index} className="bg-skill-hov text-heading xl:text-[0.8rem] font-semibold h-10 w-max flex items-center rounded-2xl px-5 shadow-md sm:shadow-lg">{plan}</h1>
+                  <h1 key={index} className="bg-skill-hov text-heading text-[0.8rem] font-semibold h-10 w-max flex items-center rounded-2xl px-5 shadow-md sm:shadow-lg">{plan}</h1>
                ))}
             </div>
          </div>

@@ -11,7 +11,7 @@ export const Otherplans = () => {
          <div className="flex flex-col gap-4 lg:gap-6 text-heading md:w-2/5 max-sm:mb-10">
             <h4 className="sm:mb-2 xl:mb-4 text-lg sm:text-xl font-semibold text-footer-blue w-[20rem]"> Other Plans</h4>
 
-            <h3 className="text-lg sm:text-2xl xl:text-3xl text-heading font-bold w-[16.5rem] sm:w-[23rem] xl:w-[27rem]">Get Professional  Home and Online Tutor For Your Child</h3>
+            <h3 className="text-lg sm:text-2xl xl:text-3xl text-heading font-bold w-[16.5rem] sm:w-[23rem] xl:w-[27rem]">Get Professional  Home and Online <span className="text-[#0077FF]">Tutor For Your Child</span></h3>
 
             <h5 className="text-courses text-xs xl:text-sm w-[19rem] lg:w-[27rem] xl:w-[29rem] mb-5">Elevate your child's educational journey with the guidance of professional home and online tutors. Our personalized learning approach ensures tailored support, fostering a strong foundation for academic success and lifelong skills.</h5>
          
@@ -28,7 +28,7 @@ export const Otherplans = () => {
 
 {plans.otherplan.map((plan, index) => (
   
-  <h1 key={index} className="bg-nav-blue text-heading xl:text-[0.8rem] font-medium h-10 w-max flex items-center rounded-2xl px-5 shadow-md sm:shadow-lg">{plan}</h1>
+  <h1 key={index} className="bg-nav-blue text-heading xl:text-[0.8rem] font-medium h-10 w-max flex items-center rounded-2xl px-5 shadow-md drop-shadow-md">{plan}</h1>
   ))}
   </div>
 
