@@ -122,7 +122,7 @@ export const Skill = () => {
 
 <div className="max-sm:mb-5 sm:mt-11">
 
-     {selected && <img src={selected.img} alt={selected.level} className="rounded-3xl"/> }
+     {selected && <img src={selected.img} alt={selected.level} className="max-sm:rounded-3xl"/> }
 </div>
      </div>
    </div>

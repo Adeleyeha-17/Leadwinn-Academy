@@ -19,6 +19,7 @@ import MobilePlans from "./MobilePlans"
 import DesktopPlans from "./DesktopPlans"
 import Careers from "./Careers"
 import JoinLeads from "./JoinLeads"
+import Insights from "./Insights"
 
 export {
    IgnitingMind,
@@ -41,5 +42,6 @@ export {
    MobilePlans,
    DesktopPlans,
    Careers,
-   JoinLeads
+   JoinLeads,
+   Insights
 }

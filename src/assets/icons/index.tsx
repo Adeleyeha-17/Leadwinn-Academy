@@ -16,10 +16,8 @@ import review from "../icons/review.svg"
 import time from "../icons/time.svg"
 import tips from "../icons/tips.svg"
 import star from "../icons/star.svg"
-
-
-
-
+import spinner from "../icons/spinner.svg"
+import checked from "../icons/checked.svg"
 
 
 export {
@@ -40,5 +38,7 @@ replay,
 review,
 time,
 tips,
-star
+star,
+spinner,
+checked
 }
