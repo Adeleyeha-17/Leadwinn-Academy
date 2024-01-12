@@ -20,6 +20,7 @@ import DesktopPlans from "./DesktopPlans"
 import Careers from "./Careers"
 import JoinLeads from "./JoinLeads"
 import Insights from "./Insights"
+import Knowledge from "./Knowledge"
 
 export {
    IgnitingMind,
@@ -43,5 +44,6 @@ export {
    DesktopPlans,
    Careers,
    JoinLeads,
-   Insights
+   Insights,
+   Knowledge
 }
