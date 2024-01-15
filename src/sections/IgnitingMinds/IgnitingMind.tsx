@@ -19,29 +19,29 @@ export const IgnitingMind = () => {
         <div className="bg-gradient-to-br from-[#0965CE] to-[#01152C] text-[#DCEDFF] sm:h-[10rem] w-1/2 sm:w-full rounded-[3.125rem] font-poppin mx-auto max-sm:mt-16 max-sm:py-10 flex justify-center items-center">
           <div className="items-center justify-evenly sm:flex sm:mt-3 w-full px-10 xl:px-20">
 
-            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-cennter gap-5 sm:mt-4">
+            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-cennter sm:gap-5 sm:mt-4">
               <h1 className="sm:max-lg:text-3xl text-4xl font-medium">100+</h1>
-              <h4 className="w-[13rem] sm:w-[10rem] lg:w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center">Trained students across 10 countries</h4>
+              <h4 className="w-[13rem] sm:w-[10rem] lg:w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">Trained students across 10 countries</h4>
             </div>
             <div className="w-16 lg:w-40 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
-            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-center gap-5">
+            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-center sm:gap-5">
               <h1 className="sm:max-lg:text-3xl text-4xl font-medium">50+</h1>
-              <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center">projects submitted</h4>
+              <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">projects submitted</h4>
             </div>
 
             <div className="w-16 lg:w-40 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
-            <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center gap-5">
+            <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center sm:gap-5">
               <h1 className="sm:max-lg:text-3xl text-4xl font-medium">100+</h1>
-              <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center">certificates earned</h4>
+              <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">certificates earned</h4>
             </div>
 
             <div className="w-16 lg:w-40 mb-8 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
 
-            <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center gap-5">
+            <div className="flex justify-center flex-col mb-8 sm:mb-0 items-center sm:gap-5">
               <h1 className="sm:max-lg:text-3xl text-4xl font-medium">99%</h1>
-              <h4 className="w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center">of graduates recorded</h4>
+              <h4 className="w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">of graduates recorded</h4>
             </div>
           </div>
 
