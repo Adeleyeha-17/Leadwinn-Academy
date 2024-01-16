@@ -6,7 +6,6 @@ import adeleye from "../images/Adeleye.png"
 import age from "../images/age.png"
 import basit from "../images/Basit.png"
 import clipPath from "../images/Clippath.png"
-import comingSoon from "../images/coming soon.png"
 import convenients from "../images/convenients.png"
 import convenient from "../images/convenient.png"
 import curriculum from "../images/curriculum.png"
@@ -79,7 +78,6 @@ export {
    age,
    basit,
    clipPath,
-   comingSoon,
    convenients,
    convenient,
    curriculum,
