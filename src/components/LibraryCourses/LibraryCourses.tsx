@@ -81,8 +81,8 @@ export const LibraryCourses = () => {
           </div>
 
           {/* Advanced Scratch */}
-          <div className='bg-head-black text-white h-[40rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
-            <h4 className=' text-base sm:text-2xl font-semibold'>Advanced Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
+          <div className='bg-head-black text-white h-[35rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
+            <h4 className='text-base sm:text-2xl font-semibold'>Advanced Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[57rem] text-center text-[0.8rem] xl:text-base'>Embark on a coding adventure with Leadwinn's MIT classes, specially crafted for young minds aged 6 to 8. Our program is designed to ignite curiosity and provide a solid foundation in computer science principles. Through engaging activities and hands-on learning, we inspire creativity and set the stage for a future filled with technological innovation.</p>
 
