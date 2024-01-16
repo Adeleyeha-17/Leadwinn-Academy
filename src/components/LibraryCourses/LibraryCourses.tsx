@@ -44,7 +44,7 @@ export const LibraryCourses = () => {
 
       <div className="flex space-x-6">
         {libraryNav.map((nav, index) => (
-          <h4 onClick={() => toggleTab(index)} key={index} className={`ml-[34rem] sm:ml-[10rem] md:ml-[20rem] lg:ml-0 w-max px-7 py-2 text-xs md:text-sm rounded-3xl font-semibold cursor-pointer ${toggle === index ? "bg-hero-blue text-white" : "bg-white text-heading"}`}> {nav.link} </h4>
+          <h4 onClick={() => toggleTab(index)} key={index} className={`ml-[34rem] sm:ml-[13rem] md:ml-[20rem] lg:ml-0 w-max px-7 py-2 text-xs md:text-sm rounded-3xl font-semibold cursor-pointer ${toggle === index ? "bg-hero-blue text-white" : "bg-white text-heading"}`}> {nav.link} </h4>
           ))}
           </div>
       </div>
