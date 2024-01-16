@@ -36,14 +36,15 @@ export const LibraryCourses = () => {
   return (
     <div>
 
-    <div className="bg-nav-blue py-10 flex gap-7 flex-col items-center justify-center font-poppins">
-      <h4 className="text-heading text-xl font-semibold">Explore Different Learning Paths Within The Library</h4>
+
+      <h4 className="bg-nav-blue text-heading text-center text-base sm:text-xl font-semibold py-10">Explore Different Learning Paths Within The Library</h4>
+    <div className="bg-nav-blue pb-10 flex gap-7 flex-col items-center justify-center font-poppins max-lg:overflow-x-scroll">
 
       <div className="flex space-x-6">
         {libraryNav.map((nav, index) => (
-          <h4 onClick={() => toggleTab(index)} key={index} className={`px-7 py-2 text-sm rounded-3xl font-semibold cursor-pointer ${toggle === index ? "bg-hero-blue text-white" : "bg-white text-heading"}`}> {nav.link} </h4>
-        ))}
-      </div>
+          <h4 onClick={() => toggleTab(index)} key={index} className={`max-sm:mr-72 h-max w-max px-7 py-2 text-xs md:text-sm rounded-3xl font-semibold cursor-pointer ${toggle === index ? "bg-hero-blue text-white" : "bg-white text-heading"}`}> {nav.link} </h4>
+          ))}
+          </div>
       </div>
 
       <div>
