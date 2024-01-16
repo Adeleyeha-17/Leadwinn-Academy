@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { scratchAdvanced, scratchIntermediate, scratchBasic } from '../../assets/videos';
+import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webIntermediate, webBasic } from '../../assets/videos';
 
 export const LibraryCourses = () => {
 
@@ -66,8 +66,6 @@ export const LibraryCourses = () => {
 
           </div>
 
-
-
           {/* Intermediate Scratch */}
           <div className='bg-nav-blue text-heading h-[35rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
@@ -114,7 +112,41 @@ export const LibraryCourses = () => {
 
         <div className={toggle === 4 ? "block" : "hidden"}>
 
-          WEB DEVELOPMENT
+           {/*Beginners Web*/}
+           <div className='text-heading h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
+            <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Web Development <span className='text-sm sm:text-xl text-[#999999] font-medium'>(13+ Years)</span></h4>
+
+            <p className='w-[22rem] sm:w-[46rem] xl:w-[57rem] text-center text-[0.8rem] xl:text-base'>Embark on a coding adventure with Leadwinn's MIT classes, specially crafted for young minds aged 6 to 8. Our program is designed to ignite curiosity and provide a solid foundation in computer science principles. Through engaging activities and hands-on learning, we inspire creativity and set the stage for a future filled with technological innovation.</p>
+
+            <div className='mx-10 w-auto h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={webBasic} autoPlay loop muted className='h-max sm:h-[30rem] w-auto'></video>
+            </div>
+
+          </div>
+
+          {/* Intermediate Web */}
+          <div className='bg-nav-blue text-heading h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
+            <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Web Development <span className='text-sm sm:text-xl text-[#999999] font-medium'>(14+ Years)</span></h4>
+
+            <p className='w-[22rem] sm:w-[46rem] xl:w-[57rem] text-center text-[0.8rem] xl:text-base'>Embark on a coding adventure with Leadwinn's MIT classes, specially crafted for young minds aged 6 to 8. Our program is designed to ignite curiosity and provide a solid foundation in computer science principles. Through engaging activities and hands-on learning, we inspire creativity and set the stage for a future filled with technological innovation.</p>
+
+            <div className='mx-10 w-auto h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={webIntermediate} autoPlay loop muted className='h-auto sm:h-[30rem] w-auto'></video>
+            </div>
+
+          </div>
+
+          {/* Advanced Web */}
+          <div className='bg-head-black text-white h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
+            <h4 className='text-base sm:text-2xl font-semibold'>Advanced Web Development <span className='text-sm sm:text-xl text-[#999999] font-medium'>(15+ Years)</span></h4>
+
+            <p className='w-[22rem] sm:w-[46rem] xl:w-[57rem] text-center text-[0.8rem] xl:text-base'>Embark on a coding adventure with Leadwinn's MIT classes, specially crafted for young minds aged 6 to 8. Our program is designed to ignite curiosity and provide a solid foundation in computer science principles. Through engaging activities and hands-on learning, we inspire creativity and set the stage for a future filled with technological innovation.</p>
+
+            <div className='mx-10 w-auto h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={webAdvanced} autoPlay loop muted className='h-auto sm:h-[30rem] w-auto'></video>
+            </div>
+
+          </div>
 
         </div>
 
