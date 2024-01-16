@@ -64,7 +64,7 @@ export const Insights = () => {
 
                <div className="flex flex-col gap-6">
                   {insights.map((data, index) => (
-                     <div className="flex">
+                     <div key={index} className="flex">
 
                         <img src={checked} alt="checked icon" className="w-6 mr-5" />
 
