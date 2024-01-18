@@ -1,5 +1,6 @@
+import DownloadBrochure from "../components/DownloadBrochure";
 import Faq from "../components/Faq";
-import { Courses, Goal, Growth, Hero, Learning, Testimonial, Whychoose } from "../sections"
+import { Courses, Goal, Growth, Hero, Testimonial, Whychoose } from "../sections"
 import { motion } from "framer-motion";
 
 
@@ -15,7 +16,7 @@ export const Home: React.FC = () => {
 
              <Whychoose /> 
 
-            <Learning /> 
+            <DownloadBrochure />
 
             <Goal />
 

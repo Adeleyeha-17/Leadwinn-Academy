@@ -55,10 +55,10 @@ import beginners from "../images/beginners-img.png"
 import intermediate from "../images/intermediate-img.png"
 import plans from "../images/plans-deg.png"
 import beginnerSvg from "../images/beginner.png"
-import intermediateSvg  from "../images/intermediate.png"
+import intermediateSvg from "../images/intermediate.png"
 import advancedSvg from "../images/advanced.png"
 import beginnerActive from "../images/beginner-a.png"
-import intermediateActive  from "../images/intermediate-a.png"
+import intermediateActive from "../images/intermediate-a.png"
 import advancedActive from "../images/advanced-a.png"
 import otherPlans from "../images/plans.png"
 import careerBg from "../images/career-bg.png"
@@ -68,6 +68,10 @@ import joinBottom from "../images/join-bottom.png"
 import joinTop from "../images/join-top.png"
 import joinLeft from "../images/join-left.png"
 import joinRight from "../images/join-right.png"
+import brochureLeft from "../images/puzzle LEFT.png"
+import brochureRight from "../images/puzzle RIGHT.png"
+import brochureButLeft from "../images/vr-gaming LEFT.png"
+import brochureButRight from "../images/vr-gaming RIGHT.png"
 
 export {
    activeAge,
@@ -123,7 +127,7 @@ export {
    webImage,
    web,
    advanced,
-   beginners, 
+   beginners,
    intermediate,
    plans,
    beginnerSvg,
@@ -134,12 +138,16 @@ export {
    advancedActive,
    otherPlans,
    careerBg,
-careerBottom,
-careerTop,
-joinBottom,
-joinTop,
-joinLeft,
-joinRight,
+   careerBottom,
+   careerTop,
+   joinBottom,
+   joinTop,
+   joinLeft,
+   joinRight,
+   brochureLeft,
+   brochureRight,
+   brochureButLeft,
+   brochureButRight,
 }
 
 
