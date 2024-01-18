@@ -11,7 +11,7 @@ export const DownloadBrochure = () => {
 
       <div className="flex flex-col gap-1 sm:gap-1 items-center justify-center text-center text-heading">
         <h1 className="font-bold text-sm sm:text-xl lg:text-[2rem] lg:leading-[2.75rem] lg:mb-2">Embark on your learning journey today!</h1>
-        <h1 className="max-sm:max-w-[18.75rem] text-xs lg:text-base mb-2 sm:mb-5">Ready to explore the pathways of your learning journey with leadwinn ?</h1>
+        <h1 className="max-sm:max-w-[17.75rem] text-[0.65rem] sm:text-xs lg:text-base mb-2 sm:mb-5">Ready to explore the pathways of your learning journey with leadwinn ?</h1>
 
         <a download="" href={brochure} className="inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer">
           Download Brochure
