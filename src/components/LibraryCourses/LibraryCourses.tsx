@@ -60,8 +60,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Discover the fundamentals of coding with Basic Scratch. Ideal for beginners aged 6+, this course introduces young minds to the basics of block-based programming, fostering a solid foundation in logical thinking and problem-solving.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchBasic} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className='h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchBasic} autoPlay loop muted className='h-[16rem] sm:h-[30rem]'></video>
             </div>
 
           </div>
@@ -72,8 +72,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Elevate your coding skills with Intermediate Scratch. Geared towards learners aged 7+, this course delves deeper into Scratch programming, emphasizing project-based learning and collaborative coding experiences. Enhance your creativity and problem-solving abilities as you embark on more advanced coding challenges</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className='h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem]'></video>
             </div>
 
           </div>
@@ -84,8 +84,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Master the art of Scratch coding with our Advanced Scratch course. Tailored for learners aged 8+, this program goes beyond the basics, focusing on advanced coding concepts, algorithmic design, and comprehensive project development. Unleash your potential and become a proficient Scratch coder ready to take on complex coding endeavors.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchAdvanced} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className='h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchAdvanced} autoPlay loop muted className='h-[16rem] sm:h-[30rem]'></video>
             </div>
 
           </div>
@@ -267,8 +267,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Ideal for beginners aged 10+, our Basic Python Programming course introduces the fundamentals of coding with Python. Dive into basic syntax, data structures, and problem-solving, laying the foundation for understanding the power of Python.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className='h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem]'></video>
             </div>
 
           </div>
