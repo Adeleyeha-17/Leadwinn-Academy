@@ -23,21 +23,21 @@ const Items: Items[] = [
     notActive: age,
     active: activeAge,
     title: "Age Appropriate Curriculum",
-    description: "Our experienced instructors are passionate about teaching coding to kids. They bring a wealth of knowledge and industry experience to make learning engaging and effective.",
+    description: "We understand the unique learning needs of children in different age groups. Our curriculum is tailored to suit the developmental stages of our students, ensuring they learn at their own pace.",
     img: curriculum,
   },
   {
     notActive: learning,
     active: activeLearning,
     title: "Interactive",
-    description: "Our experienced instructors are passionate about teaching coding to kids. They bring a wealth of knowledge and industry experience to make learning engaging and effective.",
+    description: "We believe in hands-on learning experiences. Our classes are designed to be interactive, fostering creativity and problem-solving skills as students engage in coding projects and challenges.",
     img: interactive,
   },
   {
     notActive: convenient,
       active: activeConvenient,
       title: 'Convenient Online Learning',
-      description: 'Our experienced instructors are passionate about teaching coding to kids. They bring a wealth of knowledge and industry experience to make learning engaging and effective.',
+      description: 'Our online platform ensures that your child can learn from the comfort of home, eliminating the need for commuting and providing a safe and convenient learning environment.',
       img: convenients,
   }
 ];
@@ -67,7 +67,7 @@ const CarouselItem: React.FC = () => {
         </div>
         {selected && <div className="w-[20rem] sm:w-[23rem] lg:w-[25rem] xl:w-[41rem]">
                <h1 className="mb-2 text-lg xl:text-2xl font-bold text-heading">{selected.title}</h1>
-        <h1 className=" whitespace-normal text-xs sm:text-base xl:w-[30rem]">{selected.description}</h1> 
+        <h1 className=" whitespace-normal text-xs sm:text-base xl:w-[33.6rem]">{selected.description}</h1> 
         </div> }
 
         <div className=" mt-5 xl:mt-7">
