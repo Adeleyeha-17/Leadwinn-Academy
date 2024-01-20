@@ -99,8 +99,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Geared towards beginners aged 6+, our Basic MIT App Inventor course introduces the fundamentals of mobile application interface design. Discover the basics of MIT App Inventor, unlocking the creativity to design simple and interactive mobile apps.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -111,8 +111,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Take your mobile app design skills to the next level with our Intermediate course, designed for learners aged 7+. Engage in project-based learning and collaborative design experiences, gaining proficiency in creating more complex and feature-rich mobile applications.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -123,8 +123,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Master the art of mobile app interface design with our Advanced MIT App Inventor course. Tailored for learners aged 8+, this program delves into advanced concepts, algorithmic design, and comprehensive project development. Unleash your creativity and become proficient in designing sophisticated and innovative mobile applications.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -140,8 +140,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Perfect for beginners aged 8+, the Basic 3D Roblox Design course introduces the fundamentals of creating immersive 3D experiences within the Roblox universe. Dive into the basics of 3D game design, character modeling, and world building.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -152,8 +152,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Level up your 3D Roblox design skills with our Intermediate course, designed for learners aged 9+. Engage in project-based learning, collaborative 3D design experiences, and explore advanced features to enhance your ability to create three-dimensional and engaging game environments.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -164,8 +164,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Become a master of 3D Roblox design with our Advanced course, crafted for learners aged 10+. Delve into advanced 3D design concepts, scripting for immersive experiences, and comprehensive project development. Unleash your creativity and master the art of creating intricate and visually stunning 3D environments within the Roblox universe.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -181,8 +181,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Ideal for beginners aged 9+, our Basic UI/UX Design course introduces the fundamentals of user interface and user experience design. Dive into the basics of creating visually appealing and user-friendly designs, laying the foundation for intuitive digital experiences.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -193,8 +193,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Elevate your UI/UX design skills with our Intermediate course, designed for learners aged 10+. Engage in project-based learning, collaborative design experiences, and explore advanced techniques to enhance user interactions and overall design aesthetics.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -209,8 +209,8 @@ export const LibraryCourses = () => {
               </p>
               Delve into advanced design concepts, user research methodologies, and comprehensive project development. Unleash your creativity and master the art of creating seamless and user-centric digital experiences.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -226,8 +226,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Tailored for beginners aged 9+, the Basic Front-End Web Development course introduces the fundamentals of building a visually appealing website. Dive into HTML for structure, CSS for styling, and basic JavaScript for interactivity.</p>
 
-            <div className='mx-10 w-auto h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={webBasic} autoPlay loop muted className='h-max sm:h-[30rem] w-auto'></video>
+            <div className='mx-10  h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={webBasic} autoPlay loop muted className='h-max sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -238,8 +238,8 @@ export const LibraryCourses = () => {
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Elevate your front-end web development skills with our Intermediate course, designed for learners aged 10+. Engage in project-based learning, collaborative coding experiences, and explore advanced techniques in HTML, CSS, and JavaScript to create dynamic and responsive user interfaces.</p>
 
-            <div className='mx-10 w-auto h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={webIntermediate} autoPlay loop muted className='h-auto sm:h-[30rem] w-auto'></video>
+            <div className='mx-10  h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={webIntermediate} autoPlay loop muted className='h-auto sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -251,8 +251,8 @@ export const LibraryCourses = () => {
             <p className='w-[22rem] sm:w-[46rem] xl:w-[57rem] text-center text-[0.8rem] xl:text-base'>Become a front-end web development expert with our Advanced course, crafted for learners aged 11+.
               Delve into advanced concepts of HTML, CSS, and JavaScript, mastering the art of creating sophisticated and interactive web applications with a focus on front-end development.</p>
 
-            <div className='mx-10 w-auto h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={webAdvanced} autoPlay loop muted className='h-auto sm:h-[30rem] w-auto'></video>
+            <div className='mx-10  h-auto sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={webAdvanced} autoPlay loop muted className='h-auto sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -283,8 +283,8 @@ export const LibraryCourses = () => {
               </p>
               Engage in project-based learning, collaborative coding experiences, and explore advanced topics such as algorithms and data manipulation to enhance your proficiency in Python programming.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
@@ -299,8 +299,8 @@ export const LibraryCourses = () => {
               </p>
               Delve into advanced concepts, object-oriented programming, and comprehensive project development. Unleash your creativity and master the art of leveraging Python for complex problem-solving and software development.</p>
 
-            <div className='w-auto h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
-              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] w-auto'></video>
+            <div className=' h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
+              <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem] '></video>
             </div>
 
           </div>
