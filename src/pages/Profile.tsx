@@ -2,21 +2,21 @@
 import { motion } from "framer-motion";
 import { updateProfile } from "firebase/auth"
 import { doc, updateDoc } from "firebase/firestore"
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { useState } from "react"
 import { useNavigate } from "react-router"
 import { toast } from "react-toastify"
 import { db, auth } from "../config/firebase"
-import  { profile } from "../assets/images"
 
 
 export const Profile: React.FC = () => {
-  const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [changeDetails, setChangeDetails] = useState(false)
   const [formData, setFormData] = useState({
     fullName: auth.currentUser?.displayName || "",
     email: auth.currentUser?.email || ""
   })
+
+  const userImg = auth?.currentUser?.photoURL
+  console.log(userImg)
 
   const {fullName, email} = formData
   const navigate = useNavigate()
@@ -53,23 +53,10 @@ export const Profile: React.FC = () => {
           });
         }
   
-        if (selectedImage) {
-          const storage = getStorage();
-          const storageRef = ref(storage, `profile-images/${user.uid}`);
-          await uploadBytes(storageRef, selectedImage);
-          const downloadURL = await getDownloadURL(storageRef);
-  
-          const docRef = doc(db, "users", user.uid);
-          await updateDoc(docRef, {
-            fullName: fullName,
-            profileImageURL: downloadURL,
-          });
-        } else {
-          const docRef = doc(db, "users", user.uid);
-          await updateDoc(docRef, {
-            fullName: fullName,
-          });
-        }
+        const docRef = doc(db, "users", user.uid);
+        await updateDoc(docRef, {
+          fullName: fullName,
+        });
   
         toast.success("Changes made");
       }
@@ -77,13 +64,7 @@ export const Profile: React.FC = () => {
       toast.error("Could not update the profile data");
     }
   }
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0] || null;
-    setSelectedImage(file);
-  };
-  
-  
+   
 
 
   return (
@@ -95,35 +76,8 @@ export const Profile: React.FC = () => {
       <form onSubmit={onSubmit}>
 
       <div>
-                {selectedImage ? (
-                  <img
-                    src={URL.createObjectURL(selectedImage)}
-                    alt="profile"
-                    className="rounded-full w-28 h-28 object-cover mb-4"
-                  />
-                ) : (
-                  <img
-                    src={profile}
-                    alt="profile"
-                    className="rounded-full w-28 h-28 object-cover mb-4"
-                  />
-                )}
-               {!selectedImage && (
-                <div className="mb-2">
-
-                  <label htmlFor="fileInput" className="fileInputLabel">
-                  Upload
-                </label>
-                <input
-                  type="file"
-                  id="fileInput"
-                  accept="image/*"
-                  onChange={handleFileChange}
-                  className="fileInput"
-                  />
-                  </div>
-                
-                )}
+      {userImg && <img src={userImg} alt="profile"
+                    className="rounded-full w-28 h-28 object-cover mb-4" />}
               </div>
           {/* Name input */}
           <input type="text" name="fullName" value={fullName} onChange={onChange} disabled={!changeDetails} className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out ${changeDetails && "bg-red-200 focus:bg-red-200"}`}/>
@@ -141,7 +95,7 @@ export const Profile: React.FC = () => {
       </div>
         
       </section>
-    </div>
+      </div>
     </motion.div>
   )
 }
