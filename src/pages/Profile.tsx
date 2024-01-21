@@ -58,7 +58,7 @@ export const Profile: React.FC = () => {
           fullName: fullName,
         });
   
-        toast.success("Changes made");
+        toast.success("Profile Updated");
       }
     } catch (error) {
       toast.error("Could not update the profile data");
