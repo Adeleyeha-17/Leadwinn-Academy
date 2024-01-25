@@ -49,7 +49,7 @@ export const Faq: React.FC = () => {
                         `${data.title}?`
                      }</h3>
                      <span className="w-1/4 flex items-end justify-end">{
-                        activeAccordion === index + 1 ? <img src={accordionUp} className='w-4 md:w-8' /> : <img src={accordionDown} className='w-5 md:w-8' />
+                        activeAccordion === index + 1 ? <img src={accordionUp} className='w-4 md:w-8' alt="accordionUp"/> : <img src={accordionDown} className='w-5 md:w-8' alt="accordionDown"/>
                      }</span>
                   </div>
                   <motion.div

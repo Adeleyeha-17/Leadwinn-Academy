@@ -59,7 +59,7 @@ const CarouselItem: React.FC = () => {
             {Items.map((icon, i) => (
               <button key={i} className="m-1 bg-none max-sm:mt-4" onClick={() => setSelected(icon)}>
                 <span>
-                  <img src={selected === icon ? icon.active : icon.notActive} />
+                  <img src={selected === icon ? icon.active : icon.notActive} alt={icon.title}/>
                 </span>
               </button>
             ))}

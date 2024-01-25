@@ -16,7 +16,6 @@ export const Profile: React.FC = () => {
   })
 
   const userImg = auth?.currentUser?.photoURL
-  console.log(userImg)
 
   const {fullName, email} = formData
   const navigate = useNavigate()
