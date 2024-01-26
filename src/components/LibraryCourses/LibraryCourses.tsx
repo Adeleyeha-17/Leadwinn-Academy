@@ -56,9 +56,12 @@ export const LibraryCourses = () => {
 
           {/*Beginners Scratch*/}
           <div className='text-heading h-[35rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
+            <div>
+
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
 
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Discover the fundamentals of coding with Basic Scratch. Ideal for beginners aged 6+, this course introduces young minds to the basics of block-based programming, fostering a solid foundation in logical thinking and problem-solving.</p>
+            </div>
 
             <div className='mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
   <video src={scratchBasic} autoPlay loop muted className='h-[16rem] sm:h-[30rem]'></video>
@@ -68,9 +71,11 @@ export const LibraryCourses = () => {
 
           {/* Intermediate Scratch */}
           <div className='bg-nav-blue text-heading h-[35rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
-            <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
 
+            <div>
+            <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Elevate your coding skills with Intermediate Scratch. Geared towards learners aged 7+, this course delves deeper into Scratch programming, emphasizing project-based learning and collaborative coding experiences. Enhance your creativity and problem-solving abilities as you embark on more advanced coding challenges</p>
+            </div>
 
             <div className='mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
               <video src={scratchIntermediate} autoPlay loop muted className='h-[16rem] sm:h-[30rem]'></video>
@@ -80,9 +85,10 @@ export const LibraryCourses = () => {
 
           {/* Advanced Scratch */}
           <div className='bg-head-black text-white h-[35rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
+            <div>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
-
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Master the art of Scratch coding with our Advanced Scratch course. Tailored for learners aged 8+, this program goes beyond the basics, focusing on advanced coding concepts, algorithmic design, and comprehensive project development. Unleash your potential and become a proficient Scratch coder ready to take on complex coding endeavors.</p>
+            </div>
 
             <div className='mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden '>
               <video src={scratchAdvanced} autoPlay loop muted className='h-[16rem] sm:h-[30rem]'></video>
