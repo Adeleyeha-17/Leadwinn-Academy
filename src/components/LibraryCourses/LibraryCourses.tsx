@@ -29,39 +29,39 @@ export const LibraryCourses = () => {
           <div className='text-heading  flex gap-3 py-10 sm:py-20 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-[0.8rem] xl:text-base'>Delve into coding basics with Basic Scratch, tailored for beginners aged 6 and up. It instills block-based programming skills, fostering logical thinking and problem-solving.</p>
-            <video src={scratchBasic} autoPlay loop muted className='mt-10 max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchBasic} autoPlay loop muted className='mt-10 w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-nav-blue text-heading flex py-10 sm:py-20 gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-[0.8rem] xl:text-base'>Level up your coding skills with Intermediate Scratch, tailored for ages 7 and above. Dive deeper into project-based learning, collaborative coding, and advanced challenges to enhance creativity and problem-solving.</p>
-              <video src={scratchIntermediate} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+              <video src={scratchIntermediate} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-[0.8rem] xl:text-base'>Master advanced Scratch coding for ages 8+. Go beyond basics, explore advanced concepts, algorithmic design, and project development. Unleash your coding potential.</p>
-              <video src={scratchAdvanced} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+              <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
         </div>
 
         <div className={toggle === 1 ? "block" : "hidden"}>
           <div className='text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
-            <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>Geared towards beginners aged 6+, our Basic MIT App Inventor course introduces the fundamentals of mobile application interface design. Discover the basics of MIT App Inventor, unlocking the creativity to design simple and interactive mobile apps.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-[0.8rem] xl:text-base'>Geared towards beginners aged 6+, our Basic MIT App Inventor course introduces the fundamentals of mobile application interface design. Discover the basics of MIT App Inventor, unlocking the creativity to design simple and interactive mobile apps.</p>
+            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>Take your mobile app design skills to the next level with our Intermediate course, designed for learners aged 7+. Engage in project-based learning and collaborative design experiences, gaining proficiency in creating more complex and feature-rich mobile applications.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>Master the art of mobile app interface design with our Advanced MIT App Inventor course. Tailored for learners aged 8+, this program delves into advanced concepts, algorithmic design, and comprehensive project development. Unleash your creativity and become proficient in designing sophisticated and innovative mobile applications.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
         </div>
 
@@ -69,19 +69,19 @@ export const LibraryCourses = () => {
           <div className='text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Roblox <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>Perfect for beginners aged 8+, the Basic 3D Roblox Design course introduces the fundamentals of creating immersive 3D experiences within the Roblox universe. Dive into the basics of 3D game design, character modeling, and world building.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Roblox <span className='text-sm sm:text-xl text-[#999999] font-medium'>(9+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>Level up your 3D Roblox design skills with our Intermediate course, designed for learners aged 9+. Engage in project-based learning, collaborative 3D design experiences, and explore advanced features to enhance your ability to create three-dimensional and engaging game environments.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Roblox <span className='text-sm sm:text-xl text-[#999999] font-medium'>(10+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>Become a master of 3D Roblox design with our Advanced course, crafted for learners aged 10+. Delve into advanced 3D design concepts, scripting for immersive experiences, and comprehensive project development. Unleash your creativity and master the art of creating intricate and visually stunning 3D environments within the Roblox universe.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
         </div>
 
