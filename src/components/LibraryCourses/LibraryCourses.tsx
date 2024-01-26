@@ -28,7 +28,7 @@ export const LibraryCourses = () => {
         <div className={toggle === 0 ? "block" : "hidden"}>
           <div className='text-heading h-[35rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
-            <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Discover the fundamentals of coding with Basic Scratch. Ideal for beginners aged 6+, this course introduces young minds to the basics of block-based programming, fostering a solid foundation in logical thinking and problem-solving.</p>
+            <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-center text-[0.8rem] xl:text-base'>Discover the fundamentals of coding with Basic Scratch.</p>
             <video src={scratchBasic} autoPlay loop muted className='mt-10 max-sm:w-[21.1rem] h-[16rem] sm:h-[30rem] rounded-3xl border-4 border-blue-900'></video>
           </div>
 
