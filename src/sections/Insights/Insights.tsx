@@ -6,42 +6,39 @@ export const Insights = () => {
       "Fuel Your Child's Curiosity With Courses That Encompasses Vital Skills",
       "Unlock The Power Of Creativity To Realize Both Personal And Professional Aspirations Through Skillful Learning",
       "Cultivate A Well-Rounded Education With Courses Covering School Subjects, Board Games, Music, Art, And Essential Computer Skills"
-
    ]
 
    const plans: { otherplan: string[] } = {
       otherplan: ["All Classes", "All Subjects", "Board Games", "Music Classes", "Art & Painting", "Computer", "Other Extra Curricular"]
    }
    return (
-
       <div className="h-full md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
+         <div className="py-10 sm:py-20">
+            <div className="bg-gradient-to-br from-[#0965CE] to-[#01152C] text-[#DCEDFF] sm:h-[9rem] w-1/2 sm:w-[38rem] lg:w-[45rem] rounded-[3.125rem] font-poppin mx-auto max-sm:py-10 flex justify-center items-center">
+               <div className="items-center justify-evenly w-full sm:flex px-1">
 
-<div className="py-10 sm:py-20">
-        <div className="bg-gradient-to-br from-[#0965CE] to-[#01152C] text-[#DCEDFF] sm:h-[9rem] w-1/2 sm:w-[38rem] lg:w-[45rem] rounded-[3.125rem] font-poppin mx-auto max-sm:py-10 flex justify-center items-center">
-          <div className="items-center justify-evenly w-full sm:flex px-1">
+                  <div className="flex flex-col mb-10 sm:mb-0 items-center justify-center sm:gap-5">
+                     <h1 className="sm:max-lg:text-3xl text-4xl font-medium">1</h1>
+                     <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">Project</h4>
+                  </div>
 
-            <div className="flex flex-col mb-10 sm:mb-0 items-center justify-center sm:gap-5">
-              <h1 className="sm:max-lg:text-3xl text-4xl font-medium">1</h1>
-              <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">Project</h4>
+                  <div className="w-16 lg:w-40  mb-10 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
+
+                  <div className="flex justify-center flex-col mb-10 sm:mb-0 items-center sm:gap-5">
+                     <h1 className="sm:max-lg:text-3xl text-4xl font-medium">5</h1>
+                     <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">Assignments</h4>
+                  </div>
+
+                  <div className="w-16 lg:w-40 mb-10 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
+
+                  <div className="flex justify-center flex-col mb-10 sm:mb-0 items-center sm:gap-5">
+                     <h1 className="sm:max-lg:text-3xl text-4xl font-medium">1</h1>
+                     <h4 className="w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">Certificate</h4>
+                  </div>
+               </div>
+
             </div>
-
-            <div className="w-16 lg:w-40  mb-10 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
-
-            <div className="flex justify-center flex-col mb-10 sm:mb-0 items-center sm:gap-5">
-              <h1 className="sm:max-lg:text-3xl text-4xl font-medium">5</h1>
-              <h4 className="w-[10rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">Assignments</h4>
-            </div>
-
-            <div className="w-16 lg:w-40 mb-10 sm:mb-0 border-white border transform rotate-90 mx-auto rounded-lg"></div>
-
-            <div className="flex justify-center flex-col mb-10 sm:mb-0 items-center sm:gap-5">
-              <h1 className="sm:max-lg:text-3xl text-4xl font-medium">1</h1>
-              <h4 className="w-[13rem] text-xs sm:max-lg:text-[0.65rem] text-center font-semibold">Certificate</h4>
-            </div>
-          </div>
-
-        </div>
-      </div>
+         </div>
 
          <div className="bg-gradient-to-br from-[#0965CE] to-[#01152C] h-full sm:h-[17.5rem] flex flex-col gap-10 sm:gap-8 justify-center items-center px-5 py-16 md:py-20 sm:px-20 lg:px-28">
             <h3 className="text-[#DCEDFF] text-base sm:text-xl lg:text-3xl font-semibold">More Courses To Learn</h3>
@@ -75,9 +72,6 @@ export const Insights = () => {
                   ))}
                </div>
             </div>
-
-
-
          </div>
       </div>
    )
