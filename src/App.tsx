@@ -5,7 +5,6 @@ import { Home } from "./pages/Home";
 import { Library } from "./pages/Library";
 import { Career } from "./pages/Career";
 import { Plans } from "./pages/Plans";
-import { Privacy } from "./pages/Privacy";
 import { Feedback } from "./pages/Feedback";
 import { Signin } from "./pages/Signin";
 import { Register } from "./pages/Register";
@@ -32,7 +31,6 @@ function App() {
           <Route path="/library" element={<Layout><Library /></Layout>} />
           <Route path="/career" element={<Layout><Career /></Layout>} />
           <Route path="/plans" element={<Layout><Plans /></Layout>} />
-          <Route path="/privacy" element={<Layout><Privacy /></Layout>} />
           <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
           
           <Route path="/profile" element={<PrivateRoute />}>
