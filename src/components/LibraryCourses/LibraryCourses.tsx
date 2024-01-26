@@ -49,14 +49,14 @@ export const LibraryCourses = () => {
           <div className='text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem] text-[0.8rem] xl:text-base'>Ideal for beginners (ages 6+), our Basic MIT App Inventor course introduces mobile app interface design fundamentals. Explore MIT App Inventor basics, unlocking creativity for simple and interactive app design.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchBasic} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>Elevate your mobile app design skills with our Intermediate course (ages 7+). Engage in projects, collaborative design, and create feature-rich mobile applications.</p>
-            <video src={scratchAdvanced} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
-          </div>
+            <video src={scratchIntermediate} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+          </div> 
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
@@ -136,7 +136,7 @@ export const LibraryCourses = () => {
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Python Programming <span className='text-sm sm:text-xl text-[#999999] font-medium'>(11+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>
-              <p>Elevate your Python skills with our Intermediate course for ages 11+</p>
+              Elevate your Python skills with our Intermediate course for ages 11+
               Explore projects, collaborative coding, and advanced topics like algorithms to enhance Python proficiency.</p>
               <video src={scratchIntermediate} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></video>
           </div>
@@ -144,7 +144,7 @@ export const LibraryCourses = () => {
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Python Programming <span className='text-sm sm:text-xl text-[#999999] font-medium'>(12+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>
-              <p>Become a Python expert with our Advanced course for ages 12+.</p>
+              Become a Python expert with our Advanced course for ages 12+.
               Delve into advanced concepts, object-oriented programming, and project development. Unleash your creativity, mastering Python for complex problem-solving and software development.</p>
               <video src={scratchIntermediate} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></video>
           </div>
