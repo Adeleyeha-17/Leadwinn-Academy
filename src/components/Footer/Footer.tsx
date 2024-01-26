@@ -104,11 +104,11 @@ export const Footer: React.FC = () => {
                      <input type="email" id='email' name='email' value={email} placeholder='Email Address' onChange={onChange}
                      className='px-2 py-3 w-3/4 md:w-full lg:px-4 lg:py-2 text-sm lg:text-lg text-gray-700 bg-white border-gray-300 rounded transition ease-in-out mb-4 focus:border-none focus:outline-none'/>
                      <div className='flex gap-2 mb-4'>
-                        <input type="checkbox" name="receiveMail" id="receiveMail" checked={receiveMail} onChange={onChange}/>
+                        <input type="checkbox" name="receiveMail" id="receiveMail" checked={receiveMail} onChange={onChange} autoComplete='true'/>
                         <label htmlFor="receiveMail" className="text-xs">I would like to receive emails from Leadwinn</label>
                      </div>
 
-                     <button className="flex justify-center items-center w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300">Subscribe</button>
+                     <button type='button' className="flex justify-center items-center w-24 h-8 gap-3 bg-head-blue text-white text-xs sm:font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300">Subscribe</button>
                   </form>
                </div>
             </div>
