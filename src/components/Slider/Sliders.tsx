@@ -55,7 +55,7 @@ const Sliders = () => {
     <Slider {...settings} className="grid sm:hidden slider">
       {courses.map((data, index) => (
         <div key={index} className="relative rounded-3xl overflow-hidden border-2 border-white">
-          <img src={data.img} alt={data.heading} className="w-full rounded-xl" />
+          <img src={data.img} alt={data.heading} className="w-full h-full rounded-xl" />
           <motion.div
             animate={{ translateY: 0, transition: { duration: 0.3, ease: 'easeInOut' } }}
             className="absolute flex flex-col justify-center items-center gap-2 bg-courses bg-opacity-40 inset-0 text-white rounded-3xl rounded-t-none"

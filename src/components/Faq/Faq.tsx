@@ -29,15 +29,12 @@ export const Faq: React.FC = () => {
          title: `What coding languages are taught at Leadwinn`,
          content: 'Leadwinn offers courses in popular coding languages such as Python, Scratch, JavaScript, and more. The specific languages taught may vary based on the course and age group.'
       },
-
    ];
 
    return (
       <div className="px-6 sm:px-10 md:px-20 lg:px-28 xl:px-40 p-10 md:max-lg:max-w-6xl mx-auto font-poppins">
          <h1 className="text-heading font-semibold text-base sm:text-xl lg:text-3xl mb-8 flex items-center justify-center">Frequency Asked Question
          </h1>
-
-
          {
             accordionData.map((data, index) => (
                <div key={index} className='mb-4 border-b border-gray-300 cursor-pointer py-2 flex flex-col'>
@@ -49,7 +46,7 @@ export const Faq: React.FC = () => {
                         `${data.title}?`
                      }</h3>
                      <span className="w-1/4 flex items-end justify-end">{
-                        activeAccordion === index + 1 ? <img src={accordionUp} className='w-4 md:w-8' alt="accordionUp"/> : <img src={accordionDown} className='w-5 md:w-8' alt="accordionDown"/>
+                        activeAccordion === index + 1 ? <img src={accordionUp} className='h-4 w-4 md:h-8 md:w-8' alt="accordionUp"/> : <img src={accordionDown} className='h-4 w-4 md:h-8 md:w-8' alt="accordionDown"/>
                      }</span>
                   </div>
                   <motion.div
@@ -66,6 +63,5 @@ export const Faq: React.FC = () => {
                </div>
             ))
          } </div>
-
    );
 };

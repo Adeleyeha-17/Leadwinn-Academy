@@ -12,7 +12,6 @@ export const DesktopPlans = () => {
       setTooltips(newTooltips);
    };
 
-
   return (
    <div className="bg-skill h-full font-poppins max-sm:px-5 sm:px-10 sm:flex flex-col gap-10 justify-center sm:items-center hidden">
 
@@ -25,12 +24,7 @@ export const DesktopPlans = () => {
 
          <a
          href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20Virtual%20Personal%20Tutoring%20plan.%20Can%20we%20discuss%20further?`}
-            className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
-         >
-            Get Started
-         </a>
-
-
+            className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer">Get Started</a>
 
          <div className="mt-7">
             <h4 className="text-sm lg:text-base font-semibold mb-3">Features</h4>
@@ -39,12 +33,12 @@ export const DesktopPlans = () => {
                <div className="flex flex-col gap-5">
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={experienceA} alt="Experience Icon" className=" w-4 sm:w-5 lg:w-6" />
+                        <img src={experienceA} alt="Experience Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs" >Personalized Learning Experience</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(0)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(0)}
                            onMouseLeave={() => handleTooltipToggle(0)} />
 
                         {tooltips[0] && (
@@ -59,12 +53,12 @@ export const DesktopPlans = () => {
                   </div>
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={time} alt="Duration Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={time} alt="Duration Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Time Flexibility</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(1)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(1)}
                            onMouseLeave={() => handleTooltipToggle(1)} />
 
                         {tooltips[1] && (
@@ -81,12 +75,12 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={review} alt="Review Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={review} alt="Review Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Project Review</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(2)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(2)}
                            onMouseLeave={() => handleTooltipToggle(2)} />
 
                         {tooltips[2] && (
@@ -102,12 +96,12 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={replay} alt="Replay Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={replay} alt="Replay Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Replay</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(3)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(3)}
                            onMouseLeave={() => handleTooltipToggle(3)} />
 
                         {tooltips[3] && (
@@ -124,12 +118,12 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={pricing} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={pricing} alt="Pricing Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Premium Pricing</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(4)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(4)}
                            onMouseLeave={() => handleTooltipToggle(4)} />
 
                         {tooltips[4] && (
@@ -139,7 +133,6 @@ export const DesktopPlans = () => {
                               </div>
                            </div>
                         )}
-
                      </div>
                   </div>
                </div>
@@ -169,22 +162,14 @@ export const DesktopPlans = () => {
          </div>
       </div>
 
-
-
       <div className="bg-white mx-auto w-[20rem] sm:w-[19rem] lg:w-[28rem] xl:w-[33rem] h-[40rem] lg:h-[50rem] xl:h-[46rem] rounded-2xl text-heading p-5 lg:p-10">
          <div className="mb-5">
             <h1 className=" text-base lg:text-xl font-semibold mb-1">Virtual Group Classes</h1>
             <h4 className="text-xs lg:text-sm xl:text-base w-[17rem] lg:w-[23rem] xl:w-[25rem]">Maximize Learning in Virtual Group Classes with Expert Tutors, Limited to 4 Students per Class.</h4>
          </div>
 
-         <a   href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20Virtual%20Group%20Classes%20plan.%20Can%20we%20discuss%20further?`}
-            className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
-         >
-            Get Started
-         </a>
-
-
-
+         <a href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20Virtual%20Group%20Classes%20plan.%20Can%20we%20discuss%20further?`} className={`inline-block justify-center items-center py-3 w-[17.5rem] sm:w-[16.5rem] lg:w-[23rem] xl:w-[28rem] bg-head-blue text-white text-xs text-center font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} target="_blank" rel="noopener noreferrer"
+         >Get Started</a>
          <div className="mt-7">
             <h4 className="text-sm lg:text-base font-semibold mb-3">Features</h4>
 
@@ -192,12 +177,12 @@ export const DesktopPlans = () => {
                <div className="flex flex-col gap-5">
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={experienceB} alt="Experience Icon" className=" w-4 sm:w-5 lg:w-6" />
+                        <img src={experienceB} alt="Experience Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs" >Networking Oppurtunities</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(5)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(5)}
                            onMouseLeave={() => handleTooltipToggle(5)} />
 
                         {tooltips[5] && (
@@ -211,12 +196,12 @@ export const DesktopPlans = () => {
                      </div>                           </div>
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={time} alt="Duration Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={time} alt="Duration Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Agreed Time (Not Flexible)</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(6)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(6)}
                            onMouseLeave={() => handleTooltipToggle(6)} />
 
                         {tooltips[6] && (
@@ -227,16 +212,17 @@ export const DesktopPlans = () => {
                            </div>
                         )}
 
-                     </div>                           </div>
+                     </div>
+                     </div>
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={review} alt="Review Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={review} alt="Review Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Project Review</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(7)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(7)}
                            onMouseLeave={() => handleTooltipToggle(7)} />
 
                         {tooltips[7] && (
@@ -246,17 +232,17 @@ export const DesktopPlans = () => {
                               </div>
                            </div>
                         )}
-
-                     </div>                           </div>
+                     </div>                           
+                     </div>
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={replay} alt="Replay Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={replay} alt="Replay Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Replay</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(8)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(8)}
                            onMouseLeave={() => handleTooltipToggle(8)} />
 
                         {tooltips[8] && (
@@ -271,12 +257,12 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={pricing} alt="Pricing Icon" className="w-4 sm:w-5 lg:w-6" />
+                        <img src={pricing} alt="Pricing Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
                         <span className="max-lg:text-xs">Standard Pricing</span>
                      </div>
                      <div className="relative">
 
-                        <img src={tips} className="mb-2 max-sm:w-4 sm:max-lg:w-5" onMouseEnter={() => handleTooltipToggle(9)}
+                        <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(9)}
                            onMouseLeave={() => handleTooltipToggle(9)} />
 
                         {tooltips[9] && (
