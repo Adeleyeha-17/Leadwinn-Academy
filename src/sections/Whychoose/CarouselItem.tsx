@@ -50,7 +50,7 @@ const CarouselItem: React.FC = () => {
   return (
     <div className="inline-flex max-md:flex-col justify-center bg-white w-full font-poppins px-5 sm:max-lg:px-12 lg:px-0">
       <div className="xl:px-24">
-        {selected && <img src={selected.img} alt={selected.title} />}
+        {selected && <img src={selected.img} alt={selected.title} className="w-full h-full"/>}
       </div>
 
       <div className="w-1/2 max-sm:flex max-sm:flex-col-reverse">
@@ -59,7 +59,7 @@ const CarouselItem: React.FC = () => {
             {Items.map((icon, i) => (
               <button key={i} className="m-1 bg-none max-sm:mt-4" onClick={() => setSelected(icon)}>
                 <span>
-                  <img src={selected === icon ? icon.active : icon.notActive} alt={icon.title}/>
+                  <img src={selected === icon ? icon.active : icon.notActive} alt={icon.title} className="w-full h-full"/>
                 </span>
               </button>
             ))}

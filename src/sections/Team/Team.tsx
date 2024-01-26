@@ -67,7 +67,7 @@ export const Team = () => {
       <div className="flex max-sm:flex-col gap-5 lg:gap-10 sm:px-16 justify-center items-center">
         <div>
           {selectedImage && (
-            <img src={selectedImage} className="w-[18.5rem] sm:w-[20rem] lg:w-[27.875rem]" alt={selectedImage} />
+            <img src={selectedImage} className="w-[18.5rem] h-full sm:w-[20rem] lg:w-[27.875rem]" alt={selectedImage} />
           )}
         </div>
 
@@ -82,7 +82,7 @@ export const Team = () => {
               <h4 className="mb-3 w-28 lg:w-40 text-xs lg:text-sm text-center">{data.position}</h4>
 
 <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
-<img src={selectedImage === data.img ? data.linkedinActive : data.linkedinNotActive} />
+<img src={selectedImage === data.img ? data.linkedinActive : data.linkedinNotActive} className="w-full h-full"/>
 </a>
             </div>
           ))}

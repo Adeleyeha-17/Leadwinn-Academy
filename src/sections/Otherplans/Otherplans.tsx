@@ -20,7 +20,7 @@ export const Otherplans = () => {
          </div>
 
          <div className="flex justify-end"> 
-            <img src={otherPlans} alt="" className="w-full lg:w-4/5 rounded-3xl"/>
+            <img src={otherPlans} alt="" className="w-full h-full lg:w-4/5 rounded-3xl"/>
          </div>
   </div>
 
