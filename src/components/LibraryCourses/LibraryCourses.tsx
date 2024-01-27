@@ -47,7 +47,15 @@ export const LibraryCourses = () => {
           <div className='text-heading  flex gap-3 py-10 sm:py-20 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-[0.8rem] xl:text-base'>Delve into coding basics with Basic Scratch, tailored for beginners aged 6 and up. It instills block-based programming skills, fostering logical thinking and problem-solving.</p>
-            <video src={scratchBasic} autoPlay loop muted playsInline preload="auto" className='mt-10 w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] rounded-3xl border-4 border-blue-900'></video>
+            <iframe
+  src="https://player.vimeo.com/video/906959431?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1"
+  title="scratch basic"
+  className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'
+  frameBorder="0"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowFullScreen
+></iframe>
+
           </div>
 
           <div className='bg-nav-blue text-heading flex py-10 sm:py-20 gap-3 flex-col items-center justify-center'>
