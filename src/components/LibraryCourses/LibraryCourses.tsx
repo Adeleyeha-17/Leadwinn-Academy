@@ -51,9 +51,7 @@ export const LibraryCourses = () => {
   src="https://player.vimeo.com/video/906959431?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1"
   title="scratch basic"
   className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'
-  frameBorder="0"
-  allow="autoplay; fullscreen; picture-in-picture"
-  allowFullScreen
+  allow="autoplay; picture-in-picture"
 ></iframe>
 
           </div>
