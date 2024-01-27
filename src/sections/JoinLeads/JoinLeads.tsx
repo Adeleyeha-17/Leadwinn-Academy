@@ -41,8 +41,8 @@ export const JoinLeads = () => {
 
 
       <div className="bg-skill-hov w-full h-[40rem] sm:h-[55rem] lg:h-[60rem] xl:h-[65.4rem] z-10 relative overflow-hidden">
-      <img src={joinLeft} className="absolute left-0 max-xl:w-72 max-xl:h-full -z-10"/>
-      <img src={joinRight} className="absolute -right-2 xl:-right-8 max-xl:w-72 max-xl:h-full -z-10"/>
+      <img src={joinLeft} className="absolute left-0 max-xl:w-72 max-xl:h-full -z-10"  loading="eager"/>
+      <img src={joinRight} className="absolute -right-2 xl:-right-8 max-xl:w-72 max-xl:h-full -z-10" loading="eager"/>
 
 <div className="pt-20">
       <div className="text-center mb-[2.5rem]">
