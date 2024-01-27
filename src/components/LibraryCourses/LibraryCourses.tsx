@@ -14,9 +14,19 @@ export const LibraryCourses = () => {
 
   useEffect(() => {
     const videos = document.querySelectorAll('video');
+
     videos.forEach(video => {
-      video.load();
-      video.play();
+      video.preload = 'auto';
+
+      video.addEventListener('canplaythrough', () => {
+        video.play();
+      });
+
+      setTimeout(() => {
+        if (!video.played.length) {
+          video.play();
+        }
+      }, 3000); 
     });
   }, []);
 
