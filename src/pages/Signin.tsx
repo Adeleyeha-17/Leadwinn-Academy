@@ -3,7 +3,6 @@ import { dots } from "../../src/assets/images"
 import OAuth from "../components/OAuth";
 import { AiFillEyeInvisible, AiFillEye, AiOutlineClose } from "react-icons/ai";
 import { FormEvent, useState } from 'react';
-import { motion } from "framer-motion";
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from "../config/firebase"
 import { toast } from 'react-toastify';
@@ -64,7 +63,7 @@ export const Signin: React.FC = () => {
     }
   }
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">
+    <div className="flex font-poppins">
 
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
@@ -120,6 +119,6 @@ export const Signin: React.FC = () => {
           <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Not a member yet?"} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign Up</Link></p>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }

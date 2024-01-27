@@ -5,7 +5,6 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { db } from "../config/firebase"
 import { setDoc, doc, serverTimestamp, FieldValue } from 'firebase/firestore';
 import { toast } from 'react-toastify';
-import { motion } from "framer-motion";
 import { FormEvent, useState } from 'react';
 import { AiOutlineClose } from "react-icons/ai";
 import { edit, mail, passwordSvg } from "../../src/assets/icons"
@@ -87,7 +86,7 @@ export const Register = () => {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="h-screen flex font-poppins">
+    <div className="h-screen flex font-poppins">
 
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[14rem] xl:w-[25rem] flex flex-col gap-10 ml-12">
@@ -151,6 +150,6 @@ export const Register = () => {
           <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Already a member?"} <Link to="/sign-in" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign In</Link></p>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }

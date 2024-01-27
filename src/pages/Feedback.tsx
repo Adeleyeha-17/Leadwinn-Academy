@@ -1,7 +1,6 @@
 import { FC, useRef, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
 import { edit, mail } from "../../src/assets/icons"
 import { feedback } from "../../src/assets/images"
 
@@ -25,7 +24,7 @@ export const Feedback: FC<FeedbackProps> = () => {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }}>
+    <div>
 
       <div className="bg-feedback bg-no-repeat bg-cover py-8 flex flex-col justify-center items-center font-poppins">
         <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 text-head-black">Send Us Your Feedback</h2>
@@ -95,7 +94,7 @@ export const Feedback: FC<FeedbackProps> = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
