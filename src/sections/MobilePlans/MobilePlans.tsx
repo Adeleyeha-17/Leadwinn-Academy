@@ -2,7 +2,7 @@ import { experienceA,experienceB, pricing, replay, review, time, tips } from "..
 import { useState } from "react";
 import { motion } from "framer-motion"
 
-export const MobilePlans = () => {
+export const  MobilePlans = () => {
 
    const [activeAccordion, setActiveAccordion] = useState(0);
 
@@ -34,13 +34,13 @@ export const MobilePlans = () => {
     <div className='mb-4 border-b border-skill-hov flex flex-col'>
       <div className="flex justify-between items-center" >
         <div className="flex gap-2 mb-2">
-          <img src={experienceA} alt="Experience Icon" className="w-4 h-4" />
+          <img src={experienceA} alt="Experience Icon" className="w-4 h-4"  loading="eager"/>
           <div className="flex gap-[2.3rem]">
           <div>
 
           <span className="text-xs">Personalized Learning Experience</span>
           </div>
-          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(0 + 1)}/>
+          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(0 + 1)} loading="eager"/>
           </div>
         
         </div>
@@ -58,10 +58,10 @@ export const MobilePlans = () => {
     <div className='mb-4 border-b border-skill-hov flex flex-col'>
       <div className="flex justify-between items-center">
           <div className="flex gap-2 mb-2">
-          <img src={time} alt="Pricing Icon" className="w-4 h-4" />
+          <img src={time} alt="Pricing Icon" className="w-4 h-4"  loading="eager"/>
           <div className="flex gap-[9.35rem]">
           <span className="text-xs">Time Flexibility</span>
-          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(1 + 1)}/>
+          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(1 + 1)} loading="eager"/>
           </div>
           </div>
        
@@ -80,10 +80,10 @@ export const MobilePlans = () => {
     <div className='mb-4 border-b border-skill-hov flex flex-col'>
       <div className="flex justify-between items-center" >
         <div className="flex gap-2 mb-2">
-          <img src={review} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6" />
+          <img src={review} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6"  loading="eager"/>
           <div className="flex gap-[9.32rem]">
           <span className="text-xs">Project Review</span>
-          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(2 + 1)}/>
+          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(2 + 1)} loading="eager"/>
           </div>
           </div>
       </div>
@@ -101,10 +101,10 @@ export const MobilePlans = () => {
     <div className='mb-4 border-b border-skill-hov flex flex-col'>
       <div className="flex justify-between items-center" >
         <div className="flex gap-2 mb-2">
-          <img src={replay} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6" />
+          <img src={replay} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6"  loading="eager"/>
           <div className="flex gap-[12.2rem]">
           <span className="text-xs">Replay</span>
-          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(3 + 1)}/>
+          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(3 + 1)} loading="eager"/>
           </div>
         </div>
       </div>
@@ -122,13 +122,13 @@ export const MobilePlans = () => {
     <div className='mb-4 border-b border-skill-hov flex flex-col'>
       <div className="flex justify-between items-center" >
         <div className="flex gap-2 mb-2">
-          <img src={pricing} alt="Experience Icon" className="w-4 h-4" />
+          <img src={pricing} alt="Experience Icon" className="w-4 h-4"  loading="eager"/>
           <div className="flex gap-[8.65rem]">
           <div>
 
           <span className="text-xs">Premium Pricing</span>
           </div>
-          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(9 + 1)}/>
+          <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(9 + 1)} loading="eager"/>
           </div>
         
         </div>
@@ -184,13 +184,13 @@ export const MobilePlans = () => {
           <div className='mb-4 border-b border-skill-hov flex flex-col'>
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
-                <img src={experienceB} alt="Experience Icon" className="w-4 h-4" />
+                <img src={experienceB} alt="Experience Icon" className="w-4 h-4"  loading="eager"/>
                 <div className="flex gap-[5.3rem]">
                 <div>
 
                 <span className="text-xs">Networking Opportunities</span>
                 </div>
-                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(0 + 1)}/>
+                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(0 + 1)} loading="eager"/>
                 </div>
               
               </div>
@@ -208,10 +208,10 @@ export const MobilePlans = () => {
           <div className='mb-4 border-b border-skill-hov flex flex-col'>
             <div className="flex justify-between items-center">
                 <div className="flex gap-2 mb-2">
-                <img src={time} alt="Pricing Icon" className="w-4 h-4" />
+                <img src={time} alt="Pricing Icon" className="w-4 h-4"  loading="eager"/>
                 <div className="flex gap-[4.98rem]">
                 <span className="text-xs">Agreed Time (Not Flexible)</span>
-                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(1 + 1)}/>
+                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(1 + 1)} loading="eager"/>
                 </div>
                 </div>
              
@@ -230,10 +230,10 @@ export const MobilePlans = () => {
           <div className='mb-4 border-b border-skill-hov flex flex-col'>
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
-                <img src={review} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6" />
+                <img src={review} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6"  loading="eager"/>
                 <div className="flex gap-[9.45rem]">
                 <span className="text-xs">Project Review</span>
-                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(2 + 1)}/>
+                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(2 + 1)} loading="eager"/>
                 </div>
                 </div>
             </div>
@@ -251,10 +251,10 @@ export const MobilePlans = () => {
           <div className='mb-4 border-b border-skill-hov flex flex-col'>
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
-                <img src={replay} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6" />
+                <img src={replay} alt="Pricing Icon" className="w-4 h-4 sm:w-5 lg:w-6"  loading="eager"/>
                 <div className="flex gap-[12.35rem]">
                 <span className="text-xs">Replay</span>
-                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(3 + 1)}/>
+                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(3 + 1)} loading="eager"/>
                 </div>
               </div>
             </div>
@@ -272,13 +272,13 @@ export const MobilePlans = () => {
           <div className='mb-4 border-b border-skill-hov flex flex-col'>
             <div className="flex justify-between items-center" >
               <div className="flex gap-2 mb-2">
-                <img src={pricing} alt="Experience Icon" className="w-4 h-4" />
+                <img src={pricing} alt="Experience Icon" className="w-4 h-4"  loading="eager"/>
                 <div className="flex gap-[8.7rem]">
                 <div>
 
                 <span className="text-xs">Standard Pricing</span>
                 </div>
-                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(9 + 1)}/>
+                <img src={tips} className='w-4 h-4 cursor-pointer' onClick={() => toggleTab(9 + 1)} loading="eager"/>
                 </div>
               
               </div>

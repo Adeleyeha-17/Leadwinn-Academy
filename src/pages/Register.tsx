@@ -92,7 +92,7 @@ export const Register = () => {
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[14rem] xl:w-[25rem] flex flex-col gap-10 ml-12">
           <h2 className="font-medium sm:text-lg lg:text-2xl xl:text-4xl">Join Leadwinn For Free</h2>
-          <img src={dots} className="sm:w-10/12 xl:w-10/12" />
+          <img src={dots} className="sm:w-10/12 xl:w-10/12" loading="eager"/>
           <h4 className="sm:w-[11rem] lg:w-[15rem] xl:w-[22.5rem] font-bold text-lg xl:text-2xl">Fuel your creativity at Leadwinn with cutting-edge courses in coding, tech skills, and more.</h4>
         </div>
       </div>
@@ -123,25 +123,25 @@ export const Register = () => {
                 <div className="relative ">
 
                   <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="fullName" value={fullName} placeholder="Full Name" onChange={onChange} />
-                  <img src={edit} className="absolute left-4 top-3 sm:top-4 xl:top-6" />
+                  <img src={edit} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager"/>
                 </div>
 
                 <div className="relative">
 
                   <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
-                  <img src={mail} className="absolute left-4 top-3 sm:top-4 xl:top-6" />
+                  <img src={mail} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager"/>
                 </div>
 
                 <div className="relative">
                   <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="password" value={password} placeholder="Password" onChange={onChange} autoComplete="true" />
 
-                  <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" />
+                  <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager"/>
                 </div>
 
                 <div className="relative">
                   <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="confirmPassword" value={confirmPassword} placeholder="Confirm Password" onChange={onChange} autoComplete="true" />
 
-                  <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" />
+                  <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager"/>
                 </div>
               </div>
               <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit"

@@ -93,13 +93,13 @@ export const Skill = () => {
 
        <div key={index} className={`${selected?.level === data.level ? "bg-skill-hov" :"bg-skill"} w-full h-[5.4rem] lg:h-[7.1rem] xl:h-[8rem] rounded-2xl px-6 lg:px-14 py-5 cursor-pointer`} onMouseOver={() => setSelected(data)}>
          <div className="flex justify-between items-center relative">
-            <img src={data.btnImg} alt="" className="absolute -right-6 w-[7rem] lg:w-[9.5rem] h-full xl:w-[12rem]"/>
+            <img src={data.btnImg} alt="" className="absolute -right-6 w-[7rem] lg:w-[9.5rem] h-full xl:w-[12rem]" loading="eager"/>
          <div className="text-heading flex flex-col gap-1">
             <h3 className="text-sm lg:text-lg font-semibold">{data.level}</h3>
             <h5 className="text-xs lg:text-sm">({data.age})</h5>
          </div>
 
-         <img src={selected?.level === data.level ? data.activeSvg : data.svg} className="z-10 h-full max-lg:w-[3.5rem] max-xl:w-[5rem]"/>
+         <img src={selected?.level === data.level ? data.activeSvg : data.svg} className="z-10 h-full max-lg:w-[3.5rem] max-xl:w-[5rem]" loading="eager"/>
          </div>
        </div>
       ))}
@@ -112,7 +112,7 @@ export const Skill = () => {
       {skills.map((skill, index) => (
          <div key={index} className={`flex gap-2 items-center w-max`}>
 
-            <img src={skill.rating} alt={skill.rating} className="h-4 w-4 lg:h-6 lg:w-6"/>
+            <img src={skill.rating} alt={skill.rating} className="h-4 w-4 lg:h-6 lg:w-6" loading="eager"/>
             <h4 className="text-xs lg:text-sm">
                {skill.skill}
                </h4>
@@ -122,7 +122,7 @@ export const Skill = () => {
 
 <div className="max-sm:mb-5 sm:mt-11">
 
-     {selected && <img src={selected.img} alt={selected.level} className="w-full h-full max-sm:rounded-3xl"/> }
+     {selected && <img src={selected.img} alt={selected.level} className="w-full h-full max-sm:rounded-3xl" loading="eager"/> }
 </div>
      </div>
    </div>

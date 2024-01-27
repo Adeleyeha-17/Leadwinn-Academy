@@ -33,13 +33,13 @@ export const DesktopPlans = () => {
                <div className="flex flex-col gap-5">
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={experienceA} alt="Experience Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={experienceA} alt="Experience Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs" >Personalized Learning Experience</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(0)}
-                           onMouseLeave={() => handleTooltipToggle(0)} />
+                           onMouseLeave={() => handleTooltipToggle(0)}  loading="eager"/>
 
                         {tooltips[0] && (
                            <div className="relative">
@@ -53,13 +53,13 @@ export const DesktopPlans = () => {
                   </div>
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={time} alt="Duration Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={time} alt="Duration Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Time Flexibility</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(1)}
-                           onMouseLeave={() => handleTooltipToggle(1)} />
+                           onMouseLeave={() => handleTooltipToggle(1)}  loading="eager"/>
 
                         {tooltips[1] && (
                            <div className="relative">
@@ -75,13 +75,13 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={review} alt="Review Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={review} alt="Review Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Project Review</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(2)}
-                           onMouseLeave={() => handleTooltipToggle(2)} />
+                           onMouseLeave={() => handleTooltipToggle(2)}  loading="eager"/>
 
                         {tooltips[2] && (
                            <div className="relative">
@@ -96,13 +96,13 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={replay} alt="Replay Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={replay} alt="Replay Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Replay</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(3)}
-                           onMouseLeave={() => handleTooltipToggle(3)} />
+                           onMouseLeave={() => handleTooltipToggle(3)}  loading="eager"/>
 
                         {tooltips[3] && (
                            <div className="relative">
@@ -118,13 +118,13 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={pricing} alt="Pricing Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={pricing} alt="Pricing Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Premium Pricing</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(4)}
-                           onMouseLeave={() => handleTooltipToggle(4)} />
+                           onMouseLeave={() => handleTooltipToggle(4)}  loading="eager"/>
 
                         {tooltips[4] && (
                            <div className="relative">
@@ -177,13 +177,13 @@ export const DesktopPlans = () => {
                <div className="flex flex-col gap-5">
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={experienceB} alt="Experience Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={experienceB} alt="Experience Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs" >Networking Oppurtunities</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(5)}
-                           onMouseLeave={() => handleTooltipToggle(5)} />
+                           onMouseLeave={() => handleTooltipToggle(5)}  loading="eager"/>
 
                         {tooltips[5] && (
                            <div className="relative">
@@ -196,13 +196,13 @@ export const DesktopPlans = () => {
                      </div>                           </div>
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={time} alt="Duration Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={time} alt="Duration Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Agreed Time (Not Flexible)</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(6)}
-                           onMouseLeave={() => handleTooltipToggle(6)} />
+                           onMouseLeave={() => handleTooltipToggle(6)}  loading="eager"/>
 
                         {tooltips[6] && (
                            <div className="relative">
@@ -217,13 +217,13 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={review} alt="Review Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={review} alt="Review Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Project Review</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(7)}
-                           onMouseLeave={() => handleTooltipToggle(7)} />
+                           onMouseLeave={() => handleTooltipToggle(7)}  loading="eager"/>
 
                         {tooltips[7] && (
                            <div className="relative">
@@ -237,13 +237,13 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={replay} alt="Replay Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={replay} alt="Replay Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Replay</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(8)}
-                           onMouseLeave={() => handleTooltipToggle(8)} />
+                           onMouseLeave={() => handleTooltipToggle(8)}  loading="eager"/>
 
                         {tooltips[8] && (
                            <div className="relative">
@@ -257,13 +257,13 @@ export const DesktopPlans = () => {
 
                   <div className="flex justify-between items-center border-skill-hov border-b-2">
                      <div className="flex gap-2 mb-2">
-                        <img src={pricing} alt="Pricing Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6" />
+                        <img src={pricing} alt="Pricing Icon" className="h-4 w-4 sm:w-5 sm:h-5 lg:h-6 lg:w-6"  loading="eager"/>
                         <span className="max-lg:text-xs">Standard Pricing</span>
                      </div>
                      <div className="relative">
 
                         <img src={tips} className="mb-2 max-sm:w-4 max-sm:h-4 sm:max-lg:w-5 sm:max-lg:h-5" onMouseEnter={() => handleTooltipToggle(9)}
-                           onMouseLeave={() => handleTooltipToggle(9)} />
+                           onMouseLeave={() => handleTooltipToggle(9)}  loading="eager"/>
 
                         {tooltips[9] && (
                            <div className="relative">

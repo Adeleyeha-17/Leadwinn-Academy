@@ -69,7 +69,7 @@ export const Signin: React.FC = () => {
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
           <h2 className=" font-medium sm:text-lg lg:text-2xl xl:text-4xl">Welcome Back To Leadwinn</h2>
-          <img src={dots} className="sm:w-8/12 xl:w-8/12" />
+          <img src={dots} className="sm:w-8/12 xl:w-8/12" loading="eager"/>
           <h4 className="sm:w-[11rem] lg:w-[13rem] xl:w-[24rem] font-bold text-lg xl:text-2xl">Sign in to continue to your account</h4>
         </div>
       </div>
@@ -102,7 +102,7 @@ export const Signin: React.FC = () => {
                   ) : (
                     <AiFillEye className="absolute right-3 top-4 xl:top-7 text-xl cursor-pointer" onClick={toggleShowPassword} />
                   )}
-                  <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" />
+                  <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager"/>
                 </div>
               </div>
               <div className="flex justify-between font-medium text-xs sm:text-sm mb-6">

@@ -29,7 +29,7 @@ export const Feedback: FC<FeedbackProps> = () => {
 
       <div className="bg-feedback bg-no-repeat bg-cover py-8 flex flex-col justify-center items-center font-poppins">
         <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 text-head-black">Send Us Your Feedback</h2>
-        <img src={feedback} className="w-[10rem] md:w-[14rem]" />
+        <img src={feedback} className="w-[10rem] md:w-[14rem]" loading="eager"/>
       </div>
 
       <div className="contact font-poppins pb-20 md:px-12 px-5 xl:px-40 py-10 lg:max-xl:max-w-6xl mx-auto text-head-black ">
@@ -80,16 +80,16 @@ export const Feedback: FC<FeedbackProps> = () => {
             <form ref={form} onSubmit={sendEmail} className="w-[350px] sm:max-xl:w-[320px] xl:w-[360px]">
               <div className="relative mb-8 h-16">
                 <input type="text" name="name" className="relative top-0 left-0 w-full h-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 pl-12" placeholder="Full Name" />
-                <img src={edit} className="absolute left-4 top-5" />
+                <img src={edit} className="absolute left-4 top-5" loading="eager"/>
               </div>
               <div className="relative mb-8 h-16">
                 <input type="email" name="email" className="relative top-0 left-0 w-full h-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 pl-12" placeholder="Email" />
-                <img src={mail} className="absolute left-4 top-5" />
+                <img src={mail} className="absolute left-4 top-5" loading="eager"/>
               </div>
               <div className="relative mb-28 h-32 contact__form-area">
                 <textarea name="feedback" cols={30} rows={10} className="relative top-0 left-0 w-full bg-none outline-none rounded-[0.75rem] p-[1.5rem] border-2 border-opacity-30 h-[12rem]" placeholder="Type your message"></textarea>
               </div>
-              <button className="text-sm inline-flex items-center bg-hero-blue text-white rounded-[1rem] border py-[1.25rem] px-[2rem]">Send Message
+              <button type="submit" className="text-sm inline-flex items-center bg-hero-blue text-white rounded-[1rem] border py-[1.25rem] px-[2rem]">Send Message
               </button>
             </form>
           </div>

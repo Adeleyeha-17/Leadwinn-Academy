@@ -51,12 +51,12 @@ export const Courses = () => {
          <div className="hidden sm:grid grid-cols-6 sm:grid-cols-2 lg:grid-cols-3 gap-72 sm:gap-10 xl:gap-x-26">
             {courses.map((data, index) => (
                <div key={index} className="w-[17rem] sm:w-[17rem] xl:w-[21rem] relative rounded-3xl overflow-hidden mx-auto">
-                  <img src={data.img} alt={data.heading} className="h-full w-full rounded-xl"
+                  <img src={data.img} alt={data.heading} className="h-full w-full rounded-xl" loading="lazy"
                 />
                  <motion.div whileHover={{ translateY: 0, transition: { duration: 0.3, ease: "easeInOut" } }}
               animate={{ translateY: window.innerWidth >= 1300 ? 195 : 160, transition: { duration: 0.3, ease: "easeInOut" } }} className="absolute flex flex-col justify-center items-center gap-10 bg-courses bg-opacity-70 backdrop-blur-sm inset-0 text-white rounded-3xl rounded-t-none transform translate-y-40">
                      <h1 className="font-bold text-xs sm:text-base ">{data.heading}</h1>
-                     <img src={data.overlayImg} alt={data.heading} className="max-sm:w-[2rem] max-sm:h-[2rem] max-xl:h-[3rem] max-xl:w-[3rem]" />
+                     <img src={data.overlayImg} alt={data.heading} className="max-sm:w-[2rem] max-sm:h-[2rem] max-xl:h-[3rem] max-xl:w-[3rem]" loading="lazy"/>
 
                      <Link to="/register" className={`inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs md:font-semibold rounded-3xl transition hover:bg-blue-800 ease-in-out duration-300`}>Enroll Now</Link>
                   </motion.div> 

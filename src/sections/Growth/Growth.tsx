@@ -17,7 +17,7 @@ export const Growth = () => {
         </div>
 
         <div className="md:w-3/5">
-          <img src={growth} alt="growth image" className="w-full h-full" />
+          <img src={growth} alt="growth image" className="w-full h-full" loading="lazy"/>
         </div>
       </div>
     </div>

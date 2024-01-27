@@ -44,7 +44,7 @@ export const PlanCourses = () => {
             {courses.map((plans, index) => (
                <div key={index} className="p-4 xl:p-9">
                   <div className="bg-[#409BFF] flex items-center justify-center h-[5rem] lg:h-[7rem] lg w-[5rem] lg:w-[7rem] rounded-3xl mx-auto">
-                     <img src={plans.overlayImg} alt={plans.heading} className="w-[4rem] h-[4rem] xl:h-[5rem] xl:w-[5rem] rounded-xl" />
+                     <img src={plans.overlayImg} alt={plans.heading} className="w-[4rem] h-[4rem] xl:h-[5rem] xl:w-[5rem] rounded-xl" loading="lazy"/>
                   </div>
                   <h4 className="max-lg:w-[4rem] text-center text-xs xl:text-sm font-semibold mt-3 mx-auto">{plans.heading}</h4>
                </div>
