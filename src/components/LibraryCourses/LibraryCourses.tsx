@@ -138,7 +138,7 @@ export const LibraryCourses = () => {
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-[0.8rem] xl:text-base'>
               Elevate your Python skills with our Intermediate course for ages 11+
               Explore projects, collaborative coding, and advanced topics like algorithms to enhance Python proficiency.</p>
-              <video src={scratchIntermediate} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></video>
+              <video src={scratchIntermediate} autoPlay loop muted className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden' ></video>
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>

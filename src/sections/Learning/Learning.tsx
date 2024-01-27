@@ -5,10 +5,10 @@ import { puzzleLeft, puzzleRight, monitorRight, monitorLeft }from "../../assets/
 export const Learning = () => {
   return (
     <div className="bg-nav-blue w-full h-full py-10 sm:py-16 lg:py-24 flex items-center justify-center font-poppins relative mx-auto">
-      <img src={puzzleLeft} className="absolute top-0 left-4 sm:left-16 xl:left-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem]"/>
-      <img src={puzzleRight} className="absolute top-0 right-4 sm:right-16 xl:right-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem]"/>
-      <img src={monitorLeft} className="absolute bottom-0 left-0 w-[6rem] sm:w-[12rem] lg:w-[15rem]"/>
-      <img src={monitorRight} className="absolute bottom-0 right-0 w-[6rem] sm:w-[12rem] lg:w-[15rem]"/>
+      <img src={puzzleLeft} className="absolute top-0 left-4 sm:left-16 xl:left-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem]" loading="lazy"/>
+      <img src={puzzleRight} className="absolute top-0 right-4 sm:right-16 xl:right-52 w-[3.5rem] sm:w-[6rem] lg:w-[9rem]" loading="lazy"/>
+      <img src={monitorLeft} className="absolute bottom-0 left-0 w-[6rem] sm:w-[12rem] lg:w-[15rem]" loading="lazy"/>
+      <img src={monitorRight} className="absolute bottom-0 right-0 w-[6rem] sm:w-[12rem] lg:w-[15rem]" loading="lazy"/>
 
       <div className="flex flex-col gap-1 sm:gap-2 items-center justify-center text-center text-heading">
         <h1 className="font-bold text-sm sm:text-xl lg:text-[2rem] lg:leading-[2.75rem] lg:mb-3">Start your learning journey today!</h1>

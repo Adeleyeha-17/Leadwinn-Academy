@@ -10,7 +10,7 @@ export const IgnitingMind = () => {
         </div>
 
         <div>
-          <img src={enroll} className="w-[18.5rem] h-full sm:h-[35rem] sm:w-[27rem]" />
+          <img src={enroll} className="w-[18.5rem] h-full sm:h-[35rem] sm:w-[27rem]" loading="eager"/>
         </div>
       </div>
 
@@ -51,7 +51,7 @@ export const IgnitingMind = () => {
 
       <div className="flex max-sm:flex-col-reverse sm:justify-center sm:items-center gap-10 sm:px-16 max-sm:mt-5">
         <div>
-          <img src={empowering} className="w-[18.5rem] h-full sm:w-[27rem] sm:h-[35rem] mx-auto" />
+          <img src={empowering} className="w-[18.5rem] h-full sm:w-[27rem] sm:h-[35rem] mx-auto" loading="lazy"/>
         </div>
 
         <div className="text-heading sm:w-[22rem]">
