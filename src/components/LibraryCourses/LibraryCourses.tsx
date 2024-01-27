@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webIntermediate, webBasic } from '../../assets/videos';
+import Spinner from '../Spinner';
 
 export const LibraryCourses = () => {
 
@@ -12,23 +13,33 @@ export const LibraryCourses = () => {
     setToggle(index)
   }
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const videos = document.querySelectorAll('video');
+    const videoLoadPromises: Promise<void>[] = [];
 
-    videos.forEach(video => {
+    videos.forEach((video) => {
       video.preload = 'auto';
 
-      video.addEventListener('canplaythrough', () => {
-        video.play();
+      const loadPromise = new Promise<void>((resolve) => {
+        video.addEventListener('canplaythrough', () => {
+          video.play();
+          resolve();
+        });
       });
 
-      setTimeout(() => {
-        if (!video.played.length) {
-          video.play();
-        }
-      }, 3000); 
+      videoLoadPromises.push(loadPromise);
+    });
+
+    Promise.all(videoLoadPromises).then(() => {
+      setLoading(false);
     });
   }, []);
+
+  if (loading) {
+    return <Spinner />
+  }
 
   return (
     <div className='font-poppins text-center'>
