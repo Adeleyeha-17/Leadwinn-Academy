@@ -46,7 +46,7 @@ export const Faq: React.FC = () => {
                         `${data.title}?`
                      }</h3>
                      <span className="w-1/4 flex items-end justify-end">{
-                        activeAccordion === index + 1 ? <img src={accordionUp} className='h-4 w-4 md:h-8 md:w-8' alt="accordionUp"/> : <img src={accordionDown} className='h-4 w-4 md:h-8 md:w-8' alt="accordionDown"/>
+                        activeAccordion === index + 1 ? <img src={accordionUp} className='h-4 w-4 md:h-8 md:w-8' alt="accordionUp" loading='eager'/> : <img src={accordionDown} className='h-4 w-4 md:h-8 md:w-8' alt="accordionDown" loading='eager'/>
                      }</span>
                   </div>
                   <motion.div
