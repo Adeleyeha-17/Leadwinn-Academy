@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webIntermediate, webBasic } from '../../assets/videos';
 
 export const LibraryCourses = () => {
@@ -11,6 +11,34 @@ export const LibraryCourses = () => {
   const toggleTab = (index: number) => {
     setToggle(index)
   }
+
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  const handleIntersection: IntersectionObserverCallback = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry: IntersectionObserverEntry) => {
+      if (entry.isIntersecting) {
+        const videoElement = entry.target as HTMLVideoElement;
+        videoElement.load();
+      }
+    });
+  };
+
+  useEffect(() => {
+    const currentVideoRef = videoRef.current;
+
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+    if (currentVideoRef) {
+      observer.observe(currentVideoRef);
+    }
+
+    return () => {
+      if (currentVideoRef) {
+        observer.unobserve(currentVideoRef);
+      }
+    };
+  }, [videoRef]);
 
 
   return (
@@ -30,7 +58,13 @@ export const LibraryCourses = () => {
           <div className='text-heading  flex gap-3 py-10 sm:py-20 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-[0.8rem] xl:text-base'>Delve into coding basics with Basic Scratch, tailored for beginners aged 6 and up. It instills block-based programming skills, fostering logical thinking and problem-solving.</p>
-            <video src={scratchBasic} autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video
+            ref={videoRef}
+            src={scratchBasic}
+            autoPlay loop muted playsInline
+            preload="none"
+            className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'
+          ></video>
           </div>
 
           <div className='bg-nav-blue text-heading flex py-10 sm:py-20 gap-3 flex-col items-center justify-center'>
