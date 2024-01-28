@@ -12,11 +12,11 @@ export const LibraryCourses = () => {
     setToggle(index)
   }
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 425);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 425);
     };
 
     window.addEventListener('resize', handleResize);
@@ -157,7 +157,7 @@ export const LibraryCourses = () => {
         <img
           src={webAdvanced}
           alt="Web Advanced"
-          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+          className="w-[21.1rem] h-auto mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
         />
       ) : (
         <video
