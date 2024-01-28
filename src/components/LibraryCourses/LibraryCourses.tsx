@@ -112,7 +112,7 @@ export const LibraryCourses = () => {
           <div className='text-heading h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Web Development <span className='text-sm sm:text-xl text-[#999999] font-medium'>(9+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-xs xl:text-base'>Tailored for beginners aged 9+, the Basic Front-End Web Development course introduces the fundamentals of building a visually appealing website. Dive into HTML for structure, CSS for styling, and basic JavaScript for interactivity.</p>
-              <video src={webBasic} autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[55.6rem] h-max sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></video>
+              <img src={webBasic} className='w-[21.1rem] sm:w-[55.6rem] h-max sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
           </div>
 
           <div className='bg-nav-blue text-heading h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
