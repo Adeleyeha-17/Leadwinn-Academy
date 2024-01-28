@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webIntermediate, webBasic } from '../../assets/videos';
-import { pythongif, drawStar } from "../../assets/videos"
-
+import { useEffect, useState } from 'react';
+import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, pythongif, drawStar } from '../../assets/videos';
+ 
 export const LibraryCourses = () => {
 
   type libraryNav = {link: string};
@@ -12,6 +11,20 @@ export const LibraryCourses = () => {
   const toggleTab = (index: number) => {
     setToggle(index)
   }
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   return (
@@ -112,7 +125,23 @@ export const LibraryCourses = () => {
           <div className='text-heading h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Web Development <span className='text-sm sm:text-xl text-[#999999] font-medium'>(9+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-xs xl:text-base'>Tailored for beginners aged 9+, the Basic Front-End Web Development course introduces the fundamentals of building a visually appealing website. Dive into HTML for structure, CSS for styling, and basic JavaScript for interactivity.</p>
-              <img src={webBasic} className='w-[21.1rem] sm:w-[55.6rem] h-max sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
+            {isMobile ? (
+        <img
+          src={webBasic}
+          alt="Web Basic"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
+      ) : (
+        <video
+          src={webBasicVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-[55.6rem] h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        ></video>
+      )}
           </div>
 
           <div className='bg-nav-blue text-heading h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
@@ -124,7 +153,23 @@ export const LibraryCourses = () => {
           <div className='bg-head-black text-white h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Web Development <span className='text-sm sm:text-xl text-[#999999] font-medium'>(11+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[57rem]  text-xs xl:text-base'>Master front-end web development with our Advanced course for learners aged 11+. Dive into advanced HTML, CSS, and JavaScript concepts, creating interactive web applications with a focus on front-end development.</p>
-              <img src={webAdvanced} className='w-[21.1rem] sm:w-[55.6rem] h-auto sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
+              {isMobile ? (
+        <img
+          src={webAdvanced}
+          alt="Web Advanced"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
+      ) : (
+        <video
+          src={webAdvancedVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-[55.6rem] h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        ></video>
+      )}
           </div>
         </div>
 
