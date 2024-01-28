@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webIntermediate, webBasic } from '../../assets/videos';
-import { pythongif, drawStar } from "../../assets/images"
+import { pythongif, drawStar } from "../../assets/videos"
 
 export const LibraryCourses = () => {
 
@@ -124,7 +124,7 @@ export const LibraryCourses = () => {
           <div className='bg-head-black text-white h-[30rem] sm:h-[50rem] flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Web Development <span className='text-sm sm:text-xl text-[#999999] font-medium'>(11+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[46rem] xl:w-[57rem]  text-xs xl:text-base'>Master front-end web development with our Advanced course for learners aged 11+. Dive into advanced HTML, CSS, and JavaScript concepts, creating interactive web applications with a focus on front-end development.</p>
-              <video src={webAdvanced} autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[55.6rem] h-auto sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></video>
+              <img src={webAdvanced} className='w-[21.1rem] sm:w-[55.6rem] h-auto sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
           </div>
         </div>
 
