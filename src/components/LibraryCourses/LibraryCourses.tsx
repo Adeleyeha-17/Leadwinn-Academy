@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webIntermediate, webBasic } from '../../assets/videos';
-import { pythongif } from "../../assets/images"
+import { pythongif, drawStar } from "../../assets/images"
 
 export const LibraryCourses = () => {
 
@@ -140,7 +140,7 @@ export const LibraryCourses = () => {
             <p className='w-[22rem] sm:w-[46rem] xl:w-[58rem]  text-xs xl:text-base'>
               Elevate your Python skills with our Intermediate course for ages 11+
               Explore projects, collaborative coding, and advanced topics like algorithms to enhance Python proficiency.</p>
-              <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden' ></video>
+              <img src={drawStar} className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden' ></img>
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
