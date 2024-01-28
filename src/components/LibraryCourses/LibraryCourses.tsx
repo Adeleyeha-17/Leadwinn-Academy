@@ -12,7 +12,7 @@ export const LibraryCourses = () => {
     setToggle(index)
   }
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
   useEffect(() => {
     const handleResize = () => {
