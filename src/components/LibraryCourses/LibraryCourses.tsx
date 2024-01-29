@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, pythongif, drawStar } from '../../assets/videos';
+import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, pythongif, drawStar, mitAdvanced, mitIntermediate, mitBasic, robloxBasic, robloxIntermediate, robloxAdvanced } from '../../assets/videos';
  
 export const LibraryCourses = () => {
 
@@ -64,19 +64,31 @@ export const LibraryCourses = () => {
           <div className='text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem]text-xs xl:text-base'>Ideal for beginners (ages 6+), our Basic MIT App Inventor course introduces mobile app interface design fundamentals. Explore MIT App Inventor basics, unlocking creativity for simple and interactive app design.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <img
+          src={mitBasic}
+          alt="MIT Basic"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
 
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>Elevate your mobile app design skills with our Intermediate course (ages 7+). Engage in projects, collaborative design, and create feature-rich mobile applications.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <img
+          src={mitIntermediate}
+          alt="MIT Intermediate"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div> 
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced MIT <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>Become a mobile app design expert with our Advanced MIT App Inventor course (ages 8+). Delve into advanced concepts, algorithmic design, and project development. Unleash your creativity, mastering innovative mobile app interfaces.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <img
+          src={mitAdvanced}
+          alt="MIT Advanced"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
         </div>
 
@@ -84,19 +96,31 @@ export const LibraryCourses = () => {
           <div className='text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Roblox <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>Ideal for beginners (ages 8+), our Basic 3D Roblox Design course covers immersive 3D experiences in the Roblox universe. Learn basics of 3D game design, character modeling, and world building.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+             <img
+          src={robloxBasic}
+          alt="Roblox Basic"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
 
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Roblox <span className='text-sm sm:text-xl text-[#999999] font-medium'>(9+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>Enhance your 3D Roblox design skills with our Intermediate course (ages 9+). Explore projects, collaborate on 3D designs, and master advanced features for creating engaging game environments.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+             <img
+          src={robloxIntermediate}
+          alt="Roblox Intermediate"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Roblox <span className='text-sm sm:text-xl text-[#999999] font-medium'>(10+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>Master 3D Roblox design with our Advanced course (ages 10+). Explore advanced 3D concepts, immersive scripting, and project development, unleashing creativity for stunning environments in the Roblox universe.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+             <img
+          src={robloxAdvanced}
+          alt="Roblox Advanced"
+          className="w-[21.1rem] h-max mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
         </div>
 
