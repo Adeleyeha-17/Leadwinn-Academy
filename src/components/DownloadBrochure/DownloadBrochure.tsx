@@ -2,6 +2,8 @@ import { brochureLeft, brochureRight, brochureButLeft, brochureButRight }from ".
 import brochure from "../../assets/brochure.pdf"
 
 export const DownloadBrochure = () => {
+  const downloadFilename = "leadwinn_brochure.pdf";
+
   return (
     <div className="bg-nav-blue w-full h-full py-10 sm:py-16 lg:py-24 flex items-center justify-center font-poppins relative mx-auto">
       <img src={brochureLeft} className="absolute top-0 left-1 sm:left-20 lg:left-16 xl:left-52 h-[3.5rem] w-[3.5rem] sm:h-[6rem] sm:w-[6rem] lg:h-[8rem] lg:w-[8rem] xl:h-[9rem] xl:w-[9rem]" alt={brochureLeft} loading="eager"/>
@@ -12,7 +14,7 @@ export const DownloadBrochure = () => {
       <div className="flex flex-col gap-1 sm:gap-1 items-center justify-center text-center text-heading">
         <h1 className="font-bold text-sm sm:text-xl lg:text-[2rem] lg:leading-[2.75rem] lg:mb-2">Embark on your learning journey today!</h1>
         <h1 className="max-sm:max-w-[17.75rem] text-[0.65rem] sm:text-xs lg:text-base mb-2 sm:mb-5">Ready to explore the pathways of your learning journey with leadwinn ?</h1>
-        <a download="" href={brochure} className="inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer">
+        <a download={downloadFilename} href={brochure} className="inline-block justify-center items-center py-2 px-4 md:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer">
           Download Brochure
         </a>
       </div>
