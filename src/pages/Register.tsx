@@ -89,7 +89,7 @@ export const Register = () => {
     <div className="h-screen flex font-poppins">
 
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
-        <div className="w-[15rem] lg:w-[14rem] xl:w-[23rem] flex flex-col gap-10 ml-12">
+        <div className="w-[15rem] lg:w-[14rem] xl:w-[20rem] flex flex-col gap-10 ml-12">
           <h2 className="font-medium sm:text-lg lg:text-2xl xl:text-4xl">Join Leadwinn Now</h2>
           <img src={dots} className="sm:w-10/12 xl:w-10/12" loading="eager"/>
           <h4 className="sm:w-[11rem] lg:w-[15rem] xl:w-[22.5rem] font-bold text-lg xl:text-2xl">Fuel your creativity at Leadwinn with cutting-edge courses in coding, tech skills, and more.</h4>
