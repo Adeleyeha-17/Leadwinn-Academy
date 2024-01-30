@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {  webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, mitAdvanced, mitIntermediate, mitBasic, robloxBasic, robloxIntermediate, robloxAdvanced, pythonBasic, pythonIntermediate, uiBasic, uiIntermediate, uiAdvanced } from '../../assets/videos';
+import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, mitAdvanced, mitIntermediate, mitBasic, robloxBasic, robloxIntermediate, robloxAdvanced, pythonBasic, pythonIntermediate, uiBasic, uiIntermediate, uiAdvanced } from '../../assets/videos';
  
 export const LibraryCourses = () => {
 
@@ -44,19 +44,19 @@ export const LibraryCourses = () => {
           <div className='text-heading  flex gap-3 py-10 sm:py-20 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(6+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-xs xl:text-base'>Delve into coding basics with Basic Scratch, tailored for beginners aged 6 and up. It instills block-based programming skills, fostering logical thinking and problem-solving.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <video src={scratchBasic} autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-nav-blue text-heading flex py-10 sm:py-20 gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(7+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-xs xl:text-base'>Level up your coding skills with Intermediate Scratch, tailored for ages 7 and above. Dive deeper into project-based learning, collaborative coding, and advanced challenges to enhance creativity and problem-solving.</p>
-              <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+              <video src={scratchIntermediate} autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced Scratch <span className='text-sm sm:text-xl text-[#999999] font-medium'>(8+ Years)</span></h4>
             <p className='w-[23rem] sm:w-[46rem] xl:w-[58rem] text-xs xl:text-base'>Master advanced Scratch coding for ages 8+. Go beyond basics, explore advanced concepts, algorithmic design, and project development. Unleash your coding potential.</p>
-              <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+              <video src={scratchAdvanced} autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
           </div>
         </div>
 
