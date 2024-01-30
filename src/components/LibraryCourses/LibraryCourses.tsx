@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, pythongif, drawStar, mitAdvanced, mitIntermediate, mitBasic, robloxBasic, robloxIntermediate, robloxAdvanced } from '../../assets/videos';
+import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, mitAdvanced, mitIntermediate, mitBasic, robloxBasic, robloxIntermediate, robloxAdvanced, pythonBasic, pythonIntermediate, uiBasic, uiIntermediate, uiAdvanced } from '../../assets/videos';
  
 export const LibraryCourses = () => {
 
@@ -128,20 +128,32 @@ export const LibraryCourses = () => {
           <div className='text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic UI/UX Design <span className='text-sm sm:text-xl text-[#999999] font-medium'>(9+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>Perfect for beginners aged 9+, our Basic UI/UX Design course covers fundamental principles. Learn to create visually appealing, user-friendly designs, building the foundation for intuitive digital experiences.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <img
+          src={uiBasic}
+          alt="UI Basic"
+          className="w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
 
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Intermediate UI/UX Design <span className='text-sm sm:text-xl text-[#999999] font-medium'>(10+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>Enhance UI/UX skills with our Intermediate course for learners aged 10+. Engage in project-based learning, collaborative design, and explore advanced techniques for improved user interactions and design aesthetics.</p>
-            <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+            <img
+          src={uiIntermediate}
+          alt="UI intermediate"
+          className="w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-base sm:text-2xl font-semibold'>Advanced UI/UX Design <span className='text-sm sm:text-xl text-[#999999] font-medium'>(11+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>
               Master UI/UX design with our Advanced course for learners aged 11+. Delve into advanced design concepts, user research, and project development to create seamless and user-centric digital experiences.</p>
-              <video src="" autoPlay loop muted playsInline preload="auto" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mt-10 rounded-3xl border-4 border-blue-900'></video>
+              <img
+          src={uiAdvanced}
+          alt="UI Advanced"
+          className="w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden"
+        />
           </div>
         </div>
 
@@ -201,7 +213,7 @@ export const LibraryCourses = () => {
           <div className='text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
             <h4 className='text-heading text-base sm:text-2xl font-semibold'>Basic Python Programming <span className='text-sm sm:text-xl text-[#999999] font-medium'>(10+ Years)</span></h4>
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>For beginners aged 10+, our Basic Python Programming course introduces Python fundamentals, covering syntax, data structures, and problem-solving. Build a strong foundation in Python.</p>
-              <img src={pythongif} className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
+              <img src={pythonBasic} className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
           </div>
 
           <div className='bg-nav-blue text-heading py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
@@ -209,7 +221,7 @@ export const LibraryCourses = () => {
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-xs xl:text-base'>
               Elevate your Python skills with our Intermediate course for ages 11+
               Explore projects, collaborative coding, and advanced topics like algorithms to enhance Python proficiency.</p>
-              <img src={drawStar} className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden' ></img>
+              <img src={pythonIntermediate} className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden' ></img>
           </div>
 
           <div className='bg-head-black text-white py-10 sm:py-20 flex gap-3 flex-col items-center justify-center'>
