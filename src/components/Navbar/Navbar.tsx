@@ -61,7 +61,7 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className={`${currentPath('/')}`}>
+    <div className={`${currentPath('/')} fixed top-0 right-0 left-0 z-10`}>
       <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-24 mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
@@ -102,43 +102,30 @@ export const Navbar: React.FC = () => {
           )}
         </div>
 
-        <div onClick={toggleFunc} className="cursor-pointer md:hidden">
-          <AiOutlineMenu size={32} className="md:hidden" />
+        <div className="cursor-pointer md:hidden">
+          {nav ? <AiOutlineClose size={32} className="md:hidden cursor-pointer" onClick={closeNav}/>
+ : <AiOutlineMenu size={32} className="md:hidden" onClick={toggleFunc}/> }
         </div>
       </div>
       
   <div
-    className={nav ? 'fixed left-0 bottom-0 top-0 w-full h-full pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all ease-in-out duration-500 z-20' : 'fixed -top-full bottom-0 h-full w-full transition-all ease-in-out duration-700 z-20'}
+    className={nav ? 'fixed left-0 top-20 w-full h-2/5  pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all duration-700 ease-in-out z-20' : 'fixed -left-full transition-all duration-1000 ease-in-out z-20'}
   >
     <div className="font-poppins mx-1 mr-4 flex flex-col font-semibold">
-      <div className="flex items-center justify-between gap-2 ml-2">
-        <div className="flex items-center gap-2 ml-2">
-
-        <Link to="/">
-          <img src={leadwinnLogo} alt="leadwinn logo" className="w-12 h-12" />
-        </Link>
-        <span className="flex flex-col text-lead-black text-sm font-semibold font-poppins">
-          <h1>Leadwinn</h1>
-          <h1>Academy</h1>
-
-        </span>
-        </div>
-          <AiOutlineClose size={32} className="md:hidden cursor-pointer" onClick={closeNav}/>
-      </div>
 
       {navLinks.map((link) => (
-        <Link key={link.path} to={link.path} className={`px-4 py-3 border-b text-sm ${currentMatchPath(link.path)}`} onClick={closeNav}>
+        <Link key={link.path} to={link.path} className={`px-4 py-3 text-sm ${currentMatchPath(link.path)}`} onClick={closeNav}>
           {link.link}
         </Link>
       ))}
 
       {user ? (
         <>
-          <Link to="/profile" className={`px-4 py-3 border-b text-sm ${currentMatchPath('/profile')}`} onClick={closeNav}>
+          <Link to="/profile" className={`px-4 py-3 text-sm ${currentMatchPath('/profile')}`} onClick={closeNav}>
             Profile
           </Link>
           <Link to="/"
-            className={`px-4 py-3 border-b text-sm ${currentMatchPath('/sign-out')}`} 
+            className={`px-4 py-3 text-sm ${currentMatchPath('/sign-out')}`} 
             onClick={() => {
               signOut(auth);
               closeNav();
@@ -149,10 +136,10 @@ export const Navbar: React.FC = () => {
         </>
       ) : (
         <>
-          <Link to="/sign-in" className={`px-4 py-3 border-b text-sm ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
+          <Link to="/sign-in" className={`px-4 py-3 text-sm ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
             Sign In
           </Link>
-          <Link to="/register" className={`px-4 py-3 border-b text-sm ${currentMatchPath('/register')}`}  onClick={closeNav}>
+          <Link to="/register" className={`px-4 py-3 text-sm ${currentMatchPath('/register')}`}  onClick={closeNav}>
             Enroll Now
           </Link>
         </>
