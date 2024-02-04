@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
       <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-24 mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
-            <img src={leadwinnLogo} alt="leadwinn logo" className="h-12 w-12 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
+            <img src={leadwinnLogo} alt="leadwinn logo" className="h-10 w-10 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
             <span className="flex flex-col text-lead-black text-xs font-semibold font-poppins">
               <h1>Leadwinn</h1>
               <h1>Academy</h1>
@@ -103,13 +103,13 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="cursor-pointer md:hidden">
-          {nav ? <AiOutlineClose size={32} className="md:hidden cursor-pointer" onClick={closeNav}/>
- : <AiOutlineMenu size={32} className="md:hidden" onClick={toggleFunc}/> }
+          {nav ? <AiOutlineClose size={27} className="md:hidden cursor-pointer" onClick={closeNav}/>
+ : <AiOutlineMenu size={27} className="md:hidden" onClick={toggleFunc}/> }
         </div>
       </div>
       
   <div
-    className={nav ? 'fixed left-0 top-20 w-full h-[45%] pt-4 bg-nav-blue border-r border-gray-200 md:hidden transition-all duration-700 ease-in-out z-20' : 'fixed -left-full transition-all duration-1000 ease-in-out z-20'}
+    className={nav ? 'fixed left-0 top-16 w-full h-[43%] bg-nav-blue md:hidden transition-all duration-700 ease-in-out z-20' : 'fixed -left-full transition-all duration-1000 ease-in-out z-20'}
   >
     <div className="font-poppins mx-1 mr-4 flex flex-col font-semibold">
 
