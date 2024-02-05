@@ -3,7 +3,7 @@ import { Path, PlanCourses, Otherplans, Skill, SelectedPlans } from "../sections
 
 export const Plans = () => {
   return (
-    <div className="font-poppins pt-24">
+    <div className="font-poppins pt-20">
       <Path />
 
       <Skill />

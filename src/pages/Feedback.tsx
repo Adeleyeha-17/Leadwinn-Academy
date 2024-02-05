@@ -26,7 +26,7 @@ export const Feedback: FC<FeedbackProps> = () => {
   return (
     <div>
 
-      <div className="bg-feedback bg-no-repeat bg-cover py-8 pt-24 flex flex-col justify-center items-center font-poppins">
+      <div className="bg-feedback bg-no-repeat bg-cover py-8 pt-20 flex flex-col justify-center items-center font-poppins">
         <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 text-head-black">Send Us Your Feedback</h2>
         <img src={feedback} className="w-[10rem] md:w-[14rem]" loading="eager"/>
       </div>

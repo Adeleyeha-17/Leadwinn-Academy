@@ -2,7 +2,7 @@ import { Experience, IgnitingMind, Innovators, Team, Values, Learning } from "..
 
 export const About = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-20">
 
       <Innovators />
 

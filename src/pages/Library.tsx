@@ -5,7 +5,7 @@ import DownloadBrochure from "../components/DownloadBrochure";
 
 export const Library: React.FC = () => {
   return (
-    < div className="pt-24">
+    < div className="pt-20">
       <Knowledge />
 
       <LibraryCourses />
