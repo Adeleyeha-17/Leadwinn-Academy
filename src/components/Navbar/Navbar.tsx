@@ -12,7 +12,7 @@ type NavLink = {
   icon: ReactNode;
 };
 
-export const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => { 
   const location = useLocation();
   const [user, setUser] = useState<User | null>(null);
 
@@ -229,7 +229,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                   {navLinks.map((link) => (
                     <div className='flex items-center'>
                       <div>{link.icon}</div>
-        <Link key={link.path} to={link.path} className={`px-4 py-3 text-xl ${currentMatchPath(link.path)}`} onClick={toggleMobileNav} >
+        <Link key={link.path} to={link.path} className={`px-4 py-3 text-lg ${currentMatchPath(link.path)}`} onClick={toggleMobileNav} >
           {link.link}
         </Link>
                     </div>
@@ -238,11 +238,11 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
 
                   {user ? (
                     <div onClick={toggleMobileNav}>
-          <Link to="/profile" className={`px-4 py-3 text-xl ${currentMatchPath('/profile')}`}>
+          <Link to="/profile" className={`px-4 py-3 text-lg ${currentMatchPath('/profile')}`}>
             Profile
           </Link>
           <Link to="/"
-            className={`px-4 py-3 text-xl ${currentMatchPath('/sign-out')}`} 
+            className={`px-4 py-3 text-lg ${currentMatchPath('/sign-out')}`} 
             onClick={() => {
               signOut(auth);
                  }}
@@ -252,10 +252,10 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
         </div>
       ) : (
         <div onClick={toggleMobileNav}>
-          <Link to="/sign-in" className={`px-4 py-3 text-xl ${currentMatchPath('/sign-in')}`} >
+          <Link to="/sign-in" className={`px-4 py-3 text-lg ${currentMatchPath('/sign-in')}`} >
             Sign In
           </Link>
-          <Link to="/register" className={`px-4 py-3 text-xl ${currentMatchPath('/register')}`} >
+          <Link to="/register" className={`px-4 py-3 text-lg ${currentMatchPath('/register')}`} >
             Enroll Now
           </Link>
         </div>
