@@ -218,37 +218,37 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                   }}
                   className="list-none space-y-6"
                 >
-                  <li className='flex flex-col'>
+                  <li className='flex flex-col mb-4'>
                   {navLinks.map((link) => (
-        <Link key={link.path} to={link.path} className={`px-4 py-3 text-sm ${currentMatchPath(link.path)}`} >
+        <Link key={link.path} to={link.path} className={`px-4 py-3 text-lg ${currentMatchPath(link.path)}`} onClick={toggleMobileNav} >
           {link.link}
         </Link>
       ))}
                   </li>
 
                   {user ? (
-                    <>
-          <Link to="/profile" className={`px-4 py-3 text-sm ${currentMatchPath('/profile')}`}>
+                    <div onClick={toggleMobileNav}>
+          <Link to="/profile" className={`px-4 py-3 text-lg ${currentMatchPath('/profile')}`}>
             Profile
           </Link>
           <Link to="/"
-            className={`px-4 py-3 text-sm ${currentMatchPath('/sign-out')}`} 
+            className={`px-4 py-3 text-lg ${currentMatchPath('/sign-out')}`} 
             onClick={() => {
               signOut(auth);
                  }}
           >
             Sign Out
           </Link>
-        </>
+        </div>
       ) : (
-        <>
-          <Link to="/sign-in" className={`px-4 py-3 text-sm ${currentMatchPath('/sign-in')}`} >
+        <div onClick={toggleMobileNav}>
+          <Link to="/sign-in" className={`px-4 py-3 text-lg ${currentMatchPath('/sign-in')}`} >
             Sign In
           </Link>
-          <Link to="/register" className={`px-4 py-3 text-sm ${currentMatchPath('/register')}`} >
+          <Link to="/register" className={`px-4 py-3 text-lg ${currentMatchPath('/register')}`} >
             Enroll Now
           </Link>
-        </>
+        </div>
       )}
                 
                 </motion.ul>
