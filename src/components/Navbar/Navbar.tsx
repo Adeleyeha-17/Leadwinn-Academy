@@ -118,7 +118,7 @@ export default function NavbarMobile() {
 					initial="hide"
 					animate={mobileNav ? "show" : "hide"}
 					onClick={toggleMobileNav}
-					className="flex flex-col space-y-1 relative z-10"
+					className="flex flex-col space-y-2 relative z-10"
 				>
 					<motion.span
 						variants={{
@@ -130,7 +130,7 @@ export default function NavbarMobile() {
 								y: 5,
 							},
 						}}
-						className="w-6 bg-[#07e] h-px block"
+						className="w-6 bg-[#07e] h-[2px] block"
 					></motion.span>
 					<motion.span
 						variants={{
@@ -141,7 +141,7 @@ export default function NavbarMobile() {
 								opacity: 0,
 							},
 						}}
-						className="w-6 bg-[#07e] h-px block"
+						className="w-6 bg-[#07e] h-[2px] block"
 					></motion.span>
 					<motion.span
 						variants={{
@@ -153,7 +153,7 @@ export default function NavbarMobile() {
 								y: -5,
 							},
 						}}
-						className="w-6 bg-[#07e] h-px block"
+						className="w-6 bg-[#07e] h-[2px] block"
 					></motion.span>
 				</motion.button>
 				<AnimatePresence>
