@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from '../Button';
 import { leadwinnLogo} from '../../assets/icons';
 import { auth } from '../../config/firebase.ts';
 import { User, signOut } from 'firebase/auth';
+import { IoLibraryOutline } from "react-icons/io5";
 
 type NavLink = {
   link: string;
   path: string;
+  icon: ReactNode;
 };
 
 export const Navbar: React.FC = () => {
@@ -35,18 +37,22 @@ export const Navbar: React.FC = () => {
     {
       link: 'About',
       path: '/about',
+      icon: <IoLibraryOutline />
     },
     {
       link: 'Plans',
       path: '/plans',
+      icon: <IoLibraryOutline />
     },
     {
       link: 'Library',
       path: '/library',
+      icon: <IoLibraryOutline />
     },
     {
       link: 'Career',
       path: '/career',
+      icon: <IoLibraryOutline />
     },
   ];
 
@@ -108,6 +114,7 @@ import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
 interface NavLinks {
   link: string;
   path: string;
+  icon: ReactNode;
 }
 
 interface NavbarMobileProps {
@@ -220,9 +227,12 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                 >
                   <li className='flex flex-col mb-4'>
                   {navLinks.map((link) => (
+                    <div className='flex items-center'>
+                      <div>{link.icon}</div>
         <Link key={link.path} to={link.path} className={`px-4 py-3 text-xl ${currentMatchPath(link.path)}`} onClick={toggleMobileNav} >
           {link.link}
         </Link>
+                    </div>
       ))}
                   </li>
 
