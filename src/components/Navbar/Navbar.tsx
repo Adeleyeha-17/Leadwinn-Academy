@@ -55,7 +55,7 @@ export const Navbar: React.FC = () => {
       <nav className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-24 mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
-            <img src={leadwinnLogo} alt="leadwinn logo" className="h-10 w-10 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
+            <img src={leadwinnLogo} alt="leadwinn logo" loading='eager' className="h-10 w-10 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
             <span className="flex flex-col text-lead-black text-xs font-semibold font-poppins">
               <h1>Leadwinn</h1>
               <h1>Academy</h1>
@@ -263,7 +263,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                       opacity: 1,
                     },
                   }}
-                  className="w-full h-px bg-white/30"
+                  className="w-full h-px bg-heading/30"
                 ></motion.div>
                 <motion.ul
                   variants={{
@@ -282,7 +282,9 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                     <div className="bg-white rounded-lg w-8 h-8"></div>
                   </li>
                   <li>
-                    <div className="bg-white rounded-lg w-8 h-8"></div>
+                    <div className="bg-white rounded-lg w-8 h-8">
+                    <img src={leadwinnLogo} alt="leadwinn logo" className="h-8 w-8 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
+                    </div>
                   </li>
                   <li>
                     <div className="bg-white rounded-lg w-8 h-8"></div>
