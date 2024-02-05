@@ -148,7 +148,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
               },
               show: {
                 rotate: 45,
-                y: 5,
+                y: 9,
               },
             }}
             className="w-6 bg-[#07e] h-[2px] block"
@@ -171,7 +171,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
               },
               show: {
                 rotate: -45,
-                y: -5,
+                y: -9,
               },
             }}
             className="w-6 bg-[#07e] h-[2px] block"
