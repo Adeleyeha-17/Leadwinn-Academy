@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Button from '../Button';
 import { leadwinnLogo} from '../../assets/icons';
 import { auth } from '../../config/firebase.ts';
@@ -31,15 +30,6 @@ export const Navbar: React.FC = () => {
     return location.pathname === route ? 'text-head-blue' : ' text-head-black';
   };
 
-  const [nav, setNav] = useState(false);
-
-  const toggleFunc = () => {
-    setNav((prevState) => !prevState);
-  };
-
-  const closeNav = () => {
-    setNav(false);
-  };
 
   const navLinks: NavLink[] = [
     {
@@ -61,8 +51,8 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className={`${currentPath('/')} fixed top-0 right-0 left-0 z-10`}>
-      <div className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-24 mx-auto">
+    <header className={`${currentPath('/')} fixed top-0 right-0 left-0 z-10`}>
+      <nav className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-24 mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
             <img src={leadwinnLogo} alt="leadwinn logo" className="h-10 w-10 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
@@ -89,7 +79,6 @@ export const Navbar: React.FC = () => {
               </Link> 
               <Link to="/" className={ `hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} onClick={() => {
               signOut(auth);
-              closeNav();
             }}>Sign Out</Link>
               </>
           ) : (
@@ -103,50 +92,175 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="cursor-pointer md:hidden">
-          {nav ? <AiOutlineClose size={27} className="md:hidden cursor-pointer" onClick={closeNav}/>
- : <AiOutlineMenu size={27} className="md:hidden" onClick={toggleFunc}/> }
+    <NavbarMobile />
         </div>
-      </div>
+      </nav>
       
-  <div
-    className={nav ? 'fixed left-0 top-16 w-full h-[43%] bg-nav-blue md:hidden transition-all duration-700 ease-in-out z-20' : 'fixed -left-full transition-all duration-1000 ease-in-out z-20'}
-  >
-    <div className="font-poppins mx-1 mr-4 flex flex-col font-semibold">
+  
 
-      {navLinks.map((link) => (
-        <Link key={link.path} to={link.path} className={`px-4 py-3 text-sm ${currentMatchPath(link.path)}`} onClick={closeNav}>
-          {link.link}
-        </Link>
-      ))}
-
-      {user ? (
-        <>
-          <Link to="/profile" className={`px-4 py-3 text-sm ${currentMatchPath('/profile')}`} onClick={closeNav}>
-            Profile
-          </Link>
-          <Link to="/"
-            className={`px-4 py-3 text-sm ${currentMatchPath('/sign-out')}`} 
-            onClick={() => {
-              signOut(auth);
-              closeNav();
-            }}
-          >
-            Sign Out
-          </Link>
-        </>
-      ) : (
-        <>
-          <Link to="/sign-in" className={`px-4 py-3 text-sm ${currentMatchPath('/sign-in')}`}  onClick={closeNav}>
-            Sign In
-          </Link>
-          <Link to="/register" className={`px-4 py-3 text-sm ${currentMatchPath('/register')}`}  onClick={closeNav}>
-            Enroll Now
-          </Link>
-        </>
-      )}
-    </div>
-  </div>
-
-    </div>
+    </header>
   );
 };
+
+import { motion, AnimatePresence, MotionConfig } from "framer-motion";
+
+export default function NavbarMobile() {
+	const [mobileNav, setMobileNav] = useState(false);
+
+	const toggleMobileNav = () => {
+		setMobileNav(!mobileNav);
+	};
+
+	return (
+		<header className="sticky top-0 inset-x-0 p-6">
+			<nav className="container mx-auto">
+				<motion.button
+					initial="hide"
+					animate={mobileNav ? "show" : "hide"}
+					onClick={toggleMobileNav}
+					className="flex flex-col space-y-1 relative z-10"
+				>
+					<motion.span
+						variants={{
+							hide: {
+								rotate: 0,
+							},
+							show: {
+								rotate: 45,
+								y: 5,
+							},
+						}}
+						className="w-6 bg-[#07e] h-px block"
+					></motion.span>
+					<motion.span
+						variants={{
+							hide: {
+								opacity: 1,
+							},
+							show: {
+								opacity: 0,
+							},
+						}}
+						className="w-6 bg-[#07e] h-px block"
+					></motion.span>
+					<motion.span
+						variants={{
+							hide: {
+								rotate: 0,
+							},
+							show: {
+								rotate: -45,
+								y: -5,
+							},
+						}}
+						className="w-6 bg-[#07e] h-px block"
+					></motion.span>
+				</motion.button>
+				<AnimatePresence>
+					{mobileNav && (
+						<MotionConfig
+							transition={{
+								type: "spring",
+								bounce: 0.1,
+							}}
+						>
+							<motion.div
+								key="mobile-nav"
+								variants={{
+									hide: {
+										x: "-100%",
+										transition: {
+											type: "spring",
+											bounce: 0.1,
+											when: "afterChildren",
+											staggerChildren: 0.25,
+										},
+									},
+									show: {
+										x: "0%",
+										transition: {
+											type: "spring",
+											bounce: 0.1,
+											when: "beforeChildren",
+											staggerChildren: 0.25,
+										},
+									},
+								}}
+								initial="hide"
+								animate="show"
+								exit="hide"
+								className="fixed inset-0 bg-red-900 p-6 flex flex-col justify-center space-y-10 lg:hidden"
+							>
+								<motion.ul
+									variants={{
+										hide: {
+											y: "25%",
+											opacity: 0,
+										},
+										show: {
+											y: "0%",
+											opacity: 1,
+										},
+									}}
+									className="list-none space-y-6"
+								>
+									<li>
+										<a href="#" className="text-5xl font-semibold text-white">
+											Link #1
+										</a>
+									</li>
+									<li>
+										<a href="#" className="text-5xl font-semibold text-white">
+											Link #2
+										</a>
+									</li>
+									<li>
+										<a href="#" className="text-5xl font-semibold text-white">
+											Link #3
+										</a>
+									</li>
+								</motion.ul>
+								<motion.div
+									variants={{
+										hide: {
+											y: "25%",
+											opacity: 0,
+										},
+										show: {
+											y: "0%",
+											opacity: 1,
+										},
+									}}
+									className="w-full h-px bg-white/30"
+								></motion.div>
+								<motion.ul
+									variants={{
+										hide: {
+											y: "25%",
+											opacity: 0,
+										},
+										show: {
+											y: "0%",
+											opacity: 1,
+										},
+									}}
+									className="list-none flex justify-center gap-x-4"
+								>
+									<li>
+										<div className="bg-white rounded-lg w-8 h-8"></div>
+									</li>
+									<li>
+										<div className="bg-white rounded-lg w-8 h-8"></div>
+									</li>
+									<li>
+										<div className="bg-white rounded-lg w-8 h-8"></div>
+									</li>
+								</motion.ul>
+							</motion.div>
+						</MotionConfig>
+					)}
+				</AnimatePresence>
+			</nav>
+		</header>
+	);
+}
