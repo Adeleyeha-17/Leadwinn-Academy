@@ -20,7 +20,7 @@ export const Courses = () => {
   }, [])
 
   const vanElements = vans.map(van => (
-      <div key={van.id} className="w-[25rem] h-[30rem] rounded-3xl border px-6 py-10">
+      <div key={van.id} className="w-[22rem] sm:w-[25rem] h-[30rem] rounded-3xl border px-6 py-10">
           <img alt={van.name} src={van.imageUrl} className="rounded-xl mb-4 transform transition duration-150 ease-in-out hover:"/>
           <div className="van-info">
           <i className={`border py-1 px-3 text-white bg-${van.color} rounded-md`}>{van.type}</i>
