@@ -33,7 +33,7 @@ export const Courses = () => {
   return (
    <div>
 
-      <div className="flex flex-col items-center mb-32 px-10">
+      <div className="flex flex-col items-center px-10">
           <h1>FEATURED COURSES</h1>
           <h4>Find Yours From The Featured</h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
