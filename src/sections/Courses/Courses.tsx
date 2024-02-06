@@ -1,43 +1,5 @@
 import { useEffect, useState } from "react";
-import Slider from "react-slick";
-
 export const Courses = () => { 
-
-   const settings = {
-      dots: true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      initialSlide: 0,
-      arrows:true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
 
     interface Course {
         id: string;
@@ -74,11 +36,8 @@ export const Courses = () => {
       <div className="flex flex-col items-center mb-32 px-10">
           <h1>FEATURED COURSES</h1>
           <h4>Find Yours From The Featured</h4>
-          <div className="grid grid-cols-1">
-              <Slider {...settings} className="p-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {vanElements}
-      
-               </Slider>
           </div>
       </div>
    </div>
