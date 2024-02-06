@@ -97,7 +97,7 @@ export const Navbar: React.FC = () => {
           )}
         </div>
 
-        <div className="cursor-pointer md:hidden">
+        <div className="cursor-pointer sm:hidden">
     <NavbarMobile navLinks={navLinks} user={user}/>
         </div>
       </nav>

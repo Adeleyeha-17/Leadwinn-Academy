@@ -15,6 +15,7 @@ import { Profile } from "./pages/Profile";
 import { PrivateRoute } from "./hooks/PrivateRoute";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
+import "./server"
 
 function App() {
   

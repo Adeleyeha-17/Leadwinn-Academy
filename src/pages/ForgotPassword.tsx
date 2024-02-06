@@ -7,8 +7,6 @@ import { sendPasswordResetEmail } from 'firebase/auth';
 import { toast } from 'react-toastify';
 import { auth } from "../config/firebase"
 
-
-
 export const ForgotPassword: React.FC = () => {
 
   const history = useNavigate();
@@ -90,6 +88,7 @@ export const ForgotPassword: React.FC = () => {
         </div>
 
       </div>
+
 
     </div>
   )
