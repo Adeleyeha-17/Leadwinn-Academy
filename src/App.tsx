@@ -16,6 +16,8 @@ import { PrivateRoute } from "./hooks/PrivateRoute";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 import "./server"
+import { Courses } from "./pages/Course";
+import CourseDetails from "./pages/CourseDetails";
 
 function App() {
   
@@ -32,6 +34,9 @@ function App() {
           <Route path="/library" element={<Layout><Library /></Layout>} />
           <Route path="/career" element={<Layout><Career /></Layout>} />
           <Route path="/plans" element={<Layout><Plans /></Layout>} />
+          <Route path="/courses" element={<Layout><Courses /></Layout>} />
+          <Route path="/courses/:id" element={<Layout><CourseDetails /></Layout>} />
+
           <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
           
           <Route path="/profile" element={<PrivateRoute />}>

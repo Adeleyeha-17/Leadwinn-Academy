@@ -54,6 +54,11 @@ export const Navbar: React.FC = () => {
       path: '/career',
       icon: <IoLibraryOutline />
     },
+    {
+      link: 'Courses',
+      path: '/courses',
+      icon: <IoLibraryOutline />
+    },
   ];
 
   return (
