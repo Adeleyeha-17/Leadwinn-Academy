@@ -31,8 +31,6 @@ export const Courses = () => {
   ))
 
   return (
-   <div>
-
       <div className="flex flex-col items-center px-10">
           <h1>FEATURED COURSES</h1>
           <h4>Find Yours From The Featured</h4>
@@ -40,7 +38,6 @@ export const Courses = () => {
               {vanElements}
           </div>
       </div>
-   </div>
   )
 }
 
