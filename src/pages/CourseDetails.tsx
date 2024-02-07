@@ -101,7 +101,7 @@ const CourseDetails = () => {
                      Requirements
                   </h3>
 
-                  <ul className="list-disc pl-4">
+                  <ul className="list-disc pl-4 text-sm">
                      <li>There are no skill prerequisites for this course although it's helpful if you are familiar with operating your computer and using the internet.</li>
                      <li>You can take this course using a Mac, PC or LInux machine.</li>
                      <li>It is recommended that you download the free text editor and IDE the instructors will be using.</li>
