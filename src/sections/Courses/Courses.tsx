@@ -21,13 +21,13 @@ export const Courses = () => {
           .then(data => setVans(data.vans))
   }, [])
 
-  const vanElements = vans.map(van => (
+  const vanElements = vans.slice(0, 6).map(van => (
       <div key={van.id} className="w-[22rem] xl:w-[25rem] h-[30rem] rounded-3xl border px-6 py-10">
             <Link to={`/courses/${van.id}`}>
           <img alt={van.name} src={van.imageUrl} className="rounded-xl mb-4 transform transition duration-150 ease-in-out hover:"/>
-          <div className="van-info">
-          <i className={`border py-1 px-3 text-white bg-${van.color} rounded-md`}>{van.type}</i>
-              <h3>{van.name}</h3>
+          <div>
+          <i className={`border py-1 px-3 rounded-md text-sm`}>{van.type}</i>
+              <h3 className="text-base font-semibold text-head-black mt-4">{van.name}</h3>
           </div>
               <p>${van.price}<span>/day</span></p>
             </Link>
@@ -35,10 +35,11 @@ export const Courses = () => {
   ))
 
   return (
-      <div className="flex flex-col items-center justify-center">
-          <h1>FEATURED COURSES</h1>
-          <h4>Find Yours From The Featured</h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-5">
+      <div className="flex flex-col items-center justify-center overflow-hidden font-poppins py-20">
+          <h1 className="text-lg text-heading font-medium mb-2">FEATURED COURSES</h1>
+          <h2 className="text-2xl text-head-black font-semibold mb-5">Find Yours From The Featured</h2>
+          <h5 className="max-w-[36rem] text-center text-heading mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam atque officia sapiente sed molestias quo. Error </h5>
+          <div className="flex items-center justify-center gap-8">
               {vanElements}
       
           </div>
