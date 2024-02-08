@@ -8,7 +8,7 @@ export const Whychoose: React.FC = () => {
 
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center overflow-hidden font-poppins py-20 bg-nav-blue md:px-12 xl:px-20 px-5 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
+    <div className="flex flex-col sm:flex-row justify-center overflow-hidden font-poppins py-24 sm:py-28 bg-nav-blue md:px-12 xl:px-20 px-5 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
 
       <div className="sm:w-1/2 flex flex-col gap-3 xl:gap-4 max-sm:text-center">
         <h4 className="font-semibold text-heading">WHY CHOOSE US</h4>
