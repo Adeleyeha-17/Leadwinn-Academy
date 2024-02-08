@@ -6,7 +6,7 @@ import Learning from "./Learning"
 import Experience from "./Expereince"
 import Otherplans from "./Otherplans"
 import Path from "./Path"
-import Goal from "./Goal"
+import Brochure from "./Brochure"
 import Instructors from "./Instructors"
 import Hero from "./Hero"
 import Testimonial from "./Testimonial"
@@ -28,7 +28,7 @@ export {
    Experience,
    Otherplans,
    Path,
-   Goal,
+   Brochure,
    Instructors,
    Hero,
    Testimonial,

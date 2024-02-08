@@ -4,7 +4,7 @@ export const Instructors = () => {
 
   return (
     <div className="bg-nav-blue">
-    <div className="flex flex-col md:flex-row justify-between py-24 md:px-12 sm:py-28 px-5 xl:px-20 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
+    <div className="flex flex-col md:flex-row justify-between py-24 md:px-12 sm:py-28 px-5 xl:px-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
       <div className="flex max-sm:flex-col md:justify-between md:items-center sm:w-full">
         <div className="sm:w-1/2 flex flex-col gap-3 xl:gap-4">
           <div className="max-sm:text-center flex flex-col gap-3 xl:gap-4">
