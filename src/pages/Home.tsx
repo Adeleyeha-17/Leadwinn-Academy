@@ -1,6 +1,6 @@
 import DownloadBrochure from "../components/DownloadBrochure";
 import Faq from "../components/Faq";
-import { Courses, Goal, Hero, Instructors, Testimonial, Whychoose } from "../sections"
+import { Courses, Goal, Hero, Instructors, Team, Testimonial, Whychoose } from "../sections"
 import { motion } from "framer-motion";
 
 
@@ -18,6 +18,8 @@ export const Home: React.FC = () => {
          <Courses />
 
          <Whychoose />
+
+         <Team />
 
          <Instructors />
 

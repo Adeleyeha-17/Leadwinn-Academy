@@ -32,12 +32,12 @@ export const Whychoose: React.FC = () => {
 
           <p className="flex gap-3">
             <img src={checked} alt="check" className="w-5 h-5" />
-          Updated Curriculum
+            Updated Curriculum
           </p>
 
           <p className="flex gap-3">
             <img src={checked} alt="check" className="w-5 h-5" />
-             Qualified Instructors         </p>
+            Qualified Instructors         </p>
 
           <p className="flex gap-3">
             <img src={checked} alt="check" className="w-5 h-5" />
@@ -52,13 +52,13 @@ export const Whychoose: React.FC = () => {
         </div>
 
         <div className="mt-3">
-        <Link to="/courses" className={`inline-block justify-center items-center py-2 lg:py-3 px-4 lg:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Discover All Courses</Link>
+          <Link to="/courses" className={`inline-block justify-center items-center py-2 lg:py-3 px-4 lg:px-6 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Discover All Courses</Link>
 
         </div>
 
-        </div>
-        <div className="max-sm:mt-14 sm:w-1/2">
-          <img src={growth} alt="kids coding" />
+      </div>
+      <div className="max-sm:mt-14 sm:w-1/2">
+        <img src={growth} alt="kids coding" />
       </div>
 
     </div>

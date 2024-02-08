@@ -58,10 +58,11 @@ export const Team = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(teamMember[0].img);
 
   return (
-    <div className="font-poppins pb-10 md:px-12 px-5 py-10 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
-      <div className="text-center text-heading mb-10">
-        <h1 className="text-xl sm:text-3xl lg:text-4xl font-semibold mb-2">Our Team</h1>
-        <h4 className="text-xs sm:text-sm">Introducing the Dedicated Minds Powering Our Vision and Innovation</h4>
+    <div className="font-poppins pb-10 md:px-12 px-5 py-24 sm:py-28 xl:px-40 md:py-20 lg:max-xl:max-w-6xl mx-auto">
+      <div className="flex flex-col items-center gap-4 mb-10">
+        <h1 className="text-xl font-semibold text-heading">OUR TEAM</h1>
+        <h3 className="text-2xl lg:text-3xl xl:text-4xl font-semibold text-head-black">From Leadwinn Academy</h3>
+        <h4 className="text-xs sm:text-sm font-medium text-heading text-center">Introducing the Committed Minds That Propel Our Vision and Drive Innovation Forward</h4>
       </div>
 
       <div className="flex max-sm:flex-col gap-5 lg:gap-10 sm:px-16 justify-center items-center">
