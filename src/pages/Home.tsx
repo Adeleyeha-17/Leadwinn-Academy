@@ -24,7 +24,6 @@ export const Home: React.FC = () => {
 
          <Faq />
 
-
       </motion.div>
    );
 };
