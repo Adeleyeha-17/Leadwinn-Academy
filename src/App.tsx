@@ -3,7 +3,6 @@ import Layout from "./components/Layout/Layout";
 import { About } from "./pages/About";
 import { Home } from "./pages/Home";
 import { Library } from "./pages/Library";
-import { Career } from "./pages/Career";
 import { Plans } from "./pages/Plans";
 import { Feedback } from "./pages/Feedback";
 import { Signin } from "./pages/Signin";
@@ -32,7 +31,6 @@ function App() {
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/about" element={<Layout><About /></Layout>} />
           <Route path="/library" element={<Layout><Library /></Layout>} />
-          <Route path="/career" element={<Layout><Career /></Layout>} />
           <Route path="/plans" element={<Layout><Plans /></Layout>} />
           <Route path="/courses" element={<Layout><Courses /></Layout>} />
           <Route path="/courses/:id" element={<Layout><CourseDetails /></Layout>} />

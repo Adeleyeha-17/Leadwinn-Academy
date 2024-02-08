@@ -36,7 +36,7 @@ export const Hero: React.FC<HomeProps> = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 pt-20 sm:pb-10 lg:pb-20 xl:pb-0  px-5 xl:px-24 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 pt-20 sm:pb-10 lg:pb-20 xl:pb-0  px-5 xl:px-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
         <div className="font-poppins text-heading md:w-3/5">
           <motion.h1 initial={{ y: -50, opacity: 0.2 }}
             animate={{

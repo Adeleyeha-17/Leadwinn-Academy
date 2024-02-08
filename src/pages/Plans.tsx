@@ -1,5 +1,5 @@
 import Faq from "../components/Faq"
-import { Path, PlanCourses, Otherplans, Skill, SelectedPlans } from "../sections"
+import { Path, Otherplans, Skill, SelectedPlans } from "../sections"
 
 export const Plans = () => {
   return (
@@ -9,8 +9,6 @@ export const Plans = () => {
       <Skill />
 
       <SelectedPlans />
-
-      <PlanCourses />
 
       <Otherplans />
 

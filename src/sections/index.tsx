@@ -6,9 +6,8 @@ import Learning from "./Learning"
 import Experience from "./Expereince"
 import Otherplans from "./Otherplans"
 import Path from "./Path"
-import PlanCourses from "./PlanCourses"
 import Goal from "./Goal"
-import Growth from "./Growth"
+import Instructors from "./Instructors"
 import Hero from "./Hero"
 import Testimonial from "./Testimonial"
 import Whychoose from "./Whychoose"
@@ -17,8 +16,6 @@ import Skill from "./Skill"
 import SelectedPlans from "./SelectedPlans"
 import MobilePlans from "./MobilePlans"
 import DesktopPlans from "./DesktopPlans"
-import Careers from "./Careers"
-import JoinLeads from "./JoinLeads"
 import Insights from "./Insights"
 import Knowledge from "./Knowledge"
 
@@ -31,9 +28,8 @@ export {
    Experience,
    Otherplans,
    Path,
-   PlanCourses,
    Goal,
-   Growth,
+   Instructors,
    Hero,
    Testimonial,
    Whychoose,
@@ -42,8 +38,6 @@ export {
    SelectedPlans,
    MobilePlans,
    DesktopPlans,
-   Careers,
-   JoinLeads,
    Insights,
    Knowledge
 }

@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
 
    return (
       <div className='bg-footer-blue'>
-      <div className=" text-white font-poppins pb-10 md:px-12 px-5 py-10 xl:px-24 md:py-20 lg:max-xl:max-w-6xl mx-auto relative">
+      <div className=" text-white font-poppins pb-10 md:px-12 px-5 py-10 xl:px-20 md:py-20 lg:max-xl:max-w-6xl mx-auto relative">
          <div className="grid sm:max-lg:grid-cols-2 lg:grid-flow-col gap-5 ">    
             <div className="flex flex-col gap-2 w-full">
                <h1 className="text-sm lg:text-sm font-bold">Contact Us</h1>

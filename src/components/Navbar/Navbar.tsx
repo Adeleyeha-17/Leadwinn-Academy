@@ -45,25 +45,20 @@ export const Navbar: React.FC = () => {
       icon: <IoLibraryOutline />
     },
     {
-      link: 'Library',
-      path: '/library',
-      icon: <IoLibraryOutline />
-    },
-    {
-      link: 'Career',
-      path: '/career',
-      icon: <IoLibraryOutline />
-    },
-    {
       link: 'Courses',
       path: '/courses',
+      icon: <IoLibraryOutline />
+    },
+    {
+      link: 'Library',
+      path: '/library',
       icon: <IoLibraryOutline />
     },
   ];
 
   return (
     <header className={`${currentPath('/')} fixed top-0 right-0 left-0 z-10`}>
-      <nav className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-24 mx-auto">
+      <nav className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-20 mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
             <img src={leadwinnLogo} alt="leadwinn logo" loading='eager' className="h-10 w-10 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
