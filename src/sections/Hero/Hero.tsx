@@ -1,8 +1,9 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {Link} from "react-scroll"
+import {Link} from "react-router-dom"
 import { edu1, edu2, edu3, homeIllustration, homeIllus } from "../../assets/images"
+import { MdAirplay } from "react-icons/md";
 
 
 type HomeProps = {
@@ -36,8 +37,8 @@ export const Hero: React.FC<HomeProps> = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between lg:space-x-20 md:px-12 pt-20 sm:pb-10 lg:pb-20 xl:pb-0  px-5 xl:px-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto">
-        <div className="font-poppins text-heading md:w-3/5">
+      <div className="flex flex-col md:flex-row items-center lg:space-x-5 md:px-12 pt-20 sm:pb-10 lg:pb-20 xl:pb-0 px-5 xl:px-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl mx-auto font-poppins">
+        <div className="font-poppins text-heading md:w-1/2">
           <motion.h1 initial={{ y: -50, opacity: 0.2 }}
             animate={{
               y: 0,
@@ -58,41 +59,41 @@ export const Hero: React.FC<HomeProps> = () => {
               }}>
               {currentWord}
             </motion.span>  Online Coding Classes</motion.h1>
-          <h1 className="hidden md:flex mb-6 text-xs lg:text-sm sm:max-w-[23rem] lg:max-w-[30rem]">Elevate Learning with Online Coding Classes Empowering Kids and Teens Aged 6-17 to Shape the Future through Design and Innovation.</h1>
+          <h1 className="hidden md:flex mb-6 text-xs lg:text-sm xl:text-lg sm:max-w-[23rem] lg:max-w-[30rem] xl:max-w-[34rem]">Online learning and teaching marketplace with courses & over 100 students. Taught by experts to help you acquire new skills.</h1>
 
-          <Link to="courses" className={ `hidden md:inline-block justify-center items-center py-2 px-4 bg-head-blue text-white  text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Discover Course</Link>
+              <div className="flex gap-10">
+
+          <Link to="/courses" className={ `inline-block justify-center items-center py-4 px-8 bg-head-blue text-white  text-xs font-semibold rounded-xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Get Started</Link>
+
+          <Link to="/library" className={ `inline-block justify-center items-center py-4 px-8 text-heading border border-head-blue  text-xs font-semibold rounded-xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}> <MdAirplay /> Visit Library</Link>
+              </div>
         
         </div>
-        <div className="md:w-2/5">
+        <div className="md:w-1/2">
           <motion.img
             src={onloadAfter10Sec ? homeIllus : homeIllustration}
             alt="home illustration"
-            className="max-w-full max-lg:mx-auto w-3/4 h-full md:w-11/12"
+            className="max-lg:mx-auto "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1, ease: "easeInOut" } }}
           loading="eager"/>
         </div>
       </div>
 
-      <div className="bg-gradient-to-tr from-home-gra-2 to-home-gra h-2/5 sm:h-[8rem] lg:h-[9rem] sm:max-lg:w-[35.625rem] xl:h-[10rem] w-1/2 lg:w-3/5 rounded-[3.125rem] font-poppins text-white font-semibold text-xs mx-auto max-sm:mt-16 py-3 sm:py-0 xl:py-3 sm:px-6 xl:mt-32">
-        <div className="items-center justify-between sm:flex mt-5 sm:mt-3 lg:mt-0">
-
-          <div className="flex flex-col mb-10 sm:mb-12 items-center justify-center mx-auto">
-            <img src={edu1} alt="" className="max-w-full mx-auto mb-4 w-16 h-16 lg:w-20 lg:h-20 xl:w-3/5 xl:h-full" loading="eager"/>
-            <h1>Over 100+ Students</h1>
+      <div className="mt-10">
+        <div className="flex max-sm:flex-col justify-center items-center gap-5">
+          <div className="flex items-center gap-4 bg-heading text-white border rounded-lg py-5 px-16 sm:px-6 lg:px-12 shadow-sm">
+            <img src={edu1} alt="students" className="w-16 lg:w-20" loading="eager"/>
+            <h1 className="max-w-[5rem] text-xl"><span className="font-semibold">100+</span> Students</h1>
           </div>
-          <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
-
-          <div className="flex flex-col mb-10 sm:mb-14 items-center justify-center mx-auto mt-2">
-            <img src={edu2} alt="" className="max-w-full mx-auto mb-4 w-16 h-16 lg:w-20 lg:h-20 xl:w-3/5 xl:h-full" loading="eager"/>
-            <h1>Over 100+ Certified</h1>
+          <div className="flex items-center gap-4 bg-white text-heading border rounded-lg py-5 px-16 sm:px-6 lg:px-12 shadwo-sm">
+            <img src={edu2} alt="certified" className="w-16 lg:w-20" loading="eager"/>
+            <h1 className="max-w-[5rem] text-xl"><span className="font-semibold">100+</span> Certified</h1>
           </div>
 
-          <div className="w-16 mb-8 border-gray-200 border-2 transform rotate-90 mx-auto rounded-lg"></div>
-
-          <div className="flex justify-center flex-col mb-8 sm:mb-12 items-center mx-auto">
-            <img src={edu3} alt="" className="max-w-full mx-auto mb-4 w-16 h-16 lg:w-20 lg:h-20 xl:w-3/5 xl:h-full" loading="eager"/>
-            <h1>Over 10+ Countries</h1>
+          <div className="flex items-center gap-4 bg-heading text-white border rounded-lg py-5 px-16 sm:px-6 lg:px-12 shadow-sm">
+            <img src={edu3} alt="countries" className="w-16 lg:w-20" loading="eager"/>
+            <h1 className="max-w-[5rem] text-xl"><span className="font-semibold">10+</span> Countries</h1>
           </div>
         </div>
 

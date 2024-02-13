@@ -31,7 +31,7 @@ export const Courses = () => {
     const filteredVans = selectedType ? vans.filter(van => van.type === selectedType) : vans;
 
     const vanElements = filteredVans.map(van => (
-        <div key={van.id} className="w-[22rem] sm:w-[13rem] lg:w-[18rem] xl:w-[19rem] h-[30rem] sm:h-[24rem] lg:h-[27.5rem] rounded-3xl border px-6 py-10">
+        <div key={van.id} className="w-[22rem] sm:w-[13rem] lg:w-[18rem] xl:w-[17.5rem] h-[30rem] sm:h-[24rem] lg:h-[27.5rem] rounded-3xl border px-6 py-10">
             <Link to={`/courses/${van.id}`}>
                 <img alt={van.name} src={van.imageUrl} className="rounded-xl mb-4 transform transition duration-150 ease-in-out hover:"/>
                 <div>
@@ -57,8 +57,8 @@ export const Courses = () => {
 
     return (
         <div className="flex flex-col items-center justify-center py-24 font-poppins">
-          <h4 className="mb-3 text-lg sm:text-2xl text-head-black font-semibold">Courses We Offer</h4>
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-10 text-heading text-xs sm:text-base">
+          <h4 className="mb-3 text-xl sm:text-2xl text-head-black font-semibold">Courses We Offer</h4>
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-10 text-heading text-xs lg:text-base">
                 <button onClick={() => handleFilter(null)} className="border px-3 py-1 rounded-lg border-heading">All</button>
                 <button onClick={() => handleFilter("Scratch")} className="border border-heading px-3 py-1 rounded-lg">Scratch</button>
                 <button onClick={() => handleFilter("MIT")} className="border border-heading px-3 py-1 rounded-lg">MIT</button>

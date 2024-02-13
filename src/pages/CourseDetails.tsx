@@ -37,7 +37,7 @@ const CourseDetails = () => {
                   <img alt={vans.name} src={vans.imageUrl} className="w-[22rem] h-[22rem] lg:w-[29rem] xl:w-[30rem] xl:h-[30rem] rounded-xl" />
                   <div className="flex flex-col gap-4">
                      <h2 className="text-xl font-semibold text-head-black mt-4">{vans.name}</h2>
-                     <p>{vans.description}</p>
+                     <p className="text-sm lg:text-base">{vans.description}</p>
 
                      <p className="text-sm">{vans.rating} Rating</p>
                      <div className="flex gap-4 text-sm">
