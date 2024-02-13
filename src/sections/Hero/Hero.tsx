@@ -61,11 +61,11 @@ export const Hero: React.FC<HomeProps> = () => {
             </motion.span>  Online Coding Classes</motion.h1>
           <h1 className="hidden md:flex mb-6 text-xs lg:text-sm xl:text-lg sm:max-w-[23rem] lg:max-w-[30rem] xl:max-w-[34rem]">Online learning and teaching marketplace with courses & over 100 students. Taught by experts to help you acquire new skills.</h1>
 
-              <div className="flex max-sm:flex-col gap-5 items-center sm:gap-10">
+              <div className="flex max-sm:flex-col gap-5 items-center sm:gap-10 mb-10">
 
           <Link to="/courses" className={ `flex justify-center items-center max-sm:w-40 py-4 px-8 bg-head-blue text-white  text-xs font-semibold rounded-xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Get Started</Link>
 
-          <Link to="/library" className={ `flex gap-3 justify-center items-centertext-xs font-semibold cursor-pointer`}> <MdAirplay className="w-6 h-6"/> Visit Library</Link>
+          <Link to="/library" className={ `flex gap-3 justify-center items-center text-sm font-semibold cursor-pointer`}> <MdAirplay className="w-8 h-8"/> Visit Library</Link>
           </div>
         
         </div>
