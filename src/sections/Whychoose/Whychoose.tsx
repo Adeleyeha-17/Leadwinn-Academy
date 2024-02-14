@@ -8,7 +8,7 @@ export const Whychoose: React.FC = () => {
 
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center overflow-hidden font-poppins py-24 sm:py-20 lg:py-28 bg-nav-blue md:px-12 xl:px-20 px-5 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
+    <div className="flex flex-col sm:flex-row justify-center items-center overflow-hidden font-poppins py-24 sm:py-20 lg:py-28 bg-nav-blue md:px-12 xl:px-20 px-5 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl">
 
       <div className="sm:w-1/2 flex flex-col gap-3 xl:gap-4 max-sm:text-center">
         <h4 className="font-semibold text-lg text-heading">WHY CHOOSE US</h4>
@@ -18,9 +18,9 @@ export const Whychoose: React.FC = () => {
 
         <h5 className="text-sm lg:text-base max-w-[30rem] mb-2 xl:mb-3 text-head-black">Discover Your Path and Ignite Your Creativity by Unlocking Your Potential with Us.</h5>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs lg:text-sm text-head-black font-semibold">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[10px] lg:text-sm text-head-black font-semibold">
 
-          <p className="flex text-center gap-3">
+          <p className="flex gap-3">
             <img src={checked} alt="check" className="w-5 h-5" />
             Innovative Learning Tools
           </p>
