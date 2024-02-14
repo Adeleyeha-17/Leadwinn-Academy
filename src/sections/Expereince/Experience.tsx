@@ -11,7 +11,7 @@ export const Experience = () => {
 
             <div className="text-white flex flex-col sm:justify-center ">
                <h1 className="font-semibold text-xl lg:text-3xl sm:w-52 md:w-80 mb-3 lg:mb-5">What Leadwinn Offers</h1>
-               <ul className="flex flex-col gap-2 max-lg:text-xs text-base">
+               <ul className="flex flex-col gap-2 max-lg:text-sm text-base">
                   <li className="flex items-center gap-3"><img src={star} className="w-[1.2rem] h-[1.2rem] lg:w-[1.4rem] lg:h-[1.4rem]" loading="lazy"/>Problem Solving Skills</li>
                   <li className="flex items-center gap-3"><img src={star} className="w-[1.2rem] h-[1.2rem] lg:w-[1.4rem] lg:h-[1.4rem]" loading="lazy"/>  Skills Assessment</li>
                   <li className="flex items-center gap-3"><img src={star} className="w-[1.2rem] h-[1.2rem] lg:w-[1.4rem] lg:h-[1.4rem]" loading="lazy"/> Guided Learning Journeys</li>
