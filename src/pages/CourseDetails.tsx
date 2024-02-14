@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { motion } from "framer-motion";
 import Spinner from "../components/Spinner";
 import { IoPeopleOutline } from "react-icons/io5";
 import { BsGlobe, BsExclamationOctagon } from "react-icons/bs";
@@ -29,7 +30,7 @@ const CourseDetails = () => {
    )
 
    return (
-      <div className="font-poppins pt-24 max-w-sm sm:max-w-5xl py-8 px-5 sm:max-lg:px-16 lg:max-xl:px-20 mx-auto">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="font-poppins pt-24 max-w-sm sm:max-w-5xl py-8 px-5 sm:max-lg:px-16 lg:max-xl:px-20 mx-auto">
          {vans ? (
             <div>
 
@@ -113,7 +114,7 @@ const CourseDetails = () => {
             <Spinner />
          )
          }
-      </div>
+      </motion.div>
    )
 }
 

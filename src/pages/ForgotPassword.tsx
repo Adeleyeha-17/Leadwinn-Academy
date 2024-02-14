@@ -6,6 +6,7 @@ import { mail } from "../../src/assets/icons";
 import { sendPasswordResetEmail } from 'firebase/auth';
 import { toast } from 'react-toastify';
 import { auth } from "../config/firebase"
+import { motion } from "framer-motion";
 
 export const ForgotPassword: React.FC = () => {
 
@@ -42,7 +43,7 @@ export const ForgotPassword: React.FC = () => {
     }
   }
   return (
-    <div className="flex font-poppins">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">
 
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
@@ -90,6 +91,6 @@ export const ForgotPassword: React.FC = () => {
       </div>
 
 
-    </div>
+    </motion.div>
   )
 }

@@ -1,8 +1,9 @@
+import { motion } from "framer-motion"
 import { Experience, IgnitingMind, Innovators, Team, Values, Learning } from "../sections"
 
 export const About = () => {
   return (
-    <div className="pt-20">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="pt-20">
 
       <Innovators />
 
@@ -16,6 +17,6 @@ export const About = () => {
       
       <Learning />
 
-    </div>
+    </motion.div>
   )
 }

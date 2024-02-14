@@ -1,9 +1,10 @@
+import { motion } from "framer-motion"
 import Faq from "../components/Faq"
 import { Path, Otherplans, Skill, SelectedPlans } from "../sections"
 
 export const Plans = () => {
   return (
-    <div className="font-poppins pt-20">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="font-poppins pt-20">
       <Path />
 
       <Skill />
@@ -14,6 +15,6 @@ export const Plans = () => {
 
       <Faq />
 
-    </div>
+    </motion.div>
   )
 }

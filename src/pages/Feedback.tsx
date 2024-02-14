@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { edit, mail } from "../../src/assets/icons"
 import { feedback } from "../../src/assets/images"
+import { motion } from "framer-motion";
 
 interface FeedbackProps { }
 
@@ -24,7 +25,7 @@ export const Feedback: FC<FeedbackProps> = () => {
   };
 
   return (
-    <div>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }}>
 
       <div className="bg-feedback bg-no-repeat bg-cover py-8 pt-20 flex flex-col justify-center items-center font-poppins">
         <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 text-head-black">Send Us Your Feedback</h2>
@@ -94,7 +95,7 @@ export const Feedback: FC<FeedbackProps> = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

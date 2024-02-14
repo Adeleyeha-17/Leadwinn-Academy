@@ -5,6 +5,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router"
 import { toast } from "react-toastify"
 import { db, auth } from "../config/firebase"
+import { motion } from "framer-motion"
 
 
 export const Profile: React.FC = () => {
@@ -64,7 +65,7 @@ export const Profile: React.FC = () => {
   }
 
   return (
-    < div className="flex flex-col justify-between md:px-12 px-5 xl:px-40 pt-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mb-20">
+    < motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex flex-col justify-between md:px-12 px-5 xl:px-40 pt-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mb-20">
       <div className="max-w-6xl mx-auto flex flex-col justify-center items-center">
         <section>
           <h1 className="text-3xl text-center font-bold mt-6 mb-3">Profile</h1>
@@ -89,6 +90,6 @@ export const Profile: React.FC = () => {
           </div>
         </section>
       </div>
-    </div>
+    </motion.div>
   )
 }

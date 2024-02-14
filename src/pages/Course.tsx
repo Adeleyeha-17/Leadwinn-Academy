@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { IoPeopleOutline } from "react-icons/io5";
 
 export const Courses = () => { 
@@ -56,7 +57,7 @@ export const Courses = () => {
     ));
 
     return (
-        <div className="flex flex-col items-center justify-center py-24 font-poppins">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex flex-col items-center justify-center py-24 font-poppins">
           <h4 className="mb-3 text-xl sm:text-2xl text-head-black font-semibold">Courses We Offer</h4>
             <div className="flex flex-wrap items-center justify-center gap-4 mb-10 text-heading text-xs lg:text-base">
                 <button onClick={() => handleFilter(null)} className="border px-3 py-1 rounded-lg border-heading">All</button>
@@ -72,6 +73,6 @@ export const Courses = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center gap-5">
                 {vanElements}
             </div>
-        </div>
+        </motion.div>
     );
 };
