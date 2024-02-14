@@ -18,7 +18,7 @@ export const Whychoose: React.FC = () => {
 
         <h5 className="text-sm lg:text-base max-w-[30rem] mb-2 xl:mb-3 text-head-black">Discover Your Path and Ignite Your Creativity by Unlocking Your Potential with Us.</h5>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[10px] lg:text-sm text-head-black font-semibold">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-[10px] lg:text-sm text-head-black font-semibold">
 
           <p className="flex gap-3">
             <img src={checked} alt="check" className="w-5 h-5" />
