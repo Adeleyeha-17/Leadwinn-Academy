@@ -62,7 +62,7 @@ export const Team = () => {
       <div className="flex flex-col items-center gap-4 mb-10">
         <h1 className="text-xl font-semibold text-heading">OUR TEAM</h1>
         <h3 className="text-2xl lg:text-3xl xl:text-4xl font-semibold text-head-black">From Leadwinn Academy</h3>
-        <h4 className="text-sm sm:text-sm font-medium text-heading text-center">Introducing the Committed Minds That Propel Our Vision and Drive Innovation Forward</h4>
+        <h4 className="text-sm font-medium text-heading text-center">Introducing the Committed Minds That Propel Our Vision and Drive Innovation Forward</h4>
       </div>
 
       <div className="flex max-sm:flex-col gap-5 lg:gap-10 sm:px-16 justify-center items-center">
