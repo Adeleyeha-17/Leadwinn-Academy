@@ -1,7 +1,7 @@
 import React from "react";
 import { checked } from "../../assets/icons";
 import { Link } from "react-router-dom";
-import { growth } from "../../assets/images";
+import { whychoose } from "../../assets/images";
 
 
 export const Whychoose: React.FC = () => {
@@ -58,7 +58,7 @@ export const Whychoose: React.FC = () => {
 
       </div>
       <div className="max-sm:mt-14 sm:w-1/2">
-        <img src={growth} alt="kids coding" />
+        <img src={whychoose} alt="kids coding" />
       </div>
 
     </div>
