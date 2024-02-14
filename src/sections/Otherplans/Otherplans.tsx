@@ -5,7 +5,7 @@ export const Otherplans = () => {
     otherplan : [ "All Classes", "All Subjects", "Board Games", "Music Classes", "Art & Painting", "Computer", "Other Extra Curricular" ]
   }
   return (
-<div className="bg-nav-blue h-full md:px-12 md:py-20 px-5 lg:px-28 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
+<div className="bg-nav-blue h-full py-10 md:px-12 md:py-20 px-5 lg:px-28 xl:px-40 lg:py-20 md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
   <div className="grid grid-cols-1 sm:grid-cols-2 items-center sm:gap-20">
 
          <div className="flex flex-col gap-4 lg:gap-6 text-heading md:w-2/5 max-sm:mb-10">
