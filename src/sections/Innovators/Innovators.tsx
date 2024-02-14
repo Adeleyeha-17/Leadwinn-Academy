@@ -10,7 +10,7 @@ export const Innovators:React.FC = () => {
         Shaping Tech Innovators Of Tommorrow
         </h1>
 
-        <h4 className="text-xs xl:text-sm w-[20rem] sm:w-[30rem] xl:w-[40rem] text-center">
+        <h4 className="text-sm w-[20rem] sm:w-[37rem] xl:w-[40rem] text-center">
         Leadwinn is dedicated to transforming learners, inspiring progress, and nurturing the future of tech education.
         </h4>
     
