@@ -133,7 +133,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
   };
 
   return (
-    <header className="sticky top-0 inset-x-0 px-6">
+    <header className="sticky top-0 inset-x-0 ">
       <nav className="container mx-auto">
         <motion.button
           initial="hide"
