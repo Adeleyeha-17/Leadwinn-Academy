@@ -85,7 +85,7 @@ export const Skill = () => {
          Our Courses are based on skill level
       </h2>
 
-      <h5 className="max-sm:text-xs max-lg:text-sm text-center"> Elevate Your Skills, Regardless of Your Starting Point.</h5>
+      <h5 className="text-sm text-center"> Elevate Your Skills, Regardless of Your Starting Point.</h5>
       </div>
    <div className="flex max-sm:flex-col-reverse justify-center items-center gap-10 sm:px-16">
      <div className="h-auto sm:h-[21rem] lg:h-[26rem] xl:h-[28.8rem] w-[21rem] sm:w-[27.8rem] flex flex-col gap-[2.35rem]">
