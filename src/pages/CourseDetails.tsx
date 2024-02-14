@@ -30,7 +30,7 @@ const CourseDetails = () => {
    )
 
    return (
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="font-poppins pt-24 max-w-sm sm:max-w-5xl py-8 px-5 sm:max-lg:px-16 lg:max-xl:px-20 mx-auto">
+      <motion.div className="font-poppins pt-24 max-w-sm sm:max-w-5xl py-8 px-5 sm:max-lg:px-16 lg:max-xl:px-20 mx-auto">
          {vans ? (
             <div>
 
