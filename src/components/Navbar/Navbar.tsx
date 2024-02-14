@@ -57,7 +57,7 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className={`${currentPath('/')} fixed top-0 right-0 left-0 z-10`}>
+    <header className={`${currentPath('/')} fixed top-0 right-0 left-0 z-20`}>
       <nav className="flex justify-between items-center lg:space-x-20 xl:space-x-20 px-5 py-4 sm:py-2 md:px-12 lg:max-xl:max-w-6xl xl:px-20 mx-auto">
         <div className="flex justify-between items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
