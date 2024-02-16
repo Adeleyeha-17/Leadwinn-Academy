@@ -1,13 +1,10 @@
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { dots } from "../../src/assets/images"
-import OAuth from "../components/OAuth";
 import { AiFillEyeInvisible, AiFillEye, AiOutlineClose } from "react-icons/ai";
 import { FormEvent, useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from "../config/firebase"
-import { toast } from 'react-toastify';
 import { mail, passwordSvg } from "../../src/assets/icons"
 import { motion } from "framer-motion";
+import OAuth from "../components/OAuth";
 
 
 export const Signin: React.FC = () => {
@@ -49,19 +46,7 @@ export const Signin: React.FC = () => {
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
-    try {
-      const userCredentials = await signInWithEmailAndPassword(
-        auth, email, password
-      )
-
-      if (userCredentials.user) {
-        history("/")
-      }
-
-    } catch (error) {
-      toast.error("Check your email and password again")
-    }
+  
   }
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">

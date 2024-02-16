@@ -3,9 +3,6 @@ import { dots } from "../../src/assets/images"
 import { AiOutlineClose } from "react-icons/ai";
 import { FormEvent, useState } from 'react';
 import { mail } from "../../src/assets/icons";
-import { sendPasswordResetEmail } from 'firebase/auth';
-import { toast } from 'react-toastify';
-import { auth } from "../config/firebase"
 import { motion } from "framer-motion";
 
 export const ForgotPassword: React.FC = () => {
@@ -34,13 +31,7 @@ export const ForgotPassword: React.FC = () => {
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
-    try {
-      await sendPasswordResetEmail(auth, email)
-      toast.success("check email for new password")
-    } catch (error) {
-      toast.error("input correct email")
-    }
+    
   }
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">

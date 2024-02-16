@@ -1,14 +1,9 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { dots } from "../../src/assets/images";
 import OAuth from "../components/OAuth";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { db } from "../config/firebase"
-import { setDoc, doc, serverTimestamp, FieldValue } from 'firebase/firestore';
-import { toast } from 'react-toastify';
 import { FormEvent, useState } from 'react';
 import { AiOutlineClose } from "react-icons/ai";
 import { edit, mail, passwordSvg } from "../../src/assets/icons"
-import { auth } from "../config/firebase.ts"
 import { motion } from "framer-motion";
 
 export const Register = () => {
@@ -25,14 +20,12 @@ export const Register = () => {
     password: string;
     confirmPassword: string;
     rememberMe?: boolean;
-    timeStamp: FieldValue;
   }>({
     fullName: "",
     email: "",
     password: "",
     confirmPassword: "",
     rememberMe: false,
-    timeStamp: serverTimestamp(),
   });
 
   const [loading, setLoading] = useState(false);
@@ -48,42 +41,12 @@ export const Register = () => {
 
   const handleGoBack = () => {
     history(-1)
+
   }
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    if (password !== confirmPassword) {
-      toast.error("Passwords do not match");
-      return;
-    }
-
-    try {
-      setLoading(true);
-
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-      const user = userCredential.user;
-
-      if (user) {
-        await updateProfile(user, {
-          displayName: fullName,
-        });
-
-        const formDataCopy = { fullName, email, timeStamp: serverTimestamp() };
-
-        await setDoc(doc(db, "users", user.uid), formDataCopy);
-
-        history("/");
-      }
-    } catch (error) {
-      toast.error(`Registration failed`);
-    } finally {
-      setLoading(false);
-    }
+    setLoading(true)
   };
 
   return (

@@ -1,21 +1,15 @@
 
-import { updateProfile } from "firebase/auth"
-import { doc, updateDoc } from "firebase/firestore"
 import { useState } from "react"
 import { useNavigate } from "react-router"
-import { toast } from "react-toastify"
-import { db, auth } from "../config/firebase"
 import { motion } from "framer-motion"
 
 
 export const Profile: React.FC = () => {
   const [changeDetails, setChangeDetails] = useState(false)
   const [formData, setFormData] = useState({
-    fullName: auth.currentUser?.displayName || "",
-    email: auth.currentUser?.email || ""
+    fullName: "",
+    email: ""
   })
-
-  const userImg = auth?.currentUser?.photoURL
 
   const { fullName, email } = formData
   const navigate = useNavigate()
@@ -29,7 +23,6 @@ export const Profile: React.FC = () => {
   }
 
   function onSignOut() {
-    auth.signOut()
     navigate("/")
   }
 
@@ -42,26 +35,7 @@ export const Profile: React.FC = () => {
   }
 
   async function onSubmit() {
-    try {
-      const user = auth.currentUser;
-
-      if (user) {
-        if (user.displayName !== fullName) {
-          await updateProfile(user, {
-            displayName: fullName,
-          });
-        }
-
-        const docRef = doc(db, "users", user.uid);
-        await updateDoc(docRef, {
-          fullName: fullName,
-        });
-
-        toast.success("Profile Updated");
-      }
-    } catch (error) {
-      toast.error("Could not update the profile data");
-    }
+   
   }
 
   return (
@@ -73,7 +47,7 @@ export const Profile: React.FC = () => {
             <form onSubmit={onSubmit}>
 
               <div>
-                {userImg && <img src={userImg} alt="profile"
+                { <img src="" alt="profile"
                   className="rounded-full w-28 h-28 object-cover mb-4" />}
               </div>
               <input type="text" name="fullName" value={fullName} onChange={onChange} disabled={!changeDetails} className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out ${changeDetails && "bg-red-200 focus:bg-red-200"}`} />
