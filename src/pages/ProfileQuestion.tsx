@@ -40,7 +40,7 @@ export const ProfileQuestion: React.FC<ProfileQuestionsProps> = ({ onComplete })
 
   return (
    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="h-screen flex flex-col items-center justify-center gap-5 mx-auto font-poppins text-heading">
-      <p className='text-sm lg:text-xl max-lg:w-[28rem] lg:w-[35rem] text-center'>{questions[currentQuestion]}</p>
+      <p className='text-sm lg:text-xl max-sm:w-[22rem] max-lg:w-[28rem] lg:w-[35rem] text-center'>{questions[currentQuestion]}</p>
 
       <div className='flex max-lg:flex-wrap max-lg:items-center max-lg:justify-center gap-5 lg:gap-10 '>
 
