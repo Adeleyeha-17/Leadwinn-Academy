@@ -24,6 +24,7 @@ export const Register = () => {
     confirmPassword: "",
     rememberMe: false,
   });
+  const [profileQuestionData, setProfileQuestionData] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const location = useLocation();
   const history = useNavigate();
@@ -32,7 +33,8 @@ export const Register = () => {
     return location.pathname === route ? "text-hero-blue" : "text-black";
   }
 
-  const handleProfileCompletion = () => {
+  const handleProfileCompletion = (profileAnswers: string[]) => {
+    setProfileQuestionData(profileAnswers);
     setProfileCompleted(true);
     setShowRegistration(true);
   };
@@ -51,6 +53,11 @@ export const Register = () => {
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const registrationData = {
+      ...formData,
+      profileData: profileQuestionData
+    };
+    console.log("Registration Data:", registrationData);
     setLoading(true)
   };
 
