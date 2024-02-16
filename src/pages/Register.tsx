@@ -4,7 +4,7 @@ import { dots } from "../../src/assets/images";
 import OAuth from "../components/OAuth";
 import { FormEvent } from 'react';
 import { AiOutlineClose } from "react-icons/ai";
-import { edit, mail, passwordSvg } from "../../src/assets/icons";
+import { edit, mail, passwordSvg, loadingSvg } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import { ProfileQuestion } from './ProfileQuestion';
 
@@ -108,7 +108,7 @@ export const Register = () => {
                   </div>
                 </div>
                 <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit"
-                  disabled={loading}>{loading ? "Signing Up..." : "Sign Up"}</button>
+                  disabled={loading}>{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto'/> : "Sign Up"}</button>
               </form>
             </div>
             <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Already a member?"} <Link to="/sign-in" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign In</Link></p>
