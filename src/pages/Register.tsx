@@ -54,8 +54,8 @@ export const Register = () => {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const registrationData = {
-      ...formData,
-      profileData: profileQuestionData
+      profileData: profileQuestionData,
+      ...formData
     };
     console.log("Registration Data:", registrationData);
     setLoading(true)
