@@ -3,6 +3,10 @@
 @import url(tailwindcss/components);
 @import url(tailwindcss/utilities);
 
+::-webkit-scrollbar {
+   display: none;
+}
+
 .slick-dots li.slick-active button:before {
    color: #07f !important
 }
