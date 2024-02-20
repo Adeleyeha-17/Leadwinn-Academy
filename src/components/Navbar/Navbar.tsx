@@ -9,6 +9,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdMonetizationOn } from "react-icons/md";
 import { FaBookOpenReader } from "react-icons/fa6";
 
+
 type NavLink = {
   link: string;
   path: string;
@@ -93,7 +94,7 @@ export const Navbar: React.FC = () => {
           ) : (
             <>
               <Link to="/sign-in" className="flex justify-center items-center text-head-blue text-xs font-semibold">
-                Sign In
+               Sign In
               </Link>
               <Button path="/register" title="Enroll Now" />
             </>
@@ -113,6 +114,8 @@ export const Navbar: React.FC = () => {
 
 
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
+import { BiLogIn, BiLogOut, BiUser } from "react-icons/bi";
+import { AiOutlineRightCircle } from "react-icons/ai";
 
 interface NavLinks {
   link: string;
@@ -242,7 +245,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                   {user ? (
                     <div onClick={toggleMobileNav}>
           <Link to="/profile" className={`px-4 py-3 text-lg ${currentMatchPath('/profile')}`}>
-            Profile
+          <BiUser /> Profile
           </Link>
           <Link to="/"
             className={`px-4 py-3 text-lg ${currentMatchPath('/sign-out')}`} 
@@ -250,16 +253,17 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
               signOut(auth);
                  }}
           >
-            Sign Out
+            <BiLogOut />
+ Sign Out
           </Link>
         </div>
       ) : (
         <div onClick={toggleMobileNav}>
           <Link to="/sign-in" className={`px-4 py-3 text-lg ${currentMatchPath('/sign-in')}`} >
-            Sign In
+          <BiLogIn /> Sign In
           </Link>
           <Link to="/register" className={`px-4 py-3 text-lg ${currentMatchPath('/register')}`} >
-            Enroll Now
+          <AiOutlineRightCircle /> Enroll Now
           </Link>
         </div>
       )}
