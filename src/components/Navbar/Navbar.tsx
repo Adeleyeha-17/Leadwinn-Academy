@@ -244,11 +244,11 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
 
                   {user ? (
                     <div onClick={toggleMobileNav}>
-          <Link to="/profile" className={`px-4 py-3 text-lg ${currentMatchPath('/profile')}`}>
+          <Link to="/profile" className={`px-4 py-3 flex text-lg ${currentMatchPath('/profile')}`}>
           <BiUser /> Profile
           </Link>
           <Link to="/"
-            className={`px-4 py-3 text-lg ${currentMatchPath('/sign-out')}`} 
+            className={`px-4 py-3 flex text-lg ${currentMatchPath('/sign-out')}`} 
             onClick={() => {
               signOut(auth);
                  }}
@@ -259,10 +259,10 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
         </div>
       ) : (
         <div onClick={toggleMobileNav}>
-          <Link to="/sign-in" className={`px-4 py-3 text-lg ${currentMatchPath('/sign-in')}`} >
+          <Link to="/sign-in" className={`px-4 py-3 flex text-lg ${currentMatchPath('/sign-in')}`} >
           <BiLogIn /> Sign In
           </Link>
-          <Link to="/register" className={`px-4 py-3 text-lg ${currentMatchPath('/register')}`} >
+          <Link to="/register" className={`px-4 py-3 flex text-lg ${currentMatchPath('/register')}`} >
           <AiOutlineRightCircle /> Enroll Now
           </Link>
         </div>
