@@ -57,7 +57,7 @@ export const Courses = () => {
 
           <h1 className="text-lg text-heading font-semibold mb-2">FEATURED COURSES</h1>
           <h2 className="text-xl sm:text-2xl text-head-black font-semibold mb-5">Find Yours From The Featured</h2>
-          <h5 className="px-2 sm:max-w-[36rem] text-center text-heading mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam atque officia sapiente sed molestias quo. Error </h5>
+          <h5 className="px-2 sm:max-w-[36rem] text-center text-heading mb-10">From coding to design and beyond, find the perfect course to elevate your expertise and achieve your goals.</h5>
         </div>
           <div className="flex flex-col items-center justify-center font-poppins pb-20 overflow-x-auto scroll-smooth">
           <div className="flex items-center justify-center gap-8 mr-[0rem]">
