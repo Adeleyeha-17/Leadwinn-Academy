@@ -5,6 +5,9 @@ import { leadwinnLogo} from '../../assets/icons';
 import { auth } from '../../config/firebase.ts';
 import { User, signOut } from 'firebase/auth';
 import { IoLibraryOutline } from "react-icons/io5";
+import { BsInfoCircle } from "react-icons/bs";
+import { MdMonetizationOn } from "react-icons/md";
+import { FaBookOpenReader } from "react-icons/fa6";
 
 type NavLink = {
   link: string;
@@ -37,17 +40,17 @@ export const Navbar: React.FC = () => {
     {
       link: 'About',
       path: '/about',
-      icon: <IoLibraryOutline />
+      icon: <BsInfoCircle />
     },
     {
       link: 'Plans',
       path: '/plans',
-      icon: <IoLibraryOutline />
+      icon: <MdMonetizationOn />
     },
     {
       link: 'Courses',
       path: '/courses',
-      icon: <IoLibraryOutline />
+      icon: <FaBookOpenReader />
     },
     {
       link: 'Library',
