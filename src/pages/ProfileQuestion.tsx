@@ -22,7 +22,7 @@ export const ProfileQuestion: React.FC<ProfileQuestionsProps> = ({ onComplete })
   const options: string[][] = [
     ["Parent", "Student"],
     ["Yes", "No"],
-    ["Friends","Facebook", "Twitter", "Linkedin","Instagram"],
+    ["Family","Friends","Facebook", "Twitter", "Linkedin","Instagram"],
     ["Yes", "No"],
     ["Yes", "No"],
     ["SCRATCH", "MIT", "ROBLOX", "UI/UX DESIGN", "WEB DEVELOPMENT", "PYTHON"],

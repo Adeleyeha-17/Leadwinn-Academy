@@ -14,6 +14,7 @@ export const Courses = () => {
         hostId: string;
         students: number;
         instructorUrl:string;
+        instructor: string;
         star: string;
     }
 
@@ -45,7 +46,7 @@ export const Courses = () => {
                 </div>
                 <div className="flex gap-2 items-center mt-3">
                     <img src={van.instructorUrl} className="w-8 h-8 rounded-full" />
-                    <p className="text-sm">Fetuga</p>
+                    <p className="text-sm">{van.instructor}</p>
                 </div>
                 <div className="flex justify-between mt-4 text-sm">
                     <div>
