@@ -243,9 +243,9 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                   </li>
 
                   {user ? (
-                    <div onClick={toggleMobileNav}>
+                    <div onClick={toggleMobileNav} className='flex gap-4'>
           <Link to="/profile" className={`py-3 flex items-center text-lg ${currentMatchPath('/profile')}`}>
-          <BiUser className="mr-3"/> Profile
+          <BiUser className="mr-4"/> Profile
           </Link>
           <Link to="/"
             className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-out')}`} 
@@ -253,17 +253,17 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
               signOut(auth);
                  }}
           >
-            <BiLogOut className="mr-3"/>
+            <BiLogOut className="mr-4"/>
  Sign Out
           </Link>
         </div>
       ) : (
-        <div onClick={toggleMobileNav}>
+        <div onClick={toggleMobileNav} className='flex gap-4'>
           <Link to="/sign-in" className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-in')}`} >
-          <BiLogIn className="mr-3"/> Sign In
+          <BiLogIn className="mr-4"/> Sign In
           </Link>
           <Link to="/register" className={`py-3 flex items-center text-lg ${currentMatchPath('/register')}`} >
-          <AiOutlineRightCircle className="mr-3"/> Enroll Now
+          <AiOutlineRightCircle className="mr-4"/> Enroll Now
           </Link>
         </div>
       )}
