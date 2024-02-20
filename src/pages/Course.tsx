@@ -14,6 +14,7 @@ export const Courses = () => {
         hostId: string;
         students: number;
         instructorUrl:string;
+        star: string;
     }
 
     const [vans, setVans] = useState<Course[]>([]);
@@ -38,7 +39,7 @@ export const Courses = () => {
                 <div>
                     <div className="flex justify-between">
                         <i className={`border py-1 px-3 rounded-md text-xs`}>{van.type}</i>
-                        <p>Stars</p>
+                        <img src={van.star} className="w-16"/>
                     </div>
                     <h3 className="text-sm font-semibold text-head-black mt-4">{van.name}</h3>
                 </div>
@@ -50,7 +51,6 @@ export const Courses = () => {
                     <div>
                         <p className="flex items-center gap-2"><IoPeopleOutline /> {van.students} </p>
                     </div>
-                    <p>${van.price}</p>
                 </div>
             </Link>
         </div>
