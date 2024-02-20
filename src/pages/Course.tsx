@@ -16,6 +16,7 @@ export const Courses = () => {
         instructorUrl:string;
         instructor: string;
         star: string;
+        title: string;
     }
 
     const [vans, setVans] = useState<Course[]>([]);
@@ -40,7 +41,7 @@ export const Courses = () => {
                 <div>
                     <div className="flex justify-between">
                         <i className={`border py-1 px-3 rounded-md text-xs`}>{van.type}</i>
-                        <img src={van.star} className="w-16"/>
+                        <img src={van.star} className="w-16" title={van.title}/>
                     </div>
                     <h3 className="text-sm font-semibold text-head-black mt-4">{van.name}</h3>
                 </div>
