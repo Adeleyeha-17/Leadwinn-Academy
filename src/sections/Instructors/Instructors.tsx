@@ -15,7 +15,7 @@ export const Instructors = () => {
               Knowledge
             </h2>
 
-            <h5 className="max-w-[34rem] max-lg:text-xs mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae repellat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus optio rerum obcaecati repellat</h5>
+            <h5 className="max-w-[34rem] max-lg:text-xs mb-3">Unlock the opportunity to inspire others and share your knowledge with our community. Embrace the chance to make a difference, ignite passion, and empower learners on their journey.</h5>
           </div>
 
           <div className="mt-3 max-sm:mx-auto">

@@ -21,7 +21,7 @@ export const Brochure = () => {
             We Teach The Fundamentals Of Technology While Encouraging Creativity, Curiosity, And Individuality.
             </h2>
 
-            <h5 className="text-xs lg:text-base max-w-[34rem] mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae repellat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus optio rerum obcaecati repellat</h5>
+            <h5 className="text-xs lg:text-base max-w-[34rem] mb-3">Experience the power of technology as we foster creativity, ignite curiosity, and celebrate individuality. Our engaging learning environment empowers learners to explore, innovate, and thrive.</h5>
           </div>
 
           <div className="max-sm:text-center">
