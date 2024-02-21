@@ -46,8 +46,16 @@ const CourseDetails = () => {
                         <p className="flex items-center gap-2"><IoPeopleOutline /> {vans.students} </p>
                         <p className="flex items-center gap-2"><BsGlobe /> English</p>
                      </div>
-                     <button className="bg-head-blue text-white py-2 rounded-md">CHAT WITH THE ADMIN</button>
-                     <button className="bg-head-blue bg-opacity-30 text-white py-2 rounded-md">CONTINUE TO PAYMENT</button>
+
+                     <a
+                        href={`https://api.whatsapp.com/send?phone=+2348165906106&text=Hello%20admin,%20I%20want%20to%20get%20started%20with%20the%20${encodeURIComponent(vans.name)}%20course.%20Can%20we%20discuss%20further?`}
+                        className={`bg-head-blue text-white py-2 rounded-md cursor-pointer text-center`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        CHAT WITH THE ADMIN
+                     </a>
+                     <button className="bg-head-blue bg-opacity-30 text-white py-2 rounded-md cursor-pointer">CONTINUE TO PAYMENT</button>
                   </div>
                </div>
                <div className="mt-8 border p-10">

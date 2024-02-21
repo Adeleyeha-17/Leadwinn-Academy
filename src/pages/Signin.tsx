@@ -2,13 +2,13 @@ import { Link, useLocation, useNavigate } from "react-router-dom"
 import { dots } from "../../src/assets/images"
 import { AiFillEyeInvisible, AiFillEye, AiOutlineClose } from "react-icons/ai";
 import { FormEvent, useState } from 'react';
-import { mail, passwordSvg } from "../../src/assets/icons"
+import { mail, passwordSvg, loadingSvg } from "../../src/assets/icons"
 import { motion } from "framer-motion";
 import OAuth from "../components/OAuth";
 
 
 export const Signin: React.FC = () => {
-
+  const [loading, setLoading] = useState(false);
   const location = useLocation();
   const history = useNavigate();
 
@@ -46,6 +46,7 @@ export const Signin: React.FC = () => {
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setLoading(true)
   
   }
   return (
@@ -99,7 +100,7 @@ export const Signin: React.FC = () => {
                   <Link to="/forgot-password" className="text-hero-blue hover:text-blue-800 transition duration-200 ease-in-out">Forgot password?
                   </Link></p>
               </div>
-              <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">Sign In</button>
+              <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto'/> : "Sign In"}</button>
             </form>
           </div>
           <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Not a member yet?"} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign Up</Link></p>
