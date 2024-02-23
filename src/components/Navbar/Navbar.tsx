@@ -1,9 +1,7 @@
 import { ReactNode, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from '../Button';
-import { leadwinnLogo} from '../../assets/icons';
-import { auth } from '../../config/firebase.ts';
-import { User, signOut } from 'firebase/auth';
+import { leadwinnLogo } from '../../assets/icons';
 import { IoLibraryOutline } from "react-icons/io5";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdMonetizationOn } from "react-icons/md";
@@ -16,17 +14,9 @@ type NavLink = {
   icon: ReactNode;
 };
 
-export const Navbar: React.FC = () => { 
+export const Navbar: React.FC = () => {
   const location = useLocation();
   const [user, setUser] = useState<User | null>(null);
-
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      return setUser(user);
-    });
-
-    return () => unsubscribe();
-  }, []);
 
   const currentPath = (route: string) => {
     return location.pathname === route ? 'text-head-blue bg-nav-blue' : ' text-head-black bg-white';
@@ -36,6 +26,9 @@ export const Navbar: React.FC = () => {
     return location.pathname === route ? 'text-head-blue' : ' text-head-black';
   };
 
+  useEffect(() => {
+    setUser(user)
+  }, [user])
 
   const navLinks: NavLink[] = [
     {
@@ -86,15 +79,13 @@ export const Navbar: React.FC = () => {
             <>
               <Link to="/profile" className="flex justify-center items-center text-head-blue text-xs font-semibold">
                 Profile
-              </Link> 
-              <Link to="/" className={ `hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} onClick={() => {
-              signOut(auth);
-            }}>Sign Out</Link>
-              </>
+              </Link>
+              <Link to="/" className={`hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Sign Out</Link>
+            </>
           ) : (
             <>
               <Link to="/sign-in" className="flex justify-center items-center text-head-blue text-xs font-semibold">
-               Sign In
+                Sign In
               </Link>
               <Button path="/register" title="Enroll Now" />
             </>
@@ -102,11 +93,11 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="cursor-pointer sm:hidden">
-    <NavbarMobile navLinks={navLinks} user={user}/>
+          <NavbarMobile navLinks={navLinks} user={user} />
         </div>
       </nav>
-      
-  
+
+
 
     </header>
   );
@@ -116,6 +107,7 @@ export const Navbar: React.FC = () => {
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
 import { BiLogIn, BiLogOut, BiUser } from "react-icons/bi";
 import { AiOutlineRightCircle } from "react-icons/ai";
+import { User } from 'firebase/auth';
 
 interface NavLinks {
   link: string;
@@ -232,42 +224,39 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                   className="list-none space-y-6"
                 >
                   <li className='flex flex-col mb-4'>
-                  {navLinks.map((link) => (
-                    <div className='flex items-center'>
-                      <div>{link.icon}</div>
-        <Link key={link.path} to={link.path} className={`px-4 py-3 text-lg ${currentMatchPath(link.path)}`} onClick={toggleMobileNav} >
-          {link.link}
-        </Link>
-                    </div>
-      ))}
+                    {navLinks.map((link) => (
+                      <div className='flex items-center'>
+                        <div>{link.icon}</div>
+                        <Link key={link.path} to={link.path} className={`px-4 py-3 text-lg ${currentMatchPath(link.path)}`} onClick={toggleMobileNav} >
+                          {link.link}
+                        </Link>
+                      </div>
+                    ))}
                   </li>
 
                   {user ? (
                     <div onClick={toggleMobileNav} className='flex gap-4'>
-          <Link to="/profile" className={`py-3 flex items-center text-lg ${currentMatchPath('/profile')}`}>
-          <BiUser className="mr-4"/> Profile
-          </Link>
-          <Link to="/"
-            className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-out')}`} 
-            onClick={() => {
-              signOut(auth);
-                 }}
-          >
-            <BiLogOut className="mr-4"/>
- Sign Out
-          </Link>
-        </div>
-      ) : (
-        <div onClick={toggleMobileNav} className='flex gap-4'>
-          <Link to="/sign-in" className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-in')}`} >
-          <BiLogIn className="mr-4"/> Sign In
-          </Link>
-          <Link to="/register" className={`py-3 flex items-center text-lg ${currentMatchPath('/register')}`} >
-          <AiOutlineRightCircle className="mr-4"/> Enroll Now
-          </Link>
-        </div>
-      )}
-                
+                      <Link to="/profile" className={`py-3 flex items-center text-lg ${currentMatchPath('/profile')}`}>
+                        <BiUser className="mr-4" /> Profile
+                      </Link>
+                      <Link to="/"
+                        className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-out')}`}
+                      >
+                        <BiLogOut className="mr-4" />
+                        Sign Out
+                      </Link>
+                    </div>
+                  ) : (
+                    <div onClick={toggleMobileNav} className='flex gap-4'>
+                      <Link to="/sign-in" className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-in')}`} >
+                        <BiLogIn className="mr-4" /> Sign In
+                      </Link>
+                      <Link to="/register" className={`py-3 flex items-center text-lg ${currentMatchPath('/register')}`} >
+                        <AiOutlineRightCircle className="mr-4" /> Enroll Now
+                      </Link>
+                    </div>
+                  )}
+
                 </motion.ul>
                 <motion.div
                   variants={{
@@ -300,7 +289,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                   </li>
                   <li>
                     <div className="bg-white rounded-lg w-8 h-8">
-                    <img src={leadwinnLogo} alt="leadwinn logo" className="h-8 w-8 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
+                      <img src={leadwinnLogo} alt="leadwinn logo" className="h-8 w-8 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
                     </div>
                   </li>
                   <li>

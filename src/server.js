@@ -2,8 +2,6 @@ import { createServer, Model } from "miragejs"
 import { scratch, mit , roblox, uiUx, web, python, adeleye, subomi} from "./assets/images"
 import { checked, star5, star4 } from "./assets/icons"
 
-
-
 createServer({
     models: {
         vans: Model,

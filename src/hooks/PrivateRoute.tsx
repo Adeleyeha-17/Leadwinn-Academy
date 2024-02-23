@@ -1,17 +1,13 @@
-import { Outlet, Navigate } from "react-router-dom";
-import { UseAuthStatus } from "./UseAuthStatus";
-import Spinner from "../components/Spinner";
+import { Route, Navigate } from "react-router-dom";
 
-export const PrivateRoute: React.FC = () => {
-  const { loggedIn, checkingStatus } = UseAuthStatus();
+const PrivateRoute = ({ ...props }) => {
+  const isAuthenticated = sessionStorage.getItem("token") !== null;
 
-  if (checkingStatus) {
-    return <Spinner />
-  }
-
-  if (!loggedIn) {
+  if (!isAuthenticated) {
     return <Navigate to="/sign-in" />;
   }
-
-  return <Outlet />;
+  
+  return <Route {...props} />;
 };
+
+export default PrivateRoute;

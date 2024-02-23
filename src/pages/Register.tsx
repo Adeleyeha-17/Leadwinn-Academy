@@ -7,6 +7,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { edit, mail, passwordSvg, loadingSvg } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import { ProfileQuestion } from './ProfileQuestion';
+import { toast } from 'react-toastify';
+import { supabase } from '../client';
 
 export const Register = () => {
   const [showRegistration, setShowRegistration] = useState(false);
@@ -24,6 +26,7 @@ export const Register = () => {
     confirmPassword: "",
     rememberMe: false,
   });
+
   const [profileQuestionData, setProfileQuestionData] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -32,7 +35,7 @@ export const Register = () => {
   const routePathMatch = (route: string) => {
     return location.pathname === route ? "text-hero-blue" : "text-black";
   }
-
+  
   const handleProfileCompletion = (profileAnswers: string[]) => {
     setProfileQuestionData(profileAnswers);
     setProfileCompleted(true);
@@ -51,14 +54,38 @@ export const Register = () => {
     history(-1)
   }
 
+  const { fullName, email, password, confirmPassword } = formData
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+   
     const registrationData = {
       profileData: profileQuestionData,
       ...formData
     };
-    console.log("Registration Data:", registrationData);
-    setLoading(true)
+    console.log(registrationData)
+    setLoading(true);
+
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+        options: {
+          data: {
+            full_name: fullName
+          }
+        }
+      });
+  
+      if (error) {
+        toast.error(`Error signing up:, ${error.message}`);
+      } else {
+        history("/")
+        toast.success("User signed up successfully")
+        console.log('Sign up successful:', data);
+      }
+    } catch (error) {
+      console.error('Error signing up:', (error as Error).message);
+    }
   };
 
   return (
@@ -88,27 +115,27 @@ export const Register = () => {
               <form onSubmit={onSubmit}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8">
                   <div className="relative ">
-                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="fullName" value={formData.fullName} placeholder="Full Name" onChange={onChange} />
+                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="fullName" value={fullName} placeholder="Full Name" onChange={onChange} />
                     <img src={edit} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager" />
                   </div>
 
                   <div className="relative">
-                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={formData.email} placeholder="Email" onChange={onChange} />
+                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-2xl transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="Email" onChange={onChange} />
                     <img src={mail} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager" />
                   </div>
 
                   <div className="relative">
-                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="password" value={formData.password} placeholder="Password" onChange={onChange} autoComplete="true" />
+                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="password" value={password} placeholder="Password" onChange={onChange} autoComplete="true" />
                     <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager" />
                   </div>
 
                   <div className="relative">
-                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="confirmPassword" value={formData.confirmPassword} placeholder="Confirm Password" onChange={onChange} autoComplete="true" />
+                    <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="confirmPassword" value={confirmPassword} placeholder="Confirm Password" onChange={onChange} autoComplete="true" />
                     <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager" />
                   </div>
                 </div>
                 <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit"
-                  disabled={loading}>{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto'/> : "Sign Up"}</button>
+                  disabled={loading}>{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto' /> : "Sign Up"}</button>
               </form>
             </div>
             <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Already a member?"} <Link to="/sign-in" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign In</Link></p>

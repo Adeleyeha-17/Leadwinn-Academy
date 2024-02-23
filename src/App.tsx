@@ -11,23 +11,31 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { ForgotPassword } from "./pages/ForgotPassword";
 import { Profile } from "./pages/Profile";
-import { PrivateRoute } from "./hooks/PrivateRoute";
+import PrivateRoute  from "./hooks/PrivateRoute";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 import "./server"
 import { Courses } from "./pages/Course";
 import CourseDetails from "./pages/CourseDetails";
+import { useEffect, useState } from "react";
 
 function App() {
-  
+  const [token, setToken] = useState<boolean | null>(null);
 
-  
+  useEffect(() => {
+    const tokenData = sessionStorage.getItem('token');
+    if (tokenData) {
+      setToken(JSON.parse(tokenData));
+    }
+  }, []);
+
   return (
     <>
-    <Router>
-      <AnimatePresence mode="wait"/>
-      <ScrollToTop />
+      <Router>
+        <AnimatePresence mode="wait"/>
+        <ScrollToTop />
         <Routes>
+          {token ? <Route path="/" element={<Layout><Home /></Layout>} /> : <Route path="/register" element={<Register />} />}
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/about" element={<Layout><About /></Layout>} />
           <Route path="/library" element={<Layout><Library /></Layout>} />
@@ -37,11 +45,11 @@ function App() {
 
           <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
           
-          <Route path="/profile" element={<PrivateRoute />}>
+          <Route path="/profile" element={<PrivateRoute setToken={setToken} />}>
             <Route index element={<Layout><Profile /></Layout>} />
           </Route>
 
-          <Route path="/sign-in" element={<Signin />} />
+          <Route path="/sign-in" element={<Signin setToken={setToken}/>} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
@@ -60,8 +68,8 @@ function App() {
         draggable
         pauseOnHover
         theme="colored"
-        />
-        </>
+      />
+    </>
   );
 }
 

@@ -1,54 +1,79 @@
-import { Link, useLocation, useNavigate } from "react-router-dom"
-import { dots } from "../../src/assets/images"
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { dots } from "../../src/assets/images";
 import { AiFillEyeInvisible, AiFillEye, AiOutlineClose } from "react-icons/ai";
-import { FormEvent, useState } from 'react';
-import { mail, passwordSvg, loadingSvg } from "../../src/assets/icons"
+import { FormEvent, useState } from "react";
+import { mail, passwordSvg, loadingSvg } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import OAuth from "../components/OAuth";
+import { toast } from "react-toastify";
+import { supabase } from "../client";
 
-
-export const Signin: React.FC = () => {
+export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = ({
+  setToken,
+}) => {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
   const history = useNavigate();
 
   const routePathMatch = (route: string) => {
     return location.pathname === route ? "text-hero-blue" : "text-black";
-  }
+  };
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
     showPassword: false,
-    rememberMe: true
-  })
+    rememberMe: true,
+  });
 
-  const { email, password, showPassword, rememberMe } = formData
+  const { email, password, showPassword, rememberMe } = formData;
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target
-    setFormData(prevState => ({
+    const { name, value, type, checked } = e.target;
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: type === "checkbox" ? checked : value
-    }))
-  }
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
 
   const toggleShowPassword = () => {
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      showPassword: !prevState.showPassword
-    }))
-  }
+      showPassword: !prevState.showPassword,
+    }));
+  };
 
   const handleGoBack = () => {
-    history(-1)
-  }
+    history(-1);
+  };
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setLoading(true)
-  
+    setLoading(true);
+
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: password,
+      });
+
+      if (error) {
+        console.error("Error signing in:", error.message);
+        toast.error("User not signed in");
+      } else {
+        // Extract the relevant information from data
+        const isAuthenticated = data?.session != null;
+        setToken(isAuthenticated);
+        history("/");
+        toast.success("Sign in successful");
+      }
+    } catch (error) {
+      console.error("Error signing in:", (error as Error).message);
+    } finally {
+      setLoading(false);
+    }
   }
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">
 
