@@ -80,7 +80,6 @@ export const Register = () => {
         toast.error(`Error signing up:, ${error.message}`);
       } else {
         history("/")
-        toast.success("User signed up successfully")
         console.log('Sign up successful:', data);
       }
     } catch (error) {
