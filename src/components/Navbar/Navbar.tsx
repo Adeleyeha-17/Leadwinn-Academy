@@ -6,7 +6,8 @@ import { IoLibraryOutline } from "react-icons/io5";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdMonetizationOn } from "react-icons/md";
 import { FaBookOpenReader } from "react-icons/fa6";
-
+import { supabase } from '../../client';
+import { User } from '@supabase/supabase-js';
 
 type NavLink = {
   link: string;
@@ -18,6 +19,28 @@ export const Navbar: React.FC = () => {
   const location = useLocation();
   const [user, setUser] = useState<User | null>(null);
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const { data, error } = await supabase.auth.getUser();
+        if (error) {
+          throw error;
+        }
+        setUser(data?.user || null);
+      } catch (error) {
+        console.error('Error fetching user:', (error as Error).message);
+      }
+    };
+  
+    fetchUser();
+  }, []);
+  
+  
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+  };
+
   const currentPath = (route: string) => {
     return location.pathname === route ? 'text-head-blue bg-nav-blue' : ' text-head-black bg-white';
   };
@@ -25,10 +48,6 @@ export const Navbar: React.FC = () => {
   const currentMatchPath = (route: string) => {
     return location.pathname === route ? 'text-head-blue' : ' text-head-black';
   };
-
-  useEffect(() => {
-    setUser(user)
-  }, [user])
 
   const navLinks: NavLink[] = [
     {
@@ -80,7 +99,7 @@ export const Navbar: React.FC = () => {
               <Link to="/profile" className="flex justify-center items-center text-head-blue text-xs font-semibold">
                 Profile
               </Link>
-              <Link to="/" className={`hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`}>Sign Out</Link>
+              <Link to="/" className={`hidden md:inline-block justify-center items-center py-2 md:px-6 px-4 bg-head-blue text-white text-xs font-semibold rounded-3xl transition hover:bg-blue-600 ease-in-out duration-300 cursor-pointer`} onClick={handleSignOut}>Sign Out</Link>
             </>
           ) : (
             <>
@@ -96,9 +115,6 @@ export const Navbar: React.FC = () => {
           <NavbarMobile navLinks={navLinks} user={user} />
         </div>
       </nav>
-
-
-
     </header>
   );
 };
@@ -107,7 +123,6 @@ export const Navbar: React.FC = () => {
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
 import { BiLogIn, BiLogOut, BiUser } from "react-icons/bi";
 import { AiOutlineRightCircle } from "react-icons/ai";
-import { User } from 'firebase/auth';
 
 interface NavLinks {
   link: string;
@@ -121,7 +136,9 @@ interface NavbarMobileProps {
 }
 
 const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
+
   const [mobileNav, setMobileNav] = useState(false);
+  const location = useLocation();
 
   const toggleMobileNav = () => {
     setMobileNav(!mobileNav);
@@ -241,7 +258,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                       </Link>
                       <Link to="/"
                         className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-out')}`}
-                      >
+                        >
                         <BiLogOut className="mr-4" />
                         Sign Out
                       </Link>
