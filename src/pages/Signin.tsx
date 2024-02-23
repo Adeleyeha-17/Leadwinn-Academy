@@ -7,11 +7,13 @@ import { motion } from "framer-motion";
 import OAuth from "../components/OAuth";
 import { toast } from "react-toastify";
 import { supabase } from "../client";
+import Spinner from "../components/Spinner";
 
 export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = ({
   setToken,
 }) => {
   const [loading, setLoading] = useState(false);
+  const [showSpinner, setShowSpinner] = useState(false); 
   const location = useLocation();
   const history = useNavigate();
 
@@ -50,7 +52,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-
+    setShowSpinner(true); 
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email: email,
@@ -63,18 +65,20 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
       } else {
         const isAuthenticated = data?.session != null;
         setToken(isAuthenticated);
-        history("/");
+        setTimeout(() => {
+          history("/");
+        });
       }
     } catch (error) {
       console.error("Error signing in:", (error as Error).message);
     } finally {
       setLoading(false);
+      setShowSpinner(false);
     }
   }
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">
-
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
         <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
           <h2 className=" font-medium sm:text-lg lg:text-2xl xl:text-4xl">Welcome Back To Leadwinn</h2>
@@ -129,6 +133,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
           <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Not a member yet?"} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign Up</Link></p>
         </div>
       </div>
+      {showSpinner && <Spinner />}
     </motion.div>
   )
 }
