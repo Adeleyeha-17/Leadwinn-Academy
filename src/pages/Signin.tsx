@@ -73,7 +73,10 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
       console.error("Error signing in:", (error as Error).message);
     } finally {
       setLoading(false);
-      setShowSpinner(false);
+      setTimeout(() => {
+
+        setShowSpinner(false);
+      }, 500);
     }
   }
 
