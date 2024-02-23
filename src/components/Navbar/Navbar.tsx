@@ -147,6 +147,10 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
     return location.pathname === route ? 'text-head-blue' : ' text-head-black';
   };
 
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+  };
+
   return (
     <header className="sticky top-0 inset-x-0 ">
       <nav className="container mx-auto">
@@ -258,7 +262,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                       </Link>
                       <Link to="/"
                         className={`py-3 flex items-center text-lg ${currentMatchPath('/sign-out')}`}
-                        >
+                        onClick={handleSignOut}>
                         <BiLogOut className="mr-4" />
                         Sign Out
                       </Link>
