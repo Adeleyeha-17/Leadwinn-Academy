@@ -135,7 +135,24 @@ interface NavbarMobileProps {
   user: User | null;
 }
 
-const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
+const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
+  const [userIn, setUserIn] = useState<User | null>(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const { data, error } = await supabase.auth.getUser();
+        if (error) {
+          throw error;
+        }
+        setUserIn(data?.user || null);
+      } catch (error) {
+        console.error('Error fetching user:', (error as Error).message);
+      }
+    };
+  
+    fetchUser();
+  }, []);
 
   const [mobileNav, setMobileNav] = useState(false);
   const location = useLocation();
@@ -149,6 +166,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
+    setUserIn(null);
   };
 
   return (
@@ -255,7 +273,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks, user }) => {
                     ))}
                   </li>
 
-                  {user ? (
+                  {userIn ? (
                     <div onClick={toggleMobileNav} className='flex gap-4'>
                       <Link to="/profile" className={`py-3 flex items-center text-lg ${currentMatchPath('/profile')}`}>
                         <BiUser className="mr-4" /> Profile
