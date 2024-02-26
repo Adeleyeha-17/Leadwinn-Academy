@@ -11,7 +11,7 @@ export const Profile: React.FC = () => {
     fullName: "",
     email: ""
   });
-
+  const [profilePicture, setProfilePicture] = useState<string>("");
   const { fullName, email } = formData;
   const navigate = useNavigate();
 
@@ -28,6 +28,15 @@ export const Profile: React.FC = () => {
             fullName: data.user.user_metadata.full_name || "",
             email: data.user.email || ""
           });
+
+          const { data: profile, error: profileError } = await supabase.storage
+            .from("profiles")
+            .download(`profile_${user?.id}`);
+          if (profileError) {
+            console.error("Error fetching profile picture:", profileError.message);
+          } else if (profile) {
+            setProfilePicture(URL.createObjectURL(profile));
+          }
         } else {
           navigate("/sign-in");
         }
@@ -37,7 +46,7 @@ export const Profile: React.FC = () => {
     };
   
     fetchUserData();
-  }, [navigate]);
+  }, [navigate, user?.id]);
   
   
 
@@ -83,13 +92,11 @@ export const Profile: React.FC = () => {
           <div className="sm:w-full md:w-[85%] mt-6 px-3 mx-auto">
             <form onSubmit={onSubmit}>
               <div>
-                {
-                  <img
-                    src=""
-                    alt="profile"
-                    className="rounded-full w-28 h-28 object-cover mb-4"
-                  />
-                }
+              {profilePicture && (
+            <div className="rounded-full w-28 h-28 object-cover mb-4">
+              <img src={profilePicture} alt="profile" />
+            </div>
+          )}
               </div>
               <input
                 type="text"
