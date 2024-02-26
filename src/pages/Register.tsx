@@ -29,6 +29,8 @@ export const Register = () => {
 
   const [profileQuestionData, setProfileQuestionData] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
   const location = useLocation();
   const history = useNavigate();
 
@@ -78,11 +80,14 @@ export const Register = () => {
   
       if (error) {
         toast.error(`Error signing up:, ${error.message}`);
+        setError(error.message)
+        setLoading(false)
       } else {
         history("/")
       }
     } catch (error) {
-      console.error('Error signing up:', (error as Error).message);
+      setError(error as string);
+      console.error("Error signing in:", (error as Error).message);
     }
   };
 
@@ -131,6 +136,7 @@ export const Register = () => {
                     <input className="w-[20rem] sm:w-[23rem] lg:w-[18rem] xl:w-[23rem] pl-12 pr-5 xl:py-5 py-3 text-base sm:text-lg text-gray-700 font-medium bg-white border border-head-black focus:border-head-blue rounded-2xl transition ease-in-out" type="password" name="confirmPassword" value={confirmPassword} placeholder="Confirm Password" onChange={onChange} autoComplete="true" />
                     <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager" />
                   </div>
+                {error && <p className="text-red-500 text-xs sm:text-sm lg:text-base -mt-8">{error}</p>}
                 </div>
                 <button className="w-full bg-hero-blue text-white px-7 py-3 text-xs sm:text-sm font-medium uppercase rounded-3xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit"
                   disabled={loading}>{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto' /> : "Sign Up"}</button>

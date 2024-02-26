@@ -14,6 +14,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
 }) => {
   const [loading, setLoading] = useState(false);
   const [showSpinner, setShowSpinner] = useState(false); 
+  const [error, setError] = useState<string | null>(null);
   const location = useLocation();
   const history = useNavigate();
 
@@ -62,6 +63,8 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
       if (error) {
         console.error("Error signing in:", error.message);
         toast.error("Authentication failure. Please try logging in again");
+        setError(error.message)
+        setLoading(false)
       } else {
         const isAuthenticated = data?.session != null;
         setToken(isAuthenticated);
@@ -71,6 +74,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
       }
     } catch (error) {
       console.error("Error signing in:", (error as Error).message);
+      setError(error as string);
     } finally {
       setLoading(false);
         setShowSpinner(false);
@@ -119,6 +123,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
                   <img src={passwordSvg} className="absolute left-4 top-3 sm:top-4 xl:top-6" loading="eager"/>
                 </div>
               </div>
+                {error && <p className="text-red-500 text-xs sm:text-sm lg:text-base -mt-6 mb-4">{error}</p>}
               <div className="flex justify-between font-medium text-xs sm:text-sm mb-6">
                 <div className='flex items-center gap-2 max-sm:-mt-1'>
                   <input type="checkbox" name="rememberMe" id="rememberMe" checked={rememberMe} onChange={onChange} className="w-6 h-6" />
