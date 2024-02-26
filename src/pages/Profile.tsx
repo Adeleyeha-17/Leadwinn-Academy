@@ -6,12 +6,10 @@ import { User } from "@supabase/supabase-js";
 
 export const Profile: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
-  const [changeDetails, setChangeDetails] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: ""
   });
-  const [profilePicture, setProfilePicture] = useState<string>("");
   const { fullName, email } = formData;
   const navigate = useNavigate();
 
@@ -28,15 +26,7 @@ export const Profile: React.FC = () => {
             fullName: data.user.user_metadata.full_name || "",
             email: data.user.email || ""
           });
-
-          const { data: profile, error: profileError } = await supabase.storage
-            .from("profiles")
-            .download(`profile_${user?.id}`);
-          if (profileError) {
-            console.error("Error fetching profile picture:", profileError.message);
-          } else if (profile) {
-            setProfilePicture(URL.createObjectURL(profile));
-          }
+         
         } else {
           navigate("/sign-in");
         }
@@ -58,24 +48,6 @@ export const Profile: React.FC = () => {
     }));
   }
 
-  function onSignOut() {
-    supabase.auth.signOut().then(() => {
-      navigate("/");
-    }).catch(error => {
-      console.error("Error signing out:", error.message);
-    });
-  }
-
-  function editDetails() {
-    {
-      changeDetails && onSubmit();
-      setChangeDetails((prevState) => !prevState);
-    }
-  }
-
-  async function onSubmit() {
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -88,25 +60,15 @@ export const Profile: React.FC = () => {
         <section>
           <h1 className="text-3xl text-center font-bold mt-6 mb-3">Profile</h1>
 
-          <h4>Welcome back, {user && user.user_metadata.full_name}</h4>
           <div className="sm:w-full md:w-[85%] mt-6 px-3 mx-auto">
-            <form onSubmit={onSubmit}>
-              <div>
-              {profilePicture && (
-            <div className="rounded-full w-28 h-28 object-cover mb-4">
-              <img src={profilePicture} alt="profile" />
-            </div>
-          )}
-              </div>
+          <h4>Welcome to your Leadwinn profile, {user && user.user_metadata.full_name}</h4>
+            <form>
               <input
                 type="text"
                 name="fullName"
                 value={fullName}
                 onChange={onChange}
-                disabled={!changeDetails}
-                className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out ${
-                  changeDetails && "bg-red-200 focus:bg-red-200"
-                }`}
+                className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out `}
               />
 
               <input
@@ -114,27 +76,9 @@ export const Profile: React.FC = () => {
                 name="email"
                 value={email}
                 onChange={onChange}
-                disabled={!changeDetails}
                 className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out`}
               />
-
-              <div className="flex justify-between whitespace-nowrap text-sm mb-4 items-center">
-                <p className="flex max-sm:text-xs">
-                  Do you want to change your name?{" "}
-                  <span
-                    className="ml-1 text-red-600 hover:text-red-700 transition ease-in-out duration-200 cursor-pointer"
-                    onClick={editDetails}
-                  >
-                    {changeDetails ? "Apply" : "Edit"}
-                  </span>
-                </p>
-                <p
-                  className="text-blue-600 hover:text-blue-800 transition ease-in-out duration-200 cursor-pointer max-sm:text-xs"
-                  onClick={onSignOut}
-                >
-                  Sign out
-                </p>
-              </div>
+              
             </form>
           </div>
         </section>
