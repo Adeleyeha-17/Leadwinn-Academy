@@ -11,7 +11,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { ForgotPassword } from "./pages/ForgotPassword";
 import { Profile } from "./pages/Profile";
-import PrivateRoute  from "./hooks/PrivateRoute";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 import "./server"
@@ -20,7 +19,8 @@ import CourseDetails from "./pages/CourseDetails";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [token, setToken] = useState<boolean | null>(null);
+  const [token, setToken] = useState<boolean | null>(false);
+
 
   useEffect(() => {
     const tokenData = sessionStorage.getItem('token');
@@ -45,9 +45,7 @@ function App() {
 
           <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
           
-          <Route path="/profile" element={<PrivateRoute setToken={setToken} />}>
-            <Route index element={<Layout><Profile /></Layout>} />
-          </Route>
+          <Route path="/profile" element={<Layout><Profile /></Layout>} />
 
           <Route path="/sign-in" element={<Signin setToken={setToken}/>} />
           <Route path="/register" element={<Register />} />
