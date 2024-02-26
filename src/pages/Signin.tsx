@@ -5,7 +5,6 @@ import { FormEvent, useState } from "react";
 import { mail, passwordSvg, loadingSvg } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import OAuth from "../components/OAuth";
-import { toast } from "react-toastify";
 import { supabase } from "../client";
 import Spinner from "../components/Spinner";
 
@@ -62,7 +61,6 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
 
       if (error) {
         console.error("Error signing in:", error.message);
-        toast.error("Authentication failure. Please try logging in again");
         setError(error.message)
         setLoading(false)
       } else {

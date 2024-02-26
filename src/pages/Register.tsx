@@ -7,7 +7,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { edit, mail, passwordSvg, loadingSvg } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import { ProfileQuestion } from './ProfileQuestion';
-import { toast } from 'react-toastify';
 import { supabase } from '../client';
 
 export const Register = () => {
@@ -79,7 +78,6 @@ export const Register = () => {
       });
   
       if (error) {
-        toast.error(`Error signing up:, ${error.message}`);
         setError(error.message)
         setLoading(false)
       } else {
