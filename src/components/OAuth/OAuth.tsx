@@ -1,11 +1,9 @@
 import { FcGoogle } from 'react-icons/fc';
 import { supabase } from "../../client"
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
 
 export const OAuth: React.FC = () => {
   
-  const navigate = useNavigate()
 
   async function onGoogleClick() {
     try {
@@ -17,8 +15,7 @@ export const OAuth: React.FC = () => {
         toast.error("Could not authenticate with google");
       } else {
         console.log('User data:', data);
-        toast.success('Sign in successful');
-        navigate("/")
+        
       }
     } catch (error) {
       console.error('Error signing in:', (error as Error).message);
