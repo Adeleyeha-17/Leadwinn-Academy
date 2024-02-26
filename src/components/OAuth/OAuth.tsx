@@ -7,16 +7,13 @@ export const OAuth: React.FC = () => {
 
   async function onGoogleClick() {
     try {
-      const { data, error } = await supabase.auth.signInWithOAuth({
+      const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google'
       })
       if (error) {
         console.error('Error signing in:', error.message);
-        toast.error("Could not authenticate with google");
-      } else {
-        console.log('User data:', data);
-        
-      }
+        toast.error("Failed to authenticate with Google. Please try again");
+      } 
     } catch (error) {
       console.error('Error signing in:', (error as Error).message);
     

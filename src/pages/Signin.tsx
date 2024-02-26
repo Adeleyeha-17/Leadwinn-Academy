@@ -61,7 +61,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
 
       if (error) {
         console.error("Error signing in:", error.message);
-        toast.error("User not signed in");
+        toast.error("Authentication failure. Please try logging in again");
       } else {
         const isAuthenticated = data?.session != null;
         setToken(isAuthenticated);

@@ -66,7 +66,7 @@ export const Register = () => {
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.signUp({
+      const { error } = await supabase.auth.signUp({
         email: email,
         password: password,
         options: {
@@ -80,7 +80,6 @@ export const Register = () => {
         toast.error(`Error signing up:, ${error.message}`);
       } else {
         history("/")
-        console.log('Sign up successful:', data);
       }
     } catch (error) {
       console.error('Error signing up:', (error as Error).message);

@@ -39,6 +39,7 @@ export const Navbar: React.FC = () => {
   const handleSignOut = async () => {
     await supabase.auth.signOut();
     setUser(null);
+    sessionStorage.removeItem("token");
   };
 
   const currentPath = (route: string) => {
@@ -167,6 +168,8 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
   const handleSignOut = async () => {
     await supabase.auth.signOut();
     setUserIn(null);
+    sessionStorage.removeItem("token");
+
   };
 
   return (
