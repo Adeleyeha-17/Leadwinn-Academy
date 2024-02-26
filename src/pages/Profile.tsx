@@ -37,16 +37,7 @@ export const Profile: React.FC = () => {
   
     fetchUserData();
   }, [navigate, user?.id]);
-  
-  
 
-  function onChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value
-    }));
-  }
 
   return (
     <motion.div
@@ -61,13 +52,12 @@ export const Profile: React.FC = () => {
           <h1 className="text-3xl text-center font-bold mt-6 mb-3">Profile</h1>
 
           <div className="sm:w-full md:w-[85%] mt-6 px-3 mx-auto">
-          <h4>Welcome to your Leadwinn profile, {user && user.user_metadata.full_name}</h4>
+          <h4>Welcome to your Leadwinn profile,</h4>
             <form>
               <input
                 type="text"
                 name="fullName"
                 value={fullName}
-                onChange={onChange}
                 className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out `}
               />
 
@@ -75,7 +65,6 @@ export const Profile: React.FC = () => {
                 type="email"
                 name="email"
                 value={email}
-                onChange={onChange}
                 className={`w-full rounded text-xl text-gray-700 bg-white px-4 py-2 my-2 border border-gray-300 transition ease-in-out`}
               />
               
