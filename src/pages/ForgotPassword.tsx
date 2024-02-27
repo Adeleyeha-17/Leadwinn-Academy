@@ -49,11 +49,10 @@ export const ForgotPassword: React.FC = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">
       <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
-        {/* Your left side content */}
       </div>
       <div className="relative w-full max-sm:h-screen lg:h-screen flex flex-col items-center pt-16 sm:pt-24 xl:pt-32">
         <div className="absolute top-16 right-8 sm:right-14 lg:right-14 mb-5">
-          <AiOutlineClose className="cursor-pointer relative max-sm:-top-8" onClick={handleGoBack} />
+          <AiOutlineClose className="hidden md:flex cursor-pointer relative max-sm:-top-8" onClick={handleGoBack} />
         </div>
         <div className="flex items-center flex-col gap-6 xl:gap-10 text-sm sm:text-base lg:text-xl text-head-black font-bold">
           <h1>Retrieve Password</h1>

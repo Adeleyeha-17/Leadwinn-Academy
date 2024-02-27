@@ -93,7 +93,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
       <div className="relative w-full max-sm:h-screen lg:h-screen flex flex-col items-center pt-16 sm:pt-24 ">
 
         <div className="absolute top-16 right-8 sm:right-14 lg:right-14 mb-5">
-          <AiOutlineClose className="cursor-pointer relative max-sm:-top-8" onClick={handleGoBack} />
+          <AiOutlineClose className="hidden md:flex cursor-pointer relative max-sm:-top-8" onClick={handleGoBack} />
         </div>
         <div className="flex items-center flex-col gap-6 xl:gap-8 text-sm sm:text-base lg:text-xl text-head-black font-bold">
           <span className="text-sm sm:text-base font-bold"> <Link to="/register" className={`${routePathMatch("/register")}`}>Register</Link> / <Link to="/sign-in" className={`${routePathMatch("/sign-in")}`}>Sign In</Link></span>
