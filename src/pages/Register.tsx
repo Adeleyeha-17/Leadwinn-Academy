@@ -26,6 +26,7 @@ export const Register = () => {
     rememberMe: false,
   });
 
+  const [registrationSuccess, setRegistrationSuccess] = useState(false)
   const [profileQuestionData, setProfileQuestionData] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -81,11 +82,13 @@ export const Register = () => {
         setError(error.message)
         setLoading(false)
       } else {
-        history("/")
+        setRegistrationSuccess(true); 
+        setTimeout(() => {
+          setShowRegistration(false); 
+        }, 1);
       }
     } catch (error) {
       setError(error as string);
-      console.error("Error signing in:", (error as Error).message);
     }
   };
 
@@ -144,6 +147,12 @@ export const Register = () => {
           </div>
         </div>
       )}
+       {registrationSuccess && (
+        <div className="fixed top-72 w-full bg-nav-blue py-4 text-center">
+          <p>Thank you for registering! Please check your email to confirm your registration.</p>
+        </div>
+      )}
     </motion.div>
   );
+
 };
