@@ -4,13 +4,13 @@ import { mail } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import { supabase } from "../client";
 import { AiOutlineClose } from "react-icons/ai";
-import { toast } from "react-toastify";
 
 export const ForgotPassword: React.FC = () => {
   const history = useNavigate();
   const [formData, setFormData] = useState({
     email: ""
   });
+  const [resetSuccess, setResetSuccess] = useState(false)
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -38,7 +38,7 @@ export const ForgotPassword: React.FC = () => {
       if (error) {
         throw error.message;
       }
-      toast.success("Password reset email sent successfully! Please check your inbox.");
+      setResetSuccess(true)
     } catch (error) {
       setError(error as string);
     } finally {
@@ -48,7 +48,9 @@ export const ForgotPassword: React.FC = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex font-poppins">
-      <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
+      {!resetSuccess && (
+        <>
+        <div className="bg-head-black hidden text-white w-6/12 max-sm:h-screen sm:h-[65rem] lg:h-screen sm:flex flex-col lg:justify-center py-72">
       </div>
       <div className="relative w-full max-sm:h-screen lg:h-screen flex flex-col items-center pt-16 sm:pt-24 xl:pt-32">
         <div className="absolute top-16 right-8 sm:right-14 lg:right-14 mb-5">
@@ -71,6 +73,13 @@ export const ForgotPassword: React.FC = () => {
           <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Not a member yet?"} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Sign Up</Link></p>
         </div>
       </div>
+      </>
+        )}
+      {resetSuccess && (
+        <div className="fixed top-72 w-full bg-nav-blue py-4 text-center">
+        <p>Password Reset Successful! Please check your email to confirm your password reset....</p>
+        </div>
+        )}
     </motion.div>
   );
 }
