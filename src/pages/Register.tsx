@@ -148,7 +148,7 @@ export const Register = () => {
         </div>
       )}
        {registrationSuccess && (
-        <div className="fixed top-72 w-full bg-nav-blue py-4 text-center">
+        <div className="fixed top-52 lg:top-72 w-full bg-nav-blue py-4 text-center">
           <p>Thank you for registering! Please check your email to confirm your registration.</p>
         </div>
       )}
