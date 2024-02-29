@@ -148,7 +148,7 @@ export const Register = () => {
                 <OAuth />
 
               </div>
-              <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Already have an account?"} <Link to="/sign-in" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Log In</Link></p>
+              <p className="font-medium text-xs sm:text-sm lg:text-base">{"Already have an account?"} <Link to="/sign-in" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Log In</Link></p>
             </div>
           </div>
         </div>

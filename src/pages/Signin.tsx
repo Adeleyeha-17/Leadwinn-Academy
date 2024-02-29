@@ -133,7 +133,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
               <OAuth />
 
             </div>
-            <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Don't have an account? "} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0">  Register</Link></p>
+            <p className="font-medium text-xs sm:text-sm lg:text-base">{"Don't have an account? "} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0">  Register</Link></p>
           </div>
         </div>
       </div>
