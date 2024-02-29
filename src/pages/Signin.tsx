@@ -6,6 +6,7 @@ import { mail, passwordSvg, loadingSvg, leadwinnLogo } from "../../src/assets/ic
 import { motion } from "framer-motion";
 import { supabase } from "../client";
 import Spinner from "../components/Spinner";
+import OAuth from "../components/OAuth";
 
 export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = ({
   setToken,
@@ -125,6 +126,13 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
               </div>
               <button className="w-full bg-hero-blue text-white px-7 py-4 text-xs sm:text-sm font-semibold uppercase rounded-xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto'/> : "Log In"}</button>
             </form>
+
+            <div className="flex my-2 items-center before:border-t before:flex-1  before:border-gray-300 after:border-t after:flex-1  after:border-gray-300">
+                  <p className="text-center font-semibold mx-4 text-heading">OR CONTINUE</p>
+                </div>
+
+                <OAuth />
+                
           </div>
           <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Don't have an account? "} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0">  Register</Link></p>
         </div>
