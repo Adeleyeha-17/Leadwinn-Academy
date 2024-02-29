@@ -52,7 +52,7 @@ export const ForgotPassword: React.FC = () => {
           <h4 className="sm:w-[11rem] lg:w-[13rem] xl:w-[24rem] font-bold text-lg xl:text-2xl">Retrieve password to continue to your account</h4>
         </div>
       </div>
-      <div className="max-lg:bg-head-black relative w-full h-screen flex flex-col items-center pt-16 sm:pt-24 xl:pt-32">
+      <div className="max-lg:bg-head-black relative w-full h-screen flex flex-col items-center pt-12 lg:pt-16">
       <div className="flex justify-between items-center gap-2 pb-8">
           <Link to="/" className="flex items-center gap-2">
             <img src={leadwinnLogo} alt="leadwinn logo" loading='eager' className="h-10 w-10 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />

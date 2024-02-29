@@ -95,7 +95,7 @@ export const Register = () => {
         </div>
       )}
       {showRegistration && (
-        <div className="max-lg:bg-head-black  relative w-full py-40 h-screen flex flex-col items-center pt-16">
+        <div className="max-lg:bg-head-black  relative w-full py-40 h-screen flex flex-col items-center pt-12 lg:pt-16">
 
           <div className="flex justify-between items-center gap-2 pb-8">
             <Link to="/" className="flex items-center gap-2">
