@@ -81,7 +81,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
         </div>
       </div>
 
-      <div className="max-lg:bg-head-black relative w-full h-screen flex flex-col items-center pt-12 lg:pt-16 ">
+      <div className="max-lg:bg-head-black relative w-full h-auto pb-24 sm:pb-40 lg:h-screen flex flex-col items-center pt-12 lg:pt-16 ">
         <div className="flex justify-between items-center gap-2 pb-8">
           <Link to="/" className="flex items-center gap-2">
             <img src={leadwinnLogo} alt="leadwinn logo" loading='eager' className="h-10 w-10 md:h-14 md:w-14 transition duration-200 ease-in-out md:hover:scale-105" />
