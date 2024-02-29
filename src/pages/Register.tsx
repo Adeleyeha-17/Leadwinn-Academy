@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { ProfileQuestion } from './ProfileQuestion';
 import { supabase } from '../client';
 import OAuth from '../components/OAuth';
+import { animate } from '../assets/videos';
 
 export const Register = () => {
   const [showRegistration, setShowRegistration] = useState(false);
@@ -154,8 +155,9 @@ export const Register = () => {
         </div>
       )}
       {registrationSuccess && (
-        <div className="fixed top-72 w-full bg-nav-blue py-4 text-center">
-          <p>Thank you for registering! Please check your email to confirm your registration....</p>
+        <div className="w-full flex flex-col gap-6 items-center justify-center h-screen bg-nav-blue">
+          <p className='text-center font-semibold text-heading'>Thank you for registering! Please check your email to confirm your registration....</p>
+          <img src={animate} />
         </div>
       )}
     </motion.div>

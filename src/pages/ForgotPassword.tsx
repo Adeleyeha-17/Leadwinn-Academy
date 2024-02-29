@@ -4,6 +4,7 @@ import { leadwinnLogo, mail } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import { supabase } from "../client";
 import { dots } from "../assets/images";
+import { animate } from "../assets/videos";
 
 export const ForgotPassword: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -86,9 +87,10 @@ export const ForgotPassword: React.FC = () => {
       </>
         )}
       {resetSuccess && (
-        <div className="fixed top-72 w-full bg-nav-blue py-4 text-center">
-        <p>Password Reset Successful! Please check your email to confirm your password reset....</p>
-        </div>
+        <div className="w-full flex flex-col gap-6 items-center justify-center h-screen bg-nav-blue">
+        <p className='text-center text-heading font-bold'>Password Reset Successful! Please check your email to confirm your password reset....</p>
+        <img src={animate} />
+      </div>
         )}
     </motion.div>
   );
