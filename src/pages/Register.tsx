@@ -142,7 +142,7 @@ export const Register = () => {
 
 
                 <div className="flex my-2 items-center before:border-t before:flex-1  before:border-gray-300 after:border-t after:flex-1  after:border-gray-300">
-                  <p className="text-center font-semibold mx-4 text-heading">OR CONTINUE</p>
+                  <p className="text-center font-semibold mx-4 text-heading">OR CONTINUE WITH</p>
                 </div>
 
                 <OAuth />

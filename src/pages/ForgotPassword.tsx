@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { leadwinnLogo, mail } from "../../src/assets/icons";
 import { motion } from "framer-motion";
 import { supabase } from "../client";
+import { dots } from "../assets/images";
 
 export const ForgotPassword: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +46,11 @@ export const ForgotPassword: React.FC = () => {
       {!resetSuccess && (
         <>
         <div className="bg-head-black hidden text-white w-6/12 h-screen lg:flex flex-col lg:justify-center py-72">
-          Hello
+        <div className="w-[15rem] lg:w-[18rem] xl:w-[28rem] flex flex-col gap-10 ml-12">
+          <h2 className=" font-medium sm:text-lg lg:text-2xl xl:text-4xl">Forgot Password?</h2>
+          <img src={dots} className="sm:w-8/12 xl:w-8/12" loading="eager"/>
+          <h4 className="sm:w-[11rem] lg:w-[13rem] xl:w-[24rem] font-bold text-lg xl:text-2xl">Retrieve password to continue to your account</h4>
+        </div>
       </div>
       <div className="max-lg:bg-head-black relative w-full h-screen flex flex-col items-center pt-16 sm:pt-24 xl:pt-32">
       <div className="flex justify-between items-center gap-2 pb-8">
