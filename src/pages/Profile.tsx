@@ -7,6 +7,7 @@ import { User } from "@supabase/supabase-js";
 export const Profile: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
   const [profilePictureUrl, setProfilePictureUrl] = useState<string | null>(null);
+  const [emailVerified, setEmailVerified] = useState<boolean>(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: ""
@@ -29,6 +30,7 @@ export const Profile: React.FC = () => {
           });
           if (data.user.user_metadata.picture) {
             setProfilePictureUrl(data.user.user_metadata.picture);
+            setEmailVerified(data.user.user_metadata.email_verified || false);
           }
         } else {
           navigate("/sign-in");
@@ -57,9 +59,11 @@ export const Profile: React.FC = () => {
           <h1 className="text-3xl text-center font-bold mt-6 mb-3">Profile</h1>
           <div className="mt-6 px-3 mx-auto">
             <h4 className="text-lg">Welcome to your Leadwinn profile,</h4>
-            <div>
-              <h4>Name: <span>{fullName}</span></h4>
-              <h4>Email Address: <span>{email}</span></h4>
+            <div className="bg-white h-auto flex flex-col gap-4 mt-4 border border-gray-300 rounded-lg px-5 lg:px-10 py-10">
+              <h4>Name: <span className="text-heading">{fullName}</span></h4>
+              <h4>Email Address: <span className="text-heading">{email}</span></h4>
+              <h4>Email Verified: <span className="text-heading">{emailVerified ? 'No' : 'Yes'}</span></h4>
+              
             </div>
           </div>
         </section>
