@@ -56,7 +56,7 @@ export const Profile: React.FC = () => {
           <img src={profilePictureUrl} alt="Profile" className="rounded-full w-40 h-40 mb-4" />
         )}
         <section>
-          <h1 className="text-3xl text-center font-bold mt-6 mb-3">Profile</h1>
+          <h1 className="text-3xl text-center font-bold mt-6 mb-3 text-heading">Profile</h1>
           <div className="mt-6 px-3 mx-auto">
             <h4 className="text-lg">Welcome to your Leadwinn profile,</h4>
             <div className="bg-white h-auto flex flex-col gap-4 mt-4 border border-gray-300 rounded-lg px-5 lg:px-10 py-10">
