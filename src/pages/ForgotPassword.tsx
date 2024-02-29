@@ -71,7 +71,7 @@ export const ForgotPassword: React.FC = () => {
                 </div>
                 {error && <p className="text-red-500 text-xs sm:text-sm lg:text-base">{error}</p>}
               </div>
-              <button className="w-full bg-hero-blue text-white px-7 py-4 text-xs sm:text-sm font-medium uppercase rounded-lg shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit" disabled={isLoading}>{isLoading ? "Loading..." : "Reset Password"}</button>
+              <button className="w-full bg-hero-blue text-white px-7 py-4 text-xs sm:text-sm font-medium uppercase rounded-t-lg rounded-br-lg shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit" disabled={isLoading}>{isLoading ? "Loading..." : "Reset Password"}</button>
             </form>
           </div>
           <p className="mb-6 font-medium text-xs sm:text-sm lg:text-base">{"Don't have an account? "} <Link to="/register" className="text-hero-blue font-semibold transition duration-200 ease-in-out ml-1 sm:ml-0"> Register</Link></p>

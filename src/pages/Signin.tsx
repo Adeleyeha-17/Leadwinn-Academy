@@ -124,7 +124,7 @@ export const Signin: React.FC<{ setToken: (token: boolean | null) => void }> = (
                   <Link to="/forgot-password" className=" text-hero-blue sm:hover:text-blue-800 transition duration-200 ease-in-out">Forgot Password?
                   </Link></p>
               </div>
-              <button className="w-full bg-hero-blue text-white px-7 py-4 text-xs sm:text-sm font-semibold uppercase rounded-xl shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto'/> : "Log In"}</button>
+              <button className="w-full bg-hero-blue text-white px-7 py-4 text-xs sm:text-sm font-semibold uppercase rounded-t-lg rounded-br-lg shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit">{loading ? <img src={loadingSvg} className='h-5 w-14 mx-auto'/> : "Log In"}</button>
             </form>
 
             <div className="flex my-2 items-center before:border-t before:flex-1  before:border-gray-300 after:border-t after:flex-1  after:border-gray-300">

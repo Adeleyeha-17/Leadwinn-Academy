@@ -22,7 +22,7 @@ export const OAuth: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center"> 
-      <button type="button" onClick={onGoogleClick} className="flex items-center justify-center w-12 h-10 rounded-lg border border-head-black">
+      <button type="button" onClick={onGoogleClick} className="flex items-center justify-center w-12 h-10 rounded-b-lg border border-head-black">
       <FcGoogle className="text-2xl bg-white rounded-full" />
       </button>
     </div>
