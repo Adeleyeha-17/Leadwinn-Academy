@@ -37,7 +37,7 @@ export const Profile: React.FC = () => {
         console.error("Error fetching user data:", (error as Error).message);
       }
     };
-    
+
     fetchUserData();
   }, [navigate, user?.id]);
 

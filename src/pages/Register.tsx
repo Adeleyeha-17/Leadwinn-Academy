@@ -156,7 +156,10 @@ export const Register = () => {
       )}
       {registrationSuccess && (
         <div className="w-full flex flex-col gap-6 items-center justify-center h-screen bg-nav-blue">
-          <p className='text-center font-semibold text-heading'>Thank you for registering! Please check your email to confirm your registration....</p>
+          <div className='text-center text-heading font-bold'>
+            <p>Thank you for registering!</p>
+            <p>Please check your email to confirm your registration....</p>
+          </div>
           <img src={animate} />
         </div>
       )}
