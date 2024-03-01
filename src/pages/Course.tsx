@@ -58,17 +58,19 @@ export const Courses = () => {
         </div>
     ));
 
+    const buttonClasses = "border px-3 py-1 rounded-lg border-heading";
+    const activeButtonClasses = "border border-heading px-3 py-1 rounded-lg bg-heading text-white";
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }} className="flex flex-col items-center justify-center py-24 font-poppins">
           <h4 className="mb-3 text-xl sm:text-2xl text-head-black font-semibold">Courses We Offer</h4>
             <div className="flex flex-wrap items-center justify-center gap-4 mb-10 text-heading text-xs lg:text-base">
-                <button onClick={() => handleFilter(null)} className="border px-3 py-1 rounded-lg border-heading">All</button>
-                <button onClick={() => handleFilter("Scratch")} className="border border-heading px-3 py-1 rounded-lg">Scratch</button>
-                <button onClick={() => handleFilter("MIT")} className="border border-heading px-3 py-1 rounded-lg">MIT</button>
-                <button onClick={() => handleFilter("Roblox")} className="border border-heading px-3 py-1 rounded-lg">Roblox</button>
-                <button onClick={() => handleFilter("Design")} className="border border-heading px-3 py-1 rounded-lg">Design</button>
-                <button onClick={() => handleFilter("Development")} className="border border-heading px-3 py-1 rounded-lg">Development</button>
-                <button onClick={() => handleFilter("Python")} className="border border-heading px-3 py-1 rounded-lg">Python</button>
+                <button onClick={() => handleFilter(null)} className={selectedType === null ? activeButtonClasses : buttonClasses}>All</button>
+                <button onClick={() => handleFilter("Scratch")} className={selectedType === "Scratch" ? activeButtonClasses : buttonClasses}>Scratch</button>
+                <button onClick={() => handleFilter("MIT")} className={selectedType === "MIT" ? activeButtonClasses : buttonClasses}>MIT</button>
+                <button onClick={() => handleFilter("Roblox")} className={selectedType === "Roblox" ? activeButtonClasses : buttonClasses}>Roblox</button>
+                <button onClick={() => handleFilter("Design")} className={selectedType === "Design" ? activeButtonClasses : buttonClasses}>Design</button>
+                <button onClick={() => handleFilter("Development")} className={selectedType === "Development" ? activeButtonClasses : buttonClasses}>Development</button>
+                <button onClick={() => handleFilter("Python")} className={selectedType === "Python" ? activeButtonClasses : buttonClasses}>Python</button>
 
 
             </div>

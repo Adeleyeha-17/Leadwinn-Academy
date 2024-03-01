@@ -75,7 +75,7 @@ export const ForgotPassword: React.FC = () => {
                         <input className="w-[19rem] sm:w-[23rem] lg:w-[25rem] xl:w-[50rem] pl-12 xl:py-5 py-4 text-base sm:text-lg text-gray-700 font-medium bg-white rounded-lg transition ease-in-out border border-head-black focus:border-head-blue" type="text" name="email" value={email} placeholder="e.g. john@gmail.com" onChange={onChange} />
                         <img src={mail} className="absolute left-4 top-4 sm:top-5 xl:top-6" loading="eager" alt="Mail Icon" />
                       </div>
-                      {error && <p className="text-red-500 text-xs sm:text-sm lg:text-base ">{error}</p>}
+                      {error && <p className="text-red-500 text-xs sm:text-sm lg:text-base w-[19rem] sm:w-[23rem] lg:w-[25rem] xl:w-[50rem]">{error}</p>}
                     </div>
                     <button className="w-full bg-hero-blue text-white px-7 py-4 text-xs sm:text-sm font-medium uppercase rounded-t-lg rounded-br-lg shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800" type="submit" disabled={isLoading}>{isLoading ? "Loading..." : "Reset Password"}</button>
                   </form>

@@ -59,7 +59,7 @@ export const Hero: React.FC = () => {
             <img src={edu1} alt="students" className="w-16 lg:w-20" loading="eager" />
             <h1 className="max-w-[5rem] text-xl"><span className="font-semibold">100+</span> Students</h1>
           </div>
-          <div className="flex items-center gap-4 bg-white text-heading border rounded-lg py-5 px-20 sm:px-6 lg:px-12 shadwo-sm">
+          <div className="flex items-center gap-4 bg-heading text-white border rounded-lg py-5 px-20 sm:px-6 lg:px-12 shadwo-sm">
             <img src={edu2} alt="certified" className="w-16 lg:w-20" loading="eager" />
             <h1 className="max-w-[5rem] text-xl"><span className="font-semibold">100+</span> Certified</h1>
           </div>
