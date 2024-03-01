@@ -10,7 +10,7 @@ export const Brochure = () => {
     <div className="flex flex-col md:flex-row justify-between py-20 sm:max-lg:py-10 sm:py-28 px-5 md:px-12 xl:px-20  md:max-lg:max-w-6xl lg:max-xl:max-w-7xl font-poppins mx-auto">
       <div className="flex max-sm:flex-col md:justify-between md:items-center sm:w-full">
         <div className="sm:w-1/2 mb-10">
-          <img src={brochureImg} alt="growth image" className="w-10/12 h-full" loading="lazy" />
+          <img src={brochureImg} alt="growth image" className="w-full h-full mx-auto" loading="lazy" />
         </div>
 
         <div className="sm:w-1/2 flex flex-col gap-3 xl:gap-4">
