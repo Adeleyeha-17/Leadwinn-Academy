@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, mitAdvanced, mitIntermediate, mitBasic, robloxBasic, robloxIntermediate, robloxAdvanced, pythonBasic, pythonIntermediate, uiBasic, uiIntermediate, uiAdvanced } from '../../assets/videos';
+import { scratchAdvanced, scratchIntermediate, scratchBasic, webAdvanced, webAdvancedVideo, webIntermediate, webBasic, webBasicVideo, mitAdvanced, mitIntermediate, mitBasic, robloxBasic, robloxIntermediate, robloxAdvanced, pythonBasic, pythonIntermediate, uiBasic, uiIntermediate, uiAdvanced, snake } from '../../assets/videos';
  
 export const LibraryCourses = () => {
 
@@ -229,7 +229,7 @@ export const LibraryCourses = () => {
             <p className='w-[22rem] sm:w-[38rem] lg:w-[43rem]  xl:w-[57rem] text-sm xl:text-base'>
               Become a Python expert with our Advanced course for ages 12+.
               Delve into advanced concepts, object-oriented programming, and project development. Unleash your creativity, mastering Python for complex problem-solving and software development.</p>
-              <img src="" className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
+              <img src={snake} className='w-[21.1rem] sm:w-[39.75rem] h-[16rem] sm:h-[30rem] mx-10 mt-10 rounded-3xl border-4 border-blue-900 overflow-hidden'></img>
 
           </div>
         </div>
