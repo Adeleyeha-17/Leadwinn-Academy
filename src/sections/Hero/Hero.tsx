@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
 
           <div className="flex items-center gap-4 bg-white text-heading border rounded-lg py-5 px-20 sm:px-6 lg:px-12 shadow-md">
             <img src={edu3} alt="countries" className="w-16 lg:w-20" loading="eager" />
-            <h1 className="max-w-[5rem] text-xl"><span className="font-semibold">10+</span> Countries</h1>
+            <h1 className="max-w-[5rem] text-xl"><span className="font-semibold">6+</span> Countries</h1>
           </div>
         </div>
 
