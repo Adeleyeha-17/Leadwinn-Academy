@@ -34,7 +34,7 @@ export const Courses = () => {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: true
@@ -43,7 +43,7 @@ export const Courses = () => {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 2
           }
@@ -66,8 +66,8 @@ export const Courses = () => {
   }, [])
 
   const vanElements = vans.slice(0, 9).map(van => (
-        <div className="px-10">
-      <div key={van.id} className="w-[22rem] xl:w-[24rem] h-[30rem] xl:h-[32rem] rounded-3xl border px-6 py-10 ml-10">
+        <div className="px-0 sm:px-5 lg:px-10">
+      <div key={van.id} className="w-[18.5rem] sm:w-[14rem] lg:w-[18.8rem] xl:w-[24rem] h-[30rem] sm:max-lg:h-[25rem] xl:h-[32rem] rounded-3xl border px-6 py-10 ml-10">
 
             <Link to={`/courses/${van.id}`}>
           <img alt={van.name} src={van.imageUrl} className="rounded-xl mb-4 transform transition duration-150 ease-in-out hover:"/>
@@ -75,7 +75,7 @@ export const Courses = () => {
             <div className="flex justify-between">
 
           <i className={`border py-1 px-3 rounded-md text-xs`}>{van.type}</i>
-          <img src={van.star} className="w-28" title={van.title}/>
+          <img src={van.star} className="w-28 sm:max-lg:w-20 lg:w-28" title={van.title}/>
             </div>
               <h3 className="text-sm font-semibold text-head-black mt-4">{van.name}</h3>
           </div>
