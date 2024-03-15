@@ -69,12 +69,12 @@ export const Testimonial = () => {
                   <img src={sliderImage} alt="slider Image" className="h-full max-sm:w-4/5 xl:w-11/12 max-sm:mx-auto" loading='lazy'/>
                </div>
 
-               <div className='md:bg-white font-poppins md:bg-opacity-30 rounded-lg h-32 sm:h-40 lg:h-48 xl:h-60 max-sm:w-72 max-lg:px-5 flex items-center justify-center max-sm:mx-auto sm:-ml-12 md:-ml-10 xl:-ml-20 '>
+               <div className='md:bg-white font-poppins md:bg-opacity-30 rounded-lg h-32 sm:h-40 lg:h-48 xl:h-60 max-sm:w-72 max-lg:px-5 flex items-center justify-center max-sm:mx-auto sm:-ml-12 md:-ml-10 xl:-ml-20 mb-10'>
                   <Slider {...sliderSettings} className='w-full sm:w-4/5 lg:w-10/12'>
                      {
                         testimonials.map((testimonial, index) => (
                            <div key={index}
-                              className='py-2 xl:py-5'>
+                              className='sm:py-2'>
                               <p className="text-xs lg:text-sm max-sm:mb-3 sm:mb-2 lg:mb-4 max-sm:pt-3 xl:pt-10 text-center">
                                  {
                                     `"${testimonial.message

@@ -102,7 +102,7 @@ export const Courses = () => {
           <h2 className="text-xl sm:text-2xl text-head-black font-semibold mb-5">Find Yours From The Featured</h2>
           <h5 className="px-2 sm:max-w-[36rem] text-center text-heading mb-10">From coding to design and beyond, find the perfect course to elevate your expertise and achieve your goals.</h5>
         </div>
-        <div className="- sm:px-10">
+        <div className="sm:px-10">
           <Slider {...settings}>
         {vanElements}
         </Slider>
