@@ -1,0 +1,20 @@
+.slick-dots li.slick-active button:before {
+   color: #07f !important
+}
+
+.slick-dots li button:before {
+   color: #fff !important;
+   font-size: .6rem !important;
+   top: 1rem !important
+}
+
+.slider .slick-track {
+   display: grid !important;
+   grid-template-columns: repeat(14, 1fr);
+   gap: 1rem
+}
+
+.slider .slick-slide {
+   width: 100% !important;
+   box-sizing: border-box
+}

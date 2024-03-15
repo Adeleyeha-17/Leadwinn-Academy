@@ -7,7 +7,7 @@ export const IgnitingMind = () => {
 
       <div className="text-heading text-sm lg:text-base">
         <h4 className="max-sm:w-[18rem] text-xl sm:text-2xl font-semibold">What You Need To Know About Leadwinn</h4>
-        <p className="pt-5">At Leadwinn Academy, we pride ourselves on our commitment to excellence in education. With a track record spanning over 3 years, we have successfully trained over 100 students hailing from 10 countries worldwide. 
+        <p className="pt-5">At Leadwinn Academy, we pride ourselves on our commitment to excellence in education. With a track record spanning over 3 years, we have successfully trained over 100 students hailing from 6 countries worldwide. 
         </p>
         <p className="pt-3">
         Our dedication to quality education is reflected in the 50+ projects submitted by our students, showcasing their innovative thinking and practical skills. Moreover, our rigorous curriculum ensures that our students graduate with flying colors, earning over 100 certificates to date.
@@ -27,13 +27,13 @@ export const IgnitingMind = () => {
         </div>
 
         <div>
-          <img src={enroll} className="w-[18.5rem] h-full lg:h-[35rem] lg:w-[27rem]" loading="eager" />
+          <img src={enroll} className="w-[18.5rem] h-full lg:h-[35rem] lg:w-[27rem]" loading="eager" alt=""/>
         </div>
       </div>
 
       <div className="flex max-sm:flex-col-reverse sm:justify-center sm:items-center gap-10 sm:px-16 max-sm:mt-5">
         <div>
-          <img src={empowering} className="w-[18.5rem] h-full lg:w-[27rem] lg:h-[35rem] mx-auto" loading="eager" />
+          <img src={empowering} className="w-[18.5rem] h-full lg:w-[27rem] lg:h-[35rem] mx-auto" loading="eager" alt=""/>
         </div>
 
         <div className="text-heading sm:w-[22rem]">

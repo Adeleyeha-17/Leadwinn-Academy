@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IoPeopleOutline } from "react-icons/io5";
+import Slider from 'react-slick';
+
+import "./courses.css"
 
 export const Courses = () => { 
 
@@ -19,6 +22,20 @@ export const Courses = () => {
         title: string;
     }
 
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      pauseOnHover: true,
+      pauseOnFocus: true,
+      cssEase: "linear"
+    };
+
     const [vans, setVans] = useState<Course[]>([])
     useEffect(() => {
       fetch("/api/vans")
@@ -26,7 +43,7 @@ export const Courses = () => {
           .then(data => setVans(data.vans))
   }, [])
 
-  const vanElements = vans.slice(0, 9).map(van => (
+  const vanElements = vans.map(van => (
       <div key={van.id} className="w-[22rem] xl:w-[25rem] h-[30rem] xl:h-[32rem] rounded-3xl border px-6 py-10">
             <Link to={`/courses/${van.id}`}>
           <img alt={van.name} src={van.imageUrl} className="rounded-xl mb-4 transform transition duration-150 ease-in-out hover:"/>
@@ -40,7 +57,7 @@ export const Courses = () => {
           </div>
 
           <div className="flex gap-2 items-center mt-3">
-            <img src={van.instructorUrl} className="w-10 h-10 rounded-full" />
+            <img src={van.instructorUrl} className="w-10 h-10 rounded-full" alt=""/>
             <p className="text-sm">{van.instructor}</p>
           </div>
           <div className="flex justify-between mt-4 text-sm">
@@ -54,18 +71,18 @@ export const Courses = () => {
 
   return (
 
-      <div>
+      <div className="mb-28">
         <div className="flex flex-col items-center justify-center font-poppins pt-20">
 
           <h1 className="text-lg text-heading font-semibold mb-2">FEATURED COURSES</h1>
           <h2 className="text-xl sm:text-2xl text-head-black font-semibold mb-5">Find Yours From The Featured</h2>
           <h5 className="px-2 sm:max-w-[36rem] text-center text-heading mb-10">From coding to design and beyond, find the perfect course to elevate your expertise and achieve your goals.</h5>
         </div>
-          <div className="flex flex-col items-center justify-center font-poppins pb-20 overflow-x-auto scroll-smooth">
-          <div className="flex items-center justify-center gap-8 mr-[0rem]">
-              {vanElements}
+        <div className="">
+          <Slider {...settings} className="">
+        {vanElements}
+        </Slider>
     </div>
           </div>
-      </div>
   )
 }
