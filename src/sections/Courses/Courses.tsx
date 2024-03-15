@@ -24,7 +24,7 @@ export const Courses = () => {
 
     const settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
       arrows: false,
       slidesToShow: 3,
@@ -45,7 +45,6 @@ export const Courses = () => {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            initialSlide: 2
           }
         },
         {
@@ -65,9 +64,9 @@ export const Courses = () => {
           .then(data => setVans(data.vans))
   }, [])
 
-  const vanElements = vans.slice(0, 9).map(van => (
-        <div className="px-0 sm:px-5 lg:px-10">
-      <div key={van.id} className="w-[18.5rem] sm:w-[14rem] lg:w-[18.8rem] xl:w-[24rem] h-[30rem] sm:max-lg:h-[25rem] xl:h-[32rem] rounded-3xl border px-6 py-10 ml-10">
+  const vanElements = vans.slice(0, 6).map(van => (
+        <div className="sm:px-5 lg:px-10">
+      <div key={van.id} className="w-[20rem] sm:w-[14rem] lg:w-[18.8rem] xl:w-[24rem] h-[30rem] sm:max-lg:h-[25rem] xl:h-[32rem] rounded-3xl border px-6 py-10 max-sm:ml-10">
 
             <Link to={`/courses/${van.id}`}>
           <img alt={van.name} src={van.imageUrl} className="rounded-xl mb-4 transform transition duration-150 ease-in-out hover:"/>
@@ -103,7 +102,7 @@ export const Courses = () => {
           <h2 className="text-xl sm:text-2xl text-head-black font-semibold mb-5">Find Yours From The Featured</h2>
           <h5 className="px-2 sm:max-w-[36rem] text-center text-heading mb-10">From coding to design and beyond, find the perfect course to elevate your expertise and achieve your goals.</h5>
         </div>
-        <div className="px-10">
+        <div className="- sm:px-10">
           <Slider {...settings}>
         {vanElements}
         </Slider>
